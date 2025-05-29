@@ -1,0 +1,302 @@
+{
+    "database": {
+        "services": [
+            {
+                "id": 1,
+                "title": "Digital marketing",
+                "imgSrc": "Digital-Marketing-and-Advertising.jpg",
+                "showInfo": false,
+                "icon": "fa-rectangle-ad",
+                "info": "Implementing strategies like SEO, PPC, and social media marketing to enhance online presence",
+                "fullInfo": "Convert Clicks into Clients with Digital that Delivers. Digital marketing isn't just about visibility—it’s about measurable results. At AVATA Works, we build experiential, targeted, and scalable digital strategies that put your brand in front of the right people, on the right platforms, at the right time. Whether you want to grow leads, sales, or awareness, we’ve got you covered.",
+                "subServices": [
+                    "Social Media Management",
+                    "Copywriting & Content Marketing",
+                    "Paid Advertising",
+                    "Sales Funnel Optimization",
+                    "Search Engine Optimization"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Brand Strategy & Design",
+                "info": "Crafting comprehensive brand identities that resonate with your ideal customer avatar",
+                "imgSrc": "Creative-designs-and-branding--Canva-Picture.jpg",
+                "showInfo": false,
+                "icon": "fa-pencil",
+                "fullInfo": "Build a Brand That Speaks, Sells, and Stands Out. Your brand is your business’s first impression—and first impressions matter. At AVATA Works, we don't just create logos, we engineer lasting perceptions. Our brand experts work with you to define your voice, differentiate your position in the market, and design a visually powerful, emotionally compelling brand that attracts and retains the right audience.",
+                "subServices": [
+                    "Logo and Brand Identity",
+                    "Graphic Design",
+                    "UI/UX Design",
+                    "Video Production",
+                    "Photography Services"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Custom Software Development",
+                "info": "Developing tailored software solutions (website & App development) to meet specific business needs.",
+                "imgSrc": "Website-and-App-developer-Canva-Picture.jpg",
+                "showInfo": false,
+                "icon": "fa-laptop-code",
+                "fullInfo": "Code That Solves, Scales, and Succeeds.We build custom digital solutions that don’t just look good—they work smarter. Whether you’re launching a new website, an e-commerce store, or enterprise-grade applications, AVATA Works creates tailored, scalable platforms with intuitive UX and solid architecture to future-proof your growth.",
+                "subServices": [
+                    "Website Development",
+                    "Mobile App Development ",
+                    "Landing Page Development",
+                    "E-commerce Solutions",
+                    "Web Maintenance & Support"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Experiential Events management",
+                "info": "Planning and executing immersive events that connect brands with their audiences.",
+                "imgSrc": "Business-Consultation-Canva-Picture.jpg",
+                "showInfo": false,
+                "icon": "fa-people-roof",
+                "fullInfo": "Create Moments That Matter. Make Your Brand Unforgettable. Events aren’t just gatherings—they’re immersive brand experiences. We plan and execute high-impact events that delight, inspire, and leave lasting memories. From concept to execution, AVATA Works delivers flawless on-ground and virtual experiences that elevate your brand.",
+                "subServices": [
+                    "Event Planning & Management",
+                    "Booking & Scheduling"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Talent Acquisition & Development",
+                "info": " Identifying and nurturing talent to drive brand growth.",
+                "imgSrc": "Business-Consultation-Canva-Picture.jpg",
+                "showInfo": false,
+                "icon": "fa-hand-holding-droplet",
+                "fullInfo": "Nurturing Talent. Building Brands. Creating Legacies. At AVATA Works, we don’t just manage talent—we build stars. From emerging creatives to established entertainers, our Talent Management & Development service is designed to elevate individuals with exceptional skills into powerful personal brands. Whether you’re an artiste, performer, content creator, or media personality, our mission is simple: turn your talent into a thriving brand.",
+                "subServices": [
+                    "Talent Management",
+                    "Public Relations",
+                    "Brand Partnerships"
+                ]
+            },
+            {
+                "id": 6,
+                "title": "Sales Strategy & Consultation",
+                "info": "Providing insights to optimize sales processes and improve conversion rate",
+                "imgSrc": "Management-Team-1.jpg",
+                "showInfo": false,
+                "icon": "fa-chart-simple",
+                "fullInfo": "Turn Strategy into Sales. Scale with Confidence. Sales don’t happen by luck—they happen by smart systems. We partner with your team to sharpen your sales processes, improve your funnels, and close more deals. Our approach blends data, automation, and psychology to help you sell more, more efficiently.",
+                "subServices": [
+                    "Business Strategy Consulting",
+                    "Data Analytics & Reporting",
+                    "Digital Transformation",
+                    "Market Research",
+                    "Sales Training"
+                ]
+            }
+        ],
+        "whyChooseUs": [
+            {
+                "title": "Advanced V. Assistants",
+                "content": "Hire an A-List team of Digital strategists, designers, developers, marketers, Copy writers and more.",
+                "icon": "fa-headset"
+            },
+            {
+                "title": "Lead Generation",
+                "content": "As a startup or an established brand, our solutions are scalable to meet your business needs as you grow",
+                "icon": "fa-person-walking"
+            },
+            {
+                "title": "Project Management",
+                "content": "From managing Ad campaigns, Multichannel marketing, talent and events, our works speak.",
+                "icon": "fa-list-check"
+            },
+            {
+                "title": "Increase in ROI",
+                "content": "Focusing on high impactful tasks our AVATAs ensure a +30% increase in your ROI in 3 months",
+                "icon": "fa-chart-line"
+            },
+            {
+                "title": "Years of Brand Building",
+                "content": "Building businesses into brands via tailored business solutions for digital brand success",
+                "icon": "fa-copyright"
+            },
+            {
+                "title": "Full Service Agency",
+                "content": "Branding, advertising, website dev social media marketing, event and talent management at your service",
+                "icon": "fa-arrows-rotate"
+            }
+        ],
+        "frequentQuestions": {
+            "homePage": [
+                {
+                    "showAnswer": false,
+                    "question": "What is AVATAWORKS?",
+                    "answer": "AVATAWorks is a result-driven digital agency based in Nigeria, dedicated to delivering tailored business solutions using cutting-edge technology, experiential marketing, dynamic branding, and strategic sales consulting. Our goal is to drive sustainable growth and help businesses achieve digital brand success."
+                },
+                {
+                    "showAnswer": false,
+                    "question": "Where is AVATAWORKS located?",
+                    "answer": "AVATAWorks is a fully remote company operating from Nigeria atm. However, we serve clients both locally and internationally, leveraging virtual collaboration tools to bridge any geographical gaps."
+                },
+                {
+                    "showAnswer": false,
+                    "question": "How does AVATA Works help businesses grow?",
+                    "answer": "We use tailored strategies, data-driven analytics, and innovative solutions to build brand visibility, generate leads,`and enhance customer engagement to achieve measurable`growth for businesses."
+                },
+                {
+                    "showAnswer": false,
+                    "question": "What industries does AVATAWorks specialize in?",
+                    "answer": "AVATAWorks has experience working across various industries, including travel, Health, beauty, retail, food, entertainment, and more. Our AVATAs are equipped to handle projects from diverse sectors, tailoring strategies to meet specific business needs for brand digital success."
+                },
+                {
+                    "showAnswer": false,
+                    "question": "What services does AVATAWorks provide?",
+                    "answer": {
+                        "Brand Strategy & Design": "Crafting cohesive brand identities that resonate with target audiences.",
+                        "Digital Marketing Services": "Implementing data-driven campaigns to boost online presence and conversions.",
+                        "Video Production Services": "Creating engaging visual content to captivate and inform audiences.",
+                        "Custom Software Development": "Developing scalable digital transformations tailored to business needs.",
+                        "Experiential Event Management": "Planning and executing immersive events that leave lasting impressions.",
+                        "Talent Management & Development": "Nurturing Talent. Building Brands. Creating Legacies, whether you’re an artiste, performer, content creator, or media personality",
+                        "Sales Strategy & Consultation": "Refining sales approaches to boost revenue and optimize funnels."
+                    }
+                },
+                {
+                    "showAnswer": false,
+                    "question": "What is digital marketing, and why is it important?",
+                    "answer": "Digital marketing involves promoting products or services using digital channels such as websites, social media, email, and search engines. It's crucial because it allows businesses to reach a broader audience, engage with customers in real-time, and measure the effectiveness of campaigns."
+                },
+                {
+                    "showAnswer": false,
+                    "question": " How does SEO work, and why is it essential for my business?",
+                    "answer": "Search Engine Optimization (SEO) enhances your brand's visibility on search engines like Google and social media search engines like Instagram, X, and more. By optimizing your channels' content, structure, bio, and technical aspects, you can rank higher in search results, leading to increased organic traffic and potential customers."
+                }
+            ],
+            "servicePage": [
+                {
+                    "question": " Do you offer customized solutions for businesses?",
+                    "answer": "Absolutely. We understand that each business is unique. Our team collaborates closely with clients to develop tailored strategies and solutions aligning with their goals and challenges.",
+                    "showAnswer": false
+                },
+                {
+                    "question": " Can AVATAWorks handle both small and large-scale projects?",
+                    "answer": "Yes, we are equipped to manage projects of all sizes. Whether you're a start-up looking to establish your brand or a large corporation aiming to enhance your digital presence, we have the expertise to deliver results.",
+                    "showAnswer": false
+                },
+                {
+                    "question": " Does AVATAWorks offer content creation services",
+                    "answer": " Yes, we provide content creation services, including blog posts, articles, videos, design creatives, and social media content, to engage your audience and boost digital brand success",
+                    "showAnswer": false
+                },
+                {
+                    "question": "10. What is your client onboarding process like?",
+                    "answer": {
+                        "Initial Consultation": "Understanding your business needs and objectives.",
+                        "Strategy Development": "Crafting a brief and a tailored plan to achieve your digital brand goals.",
+                        "Execution": "Implementing the strategy with regular updates.",
+                        "Monitoring & Optimization": "Assessing performance and making necessary adjustments."
+                    },
+                    "showAnswer": false
+                },
+                {
+                    "question": "What are your pricing options?",
+                    "answer": " Our pricing is project-specific, based on the scope, complexity, and duration. We offer both fixed-price packages and customizable solutions to fit different budgets.",
+                    "showAnswer": false
+                },
+                {
+                    "question": "Who will be working on my project?",
+                    "answer": " Your project will be handled by a team of advanced virtual assistants in Technology and Advertising, including strategists, designers, content creators, developers, and marketers. A dedicated AVATA will oversee the process and serve as your primary point of contact.",
+                    "showAnswer": false
+                },
+                {
+                    "question": "Do you offer training or workshops for in-house teams?",
+                    "answer": " Yes, we provide training sessions and brand builders workshops to empower your in-house teams with the latest digital marketing strategies and tools.",
+                    "showAnswer": false
+                }
+            ]
+        },
+        "reviews": [
+            {
+                "companyName": "Regal",
+                "review": "this is the best nose i have ever had all my life. It feels like i made no mistake choosing avataworks",
+                "companyPosition": "Assistant Sales Manager",
+                "image": "/brands/Regal_Plastic_Surgery_Centre_Case_Study.png",
+                "logo": "/brands/logo/RegalLogoTransparent.png"
+            },
+            {
+                "companyName": "Kuddies floornuts",
+                "review": "The team was professional, efficient, and exceeded my expectations. I highly recommend them!",
+                "companyPosition": "CEO",
+                "image": "/brands/FlourNuts_Case_study.png",
+                "logo": "/brands/logo/FloorNuts.png"
+            },
+            {
+                "companyName": "The Roundtable Lekki",
+                "review": "Thought the idea was not sales, i would say the evconstent sold out. hahaha. Nice working with Avatas",
+                "companyPosition": "Director",
+                "image": "/brands/The_RoundTable_Lekki_Case_Study (1).png",
+                "logo": "/brands/logo/RoundTableLekki.png"
+            },
+            {
+                "companyName": "Gynescope",
+                "review": "Thought the idea was not sales, i would say the evconstent sold out. hahaha. Nice working with Avatas",
+                "companyPosition": "Executive Manager",
+                "image": "/brands/Gynescope_Case_Study (1).png",
+                "logo": "/brands/logo/Gynescope.png"
+            },
+            {
+                "companyName": "A-Bay Tours",
+                "review": "Travel, i would say the evconstent sold out. hahaha. Nice working with Avatas travelling the world",
+                "companyPosition": "Executive Manager",
+                "image": "/brands/A-Bay_Tours_Case_Study.png",
+                "logo": "/brands/logo/A-baytours.png"
+            }
+        ],
+        "ourTeam": [
+            {
+                "fullName": "Efe Komoni",
+                "skillSet": "General Manager",
+                "image": "efe.jpg"
+            },
+            {
+                "fullName": "Mabel Ike-Udechukwu",
+                "skillSet": "Content writer",
+                "image": "mabel.jpg"
+            },
+            {
+                "fullName": "John Asikpo",
+                "skillSet": "Content Marketer & SalesPerson",
+                "image": "john.jpg"
+            },
+            {
+                "fullName": "Victory Nengi Samuel",
+                "skillSet": "Social media manager",
+                "image": "nengi.jpg"
+            },
+            {
+                "fullName": "George Samuel",
+                "skillSet": "Graphic designer",
+                "image": "george.jpg"
+            },
+            {
+                "fullName": "Anum Queen",
+                "skillSet": "Social media handler",
+                "image": "queen.jpg"
+            },
+            {
+                "fullName": " Igbinosa Osayuwame,",
+                "skillSet": "Brand Designer.",
+                "image": "Yuyu.jpg"
+            },
+            {
+                "fullName": "Adiele Faith",
+                "skillSet": "Sales Personnel",
+                "image": "Faith.jpg"
+            },
+            {
+                "fullName": "Essang Sonia Esther",
+                "skillSet": "Graphic designer",
+                "image": "Esther.jpg"
+            }
+        ]
+    }
+}
