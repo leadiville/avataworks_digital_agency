@@ -1,0 +1,18 @@
+{
+  "items": {
+    "heroSection": [
+      {
+        "id": 1,
+        "title": "Full-Service Digital Solution",
+        "body": "Your all in one partner for digital brand success",
+        "imageUrl": "/At the office-amico.png"
+      },
+      {
+        "id": 2,
+        "title": "Advanced Virtual Assistants",
+        "body": "Remote avatas driving your business growth",
+        "imageUrl": "/Marketing-rafiki.png"
+      }
+    ]
+  }
+}
