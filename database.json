@@ -93,6 +93,28 @@
                 ]
             }
         ],
+        "features": [
+            {
+                "title": "Grow your business with a single AVATA",
+                "info": "We don’t just market brands, we build brands. From strategic brand positioning to data-driven campaigns and immersive digital experiences. AvataWorks is your all-in-one Advanced Virtual Assistant in Technology and Advertising solutions",
+                "icon": ""
+            },
+            {
+                "title": "Tech-Driven Creativity & Innovation",
+                "info": "Our approach combines data-driven insights with cutting-edge technology to deliver impactful experiences, from immersive event management to high-performing software solutions.",
+                "icon": ""
+            },
+            {
+                "title": "1 on 1 Business growth consultation",
+                "info": "Whether you are an emerging startup or a global enterprise, our flexible and scalable solutions are designed to accelerate your growth, ensuring digital brand success.",
+                "icon": ""
+            },
+            {
+                "title": "Productivity Meets Precision",
+                "info": "Our AVATAs streamline your workflow, delivering fast turnarounds without compromising quality. Every project is data-driven, deadline-ready, and designed for results.",
+                "icon": ""
+            }
+        ],
         "whyChooseUs": [
             {
                 "title": "Advanced V. Assistants",

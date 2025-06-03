@@ -4,13 +4,19 @@
       {
         "id": 1,
         "title": "Full-Service Digital Solution",
-        "body": "Your all in one partner for digital brand success",
+        "body": "Your all-in-one partner for brand visibility, engagement, and digital success—offering tailored strategies in branding, marketing, and tech.",
         "imageUrl": "/At the office-amico.png"
       },
       {
         "id": 2,
+        "title": "Wide-Range Technological Solutions",
+        "body": "We harness advanced tools, data-driven strategies, and creative expertise to deliver cutting-edge solutions for your digital brand success.",
+        "imageUrl": "/Developer activity-bro.png"
+      },
+      {
+        "id": 3,
         "title": "Advanced Virtual Assistants",
-        "body": "Remote avatas driving your business growth",
+        "body": " Remote AVATAs—skilled African digital talents—empowering your brand with creativity, innovation, and efficiency to fuel business growth globally.",
         "imageUrl": "/Marketing-rafiki.png"
       }
     ]
