@@ -9,20 +9,20 @@ const Navbar = () => {
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <a href="#" className="navbar-brand p-0">
-                            <Image width={180} height={80} src="/favicon.ico" alt="Logo" color='white' />
+                            <Image width={100} height={100} src="/logo.png" alt="Logo" color='white' className='w-100 h-100' />
                         </a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <button className="navbar-toggler" type="button" data-bs-target="#navbarToggleMenu" data-bs-toggle="collapse">
                             <span className="fa fa-bars"></span>
                         </button>
-                        <div className="collapse navbar-collapse" id="navbarCollapse">
+                        <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
                             <div className="navbar-nav mx-0 mx-lg-auto">
-                                <a href="index.html" className="nav-item nav-link active">Home</a>
-                                <a href="about.html" className="nav-item nav-link">About</a>
-                                <a href="service.html" className="nav-item nav-link">Services</a>
+                                {/* <a href="index.html" className="nav-item nav-link active">Home</a> */}
+                                <a href="service.html" className="nav-item nav-link text-primary">Services</a>
+                                <a href="about.html" className="nav-item nav-link text-primary">About</a>
                                 {/* <a href="blog.html" className="nav-item nav-link">Blog</a> */}
                                 <div className="nav-item dropdown">
                                     <a href="#" className="nav-link" data-bs-toggle="dropdown">
-                                        <span className="dropdown-toggle">Pages</span>
+                                        <span className="dropdown-toggle">Company</span>
                                     </a>
                                     <div className="dropdown-menu">
                                         <a href="feature.html" className="dropdown-item">Our Features</a>
@@ -32,10 +32,10 @@ const Navbar = () => {
                                         <a href="404.html" className="dropdown-item">404 Page</a>
                                     </div>
                                 </div>
-                                <a href="contact.html" className="nav-item nav-link">Contact</a>
+                                <a href="contact.html" className="nav-item nav-link text-primary">Contact</a>
                                 <div className="nav-btn px-3">
                                     <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search"></i></button>
-                                    <a href="#" className="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
+                                    <a href="#" className="btn btn-danger rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -47,8 +47,8 @@ const Navbar = () => {
                                 </div>
                             </a>
                             <div className="d-flex flex-column ms-3">
-                                <span>Call to Our Experts</span>
-                                <a href="tel:+ 0123 456 7890"><span className="text-dark">Free: + 234 708 935 5003</span></a>
+                                <span className='text-light'>Call to Our Experts</span>
+                                <a href="tel:+ 0123 456 7890"><span className="text-light">Free: + 234 708 935 5003</span></a>
                             </div>
                         </div>
                     </nav>
