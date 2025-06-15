@@ -7,22 +7,23 @@ const Features = ({ featuresData }) => {
             <div className="container-fluid feature bg-light py-5">
                 <div className="container py-5">
                     <div className="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style={{ maxWidth: '800px' }}>
-                        <h4 className="text-primary">Our Features</h4>
-                        <h1 className="display-4 mb-4">Why choose Avataworks</h1>
+                        <h4 >Our Features</h4>
+                        <h2 className="text-primary mb-4">Why choose Avataworks</h2>
                         <p className="mb-0">At AVATAWorks, we don’t just offer services—we deliver transformative solutions tailored to your business needs. As your all-in-one Advanced Virtual Assistant in Technology and Advertising, we combine creativity, technology, and strategy to help brands scale faster, stronger, and smarter.
                         </p>
                     </div>
                     <div className="row g-4">
-                        {featuresData.map((ftData, ftDataInx) => {
+                        {featuresData?.map((ftData, ftDataInx) => {
                             const { title, info, icon } = ftData;
                             return (
                                 <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s" key={ftDataInx}>
-                                    <div className="feature-item p-4 pt-0">
+                                    <div className="feature-item p-4 pt-0" style={{maxHeight: '280px'}}>
                                         <div className="feature-icon p-4 mb-4">
                                             <i className="far fa-handshake fa-3x"></i>
                                         </div>
-                                        <h4 className="mb-4">{title}</h4>
-                                        <p className="mb-4 text-black-5">{info.substring(0, 72)}<a className="btn py-2 text-danger"> ...more</a></p>
+                                        <h4 className="mb-4" style={{fontWeight: 600}}>{title}</h4>
+                                        <p className="mb-0 text-black-5">{info}
+                                        </p>
                                     </div>
                                 </div>
                             )
