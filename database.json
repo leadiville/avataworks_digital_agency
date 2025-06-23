@@ -177,14 +177,16 @@
                     "id": "5",
                     "showAnswer": false,
                     "question": "What services does AVATAWorks provide?",
-                    "answer": ["Brand Strategy & Design: Crafting cohesive brand identities that resonate with target customer avatar, Digital Marketing and Advertising: Implementing data-driven campaigns to boost online presence and conversions., Full Video Production Services: Capture and create engaging visual content to captivate and inform your customer avatar."]
+                    "answer": [
+                        "Brand Strategy & Design: Crafting cohesive brand identities that resonate with target customer avatar, Digital Marketing and Advertising: Implementing data-driven campaigns to boost online presence and conversions., Full Video Production Services: Capture and create engaging visual content to captivate and inform your customer avatar."
+                    ]
                 },
                 {
                     "id": "6",
                     "showAnswer": false,
                     "question": "What is digital marketing, and why is it important?",
                     "answer": "Digital marketing involves promoting products or services using digital channels such as websites, social media, email, and search engines. It's crucial because it allows businesses to reach a broader audience, engage with customers in real-time, and measure the effectiveness of campaigns."
-                }, 
+                },
                 {
                     "id": "7",
                     "showAnswer": false,
@@ -202,14 +204,12 @@
                     "showAnswer": false,
                     "question": "Why do I need a website for my business?",
                     "answer": "Your website is your 24/7 digital storefront. In today’s fast-moving world, customers look online first before making buying decisions. AVATAWorks builds modern, mobile-friendly websites that not only showcase your brand but also drive traffic, build trust, and generate leads — helping you compete locally and globally"
-
                 },
                 {
                     "id": "10",
                     "showAnswer": false,
                     "question": " What is an AVATA, and what tasks can they handle?",
                     "answer": "An AVATA stands for Advanced Virtual Assistant in Technology and Advertising — a highly skilled digital professional trained by AVATAWorks to support businesses remotely across a wide range of tasks. Unlike generic freelancers, AVATAs are verified talents equipped with both creative and technical skills to help you grow your brand faster and more affordably."
-
                 }
             ],
             "servicePage": [
@@ -230,12 +230,12 @@
                 },
                 {
                     "question": "10. What is your client onboarding process like?",
-                    "answer": {
-                        "Initial Consultation": "Understanding your business needs and objectives.",
-                        "Strategy Development": "Crafting a brief and a tailored plan to achieve your digital brand goals.",
-                        "Execution": "Implementing the strategy with regular updates.",
-                        "Monitoring & Optimization": "Assessing performance and making necessary adjustments."
-                    },
+                    "answer": [
+                        "Initial Consultation: Understanding your business needs and objectives,",
+                        " Strategy Development: Crafting a brief and a tailored plan to achieve your digital brand goals,",
+                        " Execution: Implementing the strategy with regular updates,",
+                        " Monitoring & Optimizatio: Assessing performance and making necessary adjustment."
+                    ],
                     "showAnswer": false
                 },
                 {
@@ -339,11 +339,6 @@
                 "fullName": " Igbinosa Osayuwame,",
                 "skillSet": "Brand Designer.",
                 "image": "Yuyu.jpg"
-            },
-            {
-                "fullName": "Adiele Faith",
-                "skillSet": "Sales Personnel",
-                "image": "Faith.jpg"
             }
         ]
     }

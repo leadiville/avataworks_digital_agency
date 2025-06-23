@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Features = ({ featuresData }) => {
+const Features = ({ featuresData, title }) => {
     return (
         <div>
             {/* Feature Start  */}
@@ -8,7 +8,7 @@ const Features = ({ featuresData }) => {
                 <div className="container py-5">
                     <div className="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style={{ maxWidth: '800px' }}>
                         <h4 >Our Features</h4>
-                        <h2 className="text-primary mb-4">Why choose Avataworks</h2>
+                        <h2 className="text-primary mb-4">{title}</h2>
                         <p className="mb-0">At AVATAWorks, we don’t just offer services—we deliver transformative solutions tailored to your business needs. As your all-in-one Advanced Virtual Assistant in Technology and Advertising, we combine creativity, technology, and strategy to help brands scale faster, stronger, and smarter.
                         </p>
                     </div>

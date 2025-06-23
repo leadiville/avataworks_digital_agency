@@ -14,7 +14,7 @@ const Team = ({ teamMembers }) => {
                             </p>
                         </div>
                         <div className="row g-2">
-                            {teamMembers.splice(0, 4)?.map((member, memberId) => {
+                            {teamMembers?.map((member, memberId) => {
                                 const { fullName, skillSet, image } = member;
                                 return (
                                     <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s" key={memberId}>
