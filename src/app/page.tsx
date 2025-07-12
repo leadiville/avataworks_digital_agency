@@ -19,12 +19,12 @@ export default async function Home() {
     <>
       <Navbar />
       <HeroCarousel />
-      <Features featuresData={features} />
+      <Features featuresData={features} title={'Why Choose Avataworks?'}/>
       <AboutUs />
       <OurServices services={services} />
-      <Faq faqs={faq.homePage} />
-      <Team teamMembers={ourTeam} />
+      <Team teamMembers={ourTeam.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
+      <Faq faqs={faq.homePage} />
       <Footer />
     </>
   )

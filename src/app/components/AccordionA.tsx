@@ -7,12 +7,12 @@ const AccordionA = ({ faqs }) => {
   return (
     <div className='container-fluid p-0'>
       <Accordion>
-        {faqs?.map((faq, faqId: number) => {
+        {faqs?.map((faq, faqId: string) => {
 
           return (
-            <AccordionItem eventKey={faq.id} key={faqId}>
+            <AccordionItem eventKey={faqId} key={faqId}>
               <AccordionHeader>
-                Q{faq.id}: {faq.question}
+                Q{faqId}: {faq.question}
               </AccordionHeader>
               <AccordionBody>
                 A: {faq.answer}

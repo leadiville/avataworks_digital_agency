@@ -4,13 +4,13 @@ import React from 'react'
 const AboutUs = () => {
     return (
         <div>
-            <div className="container-fluid bg-light about pb-5">
+            <div className="container-fluid bg-light about pb-5 pt-5">
                 <div className="container pb-5">
                     <div className="row g-5">
                         <div className="col-xl-6 wow fadeInLeft " data-wow-delay="0.2s">
                             <div className="about-item-content bg-white rounded p-5 h-100 d-flex align-items-center">
                                 <div>
-                                    <h4 className="">About Avataworks</h4>
+                                    <h4 className="">This Is Avataworks</h4>
                                     <h2 className="mb-4 text-capitalize text-primary">Your All-in-One Digital Team—Powered by AVATAs</h2>
                                     <p className='text-black-50'>From the comfort of your home or office, you can access a full team of remote digital experts—your personal AVATAs (Advanced Virtual Assistants in Technology and Advertising)—dedicated to helping you scale with ease.
                                     </p>
@@ -19,7 +19,7 @@ const AboutUs = () => {
                                     {/* <p className="text-dark"><i className="fa fa-check text-primary me-3"></i>We can save your money.</p>
                                     <p className="text-dark"><i className="fa fa-check text-primary me-3"></i>Speed up production</p>
                                     <p className="text-dark mb-4"><i className="fa fa-check text-primary me-3"></i>Our Our plans are flexible</p> */}
-                                    <a className="btn btn-danger rounded-pill py-3 px-5 text-capitalize" href="#">meet the avatas</a>
+                                    <a className="btn btn-danger rounded-pill mt-5 py-5 px-5 text-capitalize" href="#">meet the avatas</a>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ const AboutUs = () => {
                                 <div className="row g-4 justify-content-center">
                                     <div className="col-12">
                                         <div className="rounded bg-light">
-                                            <Image width={800} height={600} src="/Cross-platform software-pana.png" className="img-fluid w-75 h-50" alt="about-us-image" />
+                                            <Image width={400} height={600} src="/aboutUs.jpeg" className="img-fluid w-100" alt="aboutUs" />
                                         </div>
                                     </div>
                                     <div className="col-sm-6">

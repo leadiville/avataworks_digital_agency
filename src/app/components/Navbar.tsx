@@ -16,23 +16,23 @@ const Navbar = () => {
                         </button>
                         <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
                             <div className="navbar-nav mx-0 mx-lg-auto">
-                                {/* <a href="index.html" className="nav-item nav-link active">Home</a> */}
-                                <a href="service.html" className="nav-item nav-link text-primary">Services</a>
-                                <a href="about.html" className="nav-item nav-link text-primary">About</a>
-                                {/* <a href="blog.html" className="nav-item nav-link">Blog</a> */}
+                                {/* <a href="index" className="nav-item nav-link active">Home</a> */}
+                                <a href="service" className="nav-item nav-link text-primary">Services</a>
+                                <a href="about" className="nav-item nav-link text-primary">About</a>
+                                {/* <a href="blog" className="nav-item nav-link">Blog</a> */}
                                 <div className="nav-item dropdown">
                                     <a href="#" className="nav-link" data-bs-toggle="dropdown">
                                         <span className="dropdown-toggle">Company</span>
                                     </a>
                                     <div className="dropdown-menu">
-                                        <a href="feature.html" className="dropdown-item">Our Features</a>
-                                        <a href="team.html" className="dropdown-item">Our team</a>
-                                        <a href="testimonial.html" className="dropdown-item">Testimonial</a>
-                                        <a href="FAQ.html" className="dropdown-item">FAQs</a>
-                                        <a href="404.html" className="dropdown-item">404 Page</a>
+                                        <a href="feature" className="dropdown-item">Our Features</a>
+                                        <a href="team" className="dropdown-item">Our team</a>
+                                        <a href="testimonial" className="dropdown-item">Testimonial</a>
+                                        <a href="FAQ" className="dropdown-item">FAQs</a>
+                                        <a href="404" className="dropdown-item">404 Page</a>
                                     </div>
                                 </div>
-                                <a href="contact.html" className="nav-item nav-link text-primary">Contact</a>
+                                <a href="contact" className="nav-item nav-link text-primary">Contact</a>
                                 <div className="nav-btn px-3">
                                     <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search"></i></button>
                                     <a href="#" className="btn btn-danger rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
