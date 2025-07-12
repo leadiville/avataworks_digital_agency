@@ -761,3 +761,14 @@ button.accordion-button:active .collapse {
   color: var(--bs-white);
 }
 /*** Testimonial End ***/
+
+/* ABOUT US PAGE DESIGN */
+
+.about-hero {
+  background: var(--primary);
+  background: url('/background-doodle/Doodle AVatar-01.png'), linear-gradient(45deg, white, );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}

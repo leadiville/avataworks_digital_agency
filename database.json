@@ -307,38 +307,43 @@
             },
             {
                 "fullName": "Mabel Ike-Udechukwu",
-                "skillSet": "Head of Operations",
+                "skillSet": "Head of AVATA Operations",
                 "image": "mabel.jpg"
             },
             {
                 "fullName": "John Asikpo",
-                "skillSet": "Head of marketing & sales",
+                "skillSet": "Head of marketing",
                 "image": "john.jpg"
             },
             {
                 "fullName": "Essang Sonia Esther",
-                "skillSet": "advanced virtual assistant(AVATA)",
+                "skillSet": "Executive Assistant (AVATA)",
                 "image": "Esther.jpg"
             },
             {
                 "fullName": "Anum Queen",
-                "skillSet": "social media handler",
-                "image": "queen.jpg"
+                "skillSet": "social media manager (AVATA)",
+                "image": "queen.webp"
+            },
+            {
+                "fullName": "Igbinosa Osayuwame",
+                "skillSet": "video editor (AVATA).",
+                "image": "yuyu.webp"
             },
             {
                 "fullName": "Victory Nengi Samuel",
-                "skillSet": "Social media manager",
-                "image": "nengi.jpg"
+                "skillSet": "Digital Advertiser (AVATA)",
+                "image": "nengi.webp"
+            },
+            {
+                "fullName": "Faith",
+                "skillSet": "Digital Strategist (AVATA)",
+                "image": "angryGirl"
             },
             {
                 "fullName": "George Samuel",
-                "skillSet": "Graphic designer",
-                "image": "george.jpg"
-            },
-            {
-                "fullName": " Igbinosa Osayuwame,",
-                "skillSet": "Brand Designer.",
-                "image": "Yuyu.jpg"
+                "skillSet": "Visual designer (AVATA)",
+                "image": "george.webp"
             }
         ]
     }
