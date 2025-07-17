@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 
 const Features = ({ featuresData, title }) => {
@@ -17,11 +18,11 @@ const Features = ({ featuresData, title }) => {
                             const { title, info, icon } = ftData;
                             return (
                                 <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s" key={ftDataInx}>
-                                    <div className="feature-item p-4 pt-0" style={{maxHeight: '280px'}}>
+                                    <div className="feature-item p-4 pt-0" style={{ maxHeight: '320px' }}>
                                         <div className="feature-icon p-4 mb-4">
-                                            <i className="far fa-handshake fa-3x"></i>
+                                            <i><FontAwesomeIcon icon={icon} width={30} height={30} style={{width: '50px', height: '50px'}} /></i>
                                         </div>
-                                        <h4 className="mb-4" style={{fontWeight: 600}}>{title}</h4>
+                                        <h4 className="mb-4" style={{ fontWeight: 600 }}>{title}</h4>
                                         <p className="mb-0 text-black-5">{info}
                                         </p>
                                     </div>

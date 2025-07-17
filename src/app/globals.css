@@ -406,7 +406,7 @@ h2 {
 .feature .feature-item:hover .feature-icon i {
   z-index: 9;
 }
-
+/*  */
 .feature .feature-item .feature-icon::after {
   content: "";
   position: absolute;

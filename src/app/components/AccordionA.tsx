@@ -3,7 +3,6 @@ import { AccordionItem, Accordion, AccordionHeader, AccordionBody } from 'react-
 
 const AccordionA = ({ faqs }) => {
 
-  console.log(faqs);
   return (
     <div className='container-fluid p-0'>
       <Accordion>

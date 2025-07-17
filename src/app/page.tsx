@@ -9,23 +9,23 @@ import Footer from "./components/Footer";
 import Team from "./components/homePage/Team";
 import Testimonials from "./components/homePage/Testimonials";
 
-export default async function Home() {
 
+export default async function Home() {
   const request = await fetch('http://localhost:3000/database');
   const data = await request.json();
-  const { services, features, faq, ourTeam, reviews } = data;
+  const { services, features, faq, ourTeam, reviews, footer } = data;
 
   return (
     <>
       <Navbar />
       <HeroCarousel />
-      <Features featuresData={features} title={'Why Choose Avataworks?'}/>
+      <Features featuresData={features} title={'Why Choose Avataworks?'} /> 
       <AboutUs />
       <OurServices services={services} />
       <Team teamMembers={ourTeam.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
       <Faq faqs={faq.homePage} />
-      <Footer />
+      <Footer footerAddress={footer.footerAddress} socialLinks={footer.socialLinks} usefulLinks={footer.usefulLinks} />
     </>
   )
 }

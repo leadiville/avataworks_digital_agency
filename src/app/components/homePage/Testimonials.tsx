@@ -10,7 +10,7 @@ const Testimonials = ({ testimonials }) => {
           <h4 className="">Testimonial</h4>
           <h1 className="text-primary display-4 mb-4">Real Results. Real Voices</h1>
           <p className="mb-0">
-            Discover how businesses across Nigeria and beyond have grown with AvataWorks. From startups to established brands, our clients share their experiences working with our dedicated AVATAs and result-driven digital solutions
+            Discover how businesses across Nigeria and beyond have grown with AvataWorks. From startups to established brands, our clients share their experiences working with our dedicated AVATAs and result-driven digital solutions.
           </p>
         </div>
         <div className="row owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">

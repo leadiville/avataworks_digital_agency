@@ -4,6 +4,8 @@ import Image from 'next/image'
 import React from 'react'
 import { items } from '../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 const HeroCarousel = () => {
   const { heroSection } = items;
@@ -21,7 +23,7 @@ const HeroCarousel = () => {
                     <p className="mb-5 fs-5 text-black">{heroDetails.body}
                     </p>
                     <div className="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4 text-capitalize">
-                      <a className="btn btn-primary rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i className="fas fa-play-circle me-2"></i>Speak to an Avata</a>
+                      <a className="btn btn-primary rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
                       <a className="btn btn-danger rounded-pill py-3 px-4 px-md-5 ms-2 " href="#">Get a free Quote</a>
                     </div>
                   </div>

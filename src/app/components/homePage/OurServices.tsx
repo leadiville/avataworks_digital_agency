@@ -1,8 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image'
 import React from 'react'
 
 const OurServices = ({ services }) => {
-
+ const {icon} = services;
     return (
         <div>
             <div className="container-fluid service py-5">
@@ -22,7 +23,7 @@ const OurServices = ({ services }) => {
                                         <div className="service-img">
                                             <Image width={400} height={400} src={imgSrc} className="img-fluid rounded-top w-100" alt="" />
                                             <div className="service-icon p-3">
-                                                <i className="fa fa-users fa-2x">{ }</i>
+                                                <i className="fa fa-users fa-2x"><FontAwesomeIcon icon={icon} /></i>
                                             </div>
                                         </div>
                                         <div className="service-content p-4">
@@ -43,7 +44,7 @@ const OurServices = ({ services }) => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default OurServices
+export default OurServices;
