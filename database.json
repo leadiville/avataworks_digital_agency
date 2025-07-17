@@ -93,26 +93,46 @@
                 ]
             }
         ],
+        "footer": {
+            "footerAddress": [
+                {
+                    "title": "Address",
+                    "subtitle": "Lagos",
+                    "icon": "fa-map-marker-alt"
+                },
+                {
+                    "title": "Mail Us",
+                    "subtitle": "avataworks@info.com",
+                    "icon": "fa-envelope"
+                },
+                {
+                    "title": "Telephone",
+                    "subtitle": "(+234)708 935 5003",
+                    "icon": "fa-phone-alt"
+                }
+            ],
+            "usefulLinks" : ["About", "Our Team", "Features", "Services", "FAQ's, Contact"]
+        },
         "features": [
             {
                 "title": "Grow your business with team AVATA",
                 "info": "AvataWorks is your all-in-one team of Advanced Virtual Assistants in Technology and Advertising solutions.",
-                "icon": ""
+                "icon": "fa-handshake"
             },
             {
                 "title": "Tech-Driven Creativity & Innovation",
                 "info": "Our approach combines data-driven insights with cutting-edge technology to deliver high-performing software solutions.",
-                "icon": ""
+                "icon": "fa-lightbulb"
             },
             {
                 "title": "1 on 1 Business growth consultation",
                 "info": "Whether you are an emerging startup or a global enterprise, our solutions are designed to ensuring digital brand success.",
-                "icon": ""
+                "icon": "fa-chart-line"
             },
             {
                 "title": "Productivity Meets Precision",
                 "info": "With our AVATAs delivering fast turnarounds, every project is data-driven, deadline-ready, and designed for results.",
-                "icon": ""
+                "icon": "fa-gears"
             }
         ],
         "whyChooseUs": [
@@ -326,9 +346,14 @@
                 "image": "queen.webp"
             },
             {
-                "fullName": "Igbinosa Osayuwame",
-                "skillSet": "video editor (AVATA).",
-                "image": "yuyu.webp"
+                "fullName": "Faith",
+                "skillSet": "Digital Strategist (AVATA)",
+                "image": "Faith.webp"
+            },
+            {
+                "fullName": "George Samuel",
+                "skillSet": "Visual designer (AVATA)",
+                "image": "george.webp"
             },
             {
                 "fullName": "Victory Nengi Samuel",
@@ -336,14 +361,9 @@
                 "image": "nengi.webp"
             },
             {
-                "fullName": "Faith",
-                "skillSet": "Digital Strategist (AVATA)",
-                "image": "angryGirl"
-            },
-            {
-                "fullName": "George Samuel",
-                "skillSet": "Visual designer (AVATA)",
-                "image": "george.webp"
+                "fullName": "Igbinosa Osayuwame",
+                "You were and are still the only person that was always there for meskillSet": "video editor (AVATA).",
+                "image": "yuyu.webp"
             }
         ]
     }

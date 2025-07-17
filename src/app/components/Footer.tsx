@@ -1,26 +1,32 @@
+import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faCommentDots, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ footerAddress, socialLInks }) => {
     return (
         <div>
             <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
                 <div className="container py-5">
                     <div className="row g-5">
                         <div className="col-xl-9">
+
                             <div className="mb-5">
                                 <div className="row g-4">
                                     <div className="col-md-6 col-lg-6 col-xl-5">
                                         <div className="footer-item">
                                             <a href="index.html" className="p-0">
-                                                <Image src="/favicon.ico" width={250} height={250} className='w-50 h-50 p-0' alt="Logo" />
+                                                <Image src="/logo.png" width={150} height={50} className='w-50 h-50 p-0 m-0' alt="Logo" />
                                             </a>
                                             <p className="text-white mb-4 text-capitalize">your all in  one digital and technology agency to meet all your business needs</p>
                                             <div className="footer-btn d-flex">
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f"></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-twitter"></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-instagram"></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-0" href="#"><i className="fab fa-linkedin-in"></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f"><FontAwesomeIcon width={30} height={30} icon={faFacebook} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={30} height={30} icon={faTwitter} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-instagram"><FontAwesomeIcon width={30} height={30} icon={faInstagram} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-linkedin-in"><FontAwesomeIcon width={30} height={30} icon={faLinkedin} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-0" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={30} height={30} icon={faTiktok} /></i></a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -52,43 +58,30 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
+                            
                             <div className="pt-5" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.08)" }}>
                                 <div className="row g-0">
                                     <div className="col-12">
                                         <div className="row g-4">
-                                            <div className="col-lg-6 col-xl-4">
-                                                <div className="d-flex">
-                                                    <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                        <i className="fas fa-map-marker-alt fa-2x"></i>
-                                                    </div>
-                                                    <div>
-                                                        <h4 className="text-white">Address</h4>
-                                                        <p className="mb-0 text-primary">Lagos, Abuja, Portharcourt</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 col-xl-4">
-                                                <div className="d-flex">
-                                                    <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                        <i className="fas fa-envelope fa-2x"></i>
-                                                    </div>
-                                                    <div>
-                                                        <h4 className="text-white">Mail Us</h4>
-                                                        <p className="mb-0 text-primary">avatarworks@info.com</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 col-xl-4">
-                                                <div className="d-flex">
-                                                    <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                        <i className="fa fa-phone-alt fa-2x"></i>
-                                                    </div>
-                                                    <div>
-                                                        <h4 className="text-white">Telephone</h4>
-                                                        <p className="mb-0 text-primary">(+234) 708 935 5003</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            {
+                                                footerAddress?.map((contact, contactInx : number) => {
+                                                    const { title, subtitle, icon } = contact;
+                                                    return (
+                                                        <div className="col-lg-6 col-xl-4" key={contactInx}>
+                                                            <div className="d-flex">
+                                                                <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon} /></i>
+                                                                </div>
+                                                                <div>
+                                                                    <h4 className="text-white">{title}</h4>
+                                                                    <p className="mb-0 text-primary">{subtitle}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+
                                         </div>
                                     </div>
                                 </div>
@@ -106,19 +99,21 @@ const Footer = () => {
                                 <div className="d-flex flex-shrink-0">
                                     <div className="footer-btn">
                                         <a href="#" className="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                                            <i className="fa fa-phone-alt fa-2x"></i>
-                                            <div className="position-absolute" style={{ top: " 2px", right: "12px" }}>
-                                                <span><i className="fa fa-comment-dots text-secondary"></i></span>
+                                            <i className="fa fa-phone-alt fa-2x"><FontAwesomeIcon icon={faPhoneAlt} /></i>
+                                            <div className="position-absolute" style={{ top: " 1px", right: "25px" }}>
+                                                <span><i className="fa fa-comment-dots"><FontAwesomeIcon  icon={faCommentDots} /></i></span>
                                             </div>
                                         </a>
                                     </div>
                                     <div className="d-flex flex-column ms-3 flex-shrink-0 text-white">
                                         <span >Call to Our Avatas</span>
-                                        <a href="tel: (+234) 708 935 5003"><span className="text-white">Free: (+234) 708 935 5003</span></a>
+                                        <a href="tel: (+234) 708 935 5003"><span className="text-white">Free: (+234) 708 935 5003</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
