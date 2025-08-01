@@ -111,7 +111,30 @@
                     "icon": "fa-phone-alt"
                 }
             ],
-            "usefulLinks" : ["About", "Our Team", "Features", "Services", "FAQ's, Contact"]
+            "usefulLinks": [
+                "About",
+                "Our Team",
+                "Features",
+                "Services",
+                "FAQ's, Contact"
+            ],
+            "socialLinks": [
+                {
+                    "instagram": "https://www.instagram.com/avataworks?igsh=MXBvOW0xeWxiaDN2bg=="
+                },
+                {
+                    "facebook": "www.facebook.com/share/1Aw2Y9yZrY/"
+                },
+                {
+                    "LinkedIn": "https: //linkedin.com/company/avataworks"
+                },
+                {
+                    "X": "https: //x.com/avataworks"
+                },
+                {
+                    "Tiktok": "https: //www.tiktok.com/@avataworks"
+                }
+            ]
         },
         "features": [
             {
@@ -281,7 +304,7 @@
                 "review": "this is the best nose i have ever had all my life. It feels like i made no mistake choosing avataworks",
                 "companyPosition": "Assistant Sales Manager",
                 "image": "/brands/Regal_Plastic_Surgery_Centre_Case_Study.png",
-                "logo": "/brands/logo/RegalLogoTransparent.png"
+                "logo": "/brands/logo/Regal.jpg"
             },
             {
                 "companyName": "Kuddies floornuts",
@@ -316,7 +339,7 @@
                 "review": "Travel, i would say the evconstent sold out. hahaha. Nice working with Avatas travelling the world",
                 "companyPosition": "Executive Manager",
                 "image": "/brands/A-Bay_Tours_Case_Study.png",
-                "logo": "/brands/logo/A-baytours.png"
+                "logo": "/brands/logo/AbayTours.jpg"
             }
         ],
         "ourTeam": [

@@ -25,7 +25,7 @@ export default async function Home() {
       <Team teamMembers={ourTeam.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
       <Faq faqs={faq.homePage} />
-      <Footer footerAddress={footer.footerAddress} socialLinks={footer.socialLinks} usefulLinks={footer.usefulLinks} />
+      <Footer footer={footer}/>
     </>
   )
 }
