@@ -726,13 +726,13 @@ button.accordion-button:active .collapse {
 }
 
 .testimonial-carousel a.carousel-control-prev {
-  width: 74px;
-  height: 32px;
+  width: 70px;
+  height: 30px;
   position: absolute;
   top: 0px;
   left: 0;
   background: #0575bb;
-  padding: 5px 30px;
+  padding: 25px;
   border-radius: 30px;
   transition: 0.5s;
   margin-left: 20px;
@@ -744,14 +744,13 @@ button.accordion-button:active .collapse {
 }
 
 .testimonial-carousel a.carousel-control-next {
-  width: 74px;
-  height: 32px;
+  width: 70px;
+  height: 30px;
   position: absolute;
   top: 0;
   right: 0;
   background: var(--primary);
-  color: var(--bs-white);
-  padding: 5px 30px;
+  padding: 25px;
   border-radius: 30px;
   transition: 0.5s;
   margin-right: 20px;

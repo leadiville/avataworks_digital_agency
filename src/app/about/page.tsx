@@ -6,6 +6,7 @@ import Faq from "../components/homePage/Faq"
 import Team from "../components/homePage/Team"
 import Footer from "../components/Footer"
 import { WelcomeAbout } from "../components/AboutUs/WelcomeAbout"
+import { AboutGoals } from "../components/AboutUs/AboutGoals"
 // import AboutHero from "../components/AboutUs/AboutHero"
 
 export default async function () {
@@ -23,6 +24,7 @@ export default async function () {
             <AboutUs />
             <Faq faqs={faq.servicePage} />
             <Team teamMembers={ourTeam} />
+            <AboutGoals />
             <Footer footer={footer} />
         </>
     )

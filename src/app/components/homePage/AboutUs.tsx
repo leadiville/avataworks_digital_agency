@@ -4,7 +4,7 @@ import React from 'react'
 const AboutUs = () => {
     return (
         <div>
-            <div className="container-fluid bg-light about pb-5 pt-5">
+            <div className="container-fluid bg-light about pb-5">
                 <div className="container pb-5">
                     <div className="row g-5">
                         <div className="col-xl-6 wow fadeInLeft " data-wow-delay="0.2s">
