@@ -5,7 +5,7 @@ import React from 'react'
 import { items } from '../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faPhoneAlt, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const HeroCarousel = () => {
   const { heroSection } = items;
@@ -47,30 +47,32 @@ const TestimonialCarousel = ({ testimonys }) => {
   for (let i = 0; i < testimonys.length; i += 2) {
     groupedItems.push(testimonys.slice(i, i + 2))
   }
+  testimonys = Array(testimonys);
+  console.log(testimonys);
   return (
     <Carousel className='testimonial-carousel bg-white' slide>
       {groupedItems?.map((each, eachInx) => (
         <Carousel.Item key={eachInx} className='rounded-5 my-5'>
           <Stack direction='horizontal' gap={4} >
-            {each.map((e, eInx) => (
-              <Card key={eInx} className='d-flex flex-row align-items-center w-100 border-black'>
-                <div className="row g-0">
+            {each.map((e, eInx: number) => (
+              <Card key={eInx} className='d-flex flex-row align-items-center w-100 border my-4' >
+                <div className="row g-2">
                   <div className="col-lg-4 col-sm-12">
                     <Card.Img
-                      src={`${e.logo}`} width={250} height={200}  className='bg-light p-0 m-0 w-100 h-100' />
+                      src={`${e.logo}`} width={250} height={200} className='bg-light p-0 m-0 w-100 h-100' />
                   </div>
                   <div className="col-lg-8 col-sm-12 d-flex align-items-center" >
-                    <Card.Body className='d-flex flex-column bg-primary text-white'>
+                    <Card.Body className='d-flex flex-column text-black'>
                       <Card.Title>{e.companyName}</Card.Title>
                       <Card.Text>{e.companyPosition}</Card.Text>
                       <Card.Text>{e.review}</Card.Text>
                       <br />
                       <span className='d-flex flex-row'>
-                        <i className='star'></i>
-                        <i className='star'></i>
-                        <i className='star'></i>
-                        <i className='star'></i>
-                        <i className='star'></i>
+                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
                       </span>
                     </Card.Body>
                   </div>
