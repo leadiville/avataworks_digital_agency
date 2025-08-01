@@ -1,10 +1,11 @@
 import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faCommentDots, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 
-const Footer = ({ footerAddress, socialLInks }) => {
+const Footer = async ({footer}) => {
+
     return (
         <div>
             <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -21,11 +22,11 @@ const Footer = ({ footerAddress, socialLInks }) => {
                                             </a>
                                             <p className="text-white mb-4 text-capitalize">your all in  one digital and technology agency to meet all your business needs</p>
                                             <div className="footer-btn d-flex">
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f"><FontAwesomeIcon width={30} height={30} icon={faFacebook} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={30} height={30} icon={faTwitter} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-instagram"><FontAwesomeIcon width={30} height={30} icon={faInstagram} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-linkedin-in"><FontAwesomeIcon width={30} height={30} icon={faLinkedin} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-0" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={30} height={30} icon={faTiktok} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f"><FontAwesomeIcon width={20} height={20} icon={faFacebook} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={20} height={20} icon={faTwitter} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-instagram"><FontAwesomeIcon width={20} height={20} icon={faInstagram} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-linkedin-in"><FontAwesomeIcon width={20} height={20} icon={faLinkedin} /></i></a>
+                                                <a className="btn btn-md-square rounded-circle me-0" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={20} height={20} icon={faTiktok} /></i></a>
 
                                             </div>
                                         </div>
@@ -33,12 +34,8 @@ const Footer = ({ footerAddress, socialLInks }) => {
                                     <div className="col-md-6 col-lg-6 col-xl-3">
                                         <div className="footer-item">
                                             <h4 className="text-white mb-4">Useful Links</h4>
-                                            <a href="#"><i className="fas fa-angle-right me-2"></i> About Us</a>
-                                            <a href="#"><i className="fas fa-angle-right me-2"></i> Features</a>
-                                            <a href="#"><i className="fas fa-angle-right me-2"></i> Services</a>
-                                            <a href="#"><i className="fas fa-angle-right me-2"></i> FAQ's</a>
-                                            <a href="#"><i className="fas fa-angle-right me-2"></i> Blogs</a>
-                                            <a href="#"><i className="fas fa-angle-right me-2"></i> Contact</a>
+                                            {footer?.usefulLinks?.map((link :string, linkId : number) => <a key={linkId} href="#"><i className="fas fa-angle-right me-2"></i> {link}</a>
+                                            )}
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-lg-6 col-xl-4">
@@ -58,19 +55,19 @@ const Footer = ({ footerAddress, socialLInks }) => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="pt-5" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.08)" }}>
                                 <div className="row g-0">
                                     <div className="col-12">
                                         <div className="row g-4">
                                             {
-                                                footerAddress?.map((contact, contactInx : number) => {
+                                                footer.footerAddress?.map((contact, contactInx: number) => {
                                                     const { title, subtitle, icon } = contact;
                                                     return (
                                                         <div className="col-lg-6 col-xl-4" key={contactInx}>
                                                             <div className="d-flex">
                                                                 <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon} /></i>
+                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon} width={20} height={20} /></i>
                                                                 </div>
                                                                 <div>
                                                                     <h4 className="text-white">{title}</h4>
@@ -101,12 +98,12 @@ const Footer = ({ footerAddress, socialLInks }) => {
                                         <a href="#" className="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
                                             <i className="fa fa-phone-alt fa-2x"><FontAwesomeIcon icon={faPhoneAlt} /></i>
                                             <div className="position-absolute" style={{ top: " 1px", right: "25px" }}>
-                                                <span><i className="fa fa-comment-dots"><FontAwesomeIcon  icon={faCommentDots} /></i></span>
+                                                <span><i className="fa fa-comment-dots"><FontAwesomeIcon icon={faCommentDots} /></i></span>
                                             </div>
                                         </a>
                                     </div>
                                     <div className="d-flex flex-column ms-3 flex-shrink-0 text-white">
-                                        <span >Call to Our Avatas</span>
+                                        <span >Contact our Avatas</span>
                                         <a href="tel: (+234) 708 935 5003"><span className="text-white">Free: (+234) 708 935 5003</span>
                                         </a>
                                     </div>

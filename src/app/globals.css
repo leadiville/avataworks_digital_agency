@@ -140,13 +140,13 @@ h2 {
 }
 
 .btn.btn-light {
-  color: var(--bs-primary);
+  color: var(--primary);
   border: none;
 }
 
 .btn.btn-light:hover {
   color: var(--bs-white);
-  background: var(--bs-dark);
+  background: var(--primary);
 }
 
 .btn.btn-dark {
@@ -731,15 +731,15 @@ button.accordion-button:active .collapse {
   position: absolute;
   top: 0px;
   left: 0;
-  background: var(--primary);
-  color: var(--bs-white);
+  background: #0575bb;
   padding: 5px 30px;
   border-radius: 30px;
   transition: 0.5s;
+  margin-left: 20px;
 }
 
 .testimonial-carousel a.carousel-control-prev:hover {
-  background: var(--bs-dark);
+  background: var(--primary);
   color: var(--bs-white);
 }
 
@@ -754,6 +754,7 @@ button.accordion-button:active .collapse {
   padding: 5px 30px;
   border-radius: 30px;
   transition: 0.5s;
+  margin-right: 20px;
 }
 
 .testimonial-carousel a.carousel-control-next:hover {
@@ -766,7 +767,8 @@ button.accordion-button:active .collapse {
 
 .about-hero {
   background: var(--primary);
-  background: url('/background-doodle/Doodle AVatar-01.png'), linear-gradient(45deg, white, );
+  background: url("/background-doodle/Doodle AVatar-01.png"),
+    linear-gradient(45deg, white);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

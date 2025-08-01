@@ -10,7 +10,6 @@ const AboutUs = () => {
                         <div className="col-xl-6 wow fadeInLeft " data-wow-delay="0.2s">
                             <div className="about-item-content bg-white rounded p-5 h-100 d-flex align-items-center">
                                 <div>
-                                    <h4 className="">This Is Avataworks</h4>
                                     <h2 className="mb-4 text-capitalize text-primary">Your All-in-One Digital Team—Powered by AVATAs</h2>
                                     <p className='text-black-50'>From the comfort of your home or office, you can access a full team of remote digital experts—your personal AVATAs (Advanced Virtual Assistants in Technology and Advertising)—dedicated to helping you scale with ease.
                                     </p>

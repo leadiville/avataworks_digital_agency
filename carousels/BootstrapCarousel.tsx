@@ -48,19 +48,19 @@ const TestimonialCarousel = ({ testimonys }) => {
     groupedItems.push(testimonys.slice(i, i + 2))
   }
   return (
-    <Carousel className='testimonial-carousel bg-white p-0 pt-5' slide>
+    <Carousel className='testimonial-carousel bg-white' slide>
       {groupedItems?.map((each, eachInx) => (
-        <Carousel.Item key={eachInx} className='rounded-5' style={{ maxHeight: '200px' }}>
+        <Carousel.Item key={eachInx} className='rounded-5 my-5'>
           <Stack direction='horizontal' gap={4} >
             {each.map((e, eInx) => (
-              <Card key={eInx} className='d-flex flex-row align-items-center w-100 border-white'>
+              <Card key={eInx} className='d-flex flex-row align-items-center w-100 border-black'>
                 <div className="row g-0">
                   <div className="col-lg-4 col-sm-12">
                     <Card.Img
-                      src={`${e.logo}`} width={250} height={200} style={{ maxHeight: '200px' }} className='bg-light p-0 m-0 w-100 h-100' />
+                      src={`${e.logo}`} width={250} height={200}  className='bg-light p-0 m-0 w-100 h-100' />
                   </div>
-                  <div className="col-lg-8 col-sm-12 d-flex align-items-center">
-                    <Card.Body className='bg-light d-flex flex-column'>
+                  <div className="col-lg-8 col-sm-12 d-flex align-items-center" >
+                    <Card.Body className='d-flex flex-column bg-primary text-white'>
                       <Card.Title>{e.companyName}</Card.Title>
                       <Card.Text>{e.companyPosition}</Card.Text>
                       <Card.Text>{e.review}</Card.Text>
