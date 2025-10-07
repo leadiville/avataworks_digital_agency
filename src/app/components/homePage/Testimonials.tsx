@@ -13,7 +13,7 @@ const Testimonials = ({ testimonials }) => {
           </p>
         </div>
         <div className="row owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
-          <div className="testimonial-item bg-light rounded">
+          <div className="testimonial-item rounded">
             <div className="row g-4">
               <TestimonialCarousel testimonys={testimonials} />
             </div>

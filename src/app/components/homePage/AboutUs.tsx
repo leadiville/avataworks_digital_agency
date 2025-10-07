@@ -8,7 +8,7 @@ const AboutUs = () => {
                 <div className="container pb-5">
                     <div className="row g-5">
                         <div className="col-xl-6 wow fadeInLeft " data-wow-delay="0.2s">
-                            <div className="about-item-content bg-white rounded p-5 h-100 d-flex align-items-center">
+                            <div className="about-item-content bg-white rounded px-4 h-100 d-flex align-items-center">
                                 <div>
                                     <h2 className="mb-4 text-capitalize text-primary">Your All-in-One Digital Team—Powered by AVATAs</h2>
                                     <p className='text-black-50'>From the comfort of your home or office, you can access a full team of remote digital experts—your personal AVATAs (Advanced Virtual Assistants in Technology and Advertising)—dedicated to helping you scale with ease.
@@ -18,19 +18,19 @@ const AboutUs = () => {
                                     {/* <p className="text-dark"><i className="fa fa-check text-primary me-3"></i>We can save your money.</p>
                                     <p className="text-dark"><i className="fa fa-check text-primary me-3"></i>Speed up production</p>
                                     <p className="text-dark mb-4"><i className="fa fa-check text-primary me-3"></i>Our Our plans are flexible</p> */}
-                                    <a className="btn btn-danger rounded-pill mt-5 py-5 px-5 text-capitalize" href="#">meet the avatas</a>
+                                    <a className="btn btn-danger rounded-pill mt-5 py-3 px-3 text-capitalize" href="#">meet the avatas</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                            <div className="bg-white rounded p-5 h-100">
-                                <div className="row g-4 justify-content-center">
+                            <div className="bg-white rounded p-5 p-sm-0 h-100">
+                                <div className="row g-4 justify-content-center w-100">
                                     <div className="col-12">
-                                        <div className="rounded bg-light">
-                                            <Image width={400} height={600} src="/aboutUs.jpeg" className="img-fluid w-100" alt="aboutUs" />
+                                        <div className="">
+                                            <Image width={400} height={400} src="/aboutUs.jpeg" className="img-fluid w-100" alt="aboutUs" />
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
+                                    <div className="col-12">
                                         <div className="counter-item bg-light rounded p-3 h-100">
                                             <div className="counter-counting">
                                                 <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">50</span>
@@ -39,16 +39,16 @@ const AboutUs = () => {
                                             <h4 className="mb-0 text-dark">Businesses Managed</h4>
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
+                                    <div className="col-12">
                                         <div className="counter-item bg-light rounded p-3 h-100">
                                             <div className="counter-counting">
                                                 <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">30</span>
                                                 <span className="h1 fw-bold text-primary">+</span>
                                             </div>
-                                            <h4 className="mb-0 text-dark">Skilled Agents</h4>
+                                            <h4 className="mb-0 text-dark">Skilled Avatas</h4>
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
+                                    <div className="col-12">
                                         <div className="counter-item bg-light rounded p-3 h-100">
                                             <div className="counter-counting">
                                                 <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">5</span>
@@ -57,7 +57,7 @@ const AboutUs = () => {
                                             <h4 className="mb-0 text-dark">Success Years</h4>
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
+                                    <div className="col-12">
                                         <div className="counter-item bg-light rounded p-3 h-100">
                                             <div className="counter-counting">
                                                 <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">20</span>

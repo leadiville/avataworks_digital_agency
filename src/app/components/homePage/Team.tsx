@@ -18,7 +18,7 @@ const Team = ({ teamMembers }) => {
                             <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s" key={memberId}>
                                 <div className="team-item">
                                     <div className="team-img">
-                                        <Image src={`/team/${image}`} className="img-fluid rounded-top w-100" alt="" width={500} height={500} style={{ maxHeight: '300px', minHeight: '300px' }} />
+                                        <Image src={`/team/${image}`} className="img-fluid rounded-top w-100" alt="" width={500} height={500} />
                                         <div className="team-icon">
                                             <a className="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i className="fab fa-facebook-f"></i></a>
                                             <a className="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i className="fab fa-twitter"></i></a>
