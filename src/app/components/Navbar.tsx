@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCommentDots, faPhoneAlt, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 // import  styles  from '@/app/css/Navbar.module.css'
 
 const Navbar = () => {
@@ -12,10 +12,10 @@ const Navbar = () => {
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <a href="#" className="navbar-brand p-0">
-                            <Image width={100} height={100} src="/logo.png" alt="Logo" color='white' className='w-100 h-100' />
+                            <Image width={100} height={100} src="/logo.png" alt="Logo" className='w-100 h-100' />
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-target="#navbarToggleMenu" data-bs-toggle="collapse">
-                            <span className="fa fa-bars"></span>
+                            <span className="fa fa-bars"><FontAwesomeIcon icon={faBars} style={{color:'white'}} /></span>
                         </button>
                         <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
                             <div className="navbar-nav mx-0 mx-lg-auto">

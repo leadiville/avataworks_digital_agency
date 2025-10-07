@@ -19,17 +19,17 @@ const HeroCarousel = () => {
                 <div className="col-lg-7 animated fadeInLeft">
                   <div className="text-sm-center text-md-start text-primary">
                     {/* <h4 className="text-uppercase text-black fw-bold mb-4">welcome to Avataworks</h4> */}
-                    <h1 className="text-">{heroDetails.title}</h1>
-                    <p className="mb-5 fs-5 text-black">{heroDetails.body}
+                    <h2 className="text-primary">{heroDetails.title}</h2>
+                    <p className="mb-5 fs-lg-5 text-black">{heroDetails.body}
                     </p>
                     <div className="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4 text-capitalize">
-                      <a className="btn btn-primary rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
-                      <a className="btn btn-danger rounded-pill py-3 px-4 px-md-5 ms-2 " href="#">Get a free Quote</a>
+                      <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
+                      <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-5 animated fadeInRight order-first order-sm-1">
-                  <div className="calrousel-img" style={{ objectFit: 'cover' }}>
+                <div className="col-lg-5 p-0 mt-0 mb-0 animated fadeInRight order-first order-sm-1">
+                  <div className="calrousel-img p-0" style={{ objectFit: 'cover' }}>
                     <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
                   </div>
                 </div>
@@ -45,21 +45,21 @@ const HeroCarousel = () => {
 const TestimonialCarousel = ({ testimonys }) => {
   const groupedItems = [];
   for (let i = 0; i < testimonys.length; i += 2) {
-    groupedItems.push(testimonys.slice(i, i + 2))
+    groupedItems.push(window.innerWidth >= 967 ? testimonys.slice(i, i + 2) :  testimonys.slice(i, i + 1));
   }
   testimonys = Array(testimonys);
   console.log(testimonys);
   return (
-    <Carousel className='testimonial-carousel bg-white' slide>
+    <Carousel className='testimonial-carousel p-sm-0' slide>
       {groupedItems?.map((each, eachInx) => (
         <Carousel.Item key={eachInx} className='rounded-5 my-5'>
           <Stack direction='horizontal' gap={4} >
             {each.map((e, eInx: number) => (
               <Card key={eInx} className='d-flex flex-row align-items-center w-100 border my-4' >
-                <div className="row g-2">
+                <div className="row g-lg-2">
                   <div className="col-lg-4 col-sm-12">
                     <Card.Img
-                      src={`${e.logo}`} width={250} height={200} className='bg-light p-0 m-0 w-100 h-100' />
+                      src={`${e.logo}`} width={200} height={200} className='logo-image bg-light w-100 h-100' />
                   </div>
                   <div className="col-lg-8 col-sm-12 d-flex align-items-center" >
                     <Card.Body className='d-flex flex-column text-black'>
