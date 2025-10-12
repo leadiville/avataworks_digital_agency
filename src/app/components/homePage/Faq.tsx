@@ -2,8 +2,11 @@
 import Image from 'next/image'
 import React from 'react'
 import AccordionA from '../AccordionA'
+import { faqT } from '@/app/our-services/page';
 
-const Faq = ({ faqs }) => {
+
+const Faq = ({ faqs }: faqT[]) => {
+    console.log(faqs);
     return (
         <div>
             <div className="container-fluid faq-section bg-light py-5">

@@ -1,12 +1,14 @@
 import React from 'react'
 import { AccordionItem, Accordion, AccordionHeader, AccordionBody } from 'react-bootstrap'
 
-const AccordionA = ({ faqs }) => {
+
+
+const AccordionA = ({faqs}) => {
 
   return (
     <div className='container-fluid p-0'>
       <Accordion>
-        {faqs?.map((faq, faqId: string) => {
+        {faqs?.map((faq, faqId: any) => {
 
           return (
             <AccordionItem eventKey={faqId} key={faqId}>
