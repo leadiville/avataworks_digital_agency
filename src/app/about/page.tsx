@@ -24,7 +24,7 @@ export default async function () {
             <AboutUs />
             <Faq faqs={faq.servicePage} />
             <Team teamMembers={ourTeam} />
-            <AboutGoals />
+            {/* <AboutGoals /> */}
             <Footer footer={footer} />
         </>
     )

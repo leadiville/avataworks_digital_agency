@@ -574,6 +574,17 @@ h2 {
 .service .service-item:hover .service-content::after {
   height: 100%;
 }
+
+/* services page hero section */
+.services-hero {
+  background-image: url("/hero/Digital_Brand_Success_gif.gif");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: max-content;
+  padding: 18rem !important;
+}
+
 /*** Service End ***/
 
 div.accordion-item {

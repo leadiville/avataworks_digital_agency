@@ -257,21 +257,25 @@
             ],
             "servicePage": [
                 {
+                    "id": 1,
                     "question": " Do you offer customized solutions for businesses?",
                     "answer": "Absolutely. We understand that each business is unique. Our team collaborates closely with clients to develop tailored strategies and solutions aligning with their goals and challenges.",
                     "showAnswer": false
                 },
                 {
+                    "id": 2,
                     "question": " Can AVATAWorks handle both small and large-scale projects?",
                     "answer": "Yes, we are equipped to manage projects of all sizes. Whether you're a start-up looking to establish your brand or a large corporation aiming to enhance your digital presence, we have the expertise to deliver results.",
                     "showAnswer": false
                 },
                 {
+                    "id": 3,
                     "question": " Does AVATAWorks offer content creation services",
                     "answer": " Yes, we provide content creation services, including blog posts, articles, videos, design creatives, and social media content, to engage your audience and boost digital brand success",
                     "showAnswer": false
                 },
                 {
+                    "id": 4,
                     "question": "10. What is your client onboarding process like?",
                     "answer": [
                         "Initial Consultation: Understanding your business needs and objectives,",
@@ -282,16 +286,19 @@
                     "showAnswer": false
                 },
                 {
+                    "id": 5,
                     "question": "What are your pricing options?",
                     "answer": " Our pricing is project-specific, based on the scope, complexity, and duration. We offer both fixed-price packages and customizable solutions to fit different budgets.",
                     "showAnswer": false
                 },
                 {
+                    "id": 6,
                     "question": "Who will be working on my project?",
                     "answer": " Your project will be handled by a team of advanced virtual assistants in Technology and Advertising, including strategists, designers, content creators, developers, and marketers. A dedicated AVATA will oversee the process and serve as your primary point of contact.",
                     "showAnswer": false
                 },
                 {
+                    "id": 7,
                     "question": "Do you offer training or workshops for in-house teams?",
                     "answer": " Yes, we provide training sessions and brand builders workshops to empower your in-house teams with the latest digital marketing strategies and tools.",
                     "showAnswer": false

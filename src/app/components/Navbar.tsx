@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <a href="#" className="navbar-brand p-0">
+                        <a href="/" className="navbar-brand p-0">
                             <Image width={100} height={100} src="/logo.png" alt="Logo" className='w-100 h-100' />
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-target="#navbarToggleMenu" data-bs-toggle="collapse">
@@ -20,9 +20,9 @@ const Navbar = () => {
                         <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
                             <div className="navbar-nav mx-0 mx-lg-auto">
                                 <div className="nav-item dropdown" >
-                                    <a href="#" className="nav-link" data-bs-toggle="dropdown">
+                                    {/* <a href="#" className="nav-link" data-bs-toggle="dropdown">
                                         <span className="dropdown-toggle">Company</span>
-                                    </a>
+                                    </a> */}
                                     <div className="dropdown-menu">
                                         <a href="feature" className="dropdown-item" id='features-section'>Our Features</a>
                                         <a href="team" className="dropdown-item" id='dropdown'>Our team</a>
@@ -31,7 +31,7 @@ const Navbar = () => {
                                     </div>
                                 </div>
                                 {/* <a href="index" className="nav-item nav-link active">Home</a> */}
-                                <a href="service" className="nav-item nav-link text-primary">Services</a>
+                                <a href="/our-services" className="nav-item nav-link text-primary">Services</a>
                                 <a href="about" className="nav-item nav-link text-primary">About</a>
                                 {/* <a href="blog" className="nav-item nav-link">Blog</a> */}
                                 <a href="contact" className="nav-item nav-link text-primary">Contact</a>
