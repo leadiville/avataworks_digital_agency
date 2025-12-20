@@ -1,6 +1,6 @@
 import React from 'react'
-import { TestimonialCarousel } from '../../../../carousels/BootstrapCarousel';
 import { Ireviews } from '@/types';
+import { TestimonialCarousel } from '../carousels/BootstrapCarousel';
 
 interface TestimonyProps {
   testimonials: Ireviews[]
