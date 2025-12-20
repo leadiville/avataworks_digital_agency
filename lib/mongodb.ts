@@ -1,4 +1,5 @@
 /* create a small helper to connect to mongodb once and reuse */
+
 import mongoose from "mongoose";
 
 const URI = process.env.MONGODB_URI!;

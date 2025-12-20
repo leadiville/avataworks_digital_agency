@@ -8,8 +8,6 @@ import * as FontawesomeIcons from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 
-console.log(FontawesomeIcons);
-
 
 // minimal version 
 const chosenIcons = Object.values(FontawesomeIcons).filter(
