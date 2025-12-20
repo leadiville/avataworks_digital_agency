@@ -5,7 +5,8 @@ import React from 'react'
 import { items } from '../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faPhoneAlt, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
+import { Ireviews } from '@/types';
 
 const HeroCarousel = () => {
   const { heroSection } = items;
@@ -41,49 +42,53 @@ const HeroCarousel = () => {
     </Carousel>
   )
 }
+interface ReviewsProps {
+  testimonys: Ireviews[]
+}
 
-const TestimonialCarousel = ({ testimonys }) => {
+const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
+  if (typeof window === "undefined") return null;
   const groupedItems = [];
   for (let i = 0; i < testimonys.length; i += 2) {
-    groupedItems.push(window.innerWidth >= 967 ? testimonys.slice(i, i + 2) :  testimonys.slice(i, i + 1));
+    groupedItems.push(window.innerWidth >= 967 ? testimonys.slice(i, i + 2) : testimonys.slice(i, i + 1));
   }
-  testimonys = Array(testimonys);
-  console.log(testimonys);
   return (
-    <Carousel className='testimonial-carousel p-sm-0' slide>
-      {groupedItems?.map((each, eachInx) => (
-        <Carousel.Item key={eachInx} className='rounded-5 my-5'>
-          <Stack direction='horizontal' gap={4} >
-            {each.map((e, eInx: number) => (
-              <Card key={eInx} className='d-flex flex-row align-items-center w-100 border my-4' >
-                <div className="row g-lg-2">
-                  <div className="col-lg-4 col-sm-12">
-                    <Card.Img
-                      src={`${e.logo}`} width={200} height={200} className='logo-image bg-light w-100 h-100' />
+    <>
+      <Carousel className='testimonial-carousel p-sm-0' slide>
+        {groupedItems?.map((each, eachInx) => (
+          <Carousel.Item key={eachInx} className='rounded-5 my-5'>
+            <Stack direction='horizontal' gap={4} >
+              {each.map((e, eInx: number) => (
+                <Card key={eInx} className='d-flex flex-row align-items-center w-100 border my-4' >
+                  <div className="row g-lg-2">
+                    <div className="col-lg-4 col-sm-12">
+                      <Card.Img
+                        src={`${e.logo}`} width={200} height={200} className='logo-image bg-light w-100 h-100' />
+                    </div>
+                    <div className="col-lg-8 col-sm-12 d-flex align-items-center" >
+                      <Card.Body className='d-flex flex-column text-black'>
+                        <Card.Title>{e.companyName}</Card.Title>
+                        <Card.Text>{e.companyPosition}</Card.Text>
+                        <Card.Text>{e.review}</Card.Text>
+                        <br />
+                        <span className='d-flex flex-row'>
+                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                        </span>
+                      </Card.Body>
+                    </div>
                   </div>
-                  <div className="col-lg-8 col-sm-12 d-flex align-items-center" >
-                    <Card.Body className='d-flex flex-column text-black'>
-                      <Card.Title>{e.companyName}</Card.Title>
-                      <Card.Text>{e.companyPosition}</Card.Text>
-                      <Card.Text>{e.review}</Card.Text>
-                      <br />
-                      <span className='d-flex flex-row'>
-                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                        <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                      </span>
-                    </Card.Body>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </Stack>
-        </Carousel.Item>
-      )
-      )}
-    </Carousel>
+                </Card>
+              ))}
+            </Stack>
+          </Carousel.Item>
+        )
+        )}
+      </Carousel >
+    </>
   )
 }
 export { TestimonialCarousel, HeroCarousel };

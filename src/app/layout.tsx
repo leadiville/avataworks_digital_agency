@@ -7,7 +7,15 @@ import Script from "next/script";
 import * as FontawesomeIcons from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-const chosenIcons = Object.keys(FontawesomeIcons).filter((keys) => keys !== "prefix" && keys !== "").map((icon) => FontawesomeIcons[icon]);
+
+console.log(FontawesomeIcons);
+
+
+// minimal version 
+const chosenIcons = Object.values(FontawesomeIcons).filter(
+  (icon): icon is FontawesomeIcons.IconDefinition => typeof icon === "object" && icon !== null && "iconName" in icon
+);
+// Add the icons to your library form fontAwesome
 library.add(...chosenIcons);
 
 const geistSans = Geist({

@@ -1,29 +1,59 @@
+import {IfaqHome } from '@/types';
 import React from 'react'
 import { AccordionItem, Accordion, AccordionHeader, AccordionBody } from 'react-bootstrap'
 
 
-
-const AccordionA = ({faqs}) => {
-
+interface FaqProps {
+  faq: IfaqHome[]
+}
+const AccordionA = ({ faq }: FaqProps) => {
   return (
-    <div className='container-fluid p-0'>
+    <div className="container-fluid p-0">
       <Accordion>
-        {faqs?.map((faq, faqId: any) => {
+        {faq?.map((data, index) => (
+          <AccordionItem
+            eventKey={String(index)}
+            key={data._id}
+          >
+            <AccordionHeader>
+              Q{index + 1}: {data.question}
+            </AccordionHeader>
 
-          return (
-            <AccordionItem eventKey={faqId} key={faqId}>
-              <AccordionHeader>
-                Q{faqId}: {faq.question}
-              </AccordionHeader>
-              <AccordionBody>
-                A: {faq.answer}
-              </AccordionBody>
-            </AccordionItem>
-          )
-        })}
+            <AccordionBody>
+              {/* STRING */}
+              {typeof data.answer === "string" && (
+                <p>{data.answer}</p>
+              )}
+
+              {/* ARRAY */}
+              {Array.isArray(data.answer) && (
+                <ul>
+                  {data.answer.map((item, i) => {
+                    // STRING ITEM
+                    if (typeof item === "string") {
+                      return <li key={i}>{item}</li>;
+                    }
+
+                    // OBJECT ITEM { title, description }
+                    if (typeof item === "object" && item !== null) {
+                      return (
+                        <li key={i}>
+                          <strong>{item.title}</strong>
+                          <p>{item.description}</p>
+                        </li>
+                      );
+                    }
+
+                    return null;
+                  })}
+                </ul>
+              )}
+            </AccordionBody>
+          </AccordionItem>
+        ))}
       </Accordion>
     </div>
-  )
-}
+  );
+};
 
-export default AccordionA
+export default AccordionA;

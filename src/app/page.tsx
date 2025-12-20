@@ -8,24 +8,34 @@ import Faq from "./components/homePage/Faq";
 import Footer from "./components/Footer";
 import Team from "./components/homePage/Team";
 import Testimonials from "./components/homePage/Testimonials";
+import { Ifaq, Ifeatures, Ifooter, IOurTeam, Ireviews, Iservice } from "@/types";
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export default async function Home() {
-  const request = await fetch('http://localhost:3000/database');
-  const data = await request.json();
+  const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
+  const data = await res.json() as {
+    services: Iservice[],
+    features: Ifeatures[],
+    faq: Ifaq[];
+    ourTeam: IOurTeam[];
+    reviews: Ireviews[];
+    footer: Ifooter;
+  };
   const { services, features, faq, ourTeam, reviews, footer } = data;
 
+  const faqHome = faq?.[0].homePage ?? [];
   return (
     <>
       <Navbar />
       <HeroCarousel />
-      <Features featuresData={features} title={'Why Choose Avataworks?'} /> 
+      <Features featuresData={features} title={'Why Choose Avataworks?'} />
       <AboutUs />
       <OurServices services={services} />
       <Team teamMembers={ourTeam.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
-      <Faq faqs={faq.homePage} />
-      <Footer footer={footer}/>
+      <Faq faq={faqHome} />
+      <Footer footer={footer} />
     </>
   )
 }

@@ -2,12 +2,11 @@
     "database": {
         "services": [
             {
-                "id": 1,
                 "title": "Digital marketing and advertising",
+                "info": "Implementing strategies like SEO, PPC, and social media marketing to enhance online presence",
                 "imgSrc": "/Marketing-cuate.png",
                 "showInfo": false,
                 "icon": "fa-rectangle-ad",
-                "info": "Implementing strategies like SEO, PPC, and social media marketing to enhance online presence",
                 "fullInfo": "Convert Clicks into Clients with Digital that Delivers. Digital marketing isn't just about visibility—it’s about measurable results. At AVATA Works, we build experiential, targeted, and scalable digital strategies that put your brand in front of the right people, on the right platforms, at the right time. Whether you want to grow leads, sales, or awareness, we’ve got you covered.",
                 "subServices": [
                     "Social Media Management",
@@ -18,7 +17,6 @@
                 ]
             },
             {
-                "id": 2,
                 "title": "Brand Strategy & Design",
                 "info": "Crafting comprehensive brand identities that resonate with your ideal customer avatar",
                 "imgSrc": "/rebranding-amico.png",
@@ -34,7 +32,6 @@
                 ]
             },
             {
-                "id": 3,
                 "title": "Custom Software Development",
                 "info": "Developing tailored software solutions to meet specific business needs",
                 "imgSrc": "/Developer activity-bro.png",
@@ -50,7 +47,6 @@
                 ]
             },
             {
-                "id": 4,
                 "title": "Experiential Events management",
                 "info": "Planning and executing immersive events that connect brands with their audiences.",
                 "imgSrc": "/Events-amico.png",
@@ -63,7 +59,6 @@
                 ]
             },
             {
-                "id": 5,
                 "title": "Talent Management & Development",
                 "info": " Identifying and nurturing talent to drive brand growth.",
                 "imgSrc": "/Events-cuate.png",
@@ -77,7 +72,6 @@
                 ]
             },
             {
-                "id": 6,
                 "title": "Sales Strategy & Consultation",
                 "info": "Providing insights to optimize sales processes and improve conversion rate",
                 "imgSrc": "/Marketing-amico.png",
@@ -120,18 +114,10 @@
             ],
             "socialLinks": [
                 {
-                    "instagram": "https://www.instagram.com/avataworks?igsh=MXBvOW0xeWxiaDN2bg=="
-                },
-                {
-                    "facebook": "www.facebook.com/share/1Aw2Y9yZrY/"
-                },
-                {
-                    "LinkedIn": "https: //linkedin.com/company/avataworks"
-                },
-                {
-                    "X": "https: //x.com/avataworks"
-                },
-                {
+                    "instagram": "https://www.instagram.com/avataworks?igsh=MXBvOW0xeWxiaDN2bg==",
+                    "facebook": "www.facebook.com/share/1Aw2Y9yZrY/",
+                    "LinkedIn": "https: //linkedin.com/company/avataworks",
+                    "X": "https: //x.com/avataworks",
                     "Tiktok": "https: //www.tiktok.com/@avataworks"
                 }
             ]
@@ -193,63 +179,63 @@
         "faq": {
             "homePage": [
                 {
-                    "id": "1",
                     "showAnswer": false,
                     "question": "What is AVATAWORKS?",
                     "answer": "AVATAWorks is a result-driven digital agency based in Nigeria, dedicated to delivering tailored business solutions using cutting-edge technology, experiential marketing, dynamic branding, and strategic sales consulting. Our goal is to drive sustainable growth and help businesses achieve digital brand success."
                 },
                 {
-                    "id": "2",
                     "showAnswer": false,
                     "question": "Where is AVATAWORKS located?",
                     "answer": "AVATAWorks is a fully remote company operating from Nigeria atm. However, we serve clients both locally and internationally, leveraging virtual collaboration tools to bridge any geographical gaps."
                 },
                 {
-                    "id": "3",
                     "showAnswer": false,
                     "question": "How does AVATA Works help businesses grow?",
                     "answer": "We use tailored strategies, data-driven analytics, and innovative solutions to build brand visibility, generate leads,`and enhance customer engagement to achieve measurable`growth for businesses."
                 },
                 {
-                    "id": "4",
                     "showAnswer": false,
                     "question": "What industries does AVATAWorks specialize in?",
                     "answer": "AVATAWorks has experience working across various industries, including travel, Health, beauty, retail, food, entertainment, and more. Our AVATAs are equipped to handle projects from diverse sectors, tailoring strategies to meet specific business needs for brand digital success."
                 },
                 {
-                    "id": "5",
                     "showAnswer": false,
                     "question": "What services does AVATAWorks provide?",
                     "answer": [
-                        "Brand Strategy & Design: Crafting cohesive brand identities that resonate with target customer avatar, Digital Marketing and Advertising: Implementing data-driven campaigns to boost online presence and conversions., Full Video Production Services: Capture and create engaging visual content to captivate and inform your customer avatar."
+                        {
+                            "title": "Brand Strategy & Design:",
+                            "description": "Crafting cohesive brand identities that resonate with target customer avatar"
+                        },
+                        {
+                            "title": "Digital Marketing and Advertising",
+                            "description": "Implementing data-driven campaigns to boost online presence and conversions."
+                        },
+                        {
+                            "title": "Full Video Production Services: Capture and create engaging visual content to captivate and inform your customer avatar."
+                        }
                     ]
                 },
                 {
-                    "id": "6",
                     "showAnswer": false,
                     "question": "What is digital marketing, and why is it important?",
                     "answer": "Digital marketing involves promoting products or services using digital channels such as websites, social media, email, and search engines. It's crucial because it allows businesses to reach a broader audience, engage with customers in real-time, and measure the effectiveness of campaigns."
                 },
                 {
-                    "id": "7",
                     "showAnswer": false,
                     "question": " How does SEO work, and why is it essential for my business?",
                     "answer": "Search Engine Optimization (SEO) enhances your brand's visibility on search engines like Google and social media search engines like Instagram, X, and more. By optimizing your channels' content, structure, bio, and technical aspects, you can rank higher in search results, leading to increased organic traffic and potential customers."
                 },
                 {
-                    "id": "8",
                     "showAnswer": false,
                     "question": "Why does my business need a digital team of AVATAs?",
                     "answer": "Search Engine Optimization (SEO) enhances your brand's visibility on search engines like Google and social media search engines like Instagram, X, and more. By optimizing your channels' content, structure, bio, and technical aspects, you can rank higher in search results, leading to increased organic traffic and potential customers."
                 },
                 {
-                    "id": "9",
                     "showAnswer": false,
                     "question": "Why do I need a website for my business?",
                     "answer": "Your website is your 24/7 digital storefront. In today’s fast-moving world, customers look online first before making buying decisions. AVATAWorks builds modern, mobile-friendly websites that not only showcase your brand but also drive traffic, build trust, and generate leads — helping you compete locally and globally"
                 },
                 {
-                    "id": "10",
                     "showAnswer": false,
                     "question": " What is an AVATA, and what tasks can they handle?",
                     "answer": "An AVATA stands for Advanced Virtual Assistant in Technology and Advertising — a highly skilled digital professional trained by AVATAWorks to support businesses remotely across a wide range of tasks. Unlike generic freelancers, AVATAs are verified talents equipped with both creative and technical skills to help you grow your brand faster and more affordably."
@@ -257,48 +243,45 @@
             ],
             "servicePage": [
                 {
-                    "id": 1,
                     "question": " Do you offer customized solutions for businesses?",
                     "answer": "Absolutely. We understand that each business is unique. Our team collaborates closely with clients to develop tailored strategies and solutions aligning with their goals and challenges.",
                     "showAnswer": false
                 },
                 {
-                    "id": 2,
                     "question": " Can AVATAWorks handle both small and large-scale projects?",
                     "answer": "Yes, we are equipped to manage projects of all sizes. Whether you're a start-up looking to establish your brand or a large corporation aiming to enhance your digital presence, we have the expertise to deliver results.",
                     "showAnswer": false
                 },
                 {
-                    "id": 3,
                     "question": " Does AVATAWorks offer content creation services",
                     "answer": " Yes, we provide content creation services, including blog posts, articles, videos, design creatives, and social media content, to engage your audience and boost digital brand success",
                     "showAnswer": false
                 },
                 {
-                    "id": 4,
                     "question": "10. What is your client onboarding process like?",
                     "answer": [
-                        "Initial Consultation: Understanding your business needs and objectives,",
-                        " Strategy Development: Crafting a brief and a tailored plan to achieve your digital brand goals,",
-                        " Execution: Implementing the strategy with regular updates,",
-                        " Monitoring & Optimizatio: Assessing performance and making necessary adjustment."
+                        {
+                            "title": "Initial Consultation: Understanding your business needs and objectives",
+                            "description": " Strategy Development: Crafting a brief and a tailored plan to achieve your digital brand goals,"
+                        },
+                        {
+                            "title": " Execution: Implementing the strategy with regular updates,",
+                            "description": " Monitoring & Optimizatio: Assessing performance and making necessary adjustment."
+                        }
                     ],
                     "showAnswer": false
                 },
                 {
-                    "id": 5,
                     "question": "What are your pricing options?",
                     "answer": " Our pricing is project-specific, based on the scope, complexity, and duration. We offer both fixed-price packages and customizable solutions to fit different budgets.",
                     "showAnswer": false
                 },
                 {
-                    "id": 6,
                     "question": "Who will be working on my project?",
                     "answer": " Your project will be handled by a team of advanced virtual assistants in Technology and Advertising, including strategists, designers, content creators, developers, and marketers. A dedicated AVATA will oversee the process and serve as your primary point of contact.",
                     "showAnswer": false
                 },
                 {
-                    "id": 7,
                     "question": "Do you offer training or workshops for in-house teams?",
                     "answer": " Yes, we provide training sessions and brand builders workshops to empower your in-house teams with the latest digital marketing strategies and tools.",
                     "showAnswer": false
@@ -392,7 +375,7 @@
             },
             {
                 "fullName": "Igbinosa Osayuwame",
-                "You were and are still the only person that was always there for meskillSet": "video editor (AVATA).",
+                "skillSet": "video editor (AVATA).",
                 "image": "yuyu.webp"
             }
         ]

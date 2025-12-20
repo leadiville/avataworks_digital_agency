@@ -1,8 +1,11 @@
-import Image from 'next/image';
 import React from 'react'
 import { TestimonialCarousel } from '../../../../carousels/BootstrapCarousel';
+import { Ireviews } from '@/types';
 
-const Testimonials = ({ testimonials }) => {
+interface TestimonyProps {
+  testimonials: Ireviews[]
+}
+const Testimonials = ({ testimonials }: TestimonyProps) => {
   return (
     <div className="container-fluid testimonial pb-5 pt-5">
       <div className="container pb-5">

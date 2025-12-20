@@ -1,31 +1,35 @@
 import React from "react"
-import Navbar from "../components/Navbar"
 import Features from "../components/homePage/Features"
 import AboutUs from "../components/homePage/AboutUs"
-import Faq from "../components/homePage/Faq"
 import Team from "../components/homePage/Team"
 import Footer from "../components/Footer"
 import { WelcomeAbout } from "../components/AboutUs/WelcomeAbout"
-import { AboutGoals } from "../components/AboutUs/AboutGoals"
+import { Ifeatures, Ifooter, IOurTeam } from "@/types"
 // import AboutHero from "../components/AboutUs/AboutHero"
 
-export default async function () {
+const AboutPage = async function () {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+    const res = await fetch(`${baseUrl}/api/content`);
+    const data = await res.json() as {
+        features: Ifeatures[],
+        ourTeam: IOurTeam[],
+        footer: Ifooter
+    }
 
-    const request = await fetch('http://localhost:3000/database');
-    const response = await request.json();
-    const data = response;
-    const { features, whyChooseUs, ourTeam, faq, footer } = data;
-    console.log(features, faq.servicesPage)
+
+
+    const { features, ourTeam, footer } = data;
+
     return (
         <>
-            <Navbar />
             <WelcomeAbout />
             <Features featuresData={features} title={'At Avataworks, we ensure digital brand success'} />
             <AboutUs />
-            <Faq faqs={faq.servicePage} />
+            {/* <Faq faqs={faq.servicePage} /> */}
             <Team teamMembers={ourTeam} />
             {/* <AboutGoals /> */}
             <Footer footer={footer} />
         </>
     )
 }
+export default AboutPage    

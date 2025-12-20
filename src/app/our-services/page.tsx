@@ -1,7 +1,7 @@
 import React from "react";
 import OurServices from "../components/homePage/OurServices";
 import Faq from "../components/homePage/Faq";
-import Navbar from "../components/Navbar";
+import { Ifaq, Iservice } from "@/types";
 
 export type faqT = {
   answer: string;
@@ -10,16 +10,20 @@ export type faqT = {
   showAnswer: boolean;
 }
 
-const page = async () => {
-  const request = await fetch("http://localhost:3000/database");
-  const response = await request.json();
-  const services = response.services
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
-  const servicesFaq : faqT = response.faq.servicePage
+const page = async () => {
+  const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
+  const data = await res.json() as {
+    services: Iservice[],
+    faq: Ifaq,
+  };
+  const { services, faq } = data;
+
+  const faqService = faq.servicesPage?.map((each) => each);
 
   return (
     <div>
-      <Navbar />
       <div className="container-fluid p-5 services-hero" >
       </div>
       <div className="container-fluid px-5 py-6">
@@ -27,7 +31,7 @@ const page = async () => {
           <OurServices services={services} />
         </div>
       </div>
-      <Faq faqs={servicesFaq} />
+      <Faq faq={faqService} />
     </div>
   );
 };

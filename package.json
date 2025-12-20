@@ -7,7 +7,9 @@
     "server": "json-server database.json",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "typecheck": "tsc --noEmit --pretty"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

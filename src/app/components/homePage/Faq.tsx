@@ -2,11 +2,12 @@
 import Image from 'next/image'
 import React from 'react'
 import AccordionA from '../AccordionA'
-import { faqT } from '@/app/our-services/page';
+import { IfaqHome } from '@/types';
 
-
-const Faq = ({ faqs }: faqT[]) => {
-    console.log(faqs);
+interface FaqProps {
+    faq: IfaqHome[]
+}
+const Faq = ({ faq }: FaqProps) => {
     return (
         <div>
             <div className="container-fluid faq-section bg-light py-5">
@@ -15,10 +16,12 @@ const Faq = ({ faqs }: faqT[]) => {
                         <div className="col-xl-6 wow fadeInLeft order-lg-first" data-wow-delay="0.2s">
                             <div className="h-100">
                                 <div className="mb-5">
-                                    <h4>FAQ's answered by our AVATAs</h4>
+                                    <h4>FAQ&apos;s answered by our AVATAs</h4>
                                     <h2 className="text-primary">Common Frequently Asked Questions</h2>
                                 </div>
-                                <AccordionA faqs={faqs} />
+                                <>
+                                    <AccordionA faq={faq} />
+                                </>
                             </div>
                         </div>
                         <div className="col-xl-6 wow fadeInRight order-first order-sm-first" data-wow-delay="0.4s">
@@ -31,4 +34,4 @@ const Faq = ({ faqs }: faqT[]) => {
     )
 }
 
-export default Faq
+export default Faq;

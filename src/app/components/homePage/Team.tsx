@@ -1,7 +1,11 @@
+import { IOurTeam } from '@/types'
 import Image from 'next/image'
 import React from 'react'
 
-const Team = ({ teamMembers }) => {
+interface TeamProps {
+    teamMembers: IOurTeam[];
+}
+const Team = ({ teamMembers }: TeamProps) => {
     return (
 
         <div className="container-fluid team pb-5 pt-5">

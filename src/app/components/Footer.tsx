@@ -1,10 +1,15 @@
+import { Ifooter } from '@/types'
 import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 
-const Footer = async ({footer}) => {
+interface footerProps {
+    footer: Ifooter
+}
+
+const Footer = async ({ footer }: footerProps) => {
 
     return (
         <div>
@@ -34,7 +39,7 @@ const Footer = async ({footer}) => {
                                     <div className="col-md-6 col-lg-6 col-xl-3">
                                         <div className="footer-item">
                                             <h4 className="text-white mb-4">Useful Links</h4>
-                                            {footer?.usefulLinks?.map((link :string, linkId : number) => <a key={linkId} href="#"><i className="fas fa-angle-right me-2"></i> {link}</a>
+                                            {footer?.usefulLinks?.map((link: string, linkId: number) => <a key={linkId} href="#"><i className="fas fa-angle-right me-2"></i> {link}</a>
                                             )}
                                         </div>
                                     </div>
