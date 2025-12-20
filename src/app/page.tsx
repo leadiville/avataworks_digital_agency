@@ -1,6 +1,5 @@
 
 import Navbar from "./components/Navbar";
-import { HeroCarousel } from "../../carousels/BootstrapCarousel";
 import Features from "./components/homePage/Features";
 import AboutUs from "./components/homePage/AboutUs";
 import OurServices from "./components/homePage/OurServices";
@@ -9,6 +8,7 @@ import Footer from "./components/Footer";
 import Team from "./components/homePage/Team";
 import Testimonials from "./components/homePage/Testimonials";
 import { Ifaq, Ifeatures, Ifooter, IOurTeam, Ireviews, Iservice } from "@/types";
+import { HeroCarousel } from "./components/carousels/BootstrapCarousel";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroCarousel } from '../../../carousels/BootstrapCarousel'
+import { HeroCarousel } from './carousels/BootstrapCarousel'
 
 export const Hero = () => {
     return (
