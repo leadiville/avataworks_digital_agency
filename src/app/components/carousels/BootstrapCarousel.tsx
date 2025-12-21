@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image'
+// import Image from 'next/image'
 import React from 'react'
 import { items } from '../../../../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
@@ -31,7 +31,8 @@ const HeroCarousel = () => {
                 </div>
                 <div className="col-lg-5 p-0 mt-0 mb-0 animated fadeInRight order-first order-sm-1">
                   <div className="calrousel-img p-0" style={{ objectFit: 'cover' }}>
-                    <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
+                    {/* <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' /> */}
+                    <img width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
                   </div>
                 </div>
               </div>
