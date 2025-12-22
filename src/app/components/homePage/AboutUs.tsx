@@ -7,7 +7,7 @@ const AboutUs = () => {
             <div className="container-fluid bg-light about pb-5">
                 <div className="container pb-5">
                     <div className="row g-5">
-                        <div className="col-xl-6 wow fadeInLeft " data-wow-delay="0.2s">
+                        <div className="col-xl-6 wow fadeInLeft " >
                             <div className="about-item-content bg-white rounded px-4 h-100 d-flex align-items-center">
                                 <div>
                                     <h2 className="mb-4 text-capitalize text-primary">Your All-in-One Digital Team—Powered by AVATAs</h2>
@@ -22,7 +22,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div className="col-xl-6 wow fadeInRight">
                             <div className="bg-white rounded p-5 p-sm-0 h-100">
                                 <div className="row g-4 justify-content-center w-100">
                                     <div className="col-12">

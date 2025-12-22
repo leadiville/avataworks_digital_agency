@@ -13,7 +13,7 @@ const Faq = ({ faq }: FaqProps) => {
             <div className="container-fluid faq-section bg-light py-5">
                 <div className="container py-5">
                     <div className="row g-5 align-items-center">
-                        <div className="col-xl-6 wow fadeInLeft order-lg-first" data-wow-delay="0.2s">
+                        <div className="col-xl-6 wow fadeInLeft order-lg-first">
                             <div className="h-100">
                                 <div className="mb-5">
                                     <h4>FAQ&apos;s answered by our AVATAs</h4>
@@ -24,7 +24,7 @@ const Faq = ({ faq }: FaqProps) => {
                                 </>
                             </div>
                         </div>
-                        <div className="col-xl-6 wow fadeInRight order-first order-sm-first" data-wow-delay="0.4s">
+                        <div className="col-xl-6 wow fadeInRight order-first order-sm-first">
                             <Image src="/FAQs-amico.png" className="w-100 h-100" alt="" width={400} height={400} />
                         </div>
                     </div>

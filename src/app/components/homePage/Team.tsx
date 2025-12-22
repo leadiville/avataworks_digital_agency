@@ -10,7 +10,7 @@ const Team = ({ teamMembers }: TeamProps) => {
 
         <div className="container-fluid team pb-5 pt-5">
             <div className="container pb-5">
-                <div className="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style={{ maxWidth: "800px" }}>
+                <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
                     <h1 className="display-4 mb-4 text-primary">Meet Our Avatas</h1>
                     <p className="mb-0">A powerhouse of advanced virtual assistants in tech and advertising, each bringing exceptional skills, experience, and passion. Driving our clients to digital brand success.
                     </p>
@@ -19,7 +19,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                     {teamMembers?.map((member, memberId) => {
                         const { fullName, skillSet, image } = member;
                         return (
-                            <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s" key={memberId}>
+                            <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" key={memberId}>
                                 <div className="team-item">
                                     <div className="team-img">
                                         <Image src={`/team/${image}`} className="img-fluid rounded-top w-100" alt="" width={500} height={500} />

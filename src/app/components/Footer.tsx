@@ -13,7 +13,7 @@ const Footer = async ({ footer }: footerProps) => {
 
     return (
         <div>
-            <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div className="container-fluid footer py-5 wow fadeIn">
                 <div className="container py-5">
                     <div className="row g-5">
                         <div className="col-xl-9">
@@ -100,7 +100,7 @@ const Footer = async ({ footer }: footerProps) => {
                                 </div>
                                 <div className="d-flex flex-shrink-0">
                                     <div className="footer-btn">
-                                        <a href="#" className="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                                        <a href="#" className="btn btn-lg-square rounded-circle position-relative wow tada">
                                             <i className="fa fa-phone-alt fa-2x"><FontAwesomeIcon icon={faPhoneAlt} /></i>
                                             <div className="position-absolute" style={{ top: " 1px", right: "25px" }}>
                                                 <span><i className="fa fa-comment-dots"><FontAwesomeIcon icon={faCommentDots} /></i></span>

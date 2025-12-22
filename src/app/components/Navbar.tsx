@@ -43,7 +43,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="d-none d-xl-flex flex-shrink-0 ps-4">
-                            <Link href="#" className="btn btn-light btn-lg-square rounded-circle position-relative wow tada " data-wow-delay=".9s">
+                            <Link href="#" className="btn btn-light btn-lg-square rounded-circle position-relative wow tada " >
                                 <span>
                                     <FontAwesomeIcon icon={faPhoneAlt} width={25} height={25} style={{ width: '28px', height: '28px', marginLeft: "6px" }} />
                                     <div className="position-absolute" style={{ top: '7px', right: '26px' }}>

@@ -14,7 +14,7 @@ const AboutPage = async function () {
         features: Ifeatures[],
         ourTeam: IOurTeam[],
         footer: Ifooter
-    }
+    }p
 
 
 

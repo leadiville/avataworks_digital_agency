@@ -11,7 +11,7 @@ const OurServices = ({ services }: ServicesProps) => {
         <div>
             <div className="container-fluid service py-5">
                 <div className="container py-5">
-                    <div className="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style={{ maxWidth: "800px" }}>
+                    <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
                         <h4 className="">Our Services</h4>
                         <h2 className="mb-4 text-primary">Full digital services. <br /> One team. <br /> Infinite possibilities.</h2>
                         <h5 className="mb-0 text-black-50">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand)
@@ -21,7 +21,7 @@ const OurServices = ({ services }: ServicesProps) => {
                         {services.splice(0, 3)?.map((service) => {
                             const { _id, title, imgSrc, icon, info } = service;
                             return (
-                                <div key={_id} className="col-md-4 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                                <div key={_id} className="col-md-4 col-lg-4 col-xl-3 wow fadeInUp">
                                     <div className="service-item">
                                         <div className="service-img">
                                             <Image width={400} height={400} src={imgSrc} className="img-fluid rounded-top w-100" alt="" />
@@ -40,7 +40,7 @@ const OurServices = ({ services }: ServicesProps) => {
                                 </div>
                             )
                         })}
-                        <div className="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div className="col-12 text-center wow fadeInUp">
                             <a className="btn btn-primary rounded-pill py-3 px-5" href="#">Explore More Services</a>
                         </div>
                     </div>
