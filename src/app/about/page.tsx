@@ -9,7 +9,7 @@ import { Ifeatures, Ifooter, IOurTeam } from "@/types"
 
 const AboutPage = async function () {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-    const res = await fetch(`${baseUrl}/api/content`);
+    const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
     const data = await res.json() as {
         features: Ifeatures[],
         ourTeam: IOurTeam[],
@@ -20,7 +20,7 @@ const AboutPage = async function () {
     const { features, ourTeam, footer } = data;
 
     return (
-        <div>
+        <>
             <WelcomeAbout />
             <Features featuresData={features} title={'At Avataworks, we ensure digital brand success'} />
             <AboutUs />
@@ -28,7 +28,7 @@ const AboutPage = async function () {
             <Team teamMembers={ourTeam} />
             {/* <AboutGoals /> */}
             <Footer footer={footer} />
-        </div>
+        </>
     )
 }
 export default AboutPage    
