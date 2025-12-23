@@ -2,14 +2,14 @@
 
 import Image from 'next/image'
 import React from 'react'
-import { items } from '../../../../public/heroData.json';
+import allItems from '../../../../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Ireviews } from '@/types';
 
 const HeroCarousel = () => {
-  const { heroSection } = items;
+  const { heroSection } = allItems.items;
   return (
     <Carousel className='header-carousel'>
       {heroSection.map((heroDetails) => (
@@ -56,10 +56,10 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
   return (
     <>
       <Carousel className='testimonial-carousel p-sm-0' slide>
-        {groupedItems?.map((each, eachInx) => (
+        {groupedItems?.map((groupItem, eachInx) => (
           <Carousel.Item key={eachInx} className='rounded-5 my-5'>
             <Stack direction='horizontal' gap={4} >
-              {each.map((e, eInx: number) => (
+              {groupItem.map((e, eInx: number) => (
                 <Card key={eInx} className='d-flex flex-row align-items-center w-100 border my-4' >
                   <div className="row g-lg-2">
                     <div className="col-lg-4 col-sm-12">
