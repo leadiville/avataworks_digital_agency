@@ -1,6 +1,6 @@
 import { Geist } from 'next/font/google'; import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
-// import Head from "next/head";
+import Head from 'next/head';
 import Script from "next/script";
 import * as FontawesomeIcons from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -26,9 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossOrigin="anonymous"></Script>
-      <header >
+      <Head >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossOrigin="anonymous"></link>
-      </header>
+      </Head>
       <body className={`${geistSans.className}`}>
         {children}
       </body>

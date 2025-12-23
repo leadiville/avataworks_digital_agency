@@ -20,7 +20,7 @@ const AboutPage = async function () {
     const { features, ourTeam, footer } = data;
 
     return (
-        <>
+        <div>
             <WelcomeAbout />
             <Features featuresData={features} title={'At Avataworks, we ensure digital brand success'} />
             <AboutUs />
@@ -28,7 +28,7 @@ const AboutPage = async function () {
             <Team teamMembers={ourTeam} />
             {/* <AboutGoals /> */}
             <Footer footer={footer} />
-        </>
+        </div>
     )
 }
 export default AboutPage    
