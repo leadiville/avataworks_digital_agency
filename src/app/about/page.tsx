@@ -14,8 +14,7 @@ const AboutPage = async function () {
         features: Ifeatures[],
         ourTeam: IOurTeam[],
         footer: Ifooter
-    }p
-
+    }
 
 
     const { features, ourTeam, footer } = data;
