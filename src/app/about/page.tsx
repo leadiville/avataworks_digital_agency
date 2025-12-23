@@ -1,4 +1,3 @@
-import React from "react"
 import Features from "../components/homePage/Features"
 import AboutUs from "../components/homePage/AboutUs"
 import Team from "../components/homePage/Team"
@@ -6,9 +5,9 @@ import Footer from "../components/Footer"
 import { WelcomeAbout } from "../components/AboutUs/WelcomeAbout"
 import { Ifeatures, Ifooter, IOurTeam } from "@/types"
 // import AboutHero from "../components/AboutUs/AboutHero"
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const AboutPage = async function () {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
     const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
     const data = await res.json() as {
         features: Ifeatures[],
