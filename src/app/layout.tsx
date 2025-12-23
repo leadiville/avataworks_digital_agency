@@ -1,6 +1,4 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Geist } from 'next/font/google'; import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 // import Head from "next/head";
 import Script from "next/script";
@@ -16,16 +14,10 @@ const chosenIcons = Object.values(FontawesomeIcons).filter(
 // Add the icons to your library form fontAwesome
 library.add(...chosenIcons);
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const geistSans = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist-sans', // Optional CSS variable name
 });
-
-export const metadata: Metadata = {
-  title: "Avataworks official website",
-  description: "digital brand success",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,7 +29,7 @@ export default function RootLayout({
       <header >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossOrigin="anonymous"></link>
       </header>
-      <body className={`${inter.variable}`}>
+      <body className={`${geistSans.className}`}>
         {children}
       </body>
     </html>
