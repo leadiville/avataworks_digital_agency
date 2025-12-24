@@ -15,10 +15,13 @@ import FeaturesM from "../../models/Features";
 import FaqM from "../../models/Faq";
 import ServicesM from "../../models/Services";
 import Reviews from "../../models/Reviews";
+import { connectDb } from "../../lib/mongodb";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export default async function Home() {
+  // Connect to database first (mongodb)
+  await connectDb();
   const features = await FeaturesM.find().lean<Partial<Ifeatures>[]>();
   const faq = await FaqM.find().lean<Partial<Ifaq>[]>();
   const services = await ServicesM.find().lean<Partial<Ifooter>[]>();

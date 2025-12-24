@@ -6,17 +6,16 @@ import { WelcomeAbout } from "../components/AboutUs/WelcomeAbout"
 import { Ifeatures, Ifooter, IOurTeam } from "@/types"
 import { connectDb } from "../../../lib/mongodb"
 import OurTeam from "@/../models/OurTeam";
-import Feature from "@/../models/Features";
 import FooterM from "@/../models/Footer";
+import FeaturesM from "@/../models/Features";
 // import AboutHero from "../components/AboutUs/AboutHero"
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const AboutPage = async function () {
     await connectDb();
     const ourTeam = await OurTeam.find().lean<Partial<IOurTeam>[]>();
-    const features = await Feature.find().lean<Partial<Ifeatures>[]>();
     const footer = await FooterM.findOne().lean<Ifooter>();
-    console.log(ourTeam, footer, features);
+    const features = await FeaturesM.find().lean<Partial<Ifeatures>[]>();
 
     return (
         <>

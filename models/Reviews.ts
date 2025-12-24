@@ -9,4 +9,4 @@ const ReviewsSchema = new Schema({
 });
 
 export default mongoose.models.Reviews ||
-  mongoose.model("Review", ReviewsSchema);
+  mongoose.model("Reviews", ReviewsSchema);
