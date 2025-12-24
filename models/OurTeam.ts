@@ -6,4 +6,4 @@ const OurTeamSchema = new Schema({
   image: String,
 });
 
-export default mongoose.model("OurTeam", OurTeamSchema);
+export default mongoose.models.OurTeam || mongoose.model("OurTeam", OurTeamSchema);

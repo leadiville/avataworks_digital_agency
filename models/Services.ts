@@ -10,4 +10,4 @@ const ServicesSchema = new Schema({
   subServices: [String],
 });
 
-export default mongoose.model("Services", ServicesSchema);
+export default mongoose.models.Services || mongoose.model("Services", ServicesSchema);

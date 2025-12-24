@@ -1,4 +1,5 @@
 import { Iservice } from '@/types';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image'
 import React from 'react'
@@ -18,15 +19,15 @@ const OurServices = ({ services }: ServicesProps) => {
                         </h5>
                     </div>
                     <div className="row gy-lg-4 justify-content-evenly">
-                        {services.splice(0, 3)?.map((service) => {
+                        {services?.map((service) => {
                             const { _id, title, imgSrc, icon, info } = service;
                             return (
                                 <div key={_id} className="col-md-4 col-lg-4 col-xl-3 wow fadeInUp">
                                     <div className="service-item">
                                         <div className="service-img">
-                                            <Image width={400} height={400} src={imgSrc} className="img-fluid rounded-top w-100" alt="" />
+                                            <Image width={400} height={400} src={imgSrc as string} className="img-fluid rounded-top w-100" alt="" />
                                             <div className="service-icon p-3">
-                                                <i className="fa fa-users fa-2x"><FontAwesomeIcon icon={icon} /></i>
+                                                <i className="fa fa-users fa-2x"><FontAwesomeIcon icon={icon as IconDefinition} /></i>
                                             </div>
                                         </div>
                                         <div className="service-content p-4">

@@ -19,4 +19,4 @@ const FooterSchema = new Schema({
   socialLinks: SocialLinkSchema,
 });
 
-export default mongoose.model("Footer", FooterSchema);
+export default mongoose.models.Footer || mongoose.model("Footer", FooterSchema);

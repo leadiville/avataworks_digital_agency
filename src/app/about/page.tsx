@@ -4,19 +4,19 @@ import Team from "../components/homePage/Team"
 import Footer from "../components/Footer"
 import { WelcomeAbout } from "../components/AboutUs/WelcomeAbout"
 import { Ifeatures, Ifooter, IOurTeam } from "@/types"
+import { connectDb } from "../../../lib/mongodb"
+import OurTeam from "@/../models/OurTeam";
+import Feature from "@/../models/Features";
+import FooterM from "@/../models/Footer";
 // import AboutHero from "../components/AboutUs/AboutHero"
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const AboutPage = async function () {
-    const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
-    const data = await res.json() as {
-        features: Ifeatures[],
-        ourTeam: IOurTeam[],
-        footer: Ifooter
-    }
-
-
-    const { features, ourTeam, footer } = data;
+    await connectDb();
+    const ourTeam = await OurTeam.find().lean<Partial<IOurTeam>[]>();
+    const features = await Feature.find().lean<Partial<Ifeatures>[]>();
+    const footer = await FooterM.findOne().lean<Ifooter>();
+    console.log(ourTeam, footer, features);
 
     return (
         <>
@@ -26,7 +26,7 @@ const AboutPage = async function () {
             {/* <Faq faqs={faq.servicePage} /> */}
             <Team teamMembers={ourTeam} />
             {/* <AboutGoals /> */}
-            <Footer footer={footer} />
+            {footer && <Footer footer={footer} />}
         </>
     )
 }

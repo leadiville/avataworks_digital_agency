@@ -9,20 +9,23 @@ import Team from "./components/homePage/Team";
 import Testimonials from "./components/homePage/Testimonials";
 import { Ifaq, Ifeatures, Ifooter, IOurTeam, Ireviews, Iservice } from "@/types";
 import { HeroCarousel } from "./components/carousels/BootstrapCarousel";
+import FooterM from "../../models/Footer";
+import OurTeam from "../../models/Services";
+import FeaturesM from "../../models/Features";
+import FaqM from "../../models/Faq";
+import ServicesM from "../../models/Services";
+import Reviews from "../../models/Reviews";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export default async function Home() {
-  const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
-  const data = await res.json() as {
-    services: Iservice[],
-    features: Ifeatures[],
-    faq: Ifaq[];
-    ourTeam: IOurTeam[];
-    reviews: Ireviews[];
-    footer: Ifooter;
-  };
-  const { services, features, faq, ourTeam, reviews, footer } = data;
+  const features = await FeaturesM.find().lean<Partial<Ifeatures>[]>();
+  const faq = await FaqM.find().lean<Partial<Ifaq>[]>();
+  const services = await ServicesM.find().lean<Partial<Ifooter>[]>();
+  const ourTeam = await OurTeam.find().lean<Partial<Ifooter>[]>();
+  const reviews = await Reviews.find().lean<Partial<Ireviews>[]>();
+  const footer = await FooterM.findOne<Partial<Ifooter>>();
+
 
   const faqHome = faq?.[0].homePage ?? [];
   return (
@@ -31,11 +34,11 @@ export default async function Home() {
       <HeroCarousel />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
       <AboutUs />
-      <OurServices services={services} />
+      <OurServices services={services.splice(0, 3)} />
       <Team teamMembers={ourTeam.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
       <Faq faq={faqHome} />
-      <Footer footer={footer} />
+      {footer && <Footer footer={footer} />}
     </>
   )
 }

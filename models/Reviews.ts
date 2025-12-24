@@ -8,4 +8,5 @@ const ReviewsSchema = new Schema({
   logo: String,
 });
 
-export default mongoose.model("Review", ReviewsSchema);
+export default mongoose.models.Reviews ||
+  mongoose.model("Review", ReviewsSchema);

@@ -1,6 +1,9 @@
 import React from "react";
 import OurServices from "../components/homePage/OurServices";
 import Faq from "../components/homePage/Faq";
+import { connectDb } from "../../../lib/mongodb";
+import Services from "../../../models/Services";
+import Faqs from "../../../models/Faq";
 import { Ifaq, Iservice } from "@/types";
 
 export type faqT = {
@@ -13,14 +16,16 @@ export type faqT = {
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const page = async () => {
-  const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
-  const data = await res.json() as {
-    services: Iservice[],
-    faq: Ifaq,
-  };
-  const { services, faq } = data;
-
-  const faqService = faq.servicesPage?.map((each) => each);
+  // const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });
+  // const data = await res.json() as {
+  //   services: Iservice[],
+  //   faq: Ifaq,
+  // };
+  // const { services, faq } = data;
+  await connectDb();
+  const services = await Services.find().lean<Partial<Iservice>[]>();
+  const faq = await Faqs.find().lean<Partial<Ifaq>[]>();
+  const faqServices = faq?.[0].servicesPage ?? [];
 
   return (
     <div>
@@ -31,7 +36,7 @@ const page = async () => {
           <OurServices services={services} />
         </div>
       </div>
-      <Faq faq={faqService} />
+      <Faq faq={faqServices} />
     </div>
   );
 };

@@ -5,4 +5,6 @@ const FeaturesSchema = new Schema({
   info: String,
   icon: String,
 });
-export default mongoose.model("Feautures", FeaturesSchema);
+const Features =
+  mongoose.models.Features || mongoose.model("Feautures", FeaturesSchema);
+export default Features;

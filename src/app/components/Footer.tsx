@@ -1,7 +1,7 @@
 import { Ifooter } from '@/types'
 import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCommentDots, faPhoneAlt, IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 
@@ -72,7 +72,7 @@ const Footer = async ({ footer }: footerProps) => {
                                                         <div className="col-lg-6 col-xl-4" key={contactInx}>
                                                             <div className="d-flex">
                                                                 <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon} width={20} height={20} /></i>
+                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon as IconDefinition} width={20} height={20} /></i>
                                                                 </div>
                                                                 <div>
                                                                     <h4 className="text-white">{title}</h4>

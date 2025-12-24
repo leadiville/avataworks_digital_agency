@@ -1,4 +1,3 @@
-
 import mongoose, { Schema } from "mongoose";
 
 const FaqSchema = new Schema({
@@ -12,4 +11,4 @@ const FaqsSchema = new Schema({
   servicePage: [FaqSchema],
 });
 
-export default mongoose.model("Faq", FaqsSchema);
+export default mongoose.models.Faq || mongoose.model("Faq", FaqsSchema);

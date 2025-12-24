@@ -1,4 +1,5 @@
 import { Ifeatures } from '@/types';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 
@@ -25,7 +26,7 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
                                 <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" key={ftDataInx}>
                                     <div className="feature-item p-4 pt-0" style={{ maxHeight: '320px' }}>
                                         <div className="feature-icon p-4 mb-4">
-                                            <i><FontAwesomeIcon icon={icon} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
+                                            <i><FontAwesomeIcon icon={icon as IconDefinition} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
                                         </div>
                                         <h4 className="mb-4" style={{ fontWeight: 600 }}>{title}</h4>
                                         <p className="mb-0 text-black-5">{info}
