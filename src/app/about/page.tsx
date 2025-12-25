@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Features from "../components/homePage/Features"
 import AboutUs from "../components/homePage/AboutUs"
 import Team from "../components/homePage/Team"
@@ -9,8 +11,7 @@ import OurTeam from "@/../models/OurTeam";
 import FooterM from "@/../models/Footer";
 import FeaturesM from "@/../models/Features";
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-export const dynamic = "force-dynamic";
+// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const AboutPage = async function () {
     await connectDb();

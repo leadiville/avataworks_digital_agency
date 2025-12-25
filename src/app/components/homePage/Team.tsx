@@ -1,6 +1,5 @@
 import { IOurTeam } from '@/types'
 import Image from 'next/image'
-import React from 'react'
 
 interface TeamProps {
     teamMembers: IOurTeam[];

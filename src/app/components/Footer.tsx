@@ -6,7 +6,7 @@ import Image from 'next/image'
 import React from 'react'
 
 interface footerProps {
-    footer: Ifooter
+    footer?: Ifooter
 }
 
 const Footer = async ({ footer }: footerProps) => {
@@ -66,7 +66,7 @@ const Footer = async ({ footer }: footerProps) => {
                                     <div className="col-12">
                                         <div className="row g-4">
                                             {
-                                                footer.footerAddress?.map((contact, contactInx: number) => {
+                                                footer?.footerAddress?.map((contact, contactInx: number) => {
                                                     const { title, subtitle, icon } = contact;
                                                     return (
                                                         <div className="col-lg-6 col-xl-4" key={contactInx}>

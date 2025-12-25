@@ -15,7 +15,7 @@ export const GET = async () => {
       await Promise.all([
         Faq.find(),
         Features.find(),
-        Footer.find(),
+        Footer.findOne(),
         OurTeam.find(),
         Reviews.find(),
         Services.find(),
