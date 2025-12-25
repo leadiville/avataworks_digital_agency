@@ -1,4 +1,5 @@
-import React from "react";
+export const dynamic = "force-dynamic";
+
 import OurServices from "../components/homePage/OurServices";
 import Faq from "../components/homePage/Faq";
 import { connectDb } from "../../../lib/mongodb";
@@ -13,7 +14,7 @@ export type faqT = {
   showAnswer: boolean;
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const page = async () => {
   // const res = await fetch(`${baseUrl}/api/content`, { cache: "no-store" });

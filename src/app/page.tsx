@@ -1,4 +1,4 @@
-
+export const dynamic = "force-dynamic";
 import Navbar from "./components/Navbar";
 import Features from "./components/homePage/Features";
 import AboutUs from "./components/homePage/AboutUs";
@@ -17,7 +17,7 @@ import ServicesM from "../../models/Services";
 import Reviews from "../../models/Reviews";
 import { connectDb } from "../../lib/mongodb";
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export default async function Home() {
   // Connect to database first (mongodb)
