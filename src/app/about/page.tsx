@@ -8,8 +8,9 @@ import { connectDb } from "../../../lib/mongodb"
 import OurTeam from "@/../models/OurTeam";
 import FooterM from "@/../models/Footer";
 import FeaturesM from "@/../models/Features";
-// import AboutHero from "../components/AboutUs/AboutHero"
+
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+export const dynamic = "force-dynamic";
 
 const AboutPage = async function () {
     await connectDb();
