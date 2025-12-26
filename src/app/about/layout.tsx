@@ -1,5 +1,3 @@
-
-
 import { PropsWithChildren } from 'react';
 import Navbar from '../components/Navbar';
 
