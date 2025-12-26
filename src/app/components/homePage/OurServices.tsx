@@ -22,7 +22,7 @@ const OurServices = ({ services }: ServicesProps) => {
                         {services?.map((service) => {
                             const { _id, title, imgSrc, icon, info } = service;
                             return (
-                                <div key={_id} className="col-md-4 col-lg-4 col-xl-3 wow fadeInUp">
+                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp">
                                     <div className="service-item">
                                         <div className="service-img">
                                             <Image width={400} height={400} src={imgSrc as string} className="img-fluid rounded-top w-100" alt="" />
@@ -42,7 +42,7 @@ const OurServices = ({ services }: ServicesProps) => {
                             )
                         })}
                         <div className="col-12 text-center wow fadeInUp">
-                            <a className="btn btn-primary rounded-pill py-3 px-5" href="#">Explore More Services</a>
+                            {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#">Explore More Services</a>}
                         </div>
                     </div>
                 </div>

@@ -24,8 +24,8 @@ export default async function Home() {
   await connectDb();
   const features = await FeaturesM.find().lean<Partial<Ifeatures>[]>();
   const faq = await FaqM.find().lean<Partial<Ifaq>[]>();
-  const services = await ServicesM.find().lean<Partial<Ifooter>[]>();
-  const ourTeam = await OurTeam.find().lean<Partial<Ifooter>[]>();
+  const services = await ServicesM.find().lean<Partial<Iservice>[]>();
+  const ourTeam = await OurTeam.find().lean<Partial<IOurTeam>[]>();
   const reviews = await Reviews.find().lean<Partial<Ireviews>[]>();
   const footer = await FooterM.findOne<Partial<Ifooter>>();
 
