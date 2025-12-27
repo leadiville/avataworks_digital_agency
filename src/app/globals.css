@@ -347,13 +347,13 @@ h2 {
 
 @media (max-width: 991px) {
   .header-carousel .header-carousel-item {
-    height: 1300px;
+    height: 950px;
   }
 }
 
 @media (max-width: 767px) {
   .header-carousel .header-carousel-item {
-    height: 950px;
+    height: 800px;
   }
 }
 /*** Carousel Hero Header End ***/

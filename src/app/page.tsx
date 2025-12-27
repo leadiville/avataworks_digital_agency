@@ -1,4 +1,5 @@
 export const dynamic = "force-dynamic";
+
 import Navbar from "../components/Navbar";
 import Features from "../components/homePage/Features";
 import AboutUs from "../components/homePage/AboutUs";
@@ -30,9 +31,7 @@ export default async function Home() {
   const reviews = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>()).map(review => ({ ...review, _id: review?._id?.toString() }));
   const footer = cleanMongoShape(await FooterM.findOne<Partial<Ifooter>>()) || null;
 
-
   const faqHome = faq?.[0].homePage ?? [];
-  console.log(ourTeam);
 
   return (
     <>
