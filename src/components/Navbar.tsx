@@ -20,25 +20,21 @@ const Navbar = () => {
                         </button>
                         <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
                             <div className="navbar-nav mx-0 mx-lg-auto">
-                                <div className="nav-item dropdown" >
-                                    {/* <Link href="#" className="nav-link" data-bs-toggle="dropdown">
-                                        <span className="dropdown-toggle">Company</span>
-                                    </Link> */}
+                                {/* <div className="nav-item dropdown" >
                                     <div className="dropdown-menu">
                                         <Link href="feature" className="dropdown-item" id='features-section'>Our Features</Link>
                                         <Link href="team" className="dropdown-item" id='dropdown'>Our team</Link>
                                         <Link href="testimonial" className="dropdown-item" id='testimonial'>Testimonial</Link>
                                         <Link href="FAQ" className="dropdown-item" id='faq'>FAQs</Link>
                                     </div>
-                                </div>
-                                {/* <Link href="index" className="nav-item nav-link active">Home</Link> */}
+                                </div> */}
                                 <Link href="/our-services" className="nav-item nav-link text-primary">Services</Link>
                                 <Link href="about" className="nav-item nav-link text-primary">About</Link>
                                 {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}
                                 <Link href="contact" className="nav-item nav-link text-primary">Contact</Link>
                                 <div className="nav-btn px-3">
                                     {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><FontAwesomeIcon icon={faSearch} width={20} height={20} /></button> */}
-                                    <Link href="#" className="btn btn-danger rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</Link>
+                                    <Link href="#" className="btn btn-danger rounded-pill py-2 px-4 flex-shrink-0"> Get a Quote</Link>
                                 </div>
                             </div>
                         </div>

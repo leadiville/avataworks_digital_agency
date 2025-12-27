@@ -28,8 +28,8 @@ const HeroCarousel = () => {
                     <div className="d-md-flex justify-content-center justify-content-md-start flex-shrink-0 text-capitalize">
                       {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
-                      <Link href="/our-services" ><PrimaryButton text='Speak to an Avata' icon={faPhoneAlt} className='btn-primary' />
-                        <PrimaryButton text='Get a quote' icon={faPenAlt} className='btn-danger' /></Link>
+                      <Link href="/our-services" ><PrimaryButton text='Speak to an Avata' icon={faPhoneAlt} className='btn-primary' /></Link>
+                      <Link href={"/about"}><PrimaryButton text='Get a quote' icon={faPenAlt} className='btn-danger' /></Link>
                     </div>
                   </div>
                 </div>
