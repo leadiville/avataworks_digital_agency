@@ -1,10 +1,11 @@
 export const dynamic = "force-dynamic";
-import OurServices from "../components/homePage/OurServices";
-import Faq from "../components/homePage/Faq";
-import { connectDb } from "../../../lib/mongodb";
-import Services from "../../../models/Services";
-import Faqs from "../../../models/Faq";
+import OurServices from "../../components/homePage/OurServices";
+import Faq from "../../components/homePage/Faq";
+import Services from "../../models/Services";
+import Faqs from "../../models/Faq";
 import { Ifaq, Iservice } from "@/types";
+import { connectDb } from "@/lib/mongodb";
+import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 
 export type faqT = {
   answer: string;
@@ -17,8 +18,8 @@ export type faqT = {
 
 const page = async () => {
   await connectDb();
-  const services = await Services.find().lean<Partial<Iservice>[]>();
-  const faq = await Faqs.find().lean<Partial<Ifaq>[]>();
+  const services = cleanMongoShape(await Services.find().lean<Partial<Iservice>[]>());
+  const faq = cleanMongoShape(await Faqs.find().lean<Partial<Ifaq>[]>());
   const faqServices = faq?.[0].servicesPage ?? [];
 
   return (

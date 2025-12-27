@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import allItems from '../../../../public/heroData.json';
+import allItems from '../../../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons';

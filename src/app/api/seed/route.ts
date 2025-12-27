@@ -1,5 +1,5 @@
+import seedDb from "@/lib/seed";
 import { NextResponse } from "next/server";
-import seedDb from "../../../../lib/seed";
 
 export async function POST() {
   try {

@@ -1,9 +1,9 @@
 import { PropsWithChildren } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { connectDb } from '../../../lib/mongodb';
-import FooterM from '../../../models/Footer';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import FooterM from '../../models/Footer';
 import { Ifooter } from '@/types';
+import { connectDb } from '@/lib/mongodb';
 
 const servicesLayout = async ({ children }: PropsWithChildren) => {
     await connectDb();

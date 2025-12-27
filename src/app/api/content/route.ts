@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import Faq from "../../../../models/Faq";
-import Features from "../../../../models/Features";
-import Footer from "../../../../models/Footer";
-import OurTeam from "../../../../models/OurTeam";
-import Reviews from "../../../../models/Reviews";
-import Services from "../../../../models/Services";
-import WhyChooseUs from "../../../../models/WhyChooseUs";
-import { connectDb } from "../../../../lib/mongodb";
+import Faq from "../../../models/Faq";
+import Features from "../../../models/Features";
+import Footer from "../../../models/Footer";
+import OurTeam from "../../../models/OurTeam";
+import Reviews from "../../../models/Reviews";
+import Services from "../../../models/Services";
+import WhyChooseUs from "../../../models/WhyChooseUs";
+import { connectDb } from "@/lib/mongodb";
 
 export const GET = async () => {
   try {
