@@ -10,7 +10,7 @@ import Testimonials from "../components/homePage/Testimonials";
 import { Ifaq, Ifeatures, Ifooter, IOurTeam, Ireviews, Iservice } from "@/types";
 import { HeroCarousel } from "../components/carousels/BootstrapCarousel";
 import FooterM from "../models/Footer";
-import OurTeam from "../models/Services";
+import OurTeam from "../models/OurTeam";
 import FeaturesM from "../models/Features";
 import FaqM from "../models/Faq";
 import ServicesM from "../models/Services";
@@ -32,14 +32,16 @@ export default async function Home() {
 
 
   const faqHome = faq?.[0].homePage ?? [];
+  console.log(ourTeam);
+
   return (
     <>
       <Navbar />
       <HeroCarousel />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
       <AboutUs />
-      <OurServices services={services.splice(0, 3)} />
-      <Team teamMembers={ourTeam.splice(0, 4)} />
+      <OurServices services={services?.splice(0, 3)} />
+      <Team teamMembers={ourTeam?.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
       <Faq faq={faqHome} />
       {footer && <Footer footer={footer} />}
