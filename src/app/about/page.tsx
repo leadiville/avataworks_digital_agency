@@ -17,7 +17,7 @@ import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 const AboutPage = async function () {
     await connectDb();
     const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
-    const footer = cleanMongoShape(await FooterM.findOne().lean<Ifooter>());
+    const footer = cleanMongoShape(await FooterM.findOne().lean<Ifooter>()) || null;
     const features = cleanMongoShape(await FeaturesM.find().lean<Partial<Ifeatures>[]>());
 
     return (
