@@ -5,8 +5,10 @@ import React from 'react'
 import allItems from '../../../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faPenAlt, faPhone, faPhoneAlt, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Ireviews } from '@/types';
+import PrimaryButton from '../PrimaryButton';
+import Link from 'next/link';
 
 const HeroCarousel = () => {
   const { heroSection } = allItems.items;
@@ -23,13 +25,15 @@ const HeroCarousel = () => {
                     <h2 className="text-primary">{heroDetails.title}</h2>
                     <p className="mb-5 fs-lg-5 text-black">{heroDetails.body}
                     </p>
-                    <div className="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4 text-capitalize">
-                      <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
-                      <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a>
+                    <div className="d-md-flex justify-content-center justify-content-md-start flex-shrink-0 text-capitalize">
+                      {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
+                      <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
+                      <Link href="/our-services" ><PrimaryButton text='Speak to an Avata' icon={faPhoneAlt} className='btn-primary' />
+                        <PrimaryButton text='Get a quote' icon={faPenAlt} className='btn-danger' /></Link>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-5 p-0 mt-0 mb-0 animated fadeInRight order-first order-sm-1">
+                <div className="col-lg-5 p-0 mt-0 mb-0 animated fadeInRight order-first order-lg-1">
                   <div className="calrousel-img p-0" style={{ objectFit: 'cover' }}>
                     {/* <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' /> */}
                     <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
@@ -62,12 +66,12 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
               {groupItem.map((e, eInx: number) => (
                 <Card key={eInx} className='d-flex flex-row align-items-center w-100 border my-4' >
                   <div className="row g-lg-2">
-                    <div className="col-lg-4 col-sm-12">
+                    <div className="col-lg-4">
                       <Card.Img
                         src={`${e.logo}`} width={200} height={200} className='logo-image bg-light w-100 h-100' />
                     </div>
-                    <div className="col-lg-8 col-sm-12 d-flex align-items-center" >
-                      <Card.Body className='d-flex flex-column text-black'>
+                    <div className="col-lg-8 col-sm-12 d-flex" >
+                      <Card.Body className='d-flex flex-column text-black align-items-sm-center'>
                         <Card.Title>{e.companyName}</Card.Title>
                         <Card.Text>{e.companyPosition}</Card.Text>
                         <Card.Text>{e.review}</Card.Text>

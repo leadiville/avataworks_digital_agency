@@ -3,6 +3,8 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image'
 import React from 'react'
+import PrimaryButton from '../PrimaryButton';
+import Link from 'next/link';
 
 interface ServicesProps {
     services: Iservice[];
@@ -11,7 +13,7 @@ const OurServices = ({ services }: ServicesProps) => {
     return (
         <div>
             <div className="container-fluid service py-5">
-                <div className="container py-5">
+                <div className="container py-5 p-4">
                     <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
                         <h4 className="">Our Services</h4>
                         <h2 className="mb-4 text-primary">Full digital services. <br /> One team. <br /> Infinite possibilities.</h2>
@@ -41,8 +43,9 @@ const OurServices = ({ services }: ServicesProps) => {
                                 </div>
                             )
                         })}
-                        <div className="col-12 text-center wow fadeInUp">
-                            {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#">Explore More Services</a>}
+                        <div className="col-12 text-center wow fadeInUp mt-4">
+                            {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
+                            <Link href={"/our-services"} ><PrimaryButton text='Explore More Services' className='py-2 btn-primary'/></Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import PrimaryButton from '../PrimaryButton'
+import Link from 'next/link'
 
 const AboutUs = () => {
     return (
@@ -18,7 +20,7 @@ const AboutUs = () => {
                                     {/* <p className="text-dark"><i className="fa fa-check text-primary me-3"></i>We can save your money.</p>
                                     <p className="text-dark"><i className="fa fa-check text-primary me-3"></i>Speed up production</p>
                                     <p className="text-dark mb-4"><i className="fa fa-check text-primary me-3"></i>Our Our plans are flexible</p> */}
-                                    <a className="btn btn-danger rounded-pill mt-5 py-3 px-3 text-capitalize" href="#">meet the avatas</a>
+                                    <Link href={'/about'}><PrimaryButton className='btn-danger py-2' text='meet our avatas' /></Link>
                                 </div>
                             </div>
                         </div>
@@ -33,10 +35,19 @@ const AboutUs = () => {
                                     <div className="col-12">
                                         <div className="counter-item bg-light rounded p-3 h-100">
                                             <div className="counter-counting">
-                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">50</span>
+                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">200</span>
+                                                <span className="h1 fw-bold text-primary">%</span>
+                                            </div>
+                                            <h4 className="mb-0 text-dark">Revenue Increase</h4>
+                                        </div>
+                                    </div>
+                                    <div className="col-12">
+                                        <div className="counter-item bg-light rounded p-3 h-100">
+                                            <div className="counter-counting">
+                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">20</span>
                                                 <span className="h1 fw-bold text-primary">+</span>
                                             </div>
-                                            <h4 className="mb-0 text-dark">Businesses Managed</h4>
+                                            <h4 className="mb-0 text-dark">Brands Managed</h4>
                                         </div>
                                     </div>
                                     <div className="col-12">
@@ -51,19 +62,10 @@ const AboutUs = () => {
                                     <div className="col-12">
                                         <div className="counter-item bg-light rounded p-3 h-100">
                                             <div className="counter-counting">
-                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">5</span>
+                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">4</span>
                                                 <span className="h1 fw-bold text-primary">+</span>
                                             </div>
                                             <h4 className="mb-0 text-dark">Success Years</h4>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="counter-item bg-light rounded p-3 h-100">
-                                            <div className="counter-counting">
-                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">20</span>
-                                                <span className="h1 fw-bold text-primary">+</span>
-                                            </div>
-                                            <h4 className="mb-0 text-dark">Team Members</h4>
                                         </div>
                                     </div>
                                 </div>

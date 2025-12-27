@@ -1,5 +1,7 @@
 import { IOurTeam } from '@/types'
 import Image from 'next/image'
+import PrimaryButton from '../PrimaryButton';
+import Link from 'next/link';
 
 interface TeamProps {
     teamMembers: IOurTeam[];
@@ -18,7 +20,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                     {teamMembers?.map((member, memberId) => {
                         const { fullName, skillSet, image } = member;
                         return (
-                            <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" key={memberId}>
+                            <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp mb-4" key={memberId}>
                                 <div className="team-item">
                                     <div className="team-img">
                                         <Image src={`/team/${image}`} className="img-fluid rounded-top w-100" alt="" width={500} height={500} />
@@ -37,7 +39,10 @@ const Team = ({ teamMembers }: TeamProps) => {
                             </div>
                         )
                     })}
+                    <div className="w-100 d-flex justify-content-center">
 
+                        <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-danger w-auto py-2' /></Link>
+                    </div>
                 </div>
             </div>
         </div>
