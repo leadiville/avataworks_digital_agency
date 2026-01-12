@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <Link href="/" className="navbar-brand p-0">
-                            <Image width={100} height={100} src="/logo.png" alt="Logo" className='w-100 h-100' />
+                            <Image width={250} height={70} src="/logo.png" alt="Logo" />
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-target="#navbarToggleMenu" data-bs-toggle="collapse">
                             <span className="fa fa-bars"><FontAwesomeIcon icon={faBars} style={{ color: 'white' }} /></span>
