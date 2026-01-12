@@ -13,16 +13,16 @@ import Link from 'next/link';
 const HeroCarousel = () => {
   const { heroSection } = allItems.items;
   return (
-    <Carousel className='header-carousel'>
+    <Carousel className='header-carousel container-fluid'>
       {heroSection.map((heroDetails) => (
         <Carousel.Item key={heroDetails.id} className='header-carousel-item'>
           <Carousel.Caption>
-            <div className="container">
+            <div className="container-fluid">
               <div className="row g-4 align-items-center">
                 <div className="col-lg-7 animated fadeInLeft">
                   <div className="text-sm-center text-md-start text-primary">
                     {/* <h4 className="text-uppercase text-black fw-bold mb-4">welcome to Avataworks</h4> */}
-                    <h2 className="text-primary">{heroDetails.title}</h2>
+                    <h2 className="text-primary text-wrap">{heroDetails.title}</h2>
                     <p className="mb-5 fs-lg-5 text-black">{heroDetails.body}
                     </p>
                     <div className="d-md-flex justify-content-center justify-content-md-start flex-shrink-0 text-capitalize">
