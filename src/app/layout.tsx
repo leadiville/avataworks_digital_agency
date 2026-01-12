@@ -8,7 +8,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 // minimal version 
 const chosenIcons = Object.values(FontawesomeIcons).filter(
-  (icon): icon is FontawesomeIcons.IconDefinition => typeof icon === "object" && icon !== null && "iconName" in icon
+  (icon): icon is FontawesomeIcons.IconDefinition => typeof icon === "object" && icon !== null && "iconName" in icon && typeof icon.iconName === "string" && icon.iconName.trim().length > 0
 );
 // Add the icons to your library form fontAwesome
 library.add(...chosenIcons);
