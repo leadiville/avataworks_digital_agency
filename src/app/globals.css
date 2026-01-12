@@ -208,20 +208,15 @@ h2 {
   align-items: center;
   padding: 15px 50px;
   font-weight: 500 !important;
-  transition: transform 0.3s ease-in-out;
-}
-.navbar .navbar-nav .nav-item:hover {
-  color: red !important;
-  transform: scale(1.2);
 }
 
 .navbar-light .navbar-nav .nav-item:hover,
 .navbar-light .navbar-nav .nav-item.active,
 .navbar-light .navbar-nav .nav-item:hover .nav-link,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: var(--bs-primary);
-  /* transition: 0.9s ease-in-out;
-  transform: scale(1.1); */
+  color: red !important;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 991px) {
@@ -745,13 +740,12 @@ button.accordion-button:active .collapse {
   width: 70px;
   height: 30px;
   position: absolute;
-  top: 0px;
-  left: 0;
-  background: #0575bb;
+  top: 0;
+  left: -120;
+  background: var(--primary);
   padding: 25px;
   border-radius: 30px;
   transition: 0.5s;
-  margin-left: 50px;
 }
 
 .testimonial-carousel a.carousel-control-prev:hover {
@@ -764,12 +758,11 @@ button.accordion-button:active .collapse {
   height: 30px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -120;
   background: var(--primary);
   padding: 25px;
   border-radius: 30px;
   transition: 0.5s;
-  margin-right: 50px;
 }
 
 .testimonial-carousel a.carousel-control-next:hover {

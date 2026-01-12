@@ -56,7 +56,7 @@ export interface IfaqHome {
 export interface Ifaq {
   _id?: string;
   homePage?: IfaqHome[];
-  servicesPage?: IfaqHome[];
+  servicePage?: IfaqHome[];
 }
 // Review and testimonies
 export interface Ireviews {

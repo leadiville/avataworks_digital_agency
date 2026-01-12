@@ -20,7 +20,8 @@ const page = async () => {
   await connectDb();
   const services = cleanMongoShape(await Services.find().lean<Partial<Iservice>[]>());
   const faq = cleanMongoShape(await Faqs.find().lean<Partial<Ifaq>[]>());
-  const faqServices = faq?.[0].servicesPage ?? [];
+  const faqServices = faq?.[0].servicePage ?? [];
+
 
   return (
     <div>

@@ -6,7 +6,6 @@ import * as FontawesomeIcons from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 
-
 // minimal version 
 const chosenIcons = Object.values(FontawesomeIcons).filter(
   (icon): icon is FontawesomeIcons.IconDefinition => typeof icon === "object" && icon !== null && "iconName" in icon

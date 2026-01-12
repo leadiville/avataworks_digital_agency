@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import NavMenus from './NavMenus'
 // import  styles  from '@/app/css/Navbar.module.css'
 
 const Navbar = () => {
@@ -18,18 +19,7 @@ const Navbar = () => {
                         <button className="navbar-toggler" type="button" data-bs-target="#navbarToggleMenu" data-bs-toggle="collapse">
                             <span className="fa fa-bars"><FontAwesomeIcon icon={faBars} style={{ color: 'white' }} /></span>
                         </button>
-                        <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
-                            <div className="navbar-nav mx-0 mx-lg-auto">
-                                <Link href="/our-services" className="nav-item nav-link text-primary">Services</Link>
-                                <Link href="about" className="nav-item nav-link text-primary">About</Link>
-                                {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}
-                                <Link href="contact" className="nav-item nav-link text-primary">Contact</Link>
-                                <div className="nav-item">
-                                    {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><FontAwesomeIcon icon={faSearch} width={20} height={20} /></button> */}
-                                    <Link href="#" className="btn btn-danger rounded-pill py-2 px-4 flex-shrink-0"> Get a Quote</Link>
-                                </div>
-                            </div>
-                        </div>
+                        <NavMenus />
                         <div className="d-none d-xl-flex flex-shrink-0 ps-4">
                             <Link href="#" className="btn btn-light btn-lg-square rounded-circle position-relative wow tada " >
                                 <span>

@@ -17,7 +17,7 @@ const Faq = ({ faq }: FaqProps) => {
                             <div className="h-100">
                                 <div className="mb-5">
                                     <h4>FAQ&apos;s answered by our AVATAs</h4>
-                                    <h2 className="text-primary">Common Frequently Asked Questions</h2>
+                                    <h2 className="text-primary">Frequently Asked Questions</h2>
                                 </div>
                                 <>
                                     <AccordionA faq={faq} />
