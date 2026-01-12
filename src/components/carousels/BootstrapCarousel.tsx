@@ -54,44 +54,36 @@ interface ReviewsProps {
 const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
   if (typeof window === "undefined") return null;
   const groupedItems = [];
-  for (let i = 0; i < testimonys.length; i += 2) {
-    groupedItems.push(window.innerWidth >= 967 ? testimonys.slice(i, i + 2) : testimonys.slice(i, i + 1));
-  }
+  // function for making two contents of the array display at once
+  // for (let i = 0; i < testimonys.length; i += 2) {
+  //   groupedItems.push(window.innerWidth >= 967 ? testimonys.slice(i, i + 2) : testimonys.slice(i, i + 1));
+  // }
   return (
     <>
       <Carousel className='testimonial-carousel p-sm-0' slide>
-        {groupedItems?.map((groupItem, eachInx) => (
-          <Carousel.Item key={eachInx} className='rounded-5 my-5'>
+        {testimonys?.map((e, eachInx) => (
+          <Carousel.Item key={eachInx} className='rounded my-5'>
             <Stack direction='horizontal' gap={4} >
-              {groupItem.map((e, eInx: number) => (
-                <Card key={eInx} className='d-flex flex-row align-items-center w-100 border my-4' >
-                  <div className="row g-lg-2">
-                    <div className="col-lg-4">
-                      <Card.Img
-                        src={`${e.logo}`} width={200} height={200} className='logo-image bg-light w-100 h-100' />
-                    </div>
-                    <div className="col-lg-8 col-sm-12 d-flex" >
-                      <Card.Body className='d-flex flex-column text-black align-items-sm-center'>
-                        <Card.Title>{e.companyName}</Card.Title>
-                        <Card.Text>{e.companyPosition}</Card.Text>
-                        <Card.Text>{e.review}</Card.Text>
-                        <br />
-                        <span className='d-flex flex-row'>
-                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                          <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
-                        </span>
-                      </Card.Body>
-                    </div>
-                  </div>
-                </Card>
-              ))}
+              <Card className='flex flex-row px-5 mx-5 justify-content-between align-items-center w-100 border my-4'>
+                <Card.Img
+                  src={`${e.logo}`} width={100} height={100} className='logo-image bg-light' />
+                <Card.Body className='d-flex flex-column text-black align-items-lg-start align-items-sm-center'>
+                  <Card.Title>{e.companyName}</Card.Title>
+                  <Card.Text>{e.companyPosition}</Card.Text>
+                  <Card.Text>{e.review}</Card.Text>
+                  <br />
+                  <span className='d-flex flex-row'>
+                    <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                    <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                    <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                    <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                    <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
+                  </span>
+                </Card.Body>
+              </Card>
             </Stack>
           </Carousel.Item>
-        )
-        )}
+        ))}
       </Carousel >
     </>
   )

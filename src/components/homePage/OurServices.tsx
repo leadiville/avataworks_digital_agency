@@ -15,7 +15,6 @@ const OurServices = ({ services }: ServicesProps) => {
             <div className="container-fluid service py-5">
                 <div className="container py-5 p-4">
                     <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
-                        <h4 className="">Our Services</h4>
                         <h2 className="mb-4 text-primary">Full digital services. <br /> One team. <br /> Infinite possibilities.</h2>
                         <h5 className="mb-0 text-black-50">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand)
                         </h5>
@@ -43,9 +42,9 @@ const OurServices = ({ services }: ServicesProps) => {
                                 </div>
                             )
                         })}
-                        <div className="col-12 text-center wow fadeInUp mt-4">
+                        <div className="col-12 text-center wow fadeInUp mt-5 pt-4">
                             {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
-                            <Link href={"/our-services"} ><PrimaryButton text='Explore More Services' className='py-2 btn-primary'/></Link>
+                            <Link href={"/our-services"} ><PrimaryButton text='Explore More Services' className='py-3 btn-primary'/></Link>
                         </div>
                     </div>
                 </div>
