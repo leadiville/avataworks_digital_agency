@@ -10,7 +10,7 @@ const AboutUs = () => {
                 <div className="container pb-5">
                     <div className="row g-5">
                         <div className="col-xl-6 wow fadeInLeft " >
-                            <div className="bg-primary rounded p-5 h-100">
+                            <div className="bg-primary rounded p-lg-5 pt-4 mt-lg-4 p-3 h-100">
                                 <div>
                                     <h2 className="mb-4 text-capitalize text-white">Your All-in-One Digital Team—Powered by AVATAs</h2>
                                     <p className='text-black-100'>From the comfort of your home or office, you can access a full team of remote digital experts—your personal AVATAs (Advanced Virtual Assistants in Technology and Advertising)—dedicated to helping you scale with ease.
@@ -23,7 +23,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="col-xl-6 wow fadeInRight">
-                            <div className="bg-white rounded p-5 p-sm-0 h-100 mt-4">
+                            <div className="bg-white rounded p-lg-5 p-sm-0 h-100 mt-4">
                                 <div className="row g-4 justify-content-center w-100 p-4">
                                     <div className="col-12">
                                         <div className="counter-item bg-light rounded p-3 h-100">

@@ -61,13 +61,13 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
   return (
     <>
       <Carousel className='testimonial-carousel p-sm-0' slide>
-        {testimonys?.map((e, eachInx) => (
+        {testimonys?.map((e, eachInx) => (  
           <Carousel.Item key={eachInx} className='rounded my-5'>
             <Stack direction='horizontal' gap={4} >
-              <Card className='flex flex-row px-5 mx-5 justify-content-between align-items-center w-100 border my-4'>
+              <Card className='flex flex-lg-row  px-lg-5 mx-lg-5 justify-content-between align-items-center w-100 border my-4'>
                 <Card.Img
                   src={`${e.logo}`} width={100} height={100} className='logo-image bg-light' />
-                <Card.Body className='d-flex flex-column text-black align-items-lg-start align-items-sm-center'>
+                <Card.Body className='d-flex flex-column text-black align-items-lg-start align-items-center'>
                   <Card.Title>{e.companyName}</Card.Title>
                   <Card.Text>{e.companyPosition}</Card.Text>
                   <Card.Text>{e.review}</Card.Text>

@@ -10,7 +10,7 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
     return (
         <div>
             {/* Feature Start  */}
-            <div className="container-fluid feature bg-light py-5">
+            <div className="container-fluid feature bg-light pt-5">
                 <div className="container py-5">
                     <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: '800px' }}>
                         <h2 className="text-primary">{title}</h2>
