@@ -27,7 +27,7 @@ const page = async () => {
     <div>
       <div className="container-fluid p-5 services-hero" >
       </div>
-      <div className="container-fluid px-5 py-6">
+      <div className="container-fluid">
         <div className="row g-1">
           <OurServices services={services} />
         </div>

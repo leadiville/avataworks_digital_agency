@@ -586,6 +586,14 @@ h2 {
   padding: 25rem !important;
 }
 
+/* mobile view */
+@media (max-width: 768px) {
+  .services-hero 
+  {
+    background-position: right;
+    padding: 9rem !important; 
+  }
+}
 /*** Service End ***/
 
 div.accordion-item {
