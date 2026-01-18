@@ -1,7 +1,6 @@
 "use client";
 
 import Image from 'next/image'
-import React from 'react'
 import allItems from '../../../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,19 +16,21 @@ const HeroCarousel = () => {
       {heroSection.map((heroDetails) => (
         <Carousel.Item key={heroDetails.id} className='header-carousel-item'>
           <Carousel.Caption>
-            <div className="container-fluid">
-              <div className="row g-4 align-items-center">
+            <div className="">
+              <div className="row g-4 align-items-center justify-content-center">
                 <div className="col-lg-7 animated fadeInLeft">
-                  <div className="text-sm-center text-md-start text-primary">
+                  <div className="text-sm-center text-md-start text-primary align-items-center justify-content-center">
                     {/* <h4 className="text-uppercase text-black fw-bold mb-4">welcome to Avataworks</h4> */}
                     <h2 className="text-primary text-wrap">{heroDetails.title}</h2>
                     <p className="mb-5 fs-lg-5 text-black">{heroDetails.body}
                     </p>
-                    <div className="d-md-flex justify-content-center justify-content-md-start flex-shrink-0 text-capitalize">
+                    <div className="text-capitalize hero-cta">
                       {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
-                      <Link href="/our-services" ><PrimaryButton text='Speak to an Avata' icon={faPhoneAlt} className='btn-primary' /></Link>
-                      <Link href={"/about"}><PrimaryButton text='Get a quote' icon={faPenAlt} className='btn-danger' /></Link>
+                      <div className='d-lg-flex gap-md-3'>
+                        <Link href="/our-services" className='' ><PrimaryButton text='Speak to an Avata' icon={faPhone} className='btn-primary d-flex align-items-center p-3 justify-content-center w-100' /></Link>
+                        <Link href={"/about"}><PrimaryButton text='Get a quote' icon={faPenAlt} className='btn-danger p-3 d-flex align-items-center justify-content-center w-100' /></Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -48,7 +49,7 @@ const HeroCarousel = () => {
   )
 }
 interface ReviewsProps {
-  testimonys: Ireviews[]
+  testimonys: Ireviews[];
 }
 
 const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
@@ -61,7 +62,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
   return (
     <>
       <Carousel className='testimonial-carousel p-sm-0' slide>
-        {testimonys?.map((e, eachInx) => (  
+        {testimonys?.map((e, eachInx) => (
           <Carousel.Item key={eachInx} className='rounded my-5'>
             <Stack direction='horizontal' gap={4} >
               <Card className='flex flex-lg-row  px-lg-5 mx-lg-5 justify-content-between align-items-center w-100 border my-4'>

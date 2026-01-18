@@ -2,23 +2,22 @@ import { Iservice } from '@/types';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image'
-import React from 'react'
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
 
 interface ServicesProps {
     services: Iservice[];
 }
-const OurServices = ({ services }: ServicesProps) => {
+const CoreServices = ({ services }: ServicesProps) => {
     return (
         <div>
             <div className="container-fluid service py-5">
                 <div className="container py-5 p-lg-4">
-                    <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
-                        <h2 className="mb-4 text-primary">Full digital services. <br /> One team. <br /> Infinite possibilities.</h2>
-                        <h5 className="mb-0 text-black">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand)
-                        </h5>
-                    </div>
+                    <div className="text-center mx-auto pb-5 wow fadeInUp">
+                            <h2 className="mb-4 text-primary">We are brand builders for hire.<br/> We fuel your growth engine so you can focus on the vision.</h2>
+                            <h4 className="mb-0 text-black">AVATAWorks digital agency is a growth engine and Managed Marketing Service Provider (MMSP) for startups and ambitious brands. We build brands, execute conversion-ready digital transformations, and operate growth systems with Avatas across social media, creative strategy & branding, website & app development.
+                            </h4>
+                       </div>
                     <div className="row gy-lg-4 justify-content-evenly">
                         {services?.map((service) => {
                             const { _id, title, imgSrc, icon, info } = service;
@@ -44,7 +43,7 @@ const OurServices = ({ services }: ServicesProps) => {
                         })}
                         <div className="col-12 text-center wow fadeInUp pt-4">
                             {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
-                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger'/></Link>
+                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger' /></Link>
                         </div>
                     </div>
                 </div>
@@ -53,4 +52,4 @@ const OurServices = ({ services }: ServicesProps) => {
     );
 }
 
-export default OurServices;
+export default CoreServices;

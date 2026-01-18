@@ -356,7 +356,17 @@ h2 {
   .header-carousel .header-carousel-item {
     height: 800px;
   }
+  /* hero cta */
+  .hero-cta {
+    display: flex !important;
+    justify-content: center;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
 }
+
 /*** Carousel Hero Header End ***/
 
 /*** Single Page Hero Header Start ***/
@@ -582,16 +592,14 @@ h2 {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  height: max-content;
   padding: 25rem !important;
 }
 
 /* mobile view */
 @media (max-width: 768px) {
-  .services-hero 
-  {
+  .services-hero {
     background-position: right;
-    padding: 9rem !important; 
+    padding: 9rem !important;
   }
 }
 /*** Service End ***/
@@ -787,7 +795,6 @@ button.accordion-button:active .collapse {
   .testimonial-carousel .logo-image {
     width: 250px !important;
   }
-  
 }
 /*** Testimonial End ***/
 

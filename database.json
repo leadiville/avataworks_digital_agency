@@ -2,19 +2,20 @@
     "database": {
         "services": [
             {
-                "title": "Digital marketing and advertising",
+                "title": "Social Media Management",
                 "info": "Implementing strategies like SEO, PPC, and social media marketing to enhance online presence",
                 "imgSrc": "/Marketing-cuate.png",
                 "showInfo": false,
                 "icon": "fa-rectangle-ad",
                 "fullInfo": "Convert Clicks into Clients with Digital that Delivers. Digital marketing isn't just about visibility—it’s about measurable results. At AVATA Works, we build experiential, targeted, and scalable digital strategies that put your brand in front of the right people, on the right platforms, at the right time. Whether you want to grow leads, sales, or awareness, we’ve got you covered.",
                 "subServices": [
-                    "Social Media Management",
                     "Copywriting & Content Marketing",
                     "Paid Advertising",
                     "Sales Funnel Optimization",
                     "Search Engine Optimization"
-                ]
+                ],
+                "fullInfoCore": "AVATAWorks is a paid media and social media marketing agency in Nigeria. We drive growth for startups and brands in Africa. We deliver digital brand success through organic growth marketing operations, customer avatar acquisition, and user-generated content for e-commerce. Managing community systems that convert attention into qualified leads and revenue."
+                
             },
             {
                 "title": "Brand Strategy & Design",
@@ -45,48 +46,9 @@
                     "E-commerce Solutions",
                     "Web Maintenance & Support"
                 ]
-            },
-            {
-                "title": "Experiential Events management",
-                "info": "Planning and executing immersive events that connect brands with their audiences.",
-                "imgSrc": "/Events-amico.png",
-                "showInfo": false,
-                "icon": "fa-people-roof",
-                "fullInfo": "Create Moments That Matter. Make Your Brand Unforgettable. Events aren’t just gatherings—they’re immersive brand experiences. We plan and execute high-impact events that delight, inspire, and leave lasting memories. From concept to execution, AVATA Works delivers flawless on-ground and virtual experiences that elevate your brand.",
-                "subServices": [
-                    "Event Planning & Management",
-                    "Booking & Scheduling"
-                ]
-            },
-            {
-                "title": "Talent Management & Development",
-                "info": " Identifying and nurturing talent to drive brand growth.",
-                "imgSrc": "/Events-cuate.png",
-                "showInfo": false,
-                "icon": "fa-hand-holding-droplet",
-                "fullInfo": "Nurturing Talent. Building Brands. Creating Legacies. At AVATA Works, we don’t just manage talent—we build stars. From emerging creatives to established entertainers, our Talent Management & Development service is designed to elevate individuals with exceptional skills into powerful personal brands. Whether you’re an artiste, performer, content creator, or media personality, our mission is simple: turn your talent into a thriving brand.",
-                "subServices": [
-                    "Talent Management",
-                    "Public Relations",
-                    "Brand Partnerships"
-                ]
-            },
-            {
-                "title": "Sales Strategy & Consultation",
-                "info": "Providing insights to optimize sales processes and improve conversion rate",
-                "imgSrc": "/Marketing-amico.png",
-                "showInfo": false,
-                "icon": "fa-chart-simple",
-                "fullInfo": "Turn Strategy into Sales. Scale with Confidence. Sales don’t happen by luck—they happen by smart systems. We partner with your team to sharpen your sales processes, improve your funnels, and close more deals. Our approach blends data, automation, and psychology to help you sell more, more efficiently.",
-                "subServices": [
-                    "Business Strategy Consulting",
-                    "Data Analytics & Reporting",
-                    "Digital Transformation",
-                    "Market Research",
-                    "Sales Training"
-                ]
             }
         ],
+
         "footer": {
             "footerAddress": [
                 {

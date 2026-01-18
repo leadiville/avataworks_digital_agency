@@ -1,11 +1,11 @@
 export const dynamic = "force-dynamic";
-import OurServices from "../../components/homePage/OurServices";
 import Faq from "../../components/homePage/Faq";
 import Services from "../../models/Services";
 import Faqs from "../../models/Faq";
 import { Ifaq, Iservice } from "@/types";
 import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
+import CoreServices from "@/components/servicesPage/CoreServices";
 
 export type faqT = {
   answer: string;
@@ -29,7 +29,7 @@ const page = async () => {
       </div>
       <div className="container-fluid">
         <div className="row g-1">
-          <OurServices services={services} />
+          <CoreServices services={services} />
         </div>
       </div>
       <Faq faq={faqServices} />
