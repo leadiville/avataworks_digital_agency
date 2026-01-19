@@ -67,12 +67,16 @@ h2 {
 #spinner {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  transition:
+    opacity 0.5s ease-out,
+    visibility 0s linear 0.5s;
   z-index: 99999;
 }
 
 #spinner.show {
-  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  transition:
+    opacity 0.5s ease-out,
+    visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -248,12 +252,23 @@ h2 {
     padding: 0;
   }
 
+  .navbar .navbar-nav {
+    padding: 10px 25px !important;
+  }
+
   .navbar .navbar-nav .nav-item {
     display: flex;
-    padding: 20px;
+    margin-top: 0.2rem;
+    padding: 10px;
     flex-direction: column;
     justify-content: start;
     align-items: start;
+  }
+
+  .navbar .navbar-nav .nav-item.active {
+    color: var(--primary) !important;
+    transition: none;
+    transform: none;
   }
 
   .navbar .navbar-nav .nav-btn {
@@ -802,7 +817,8 @@ button.accordion-button:active .collapse {
 
 .about-hero {
   background: var(--primary);
-  background: url("/background-doodle/Doodle AVatar-01.png"),
+  background:
+    url("/background-doodle/Doodle AVatar-01.png"),
     linear-gradient(45deg, white);
   background-position: center;
   background-size: cover;
