@@ -1,6 +1,8 @@
 "use client"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import PrimaryButton from './PrimaryButton';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
 
 
 const NavMenus = () => {
@@ -14,7 +16,7 @@ const NavMenus = () => {
                 <Link href="contact" className={`nav-item nav-link ${pathname === "/contact" ? "active" : "text-primary"}`}>Contact</Link>
                 <div className="nav-item">
                     {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><FontAwesomeIcon icon={faSearch} width={20} height={20} /></button> */}
-                    <Link href="/get-quote" className="btn btn-danger rounded-pill py-2 px-4 flex-shrink-0"> Get a Quote</Link>
+                    <Link href="/get-quote" ><PrimaryButton text='Get a Quote' icon={faPen} className="btn btn-danger rounded-pill py-1 flex-shrink-0"></PrimaryButton></Link>
                 </div>
             </div>
         </div>
