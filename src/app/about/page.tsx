@@ -23,7 +23,7 @@ const AboutPage = async function () {
     return (
         <>
             <WelcomeAbout />
-            <Features featuresData={features} title={'At Avataworks, we ensure digital brand success'} />
+            <Features featuresData={features} title={'We ensure digital brand success'} />
             <AboutUs />
             {/* <Faq faqs={faq.servicePage} /> */}
             <Team teamMembers={ourTeam} />

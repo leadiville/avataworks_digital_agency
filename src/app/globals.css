@@ -814,14 +814,14 @@ button.accordion-button:active .collapse {
 /*** Testimonial End ***/
 
 /* ABOUT US PAGE DESIGN */
-
-.about-hero {
-  background: var(--primary);
-  background:
-    url("/background-doodle/Doodle AVatar-01.png"),
-    linear-gradient(45deg, white);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
+@media (max-width: 768px) {
+  .about-hero {
+    background: var(--primary);
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .about-hero .about-image {
+    /* border: 2px solid black; */
+    padding-top: -80px;
+  }
 }

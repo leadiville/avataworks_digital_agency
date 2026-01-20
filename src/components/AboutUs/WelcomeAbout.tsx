@@ -4,29 +4,27 @@ import Image from "next/image";
 
 export const WelcomeAbout = () => {
   return (
-    <div className="container-fluid bg-primary about pt-5">
-      <div className="container pt-5">
-        <div className="row g-5 w-100">
-          <div className="col-lg-4 px-5 col-sm-4">
-            <i>
-              <Image
-                src={"/aboutLadyCartoon.png"}
-                width={450}
-                height={450}
-                alt="welcome image"
-              />
-            </i>
+    <div className="container-fluid bg-primary about pb-5">
+      <div className="">
+        <div className="d-lg-flex gap-lg-0 align-items-center justify-content-between pe-5 ps-5 about-hero" style={{ marginLeft: "160px", marginRight: "160px" }}>
+          <div className="p-0 w-fit about-image">
+            <Image
+              src={"/aboutUs.png"}
+              width={420}
+              height={450}
+              alt="welcome image"
+            />
           </div>
-          <div className="col-lg-8 px-5 pt-4 col-sm-8 text-white">
+          <div className="col-lg-8 px-lg-5 p-2 py-lg-4">
             <h1 className="display-3 mb-2 text-black">
               Welcome to <span className="text-white">Avataworks</span>
             </h1>
             <p className="text-dark fw-bold">
-              We are your – Advanced Virtual Assistance in Technology and
+              We are your, Advanced Virtual Assistance in Technology and
               Advertising.
             </p>
             <p
-              className="text-grey my-4 fw-bolder"
+              className="text-white my-lg-3 fw-bolder pe-lg-5"
               style={{ lineHeight: "30px" }}
             >
               {" "}
