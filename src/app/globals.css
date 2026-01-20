@@ -813,15 +813,26 @@ button.accordion-button:active .collapse {
 }
 /*** Testimonial End ***/
 
-/* ABOUT US PAGE DESIGN */
+/* ABOUT US PAGE DESIGN HERO SECTION*/
+
 @media (max-width: 768px) {
-  .about-hero {
-    background: var(--primary);
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-  .about-hero .about-image {
+  .image-fluid {
     /* border: 2px solid black; */
-    padding-top: -80px;
+    width: 95vw !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-about {
+    font-size: 38px !important;
+    line-height: 48px;
+  }
+  .about-text {
+    font-size: 14px;
+    line-height: 25px !important;
+  }
+  .about-text-container {
+    text-align: center;
   }
 }
