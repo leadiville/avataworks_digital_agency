@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export const WelcomeAbout = () => {
   return (
-    <div className="container-fluid bg-primary about pb-5">
+    <div className="container-fluid bg-primary about pb-5 pt-5">
       <div className="">
         <div className="d-lg-flex gap-lg-0 align-items-center justify-content-between pe-5 ps-5 about-hero" style={{ marginLeft: "160px", marginRight: "160px" }}>
           <div className="p-0 w-fit about-image">
             <Image
               src={"/aboutUs.png"}
-              width={420}
-              height={450}
+              width={400}
+              height={300}
               alt="welcome image"
             />
           </div>
