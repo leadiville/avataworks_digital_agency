@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +9,7 @@ const Navbar = () => {
     return (
         <div>
             {/* Navbar & Hero Start */}
-            <div className="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+            <div className="container-fluid nav-bar px-0 px-lg-3 py-lg-0">
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <Link href="/" className="navbar-brand p-0">

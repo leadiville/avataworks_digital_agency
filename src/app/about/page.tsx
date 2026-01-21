@@ -5,12 +5,14 @@ import AboutUs from "../../components/homePage/AboutUs"
 import Team from "../../components/homePage/Team"
 import Footer from "../../components/Footer"
 import { WelcomeAbout } from "../../components/AboutUs/WelcomeAbout"
-import { Ifeatures, Ifooter, IOurTeam } from "@/types"
+import { Ifeatures, Ifooter, IOurTeam, Ireviews } from "@/types"
 import OurTeam from "../../models/OurTeam";
 import FooterM from "../../models/Footer";
 import FeaturesM from "../../models/Features";
 import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
+import Testimonials from "@/components/homePage/Testimonials";
+import Reviews from "@/models/Reviews";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -19,15 +21,14 @@ const AboutPage = async function () {
     const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
     const footer = cleanMongoShape(await FooterM.findOne().lean<Ifooter>()) || null;
     const features = cleanMongoShape(await FeaturesM.find().lean<Partial<Ifeatures>[]>());
-
+    const testimonials = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>());
     return (
         <>
             <WelcomeAbout />
             <Features featuresData={features} title={'We ensure digital brand success'} />
             <AboutUs />
-            {/* <Faq faqs={faq.servicePage} /> */}
             <Team teamMembers={ourTeam} />
-            {/* <AboutGoals /> */}
+            <Testimonials testimonials={testimonials} />
             {footer && <Footer footer={footer} />}
         </>
     )

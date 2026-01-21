@@ -41,7 +41,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                     })}
                     <div className="w-100 d-flex justify-content-center">
 
-                        <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary w-auto py-3' /></Link>
+                        {<Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary w-auto py-3' /></Link>}
                     </div>
                 </div>
             </div>

@@ -358,7 +358,7 @@ h2 {
 /*** Carousel Hero Header Start ***/
 
 .header-carousel .header-carousel-item {
-  height: 700px;
+  height: 640px;
 }
 
 @media (max-width: 991px) {
