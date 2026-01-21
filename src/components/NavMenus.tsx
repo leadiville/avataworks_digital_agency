@@ -9,7 +9,7 @@ const NavMenus = () => {
     const pathname = usePathname();
     return (
         <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
-            <div className="navbar-nav mx-0 mx-lg-auto">
+            <div className="navbar-nav mx-0 mx-md-auto">
                 <Link href="/our-services" className={`nav-item nav-link ${pathname === "/our-services" ? "active" : "text-primary"}`}>Services</Link>
                 <Link href="about" className={`nav-item nav-link ${pathname === "/about" ? "active" : "text-primary"}`}>About</Link>
                 {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}

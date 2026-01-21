@@ -9,9 +9,9 @@ const Navbar = () => {
     return (
         <div>
             {/* Navbar & Hero Start */}
-            <div className="container-fluid nav-bar px-0 px-lg-3 py-lg-0">
+            <div className="container-fluid nav-bar px-0 px-md-3 py-md-0">
                 <div className="container">
-                    <nav className="navbar navbar-expand-lg navbar-light">
+                    <nav className="navbar navbar-expand-md navbar-light">
                         <Link href="/" className="navbar-brand p-0">
                             <Image width={220} height={70} src="/logo.png" alt="Logo" />
                         </Link>
