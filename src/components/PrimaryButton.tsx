@@ -10,7 +10,7 @@ interface IPrimaryBtn {
 export default ({ icon, text, className }: IPrimaryBtn) => {
 
     return (
-        <button className={`btn rounded-pill me-2 my-1 text-capitalize "btn-primary" ${className}`}>
+        <button className={`btn rounded-pill text-capitalize "btn-primary" ${className}`}>
             <FontAwesomeIcon icon={icon as IconDefinition } width={"30px"} height={'auto'} />
             {text}
         </button>
