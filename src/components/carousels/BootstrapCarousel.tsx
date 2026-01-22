@@ -69,8 +69,8 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
                 <Card.Img
                   src={`${e.logo}`} width={100} height={100} className='logo-image bg-light' />
                 <Card.Body className='d-flex flex-column text-black align-items-lg-start align-items-center'>
-                  <Card.Title>{e.companyName}</Card.Title>
-                  <Card.Text>{e.companyPosition}</Card.Text>
+                  <Card.Title>{e.companyName} - {e.companyPosition}</Card.Title>
+                  <Card.Text></Card.Text>
                   <Card.Text>{`${e.service}`}</Card.Text>
                   <Card.Text>{e.review}</Card.Text>
                   <br />
