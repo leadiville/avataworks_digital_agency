@@ -72,7 +72,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
                   <Card.Title>{e.companyName} - {e.companyPosition}</Card.Title>
                   <Card.Text></Card.Text>
                   <Card.Text>{`${e.service}`}</Card.Text>
-                  <Card.Text>{e.review}</Card.Text>
+                  <Card.Text>"{e.review}"</Card.Text>
                   <br />
                   <span className='d-flex flex-row'>
                     <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
