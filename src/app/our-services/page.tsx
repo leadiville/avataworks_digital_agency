@@ -29,7 +29,7 @@ const page = async () => {
       </div>
       <div className="container-fluid">
         <div className="row g-1">
-          <CoreServices services={services} />
+          <CoreServices  />
         </div>
       </div>
       <Faq faq={faqServices} />

@@ -71,6 +71,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
                 <Card.Body className='d-flex flex-column text-black align-items-lg-start align-items-center'>
                   <Card.Title>{e.companyName}</Card.Title>
                   <Card.Text>{e.companyPosition}</Card.Text>
+                  <Card.Text>{`${e.service}`}</Card.Text>
                   <Card.Text>{e.review}</Card.Text>
                   <br />
                   <span className='d-flex flex-row'>

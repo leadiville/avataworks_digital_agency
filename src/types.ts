@@ -66,6 +66,7 @@ export interface Ireviews {
   image?: string;
   logo?: string;
   review?: string;
+  service?: string;
 }
 
 export interface IOurTeam {

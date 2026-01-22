@@ -1,51 +1,19 @@
-import { Iservice } from '@/types';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image'
-import PrimaryButton from '../PrimaryButton';
-import Link from 'next/link';
+import EachCoreService from './EachCoreService';
 
-interface ServicesProps {
-    services: Iservice[];
-}
-const CoreServices = ({ services }: ServicesProps) => {
+const CoreServices = () => {
     return (
         <div>
             <div className="container-fluid service py-5">
-                <div className="container py-5 p-lg-4">
-                    <div className="text-center mx-auto pb-5 wow fadeInUp">
-                            <h2 className="mb-4 text-primary">We are brand builders for hire.<br/> We fuel your growth engine so you can focus on the vision.</h2>
-                            <h4 className="mb-0 text-black">AVATAWorks digital agency is a growth engine and Managed Marketing Service Provider (MMSP) for startups and ambitious brands. We build brands, execute conversion-ready digital transformations, and operate growth systems with Avatas across social media, creative strategy & branding, website & app development.
-                            </h4>
-                       </div>
-                    <div className="row gy-lg-4 justify-content-evenly">
-                        {services?.map((service) => {
-                            const { _id, title, imgSrc, icon, info } = service;
-                            return (
-                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp">
-                                    <div className="service-item">
-                                        <div className="service-img">
-                                            <Image width={400} height={400} src={imgSrc as string} className="img-fluid rounded-top w-100" alt="" />
-                                            <div className="service-icon p-3">
-                                                <i className="fa fa-users fa-2x"><FontAwesomeIcon icon={icon as IconDefinition} /></i>
-                                            </div>
-                                        </div>
-                                        <div className="service-content p-4">
-                                            <div className="service-content-inner">
-                                                <h2 className="d-inline-block h4 mb-4">{title}</h2>
-                                                <p className="mb-4">{info}.</p>
-                                                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Read more</a> */}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                        <div className="col-12 text-center wow fadeInUp pt-4">
-                            {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
-                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger' /></Link>
-                        </div>
+                <div className="container px-lg-4">
+                    <div className="text-center mx-auto pb-5 wow fadeInUp bg-primary p-lg-4 rounded rounded-full">
+                        <h2 className="mb-4 text-white">We are brand builders for hire.<br /> We fuel your growth engine so you can focus on the vision.</h2>
+                        <h5 className="mb-0 text-white">AVATAWorks digital agency is a growth engine and Managed Marketing Service Provider (MMSP) for startups and ambitious brands. We build brands, execute conversion-ready digital transformations, and operate growth systems with Avatas across social media, creative strategy & branding, website & app development.
+                        </h5>
                     </div>
+
+                    <EachCoreService header='Social Media Management' subheader='AVATAWorks is a paid media and social media marketing agency in Nigeria. We drive growth for startups and brands in Africa. We deliver digital brand success through organic growth marketing operations, customer avatar acquisition, content creation and user-generated content for e-commerce. Managing community systems that convert attention into qualified leads and revenue.' img={"/Marketing-amico.png"} listItems='' />
+                    <EachCoreService header='Technology & Strategic Innovation' subheader='AvataWorks is a Tech Innovation agency in Nigeria. We build websites and custom mobile app development that are engineered for growth. We design Landing pages, CRM-integrated websites, WordPress websites, and analytics to turn your digital assets into a reliable revenue channel.' img={"/Cross-platform software-bro.png"} listItems='' />
+                    <EachCoreService header='Creative Strategy & Branding' subheader='AVATAWorks crafts brand identity for startups in Africa. We create brand playbooks, visual designs, and creative branding services to align messaging and improve ad creative, ad copy, and video production for performance marketing and long-term digital brand success'  listItems='' img={"/Marketing-rafiki.png"} />
                 </div>
             </div>
         </div>

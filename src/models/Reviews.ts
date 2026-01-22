@@ -6,6 +6,7 @@ const ReviewsSchema = new Schema({
   companyPosition: String,
   image: String,
   logo: String,
+  service: String,
 });
 
 export default mongoose.models.Reviews ||

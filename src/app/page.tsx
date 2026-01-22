@@ -39,7 +39,7 @@ export default async function Home() {
       <HeroCarousel />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
       <AboutUs />
-      <OurServices services={services?.splice(0, 3)} />
+      <OurServices services={services} />
       <Team teamMembers={ourTeam?.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
       <Faq faq={faqHome} />

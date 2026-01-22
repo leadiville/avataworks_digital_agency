@@ -13,9 +13,7 @@
                     "Paid Advertising",
                     "Sales Funnel Optimization",
                     "Search Engine Optimization"
-                ],
-                "fullInfoCore": "AVATAWorks is a paid media and social media marketing agency in Nigeria. We drive growth for startups and brands in Africa. We deliver digital brand success through organic growth marketing operations, customer avatar acquisition, and user-generated content for e-commerce. Managing community systems that convert attention into qualified leads and revenue."
-                
+                ]
             },
             {
                 "title": "Brand Strategy & Design",
@@ -39,7 +37,6 @@
                 "showInfo": false,
                 "icon": "fa-laptop-code",
                 "fullInfo": "Code That Solves, Scales, and Succeeds.We build custom digital solutions that don’t just look good—they work smarter. Whether you’re launching a new website, an e-commerce store, or enterprise-grade applications, AVATA Works creates tailored, scalable platforms with intuitive UX and solid architecture to future-proof your growth.",
-                "fullInfoCore": "AvataWorks is a Technology & Innovation agency in Lagos. We build websites and AI-powered mobile applications that are engineered for growth. We design conversion-first UX, CRM-integrated websites and landing pages, mobile app development for marketplaces, WordPress websites, and analytics to turn your digital assets into a reliable revenue channel.",
                 "subServices": [
                     "Website Development",
                     "Mobile App Development ",
@@ -254,43 +251,41 @@
         "reviews": [
             {
                 "companyName": "Regal",
-                "review": "this is the best nose i have ever had all my life. It feels like i made no mistake choosing avataworks",
-                "companyPosition": "Assistant Sales Manager",
+                "service": "Creative Strtegy & Branding",
+                "review": "Their brand playbook made our organic marketing strategy more appealing to our ideal target audience. More booked appointments that increased client acquisition by 200%",
+                "companyPosition": "Lead Surgeon",
                 "image": "/brands/Regal_Plastic_Surgery_Centre_Case_Study.png",
                 "logo": "/brands/logo/Regal.jpg"
             },
             {
                 "companyName": "Kuddies floornuts",
-                "review": "The team was professional, efficient, and exceeded my expectations. I highly recommend them!",
+                "service": "Social Media Management",
+                "review": "They turned Instagram into a consistent lead channel. 3x increase in qualified buyer inquiries and a measurable uplift in sales",
                 "companyPosition": "CEO",
                 "image": "/brands/FlourNuts_Case_study.png",
                 "logo": "/brands/logo/FloorNuts.png"
             },
             {
                 "companyName": "The Roundtable Lekki",
-                "review": "Thought the idea was not sales, i would say the evconstent sold out. hahaha. Nice working with Avatas",
-                "companyPosition": "Director",
+                "service": "Event Promotion",
+                "review": "We launched a 4 weeks campaign on instagram. the event soldout and instagram followers increased from 30+ to 2000+ in 30 days.",
+                "companyPosition": "Event Coordinator",
                 "image": "/brands/The_RoundTable_Lekki_Case_Study (1).png",
                 "logo": "/brands/logo/RoundTableLekki.png"
             },
             {
                 "companyName": "Gynescope",
-                "review": "Thought the idea was not sales, i would say the evconstent sold out. hahaha. Nice working with Avatas",
-                "companyPosition": "Executive Manager",
-                "image": "/brands/Gynescope_Case_Study (1).png",
-                "logo": "/brands/logo/Gynescope.jpg"
-            },
-            {
-                "companyName": "Gynescope",
-                "review": "Thought the idea was not sales, i would say the evconstent sold out. hahaha. Nice working with Avatas",
-                "companyPosition": "Executive Manager",
+                "service": "Creative Strtegy & Branding",
+                "review": "AVATAWorks transformed our brand from a logo into a brand story. Messaging and engagement rate increased by 200%",
+                "companyPosition": "Head Doctor",
                 "image": "/brands/Gynescope_Case_Study (1).png",
                 "logo": "/brands/logo/Gynescope.jpg"
             },
             {
                 "companyName": "A-Bay Tours",
-                "review": "Travel, i would say the evconstent sold out. hahaha. Nice working with Avatas travelling the world",
-                "companyPosition": "Executive Manager",
+                "service": "Social Media Management & Website Development (PWA)",
+                "review": "Their team built a brand identity that got leads.engagement and retention metrics jump within few months.",
+                "companyPosition": "Managing Director",
                 "image": "/brands/A-Bay_Tours_Case_Study.png",
                 "logo": "/brands/logo/AbayTours.jpg"
             }

@@ -10,7 +10,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "typecheck": "tsc --noEmit --pretty"
+    "typecheck": "tsc --noEmit --pretty",
+    "seedDb": "curl -X POST 'http://localhost:3000/api/seed'"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

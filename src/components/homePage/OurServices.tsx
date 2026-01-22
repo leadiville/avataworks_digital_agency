@@ -21,7 +21,7 @@ const OurServices = ({ services }: ServicesProps) => {
                     </div>
                     <div className="row gy-lg-4 justify-content-evenly">
                         {services?.map((service) => {
-                            const { _id, title, imgSrc, icon, info } = service;
+                            const { _id, title, imgSrc, icon, fullInfo } = service;
                             return (
                                 <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp">
                                     <div className="service-item">
@@ -34,7 +34,7 @@ const OurServices = ({ services }: ServicesProps) => {
                                         <div className="service-content p-4">
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4">{title}</h2>
-                                                <p className="mb-4">{info}.</p>
+                                                <p className="mb-4">{fullInfo}.</p>
                                                 {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Read more</a> */}
                                             </div>
                                         </div>
@@ -44,7 +44,7 @@ const OurServices = ({ services }: ServicesProps) => {
                         })}
                         <div className="col-12 text-center wow fadeInUp pt-4">
                             {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
-                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger'/></Link>
+                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger' /></Link>
                         </div>
                     </div>
                 </div>
