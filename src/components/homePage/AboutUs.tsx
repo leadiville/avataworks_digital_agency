@@ -18,7 +18,7 @@ const AboutUs = () => {
                                     <p className='text-black-100'>Whether you are an ambitious startup in Africa or a thriving brand aiming for global relevance, AVATAWorks is your all-in-one partner for digital brand success. We combine strategic branding, tech-driven creativity, and result-focused execution to deliver powerful marketing, design, and business growth solutions.
                                     </p>
                                     
-                                    <Link href={'/about'}><PrimaryButton className='btn-dark py-3 my-4' text='meet our avatas' /></Link>
+                                    <Link href={'/about'}><PrimaryButton className='btn-dark p-3 my-4' text='meet our avatas' /></Link>
                                 </div>
                             </div>
                         </div>
@@ -62,6 +62,11 @@ const AboutUs = () => {
                                         </div>
                                     </div>
                                 </div>
+                            {/* get a quote here */}
+                             <div className="col-12 text-center wow fadeInUp pt-4">
+                            {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
+                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger' /></Link>
+                        </div>
                             </div>
                         </div>
                     </div>

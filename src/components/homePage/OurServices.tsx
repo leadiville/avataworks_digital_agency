@@ -35,17 +35,13 @@ const OurServices = ({ services }: ServicesProps) => {
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4">{title}</h2>
                                                 <p className="mb-4">{fullInfo}.</p>
-                                                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Read more</a> */}
+                                                <Link href={"/services"} className='explore-btn p-2 rounded border border-primary bg-white'><PrimaryButton text={`Explore ${title}`}/></Link>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             )
                         })}
-                        <div className="col-12 text-center wow fadeInUp pt-4">
-                            {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
-                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger' /></Link>
-                        </div>
                     </div>
                 </div>
             </div>

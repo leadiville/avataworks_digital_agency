@@ -38,8 +38,8 @@ export default async function Home() {
       <Navbar />
       <HeroCarousel />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
-      <AboutUs />
       <OurServices services={services} />
+      <AboutUs />
       <Team teamMembers={ourTeam?.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
       <Faq faq={faqHome} />

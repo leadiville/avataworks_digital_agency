@@ -27,7 +27,7 @@ const HeroCarousel = () => {
                     <div className="text-capitalize hero-cta">
                       {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
-                      <div className='d-lg-flex gap-md-3'>
+                      <div className='d-lg-flex d-grid gap-1 gap-md-3'>
                         <Link href="/our-services"><PrimaryButton text='Speak to an Avata' icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
                         <Link href={"/about"}><PrimaryButton text='Get a quote' icon={faPenAlt} className='btn-danger p-3 align-items-center justify-content-center w-100 text-white' /></Link>
                       </div>

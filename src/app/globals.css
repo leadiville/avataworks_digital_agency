@@ -414,7 +414,7 @@ h2 {
 .feature-item p {
   min-height: 220px;
 }
-.feature .feature-item:hover {
+.feature .feature-item:hover, .feature-item-scroll {
   background: var(--primary);
 }
 
@@ -447,7 +447,7 @@ h2 {
   z-index: 1;
 }
 
-.feature .feature-item:hover .feature-icon::after {
+.feature .feature-item:hover .feature-icon::after, .feature-item-scroll .feature-icon::after {
   height: 100%;
 }
 

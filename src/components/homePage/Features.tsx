@@ -1,12 +1,35 @@
+"use client";
 import { Ifeatures } from '@/types';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useRef, useState } from 'react';
 
 interface FeaturesProps {
     featuresData: Ifeatures[];
     title: string;
 }
 const Features = ({ featuresData, title }: FeaturesProps) => {
+    const ref = useRef <null | HTMLDivElement> (null);
+    const [active, setActive] = useState<boolean>(false);
+
+    useEffect(() => {
+        const activateCss = () => {
+            if(!ref.current) return;
+            const rect = ref.current.getBoundingClientRect(); // get the shape of the rect from ref
+            const windowCenter = window.innerHeight / 2; // Get the center of the window(screen/visuals)
+            // check if the rect is centered on window then activate
+            const rectCenter = rect.top + rect.height / 2;
+            if ((windowCenter - rectCenter) <= 50) {
+                setActive(true)
+            } else {
+                setActive(false);
+            }
+        }
+        window.addEventListener("scroll", activateCss);
+        return () => window.removeEventListener("scroll", activateCss);
+    }, []);
+
+
     return (
         <div>
             {/* Feature Start  */}
@@ -21,8 +44,8 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
                         {featuresData?.map((ftData, ftDataInx) => {
                             const { title, info, icon } = ftData;
                             return (
-                                <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" key={ftDataInx}>
-                                    <div className="feature-item p-4 pt-0" style={{ maxHeight: '320px' }}>
+                                <div ref={ref} className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" key={ftDataInx}>
+                                    <div className={`feature-item  ${active && 'feature-item-scroll'} p-4 pt-0`} style={{ maxHeight: '320px' }}>
                                         <div className="feature-icon p-4 mb-4">
                                             <i><FontAwesomeIcon icon={icon as IconDefinition} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
                                         </div>
@@ -37,7 +60,6 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
                 </div>
             </div>
             {/* Feature End  */}
-
         </div >
     )
 }
