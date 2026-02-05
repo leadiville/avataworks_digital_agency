@@ -18,7 +18,7 @@ const AboutUs = () => {
                                     <p className='text-black-100'>Whether you are an ambitious startup in Africa or a thriving brand aiming for global relevance, AVATAWorks is your all-in-one partner for digital brand success. We combine strategic branding, tech-driven creativity, and result-focused execution to deliver powerful marketing, design, and business growth solutions.
                                     </p>
                                     
-                                    <Link href={'/about'}><PrimaryButton className='btn-dark p-3 my-4' text='meet our avatas' /></Link>
+                                    <Link href={'/about'}><PrimaryButton className='btn-light p-3 my-4' text='speak to an avata' /></Link>
                                 </div>
                             </div>
                         </div>

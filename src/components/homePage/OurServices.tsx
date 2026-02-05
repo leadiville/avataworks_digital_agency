@@ -35,7 +35,7 @@ const OurServices = ({ services }: ServicesProps) => {
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4">{title}</h2>
                                                 <p className="mb-4">{fullInfo}.</p>
-                                                <Link href={"/services"} className='explore-btn p-2 rounded border border-primary bg-white'><PrimaryButton text={`Explore ${title}`}/></Link>
+                                                <Link href={"/services"} className='explore-btn p-lg-2 p-3 rounded border border-primary bg-white'><PrimaryButton text={`Explore ${title}`}/></Link>
                                             </div>
                                         </div>
                                     </div>

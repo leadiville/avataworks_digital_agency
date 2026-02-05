@@ -415,7 +415,7 @@ h2 {
   min-height: 220px;
 }
 .feature .feature-item:hover, .feature-item-scroll {
-  background: var(--primary);
+  background: var(--primary) !important;
 }
 
 .feature .feature-item .feature-icon {

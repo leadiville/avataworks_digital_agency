@@ -3,18 +3,19 @@ import { Ifeatures } from '@/types';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useRef, useState } from 'react';
+import FeatureCard from './FeatureCard';
 
 interface FeaturesProps {
     featuresData: Ifeatures[];
     title: string;
 }
 const Features = ({ featuresData, title }: FeaturesProps) => {
-    const ref = useRef <null | HTMLDivElement> (null);
+    const ref = useRef<null | HTMLDivElement>(null);
     const [active, setActive] = useState<boolean>(false);
 
     useEffect(() => {
         const activateCss = () => {
-            if(!ref.current) return;
+            if (!ref.current) return;
             const rect = ref.current.getBoundingClientRect(); // get the shape of the rect from ref
             const windowCenter = window.innerHeight / 2; // Get the center of the window(screen/visuals)
             // check if the rect is centered on window then activate
@@ -42,18 +43,8 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
                     </div>
                     <div className="row g-4">
                         {featuresData?.map((ftData, ftDataInx) => {
-                            const { title, info, icon } = ftData;
                             return (
-                                <div ref={ref} className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" key={ftDataInx}>
-                                    <div className={`feature-item  ${active && 'feature-item-scroll'} p-4 pt-0`} style={{ maxHeight: '320px' }}>
-                                        <div className="feature-icon p-4 mb-4">
-                                            <i><FontAwesomeIcon icon={icon as IconDefinition} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
-                                        </div>
-                                        <h4 className="mb-4" style={{ fontWeight: 600 }}>{title}</h4>
-                                        <p className="mb-0 text-black-5">{info}
-                                        </p>
-                                    </div>
-                                </div>
+                                <FeatureCard data={ftData} key={ftDataInx} />
                             )
                         })}
                     </div>
