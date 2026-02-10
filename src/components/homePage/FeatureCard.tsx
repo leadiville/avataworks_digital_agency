@@ -1,13 +1,14 @@
 import { Ifeatures } from '@/types';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-
-interface Ifeature {
-    data: Ifeatures;
+interface Ifeat {
+    title: string;
+    info: string;
+    icon: IconDefinition;
 }
-const FeatureCard = ({ data }: Ifeature) => {
+const FeatureCard = ({ title, info, icon }: Ifeat) => {
     const ref = useRef<HTMLDivElement | null>(null);
     const [active, setActive] = useState<boolean>(false);
 
@@ -36,19 +37,16 @@ const FeatureCard = ({ data }: Ifeature) => {
             root: null, // This is the viewport ()
             // rootMargin: "-40% 0px -40% 0px",
             threshold: 1 // % of the ref is visible
-
         });
         observer.observe(el);
         return () => observer.disconnect();
     }, []);
 
-    const { title, info, icon } = data;
-
     return (
         <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" ref={ref} >
             <div className={`feature-item  ${active && 'feature-item-scroll'} p-4 pt-0`} style={{ maxHeight: '320px' }}>
                 <div className="feature-icon p-4 mb-4">
-                    <i><FontAwesomeIcon icon={icon as IconDefinition} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
+                    <i><FontAwesomeIcon icon={icon} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
                 </div>
                 <h4 className="mb-4" style={{ fontWeight: 600 }}>{title}</h4>
                 <p className="mb-0 text-black-5">{info}

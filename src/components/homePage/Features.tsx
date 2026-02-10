@@ -1,36 +1,13 @@
 "use client";
 import { Ifeatures } from '@/types';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect, useRef, useState } from 'react';
 import FeatureCard from './FeatureCard';
+import { iconMap } from './iconMap';
 
 interface FeaturesProps {
     featuresData: Ifeatures[];
     title: string;
 }
 const Features = ({ featuresData, title }: FeaturesProps) => {
-    const ref = useRef<null | HTMLDivElement>(null);
-    const [active, setActive] = useState<boolean>(false);
-
-    useEffect(() => {
-        const activateCss = () => {
-            if (!ref.current) return;
-            const rect = ref.current.getBoundingClientRect(); // get the shape of the rect from ref
-            const windowCenter = window.innerHeight / 2; // Get the center of the window(screen/visuals)
-            // check if the rect is centered on window then activate
-            const rectCenter = rect.top + rect.height / 2;
-            if ((windowCenter - rectCenter) <= 50) {
-                setActive(true)
-            } else {
-                setActive(false);
-            }
-        }
-        window.addEventListener("scroll", activateCss);
-        return () => window.removeEventListener("scroll", activateCss);
-    }, []);
-
-
     return (
         <div>
             {/* Feature Start  */}
@@ -42,9 +19,9 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
                         </p>
                     </div>
                     <div className="row g-4">
-                        {featuresData?.map((ftData, ftDataInx) => {
+                        {featuresData.map((ftData, ftDataInx) => {
                             return (
-                                <FeatureCard data={ftData} key={ftDataInx} />
+                                <FeatureCard key={ftDataInx} title={ftData.title} info={ftData.info} icon={iconMap[ftData.icon]} />
                             )
                         })}
                     </div>

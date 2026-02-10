@@ -4,7 +4,7 @@ import Image from 'next/image'
 import allItems from '../../../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenAlt, faPhone, faPhoneAlt, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faPenAlt, faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Ireviews } from '@/types';
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';

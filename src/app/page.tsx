@@ -24,7 +24,7 @@ import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 export default async function Home() {
   // Connect to database first (mongodb)
   await connectDb();
-  const features = cleanMongoShape(await FeaturesM.find().lean<Partial<Ifeatures>[]>());
+  const features = cleanMongoShape(await FeaturesM.find().lean<Ifeatures[]>());
   const faq = cleanMongoShape(await FaqM.find().lean<Partial<Ifaq>[]>());
   const services = cleanMongoShape(await ServicesM.find().lean<Partial<Iservice>[]>());
   const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());

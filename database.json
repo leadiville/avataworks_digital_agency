@@ -2,25 +2,11 @@
     "database": {
         "services": [
             {
-                "title": "Social Media Management",
-                "info": "Implementing strategies like SEO, PPC, and social media marketing to enhance online presence",
-                "imgSrc": "/Marketing-cuate.png",
-                "showInfo": false,
-                "icon": "fa-rectangle-ad",
-                "fullInfo": "Convert Clicks into Clients with Digital that Delivers. Digital marketing isn't just about visibility—it’s about measurable results. At AVATA Works, we build experiential, targeted, and scalable digital strategies that put your brand in front of the right people, on the right platforms, at the right time. Whether you want to grow leads, sales, or awareness, we’ve got you covered.",
-                "subServices": [
-                    "Copywriting & Content Marketing",
-                    "Paid Advertising",
-                    "Sales Funnel Optimization",
-                    "Search Engine Optimization"
-                ]
-            },
-            {
                 "title": "Creative Strategy & Branding",
                 "info": "Crafting comprehensive brand identities that resonate with your ideal customer avatar",
                 "imgSrc": "/rebranding-amico.png",
                 "showInfo": false,
-                "icon": "fa-pencil",
+                "icon": "pencil",
                 "fullInfo": "Build a Brand That Speaks, Sells, and Stands Out. Your brand is your business’s first impression—and first impressions matter. At AVATA Works, we don't just create logos, we engineer lasting perceptions. Our brand experts work with you to define your voice, differentiate your position in the market, and design a visually powerful, emotionally compelling brand that attracts and retains the right audience.",
                 "subServices": [
                     "Logo and Brand Identity",
@@ -35,7 +21,7 @@
                 "info": "Developing tailored software solutions to meet specific business needs",
                 "imgSrc": "/Developer activity-bro.png",
                 "showInfo": false,
-                "icon": "fa-laptop-code",
+                "icon": "laptopCode",
                 "fullInfo": "Code That Solves, Scales, and Succeeds.We build custom digital solutions that don’t just look good—they work smarter. Whether you’re launching a new website, an e-commerce store, or enterprise-grade applications, AVATA Works creates tailored, scalable platforms with intuitive UX and solid architecture to future-proof your growth.",
                 "subServices": [
                     "Website Development",
@@ -43,6 +29,20 @@
                     "Landing Page Development",
                     "E-commerce Solutions",
                     "Web Maintenance & Support"
+                ]
+            },
+            {
+                "title": "Social Media Content Curation/Creation",
+                "info": "Implementing strategies like SEO, PPC, and social media marketing to enhance online presence",
+                "imgSrc": "/Marketing-cuate.png",
+                "showInfo": false,
+                "icon": "rectangleAd",
+                "fullInfo": "Convert Clicks into Clients with Digital that Delivers. Digital marketing isn't just about visibility—it’s about measurable results. At AVATA Works, we build experiential, targeted, and scalable digital strategies that put your brand in front of the right people, on the right platforms, at the right time. Whether you want to grow leads, sales, or awareness, we’ve got you covered.",
+                "subServices": [
+                    "Copywriting & Content Marketing",
+                    "Paid Advertising",
+                    "Sales Funnel Optimization",
+                    "Search Engine Optimization"
                 ]
             }
         ],
@@ -86,34 +86,34 @@
             {
                 "title": "Grow your business with team AVATA",
                 "info": "AvataWorks is your all-in-one team of Advanced Virtual Assistants in Technology and Advertising solutions.",
-                "icon": "fa-handshake"
+                "icon": "handshake"
             },
             {
                 "title": "Tech-Driven Creativity & Innovation",
                 "info": "Our approach combines data-driven insights with cutting-edge technology to deliver high-performing software solutions.",
-                "icon": "fa-lightbulb"
+                "icon": "lightbulb"
             },
             {
                 "title": "1 on 1 Business growth consultation",
                 "info": "Whether you are an emerging startup or a global enterprise, our solutions are designed to ensuring digital brand success.",
-                "icon": "fa-chart-line"
+                "icon": "chartLine"
             },
             {
                 "title": "Productivity Meets Precision",
                 "info": "With our AVATAs delivering fast turnarounds, every project is data-driven, deadline-ready, and designed for results.",
-                "icon": "fa-gears"
+                "icon": "gears"
             }
         ],
         "whyChooseUs": [
             {
                 "title": "Advanced V. Assistants",
                 "content": "Hire an A-List team of Digital strategists, designers, developers, marketers, Copy writers and more.",
-                "icon": "fa-headset"
+                "icon": "headset"
             },
             {
                 "title": "Lead Generation",
                 "content": "As a startup or an established brand, our solutions are scalable to meet your business needs as you grow",
-                "icon": "fa-person-walking"
+                "icon": "person-walking"
             },
             {
                 "title": "Project Management",

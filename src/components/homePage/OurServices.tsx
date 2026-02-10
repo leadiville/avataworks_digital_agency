@@ -1,8 +1,9 @@
+"use client";
 import { Iservice } from '@/types';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
 
@@ -10,6 +11,21 @@ interface ServicesProps {
     services: Iservice[];
 }
 const OurServices = ({ services }: ServicesProps) => {
+
+    const [isActive, setIsActive] = useState(false);
+    const ref = useRef(null);
+    useEffect(() => {
+        const el = ref.current;
+        if (!el) return
+        const observer = new IntersectionObserver(() => setIsActive(true), {
+            root: null,
+            threshold: 0.6,
+            rootMargin: '40% 0px 40% 0px'
+        });
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div>
             <div className="container-fluid service py-5">
@@ -19,12 +35,12 @@ const OurServices = ({ services }: ServicesProps) => {
                         <h6 className="mb-0 text-black">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand)
                         </h6>
                     </div>
-                    <div className="row gy-lg-4 justify-content-evenly">
+                    <div className="row gy-lg-4 gy-4 justify-content-evenly">
                         {services?.map((service) => {
                             const { _id, title, imgSrc, icon, fullInfo } = service;
                             return (
-                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp">
-                                    <div className="service-item">
+                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp" ref={ref}>
+                                    <div className={`service-item ${isActive && 'services-scroll'}`}>
                                         <div className="service-img">
                                             <Image width={400} height={400} src={imgSrc as string} className="img-fluid rounded-top w-100" alt="" />
                                             <div className="service-icon p-3">
@@ -34,8 +50,8 @@ const OurServices = ({ services }: ServicesProps) => {
                                         <div className="service-content p-4">
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4">{title}</h2>
-                                                <p className="mb-4">{fullInfo}.</p>
-                                                <Link href={"/services"} className='explore-btn p-lg-2 p-3 rounded border border-primary bg-white'><PrimaryButton text={`Explore ${title}`}/></Link>
+                                                <p className="mb-4">{fullInfo}</p>
+                                                <Link href={"/services"} className='explore-btn p-lg-2 py-3 rounded border border-primary bg-white'><PrimaryButton text={`Explore ${title}`} /></Link>
                                             </div>
                                         </div>
                                     </div>

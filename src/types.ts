@@ -1,4 +1,5 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { IconDefinition, IconProp } from "@fortawesome/fontawesome-svg-core";
+import { iconMap } from "./components/homePage/iconMap";
 
 export interface Iservice {
   _id?: string;
@@ -33,9 +34,9 @@ export interface Ifooter {
 }
 export interface Ifeatures {
   _id?: string;
-  title?: string;
-  info?: string;
-  icon?: IconProp;
+  title: string;
+  info: string;
+  icon: keyof typeof iconMap; // gets the string key of the map
 }
 export interface WhyChooseUs {
   _id?: string;
