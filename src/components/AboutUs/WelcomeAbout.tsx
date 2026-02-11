@@ -6,7 +6,7 @@ export const WelcomeAbout = () => {
   return (
     <div className="container-fluid bg-primary py-5 px-0">
       <div className="container">
-        <div className="d-lg-flex gap-lg-0 align-items-center justify-content-center">
+        <div className="container d-lg-flex gap-lg-0 align-items-center justify-content-center">
           <div className="p-0 about-image about-text-container">
             <Image
               src={"/aboutUs.png"}
@@ -16,8 +16,8 @@ export const WelcomeAbout = () => {
               className="image-fluid"
             />
           </div>
-          <div className="px-lg-5 py-4 about-text-container">
-            <h1 className="display-3 mb-2 text-black header-about">
+          <div className="container text-center mt-4 mt-lg-0">
+            <h1 className="display-3 text-black header-about">
               Welcome to <span className="text-white">Avataworks</span>
             </h1>
             <p className="text-dark fw-bold">
@@ -25,7 +25,7 @@ export const WelcomeAbout = () => {
               Advertising.
             </p>
             <p
-              className="text-white my-lg-3 fw-bolder about-text"
+              className="text-white my-lg-3 fw-bolder about-text d-lg-grid d-none"
               style={{ lineHeight: "30px" }}
             >
               {" "}

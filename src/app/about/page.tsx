@@ -33,4 +33,4 @@ const AboutPage = async function () {
         </>
     )
 }
-export default AboutPage    
+export default AboutPage        
