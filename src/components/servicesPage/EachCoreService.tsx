@@ -12,16 +12,16 @@ interface ICoreServices {
 
 const EachCoreService = ({ header, subheader, img, listItems }: ICoreServices) => {
     return (
-        <div className=''>
-            <div className="container pt-5  text-center">
-                <h2 className='text-primary my-3 mt-5'>
+        <div className='container'>
+            <div className="container text-center">
+                <h2 className='text-primary my-3'>
                     {header}
                 </h2>
                 <h5 className="text-grey">{subheader}</h5>
             </div>
             <div className="row gap-0 my-md-5">
                 <div className="col-lg-4">
-                    <Image src={img} width={420} height={400} alt='service-image' />
+                    <Image src={img} width={500} height={500} alt='service-image' className='w-100 h-100'/>
                 </div>
                 <div className="col-lg-8">
                     <div >
