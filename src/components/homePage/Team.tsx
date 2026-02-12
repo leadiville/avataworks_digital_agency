@@ -1,12 +1,17 @@
+"use client";
 import { IOurTeam } from '@/types'
 import Image from 'next/image'
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface TeamProps {
     teamMembers: IOurTeam[];
 }
+
+
 const Team = ({ teamMembers }: TeamProps) => {
+    const path = usePathname();
     return (
 
         <div className="container-fluid team pb-5 pt-5">
@@ -41,7 +46,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                     })}
                     <div className="w-100 d-flex justify-content-center">
 
-                        {<Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary w-auto py-3' /></Link>}
+                        {(path == "/") && <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary w-auto p-3 px-5' /></Link>}
                     </div>
                 </div>
             </div>

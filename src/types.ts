@@ -1,5 +1,5 @@
 import { IconDefinition, IconProp } from "@fortawesome/fontawesome-svg-core";
-import { iconMap } from "./components/homePage/iconMap";
+import { iconMap } from "./utils/iconMap";
 
 export interface Iservice {
   _id?: string;

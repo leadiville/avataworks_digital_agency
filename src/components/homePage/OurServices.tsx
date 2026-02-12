@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
+import { iconMap } from '@/utils/iconMap';
 
 interface ServicesProps {
     services: Iservice[];
@@ -44,14 +45,14 @@ const OurServices = ({ services }: ServicesProps) => {
                                         <div className="service-img">
                                             <Image width={400} height={400} src={imgSrc as string} className="img-fluid rounded-top w-100" alt="" />
                                             <div className="service-icon p-3">
-                                                <i className="fa fa-users fa-2x"><FontAwesomeIcon icon={icon as IconDefinition} /></i>
+                                                <i className="fa fa-users fa-2x"><FontAwesomeIcon icon={iconMap[icon as string]} /></i>
                                             </div>
                                         </div>
                                         <div className="service-content p-4">
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4">{title}</h2>
                                                 <p className="mb-4">{fullInfo}</p>
-                                                <Link href={"/services"} className='explore-btn p-lg-2 py-3 rounded border border-primary bg-white'><PrimaryButton text={`Explore ${title}`} /></Link>
+                                                <Link href={"/services"} className='explore-btn p-lg-2 py-3'><PrimaryButton className='border-primary bg-white' text={`Explore ${title}`} /></Link>
                                             </div>
                                         </div>
                                     </div>

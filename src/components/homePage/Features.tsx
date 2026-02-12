@@ -1,7 +1,7 @@
 "use client";
 import { Ifeatures } from '@/types';
 import FeatureCard from './FeatureCard';
-import { iconMap } from './iconMap';
+import { iconMap } from '../../utils/iconMap';
 
 interface FeaturesProps {
     featuresData: Ifeatures[];
