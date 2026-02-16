@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import PrimaryButton from '../PrimaryButton'
 import Link from 'next/link'
+import AboutGrowth from '../AboutUs/AboutGrowth'
 
 const AboutUs = () => {
     return (
@@ -17,57 +18,13 @@ const AboutUs = () => {
                                     </p>
                                     <p className='text-black-100'>Whether you are an ambitious startup in Africa or a thriving brand aiming for global relevance, AVATAWorks is your all-in-one partner for digital brand success. We combine strategic branding, tech-driven creativity, and result-focused execution to deliver powerful marketing, design, and business growth solutions.
                                     </p>
-                                    
+
                                     <Link href={'/about'}><PrimaryButton className='btn-light p-3 my-4' text='speak to an avata' /></Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xl-6 wow fadeInRight order-first order-sm-first">
-                            <div className="bg-white rounded p-lg-5 p-sm-0 h-100 mt-4">
-                                <div className="row g-4 justify-content-center w-100 p-4">
-                                    <div className="col-12">
-                                        <div className="counter-item bg-light rounded p-3 h-100">
-                                            <div className="counter-counting">
-                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">200</span>
-                                                <span className="h1 fw-bold text-primary">%</span>
-                                            </div>
-                                            <h4 className="mb-0 text-dark">Profit Increase</h4>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="counter-item bg-light rounded p-3 h-100">
-                                            <div className="counter-counting">
-                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">20</span>
-                                                <span className="h1 fw-bold text-primary">+</span>
-                                            </div>
-                                            <h4 className="mb-0 text-dark">Brands Managed</h4>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="counter-item bg-light rounded p-3 h-100">
-                                            <div className="counter-counting">
-                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">30</span>
-                                                <span className="h1 fw-bold text-primary">+</span>
-                                            </div>
-                                            <h4 className="mb-0 text-dark">Skilled Avatas</h4>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="counter-item bg-light rounded p-3 h-100">
-                                            <div className="counter-counting">
-                                                <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">4</span>
-                                                <span className="h1 fw-bold text-primary">+</span>
-                                            </div>
-                                            <h4 className="mb-0 text-dark">Success Years</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            {/* get a quote here */}
-                             <div className="col-12 text-center wow fadeInUp pt-4">
-                            {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
-                            <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger' /></Link>
-                        </div>
-                            </div>
+                            <AboutGrowth bg='bg-white'/>
                         </div>
                     </div>
                 </div>

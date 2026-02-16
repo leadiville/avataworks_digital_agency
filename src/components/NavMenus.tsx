@@ -9,14 +9,17 @@ const NavMenus = () => {
     const pathname = usePathname();
     return (
         <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
-            <div className="navbar-nav mx-0 mx-md-auto">
-                <Link href="/our-services" className={`nav-item nav-link ${pathname === "/our-services" ? "active" : "text-primary"}`}>Services</Link>
-                <Link href="about" className={`nav-item nav-link ${pathname === "/about" ? "active" : "text-primary"}`}>About</Link>
-                {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}
-                <Link href="contact" className={`nav-item nav-link ${pathname === "/contact" ? "active" : "text-primary"}`}>Contact</Link>
-                <div className="nav-item p-0" >
-                    {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><FontAwesomeIcon icon={faSearch} width={20} height={20} /></button> */}
-                    <Link href="/get-quote" ><PrimaryButton text='Get a Quote' icon={faPen} className="btn btn-danger rounded-pill px-4 flex-shrink-0 w-100"></PrimaryButton></Link>
+            <div className="menu-container">
+
+                <div className="navbar-nav">
+                    <Link href="/our-services" className={`nav-item nav-link ${pathname === "/our-services" ? "active" : "text-primary"}`}>Services</Link>
+                    <Link href="about" className={`nav-item nav-link ${pathname === "/about" ? "active" : "text-primary"}`}>About</Link>
+                    {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}
+                    <Link href="contact" className={`nav-item nav-link ${pathname === "/contact" ? "active" : "text-primary"}`}>Contact</Link>
+                    <div className="nav-item p-0 px-5" >
+                        {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><FontAwesomeIcon icon={faSearch} width={20} height={20} /></button> */}
+                        <Link href="/get-quote" ><PrimaryButton text='Get a Quote' icon={faPen} className="btn btn-danger rounded-pill  flex-shrink-0 w-100"></PrimaryButton></Link>
+                    </div>
                 </div>
             </div>
         </div>

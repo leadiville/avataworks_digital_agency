@@ -7,13 +7,13 @@ import { connectDb } from '@/lib/mongodb';
 
 const servicesLayout = async ({ children }: PropsWithChildren) => {
     await connectDb();
-    const footer =  await FooterM.find().lean<Partial<Ifooter>>()
+    const footer = await FooterM.find().lean<Partial<Ifooter>>()
     return (
-        <div>
+        <>
             <Navbar />
             {children}
             <Footer footer={footer} />
-        </div>
+        </>
     );
 }
 
