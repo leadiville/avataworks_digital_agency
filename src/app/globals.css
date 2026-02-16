@@ -857,16 +857,3 @@ button.accordion-button:active .collapse {
   }
 }
 
-@media (max-width: 1024px) {
-  .header-about {
-    font-size: 38px !important;
-    line-height: 48px;
-  }
-  .about-text {
-    font-size: 14px;
-    line-height: 25px !important;
-  }
-  .about-text-container {
-    text-align: center;
-  }
-}

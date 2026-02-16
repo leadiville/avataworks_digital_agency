@@ -6,42 +6,32 @@ export const WelcomeAbout = () => {
   return (
     <div className="container-fluid bg-primary py-5 px-0">
       <div className="container">
-        <div className="container d-lg-flex gap-lg-0 align-items-center justify-content-center">
+        <div className="container d-lg-flex gap-lg-5 ">
           <div className="p-0 about-image about-text-container">
             <Image
               src={"/aboutUs.png"}
-              width={400}
-              height={300}
+              width={600}
+              height={400}
               alt="welcome image"
               className="image-fluid"
             />
           </div>
-          <div className="container text-center mt-4 mt-lg-0">
-            <h1 className="display-3 text-black header-about">
-              Welcome to <span className="text-white">Avataworks</span>
-            </h1>
-            <p className="text-dark fw-bold">
-              We are your, Advanced Virtual Assistant in Technology and
-              Advertising.
-            </p>
-            <p
-              className="text-white my-lg-3 fw-bolder about-text d-lg-grid d-none"
-              style={{ lineHeight: "30px" }}
-            >
-              {" "}
-              At our core, we are a results-driven digital agency based in
-              Nigeria, committed to transforming businesses through strategic,
-              data-informed innovation. AVATAWorks takes a holistic approach to
-              help businesses thrive in an ever-evolving digital landscape. Our
-              services are not one-size-fits-all; they are tailored to crafting
-              your brand identity, building responsive websites, executing
-              full-scale digital marketing campaigns, or managing world-class
-              events, we focus on one ultimate goal—achieving digital brand
-              success.
-            </p>
+          <div className="container text-left mt-4 d-flex justify-content-center align-items-center">
+            <div className="">
+
+              <h1 className="display-3 text-light ">
+                Welcome to
+              </h1>
+              <div className="px-lg-5 w-fit"><h1 className="text-white px-lg-5">Avataworks</h1>
+              </div>
+              <h5 className="text-dark fw-bold text-bold">
+                We are your, Advanced Virtual Assistant in Technology and
+                Advertising.
+              </h5>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
