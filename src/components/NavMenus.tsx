@@ -12,9 +12,9 @@ const NavMenus = () => {
             <div className="menu-container">
 
                 <div className="navbar-nav">
-                    <Link href="contact" className={`nav-item nav-link ${pathname === "/get-quote" ? "active" : "text-primary"}`}>Contact</Link>
-                    <Link href="/our-services" className={`nav-item nav-link ${pathname === "/our-services" ? "active" : "text-primary"}`}>Services</Link>
-                    <Link href="about" className={`nav-item nav-link ${pathname === "/about" ? "active" : "text-primary"}`}>About</Link>
+                    <Link href="/get-quote" className={`nav-item nav-link ${pathname === "/get-quote" ? "active" : "text-primary"}`}>Contact Us</Link>
+                    <Link href="/our-services" className={`nav-item nav-link ${pathname === "/our-services" ? "active" : "text-primary"}`}>Our Services</Link>
+                    <Link href="about" className={`nav-item nav-link ${pathname === "/about" ? "active" : "text-primary"}`}>About Us</Link>
                     {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}
                     <div className="nav-item p-0 px-lg-5" >
                         {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><FontAwesomeIcon icon={faSearch} width={20} height={20} /></button> */}
