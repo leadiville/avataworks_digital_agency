@@ -16,9 +16,9 @@ const NavMenus = () => {
                     <Link href="about" className={`nav-item nav-link ${pathname === "/about" ? "active" : "text-primary"}`}>About</Link>
                     {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}
                     <Link href="contact" className={`nav-item nav-link ${pathname === "/contact" ? "active" : "text-primary"}`}>Contact</Link>
-                    <div className="nav-item p-0 px-5" >
+                    <div className="nav-item p-0 px-lg-5" >
                         {/* <button className="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><FontAwesomeIcon icon={faSearch} width={20} height={20} /></button> */}
-                        <Link href="/get-quote" ><PrimaryButton text='Get a Quote' icon={faPen} className="btn btn-danger rounded-pill  flex-shrink-0 w-100"></PrimaryButton></Link>
+                        <Link href="/get-quote" ><PrimaryButton text='Get a Quote' icon={faPen} className="btn btn-danger rounded-pill"></PrimaryButton></Link>
                     </div>
                 </div>
             </div>

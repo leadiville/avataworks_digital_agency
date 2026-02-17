@@ -217,7 +217,7 @@ h2 {
 .navbar .navbar-nav .nav-item {
   display: flex;
   align-items: center;
-  padding: 1.1rem 3rem;
+  padding: 1.1rem 2.5rem;
   font-weight: 500 !important;
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
@@ -230,7 +230,16 @@ h2 {
   color: red !important;
   transform: scale(1.2);
 }
-
+@media (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-item:hover,
+  .navbar-light .navbar-nav .nav-item.active,
+  .navbar-light .navbar-nav .nav-item:hover .nav-link,
+  .navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: red !important;
+    transform: scale(1.1);
+    margin-right: 0px;
+  }
+}
 @media (max-width: 991px) {
   h1 {
     font-size: 3rem;
