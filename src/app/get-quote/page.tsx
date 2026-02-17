@@ -18,13 +18,13 @@ const page = () => {
 
     return (
         <div className="bg-primary">
-            <div className='container py-lg-5 pb-lg-5'>
+            <div className='container py-lg-5 pb-5'>
                 <div className="row gap-2">
                     <div className="col-lg-5 d-lg-flex align-items-end">
                         <div className="">
                             <Image width={400} className="w-100 h-100" height={400} alt="get-quote-img" src={"/getQuote/Good team-bro.png"} />
+                            <AboutGrowth bg="bg-inherit" />
                         </div>
-                            {<AboutGrowth bg="bg-inherit" />}
                     </div>
                     <div className="col-lg-6 bg-white text-primary px-5 d-flex align-items-center form-container">
                         <div>
@@ -33,7 +33,6 @@ const page = () => {
                             <QuoteForm initialState={initialState} />
                         </div>
                     </div>
-                    {/* {<AboutGrowth bg="bg-inherit" />} */}
                 </div>
             </div>
         </div >
