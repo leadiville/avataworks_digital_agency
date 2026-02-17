@@ -2,7 +2,7 @@ import EachCoreService from './EachCoreService';
 
 const CoreServices = () => {
     return (
-        <div className="container service py-lg-5 py-3">
+        <div className="container service py-5">
                 {/* <h2 className="text-danger text-center p-2">Who are we?</h2> */}
             <div className="text-center mx-auto wow fadeInUp bg-primary p-lg-5 p-4 mb-5 rounded rounded-full">
                 <h2 className="mb-4 text-white">We are brand builders for hire.<br /> We fuel your growth engine so you can focus on the vision.</h2>

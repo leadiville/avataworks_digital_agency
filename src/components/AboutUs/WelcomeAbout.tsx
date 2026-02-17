@@ -24,9 +24,9 @@ export const WelcomeAbout = () => {
               </h1>
               <div className="px-lg-5 w-fit"><h1 className="text-white px-lg-5">Avataworks</h1>
               </div>
-              <h5 className="text-dark fw-bold text-bold">
-                We are your, Advanced Virtual Assistant in Technology and
-                Advertising.
+              <h5 className="text-dark fw-bold text-bold mx-lg-5 px-lg-5">
+                <br/><span className="text-white">A</span>... Advanced <br/><span className="text-white">V</span>... Virtual <br/><span className="text-white">A</span>... Assistant in <br/><span className="text-white">T</span>... Technology and
+                <br/><span className="text-white">A</span>... Advertising
               </h5>
             </div>
           </div>
