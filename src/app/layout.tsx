@@ -17,6 +17,16 @@ const geistSans = Geist({
   subsets: ['latin'],
   variable: '--font-geist-sans', // Optional CSS variable name
 });
+
+export const metadata = {
+  title: "Avataworks",
+  description: "Advanced Virtual Assistance in Technology and Advertising",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  }
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
