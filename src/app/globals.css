@@ -91,78 +91,38 @@ h2 {
 }
 
 /*** Button Start ***/
-.btn {
-  font-weight: 600;
-  transition: 0.5s;
+.btn.btn-primary  {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid var(--primary);
+}
+.btn.btn-danger  {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid red;
+}
+.btn.btn-primary::after, .btn.btn-danger::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  inset: 1;
+  border-radius: 2rem;
+  z-index: -1;
+  transform: translateY(-102%);
+  transition: transform 0.6s ease-in-out;
 }
 
-.btn-square {
-  width: 32px;
-  height: 32px;
+.btn.btn-primary:hover::after, .btn.btn-danger:hover::after {
+  transform: translate(0%);
 }
-
-.btn-sm-square {
-  width: 34px;
-  height: 34px;
+.btn-primary:hover {
+  color:  var(--primary);
 }
-
-.btn-md-square {
-  width: 44px;
-  height: 44px;
+.btn-danger:hover {
+  color:  red !important;
 }
-
-.btn-lg-square {
-  width: 56px;
-  height: 56px;
-}
-
-.btn-xl-square {
-  width: 66px;
-  height: 66px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-md-square,
-.btn-lg-square,
-.btn-xl-square {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: normal;
-}
-
-.btn.btn-primary {
-  color: var(--bs-white);
-  border: none;
-}
-
-.btn.btn-primary:hover {
-  background: var(--bs-dark);
-  color: var(--bs-white);
-}
-
-.btn.btn-light {
-  color: var(--primary);
-  border: none;
-}
-
-.btn.btn-light:hover {
-  color: var(--bs-white);
-  background: var(--primary);
-}
-
-.btn.btn-dark {
-  color: var(--bs-white);
-  border: none;
-}
-
-.btn.btn-dark:hover {
-  color: var(--bs-primary);
-  background: var(--bs-light);
-}
-
 /*** Topbar Start ***/
 .topbar .dropdown-toggle::after {
   border: none;
@@ -228,7 +188,7 @@ h2 {
 .navbar-light .navbar-nav .nav-item:hover .nav-link,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: red !important;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .navbar-light .navbar-nav .nav-item:hover,
