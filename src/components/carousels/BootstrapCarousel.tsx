@@ -8,9 +8,12 @@ import { faPenAlt, faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Ireviews } from '@/types';
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const HeroCarousel = () => {
+  const [isShowNumber, setIsShowNumber] = useState<boolean>(false);
   const { heroSection } = allItems.items;
+
   return (
     <Carousel className='header-carousel container-fluid'>
       {heroSection.map((heroDetails) => (
@@ -29,10 +32,12 @@ const HeroCarousel = () => {
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
                       <div className='d-lg-flex d-grid gap-2 gap-md-3'>
                         <span className="position-relative">
-                          <Link href="/our-services"><PrimaryButton text='Speak to an Avata' icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
+                          <Link href="/get-quote" onClick={() => setIsShowNumber(true)}>
+                            <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008' }`} icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
                         </span>
                         <span className="position-relative">
-                          <Link href={"/about"}><PrimaryButton text='Get a quote' icon={faPenAlt} className='btn-danger p-3 align-items-center justify-content-center w-100 text-white' /></Link>
+                          <Link href={"/get-quote"}>
+                            <PrimaryButton text={"Get a quote"} icon={faPenAlt} className='btn-danger p-3 align-items-center justify-content-center w-100 text-white' /></Link>
                         </span>
                       </div>
                     </div>

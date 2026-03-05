@@ -103,6 +103,24 @@ h2 {
   overflow: hidden;
   border: 2px solid red;
 }
+.btn.btn-white  {
+  position: relative;
+  background-color: white;
+  color: var(--primary);
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.btn.btn-white::after {
+  position: absolute;
+  content: "";
+  background-color: var(--primary);
+  inset: 1;
+  border-radius: 2rem;
+  z-index: -1;
+  transform: translateY(-102%);
+  transition: transform 0.6s ease-in-out;
+}
 .btn.btn-primary::after, .btn.btn-danger::after {
   position: absolute;
   content: "";
@@ -114,7 +132,7 @@ h2 {
   transition: transform 0.6s ease-in-out;
 }
 
-.btn.btn-primary:hover::after, .btn.btn-danger:hover::after {
+.btn.btn-primary:hover::after, .btn.btn-danger:hover::after, .btn.btn-white:hover::after {
   transform: translate(0%);
 }
 .btn-primary:hover {
@@ -123,10 +141,13 @@ h2 {
 .btn-danger:hover {
   color:  red !important;
 }
+.btn-white:hover {
+  color: white;
+}
 /*** Topbar Start ***/
 .topbar .dropdown-toggle::after {
   border: none;
-  content: "\f107";
+  content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
   vertical-align: middle;
@@ -782,7 +803,7 @@ button.accordion-button:active .collapse {
   height: 30px;
   position: absolute;
   top: 0;
-  left: -120;
+  left: 50;
   background: var(--primary);
   padding: 25px;
   border-radius: 30px;
@@ -799,9 +820,9 @@ button.accordion-button:active .collapse {
   height: 30px;
   position: absolute;
   top: 0;
-  right: -120;
+  right: 50;
   background: var(--primary);
-  padding: 25px;
+  padding: 1.5rem;
   border-radius: 30px;
   transition: 0.5s;
 }
@@ -820,6 +841,15 @@ button.accordion-button:active .collapse {
   .testimonial-carousel .logo-image {
     width: 250px !important;
   }
+  .testimonial-carousel a.carousel-control-next, .testimonial-carousel a.carousel-control-prev  {
+  width: 70px;
+  position: absolute;
+  top: 14;
+  background: var(--primary);
+  padding: 1.5rem;
+  border-radius: 30px;
+  transition: 0.5s;
+}
 }
 /*** Testimonial End ***/
 

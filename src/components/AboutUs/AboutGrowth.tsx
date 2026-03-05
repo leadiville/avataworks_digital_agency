@@ -49,11 +49,7 @@ const AboutGrowth = ({ bg }: About) => {
                     </div>
                 </div>
             </div>
-            {/* get a quote here */}
-            {path !== "/get-quote" && <div className="col-12 text-center wow fadeInUp pt-4">
-                {/* {services.length <= 4 && <a className="btn btn-primary rounded-pill py-3 px-5" href="#"></a>} */}
-                <Link href={"/our-services"} ><PrimaryButton text='Get a Quote' className='py-3 px-5 btn-danger' /></Link>
-            </div>}
+            
         </div>
     )
 }

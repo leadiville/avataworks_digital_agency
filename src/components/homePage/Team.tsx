@@ -4,6 +4,7 @@ import Image from 'next/image'
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { faPeopleGroup, faPerson } from '@fortawesome/free-solid-svg-icons';
 
 interface TeamProps {
     teamMembers: IOurTeam[];
@@ -15,7 +16,7 @@ const Team = ({ teamMembers }: TeamProps) => {
     return (
 
         <div className="container-fluid team pb-5 pt-5">
-            <div className="container pb-5">
+            <div className="container">
                 <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
                     <h1 className="display-4 mb-4 text-primary">Meet Our Avatas</h1>
                     <p className="mb-0">A powerhouse of advanced virtual assistants in tech and advertising, each bringing exceptional skills, experience, and passion. Driving our clients to digital brand success.
@@ -46,7 +47,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                     })}
                     <div className="w-100 d-flex justify-content-center">
 
-                        {(path == "/") && <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary w-auto p-3 px-5' /></Link>}
+                        {(path == "/") && <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-white border-primary w-auto p-3 px-5' icon={faPeopleGroup} /></Link>}
                     </div>
                 </div>
             </div>

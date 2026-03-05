@@ -40,7 +40,7 @@ const OurServices = ({ services }: ServicesProps) => {
                         {services?.map((service) => {
                             const { _id, title, imgSrc, icon, fullInfo } = service;
                             return (
-                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp" ref={ref}>
+                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp my-5 py-2" ref={ref}>
                                     <div className={`service-item ${isActive && 'services-scroll'}`}>
                                         <div className="service-img">
                                             <Image width={400} height={400} src={imgSrc as string} className="img-fluid rounded-top w-100" alt="" />
@@ -52,7 +52,7 @@ const OurServices = ({ services }: ServicesProps) => {
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4">{title}</h2>
                                                 <p className="mb-4">{fullInfo}</p>
-                                                <Link href={"/services"} className='explore-btn p-lg-2 py-3'><PrimaryButton className='border-primary bg-white' text={`Explore ${title}`} /></Link>
+                                                <Link href={"/our-services"} className='explore-btn py-3'><PrimaryButton className='border-primary bg-white py-3 px-4' text={`Explore ${title}`} /></Link>
                                             </div>
                                         </div>
                                     </div>
