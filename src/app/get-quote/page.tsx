@@ -13,9 +13,6 @@ const page = () => {
         phone: "",
         message: "",
     }
-
-
-
     return (
         <div className="bg-primary">
             <div className='container py-lg-5 pb-5'>
