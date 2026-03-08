@@ -3,6 +3,7 @@ import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from '@forta
 import { faCommentDots, faPhoneAlt, IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 interface footerProps {
@@ -27,12 +28,11 @@ const Footer = async ({ footer }: footerProps) => {
                                             </a>
                                             <p className="text-white mb-4 text-capitalize">your all in  one digital and technology agency to meet all your business needs</p>
                                             <div className="footer-btn d-flex">
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-facebook-f"><FontAwesomeIcon width={20} height={20} icon={faFacebook} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={20} height={20} icon={faTwitter} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-instagram"><FontAwesomeIcon width={20} height={20} icon={faInstagram} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-3" href="#"><i className="fab fa-linkedin-in"><FontAwesomeIcon width={20} height={20} icon={faLinkedin} /></i></a>
-                                                <a className="btn btn-md-square rounded-circle me-0" href="#"><i className="fab fa-twitter"><FontAwesomeIcon width={20} height={20} icon={faTiktok} /></i></a>
-
+                                                <Link className="btn btn-md-square rounded-circle me-3" href="https://web.facebook.com/avataworks"><i className="fab fa-facebook-f"><FontAwesomeIcon width={20} height={20} icon={faFacebook} /></i></Link>
+                                                <Link className="btn btn-md-square rounded-circle me-3" href="https://x.com/avataworks"><i className="fab fa-twitter"><FontAwesomeIcon width={20} height={20} icon={faTwitter} /></i></Link>
+                                                <Link className="btn btn-md-square rounded-circle me-3" href="https://www.instagram.com/avataworks_agency"><i className="fab fa-instagram"><FontAwesomeIcon width={20} height={20} icon={faInstagram} /></i></Link>
+                                                <Link className="btn btn-md-square rounded-circle me-3" href="https://www.linkedin.com/company/avataworks"><i className="fab fa-linkedin-in"><FontAwesomeIcon width={20} height={20} icon={faLinkedin} /></i></Link>
+                                                <Link className="btn btn-md-square rounded-circle me-0" href="https://tiktok.com/@avataworks"><i className="fab fa-twitter"><FontAwesomeIcon width={20} height={20} icon={faTiktok} /></i></Link>
                                             </div>
                                         </div>
                                     </div>

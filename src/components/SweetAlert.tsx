@@ -4,8 +4,8 @@ const swal = Swal;
 const SweetAlert = () => {
   swal.fire({
     title: "We Got your Request!",
-    text: "You will recieve a discovery call from an AVATA(s) with 24hrs. Thank you!", 
-    timer: 7000,
+    text: "You will recieve a discovery call from an AVATA within the next 24hrs. Thank you!", 
+    timer: 10000,
     color: 'white',
     background: "#0575bb",
     position: 'top',

@@ -1,6 +1,8 @@
-import { faMailForward } from '@fortawesome/free-solid-svg-icons'
+import { faMailForward, faPen } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import PrimaryButton from '../PrimaryButton';
+import Link from 'next/link';
 
 
 interface ICoreServices {
@@ -12,7 +14,7 @@ interface ICoreServices {
 
 const EachCoreService = ({ header, subheader, img, listItems }: ICoreServices) => {
     return (
-        <div className='container'>
+        <div className='container mt-5'>
             <div className="container text-center">
                 <h2 className='text-primary my-3'>
                     {header}
@@ -21,7 +23,7 @@ const EachCoreService = ({ header, subheader, img, listItems }: ICoreServices) =
             </div>
             <div className="row gap-0 my-md-5">
                 <div className="col-lg-4">
-                    <Image src={img} width={500} height={500} alt='service-image' className='w-100 h-100'/>
+                    <Image src={img} width={500} height={500} alt='service-image' className='w-100 h-auto' />
                 </div>
                 <div className="col-lg-8">
                     <div >
@@ -35,6 +37,7 @@ const EachCoreService = ({ header, subheader, img, listItems }: ICoreServices) =
                             <li className='my-lg-1'>Automation & Analytics: <br /> CRM integrations, Lead Management & Sales Pipeline, Email & Marketing Automation, dashboarding and monthly performance reporting</li>
                         </ul>
                     </div>
+                    <Link href={"/get-quote"} ><PrimaryButton text='Get Quote' className='btn btn-danger p-3 px-5 my-5 rounded text-center'  icon={faPen} /></Link>
                 </div>
             </div>
         </div>
