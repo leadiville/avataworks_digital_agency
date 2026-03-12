@@ -18,7 +18,7 @@ export const WelcomeAbout = () => {
               />
             </div>
             <div className="w-100 ">
-              <h1 className="text-white text-capitalize px-lg-5">We are your</h1>
+              {/* <h1 className="text-white text-capitalize px-lg-5">We are your</h1> */}
               <div className="text-dark fw-bold text-bold mx-lg-5 ml-5">
                 <br />
                 <h3 className="py-0 my-0 text-uppercase"><span className="text-white">A</span> - Advanced </h3><br />
