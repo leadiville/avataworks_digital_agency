@@ -5,11 +5,11 @@ import Script from "next/script";
 import * as FontawesomeIcons from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-
-// minimal version 
+// Minimal version - Filtering out the icons we need, so we don't fetch everything every time
 const chosenIcons = Object.values(FontawesomeIcons).filter(
   (icon): icon is FontawesomeIcons.IconDefinition => typeof icon === "object" && icon !== null && "iconName" in icon && typeof icon.iconName === "string" && icon.iconName.trim().length > 0
 );
+
 // Add the icons to your library form fontAwesome
 library.add(...chosenIcons);
 

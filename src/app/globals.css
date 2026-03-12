@@ -91,25 +91,25 @@ h2 {
 }
 
 /*** Button Start ***/
-.btn.btn-primary  {
+.btn.btn-primary {
   position: relative;
   z-index: 1;
   overflow: hidden;
   border: 2px solid var(--primary);
 }
-.btn.btn-danger  {
+.btn.btn-danger {
   position: relative;
   z-index: 1;
   overflow: hidden;
   border: 2px solid red;
 }
-.btn.btn-white  {
+.btn.btn-white {
   position: relative;
   background-color: white;
   color: var(--primary);
   z-index: 1;
   overflow: hidden;
-  border: 2px solid white;
+  border: 2px solid var(--primary);
 }
 .btn.btn-white::after {
   position: absolute;
@@ -118,28 +118,33 @@ h2 {
   inset: 1;
   border-radius: 0.2rem;
   z-index: -1;
-  transform: translateY(-102%);
-  transition: transform 0.6s ease-in-out;
+  transform: translateY(102%);
+  transition: transform 0.8s ease-in-out;
+  border: 2px solid var(--primary);
 }
-.btn.btn-primary::after, .btn.btn-danger::after {
+.btn.btn-primary::after,
+.btn.btn-danger::after {
   position: absolute;
   content: "";
   background-color: white;
   inset: 1;
   border-radius: 0.2rem;
   z-index: -1;
-  transform: translateY(-102%);
-  transition: transform 0.6s ease-in-out;
+  transform: translateY(102%);
+  transition: transform 0.8s ease-in-out;
+  border: 2px solid inherit;
 }
 
-.btn.btn-primary:hover::after, .btn.btn-danger:hover::after, .btn.btn-white:hover::after {
-  transform: translate(0%);
+.btn.btn-primary:hover::after,
+.btn.btn-danger:hover::after,
+.btn.btn-white:hover::after {
+  transform: translateY(0);
 }
 .btn-primary:hover {
-  color:  var(--primary);
+  color: var(--primary);
 }
 .btn-danger:hover {
-  color:  red !important;
+  color: red !important;
 }
 .btn-white:hover {
   color: white;
@@ -195,10 +200,10 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
 .navbar .navbar-nav .nav-item {
   display: flex;
   align-items: center;
-  padding: 1.1rem 2.5rem;
   font-weight: 500 !important;
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
@@ -212,20 +217,17 @@ h2 {
   transform: scale(1.1);
 }
 @media (max-width: 768px) {
-  .navbar-light .navbar-nav .nav-item:hover,
-  .navbar-light .navbar-nav .nav-item.active,
-  .navbar-light .navbar-nav .nav-item:hover .nav-link,
-  .navbar-light .navbar-nav .nav-item.active .nav-link {
+  .navbar-nav .nav-item.active,
+  .navbar-nav .nav-item:hover .nav-link,
+  .navbar-nav .nav-item.active .nav-link {
     color: red !important;
     transform: scale(1.1);
-    margin-right: 0px;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 968px) {
   h1 {
     font-size: 3rem;
   }
-
   h1,
   h2,
   h3,
@@ -243,7 +245,7 @@ h2 {
   }
 
   .navbar {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   .navbar .navbar-nav .nav-link {
@@ -314,9 +316,11 @@ h2 {
     align-items: center;
     justify-content: end;
   }
-
+  .navbar-collapse {
+    align-items: end;
+  }
   .navbar .navbar-nav {
-    width: 100%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +329,6 @@ h2 {
   }
 
   .navbar .navbar-nav .nav-btn {
-    width: 100%;
     display: flex;
     margin-left: auto;
   }
@@ -359,15 +362,15 @@ h2 {
   height: 640px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .header-carousel .header-carousel-item {
     height: 950px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-carousel .header-carousel-item {
-    height: 800px;
+    height: 1000px;
   }
   /* hero cta */
   .hero-cta {
@@ -380,28 +383,6 @@ h2 {
   }
 }
 
-/*** Carousel Hero Header End ***/
-
-/*** Single Page Hero Header Start ***/
-/* .bg-breadcrumb {
-  position: relative;
-  overflow: hidden;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 60px 0 60px 0;
-  transition: 0.5s;
-  background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg);
-}
-
-.bg-breadcrumb .breadcrumb {
-  position: relative;
-}
-
-.bg-breadcrumb .breadcrumb .breadcrumb-item a {
-  color: var(--bs-white);
-} */
-/*** Single Page Hero Header End ***/
 
 /*** Feature Start ***/
 .feature .feature-item {
@@ -841,15 +822,16 @@ button.accordion-button:active .collapse {
   .testimonial-carousel .logo-image {
     width: 250px !important;
   }
-  .testimonial-carousel a.carousel-control-next, .testimonial-carousel a.carousel-control-prev  {
-  width: 70px;
-  position: absolute;
-  top: 14;
-  background: var(--primary);
-  padding: 1.5rem;
-  border-radius: 30px;
-  transition: 0.5s;
-}
+  .testimonial-carousel a.carousel-control-next,
+  .testimonial-carousel a.carousel-control-prev {
+    width: 70px;
+    position: absolute;
+    top: 14;
+    background: var(--primary);
+    padding: 1.5rem;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
 }
 /*** Testimonial End ***/
 

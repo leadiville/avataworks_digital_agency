@@ -9,10 +9,10 @@ interface ICoreServices {
     header: string;
     subheader: string;
     img: string;
-    listItems: string
+    whatWeBuild: string[] | undefined;
 }
 
-const EachCoreService = ({ header, subheader, img, listItems }: ICoreServices) => {
+const EachCoreService = ({ header, subheader, img, whatWeBuild, }: ICoreServices) => {
     return (
         <div className='container mt-5'>
             <div className="container text-center">
@@ -28,17 +28,18 @@ const EachCoreService = ({ header, subheader, img, listItems }: ICoreServices) =
                 <div className="col-lg-8">
                     <div >
                         <h4 className="text-primary"><FontAwesomeIcon className='me-2' icon={faMailForward} />What we deliver</h4>
-                        <ul style={{ color: "grey" }}>
-                            <li className='my-lg-1' >Brand Strategy Planning: <br /> Market & audience research, Conversion funnel design and KPI roadmap, Channel selection and media mix planning.</li>
-                            <li className='my-lg-1'>Paid Advertising: <br />  A/B testing, ad campaign optimization across Meta ads, TikTok Ads, YouTube Ads, LinkedIn Ads, Google Ads.</li>
-                            <li className='my-lg-1'>Content Creation & Marketing: <br /> content calendars, video production, copywriting & ghostwriting, blogs, user generated content, platform optimization, SEO, and distribution playbooks
-                            </li>
-                            <li className='my-lg-1'>Community & Influencer Activation: <br /> Community & Influencer Activation — creator partnerships, micro-influencer programs, and community funnels.</li>
-                            <li className='my-lg-1'>Automation & Analytics: <br /> CRM integrations, Lead Management & Sales Pipeline, Email & Marketing Automation, dashboarding and monthly performance reporting</li>
+                        <ul style={{ color: "grey" }} className='my-4'>
+                            {whatWeBuild?.map((each, inx) => {
+                                return (
+                                    <li className='my-lg-1' key={inx} >
+                                        {each}
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
-                    <Link href={"/get-quote"} ><PrimaryButton text='Get Quote' className='btn btn-danger p-3 px-5 my-5 rounded text-center'  icon={faPen} /></Link>
                 </div>
+                    <Link href={"/get-quote"} ><PrimaryButton text='Get Quote' className='btn btn-danger p-3 px-5 my-5 text-center w-100 rounded text-center' icon={faPen} /></Link>
             </div>
         </div>
     )

@@ -17,10 +17,9 @@ export const WelcomeAbout = () => {
                 className="image-fluid "
               />
             </div>
-            <div className="container">
-              <div className=" w-full"><h1 className="text-white text-capitalize px-lg-5">We are your</h1>
-              </div>
-              <div className="text-dark fw-bold text-bold mx-lg-5">
+            <div className="w-100 ">
+              <h1 className="text-white text-capitalize px-lg-5">We are your</h1>
+              <div className="text-dark fw-bold text-bold mx-lg-5 ml-5">
                 <br />
                 <h3 className="py-0 my-0 text-uppercase"><span className="text-white">A</span> - Advanced </h3><br />
                 <h3 className="py-0 my-0 text-uppercase"><span className="text-white">V</span> - Virtual </h3><br />

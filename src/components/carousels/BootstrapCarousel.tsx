@@ -32,8 +32,8 @@ const HeroCarousel = () => {
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
                       <div className='d-lg-flex d-grid gap-2 gap-md-3'>
                         <span className="position-relative">
-                          <Link href="#" onClick={() => setIsShowNumber(true)}>
-                            <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008' }`} icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
+                          <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
+                            <PrimaryButton  text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008' }`} icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
                         </span>
                         <span className="position-relative">
                           <Link href={"/get-quote"}>
