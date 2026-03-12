@@ -383,7 +383,6 @@ h2 {
   }
 }
 
-
 /*** Feature Start ***/
 .feature .feature-item {
   border-radius: 10px;
@@ -859,4 +858,11 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #ffffff inset !important; /* Change #ffffff to your desired background color */
   -webkit-text-fill-color: #000000 !important; /* Change #000000 to your desired text color */
   transition: background-color 5000s ease-in-out 0s; /* Optional: adds a long transition to prevent the default yellow flash */
+}
+
+.about-bg {
+  background: url("/background-doodle/Doodle AVatar-01.png");
+  background-position: center;
+  background-size: auto;
+  background-blend-mode: hue;
 }
