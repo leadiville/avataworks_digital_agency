@@ -12,15 +12,14 @@ const chosenIcons = Object.values(FontawesomeIcons).filter(
 
 // Add the icons to your library form fontAwesome
 library.add(...chosenIcons);
-
 const geistSans = Geist({
   subsets: ['latin'],
   variable: '--font-geist-sans', // Optional CSS variable name
 });
 
 export const metadata = {
-  title: "Avataworks",
-  description: "Advanced Virtual Assistance in Technology and Advertising",
+  title: "Avataworks Digital Agency",
+  description: "Advanced Virtual Assistance in Technology and Advertising(AVATA)",
   icons: {
     icon: "/favicon.ico",
     apple: "/favicon.ico",

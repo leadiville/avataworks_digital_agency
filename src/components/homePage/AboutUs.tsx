@@ -15,7 +15,7 @@ const AboutUs = () => {
                         <div className="col-xl-6 wow fadeInLeft order-lg-first" >
                             <div className="bg-primary rounded p-lg-5 mt-lg-4 p-3 h-100 d-flex justify-content-center align-items-center">
                                 <div>
-                                    <h2 className="mb-4 text-capitalize text-white">Your All-in-One Digital Team—Powered by AVATAs</h2>
+                                    <h1 className="mb-4 text-capitalize text-white display-4">Your All-in-One Digital Team—Powered by AVATAs</h1>
                                     <p className='text-white'>From the comfort of your home or office, you can access a full team of remote digital experts—your personal AVATAs (Advanced Virtual Assistants in Technology and Advertising) dedicated to helping you scale with ease.
                                     </p>
                                     <p className='text-white'>Whether you are an ambitious startup in Africa or a thriving brand aiming for global relevance, AVATAWorks is your all-in-one partner for digital brand success. We combine strategic branding, tech-driven creativity, and result-focused execution to deliver powerful marketing, design, and business growth solutions.

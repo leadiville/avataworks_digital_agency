@@ -218,11 +218,12 @@ h2 {
   transform: scale(1.1);
 }
 @media (max-width: 768px) {
-  .navbar-nav .nav-item.active,
-  .navbar-nav .nav-item:hover .nav-link,
-  .navbar-nav .nav-item.active .nav-link {
+  navbar-light .navbar-nav .nav-item:hover,
+.navbar-light .navbar-nav .nav-item.active,
+.navbar-light .navbar-nav .nav-item:hover .nav-link,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
     color: red !important;
-    transform: scale(1.1);
+    transform: none !important;
   }
 }
 @media (min-width: 968px) {
@@ -864,6 +865,6 @@ input:-webkit-autofill:active {
 .about-bg {
   background: url("/background-doodle/Doodle AVatar-02.png");
   background-position: center;
-  background-size: auto;
+  background-size: contain;
   background-blend-mode: difference;
 }

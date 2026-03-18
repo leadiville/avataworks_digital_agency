@@ -19,7 +19,7 @@ const Navbar = () => {
                             <span className="fa fa-bars"><FontAwesomeIcon icon={faBars} style={{ color: 'white' }} /></span>
                         </button>
                         <NavMenus />
-                        <div className="d-none d-xl-flex flex-shrink-0 ps-4">
+                        <div className="d-none d-xl-flex flex-shrink-0 ps-4 gap-2">
                             <Link href="#" className="btn btn-light btn-lg-square rounded-circle position-relative wow tada " >
                                 <span>
                                     <FontAwesomeIcon className='text-primary' icon={faPhoneAlt} width={25} height={25} style={{ width: '28px', height: '28px', marginLeft: "6px" }} />

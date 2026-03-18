@@ -26,7 +26,8 @@ const page = () => {
                     <div className="col-lg-6 bg-white text-primary px-5 d-flex align-items-center form-container">
                         <div>
                             <h4 className="text-capitalized mb-3 fw-bold">Speak to an Avata!<span className="text-primary"><FontAwesomeIcon icon={faBullhorn} width={50} height={100} /></span></h4>
-                            <h2 className="text-black">Let’s build your digital brand success! </h2>
+                            <h1 className="text-black display-3 text-capitalize">Let’s build your digital brand success! </h1>
+                            
                             <QuoteForm initialState={initialState} />
                         </div>
                     </div>
@@ -36,4 +37,4 @@ const page = () => {
     )
 }
 
-export default page                                                     
+export default page                                                  

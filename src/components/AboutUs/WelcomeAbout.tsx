@@ -11,13 +11,13 @@ export const WelcomeAbout = () => {
             <div className="p-lg-0">
               <Image
                 src={"/aboutUs.png"}
-                width={1800}
-                height={800}
+                width={3600}
+                height={2400}
                 alt="welcome image"
                 className="image-fluid w-100 h-100"
               />
             </div>
-            <div className="w-100 ">
+            <div className="w-100 d-flex justify-content-end">
               {/* <h1 className="text-white text-capitalize px-lg-5">We are your</h1> */}
               <div className="text-dark fw-bold text-bold mx-lg-5 ml-5 my-4 my-lg-0">
                 <br />
