@@ -32,7 +32,7 @@ const OurServices = ({ services }: ServicesProps) => {
             <div className="container-fluid service py-5">
                 <div className="container py-5 p-lg-4">
                     <div className="text-center mx-auto pb-5 wow fadeInUp" >
-                        <h2 className="mb-4 text-primary">Full digital services. <br /> One team. <br /> Infinite possibilities.</h2>
+                        <h1 className="mb-4 text-primary display-3">Full digital services. <br /> One team. <br /> Infinite possibilities.</h1>
                         <h6 className="mb-0 text-black px-lg-5 mx-lg-5">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand).
                         </h6>
                     </div>

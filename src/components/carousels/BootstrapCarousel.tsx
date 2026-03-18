@@ -22,9 +22,9 @@ const HeroCarousel = () => {
             <div className="">
               <div className="row g-4 align-items-center justify-content-center">
                 <div className="col-lg-7 animated fadeInLeft">
-                  <div className="text-sm-center text-md-start text-primary align-items-center justify-content-center">
+                  <div className="text-sm-center text-md-start text-primary align-items-center justify-content-center w-100">
                     {/* <h4 className="text-uppercase text-black fw-bold mb-4">welcome to Avataworks</h4> */}
-                    <h2 className="text-primary text-wrap">{heroDetails.title}</h2>
+                    <h1 className="text-primary text-break display-1 text-bold fw-bold">{heroDetails.title}</h1>
                     <p className="mb-5 fs-lg-5 text-black">{heroDetails.body}
                     </p>
                     <div className="text-capitalize hero-cta">

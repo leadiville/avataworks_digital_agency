@@ -19,13 +19,13 @@ export const WelcomeAbout = () => {
             </div>
             <div className="w-100 ">
               {/* <h1 className="text-white text-capitalize px-lg-5">We are your</h1> */}
-              <div className="text-dark fw-bold text-bold mx-lg-5 ml-5">
+              <div className="text-dark fw-bold text-bold mx-lg-5 ml-5 my-4 my-lg-0">
                 <br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-black rounded-circle p-3">A</span> - <span className="bg-white rounded px-3 py-2 "> Advanced</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-black rounded-circle p-3">V</span> - <span className="bg-white rounded px-3 py-2 "> Virtual</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-black rounded-circle p-3">A</span> - <span className="bg-white rounded px-3 py-2 "> Assistant in</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-black rounded-circle p-3">T</span> - <span className="bg-white rounded px-3 py-2 "> Technology and</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-black rounded-circle p-3">A</span> - <span className="bg-white rounded px-3 py-2 "> Advertising</span> </h3>
+                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">A</span> - <span className="bg-primary text-white rounded p-3 "> Advanced</span> </h3><br />
+                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">V</span> - <span className="bg-primary text-white rounded p-3 "> Virtual</span> </h3><br />
+                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">A</span> - <span className="bg-primary text-white rounded p-3 "> Assistant in</span> </h3><br />
+                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">T</span> - <span className="bg-primary text-white rounded p-3 "> Technology and</span> </h3><br />
+                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">A</span> - <span className="bg-primary text-white rounded p-3 "> Advertising</span> </h3>
               </div>
             </div>
           </div>
@@ -34,3 +34,5 @@ export const WelcomeAbout = () => {
     </div>
   )
 }
+
+

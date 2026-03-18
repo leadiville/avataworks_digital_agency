@@ -14,7 +14,7 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
             <div className="container-fluid feature bg-light pt-5">
                 <div className="container py-5">
                     <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: '800px' }}>
-                        <h2 className="text-primary">{title}</h2>
+                        <h1 className="text-primary display-3">{title}</h1>
                         <p className="mb-0 p-4">At AVATAWorks, we don&apos;t just offer services—we deliver transformative solutions tailored to suite your brand needs. As your all-in-one Advanced Virtual Assistant in Technology and Advertising, we combine creativity, technology, and strategy to help brands scale faster, stronger, and smarter.
                         </p>
                     </div>

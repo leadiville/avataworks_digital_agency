@@ -16,9 +16,9 @@ const EachCoreService = ({ header, subheader, img, whatWeBuild, }: ICoreServices
     return (
         <div className='container mt-5'>
             <div className="container text-center">
-                <h2 className='text-primary my-3'>
+                <h1 className='text-primary my-3 display-3'>
                     {header}
-                </h2>
+                </h1>
                 <h5 className="text-grey">{subheader}</h5>
             </div>
             <div className="row gap-0 my-md-5">

@@ -34,6 +34,7 @@ h5,
 h6 {
   font-family: "Helvetica Neue LT Pro", sans-serif;
   clear: both;
+  -webkit-text-size-adjust: none;
 }
 h1 {
   font-size: 5rem;
@@ -174,7 +175,7 @@ h2 {
   transition: 0.5s;
   opacity: 1;
 }
-/*** Topbar End ***/
+/*** Topbar End ***/ 
 
 /*** Navbar Start ***/
 .nav-bar {
@@ -861,8 +862,8 @@ input:-webkit-autofill:active {
 }
 
 .about-bg {
-  background: url("/background-doodle/Doodle AVatar-01.png");
+  background: url("/background-doodle/Doodle AVatar-02.png");
   background-position: center;
   background-size: auto;
-  background-blend-mode: hue;
+  background-blend-mode: difference;
 }
