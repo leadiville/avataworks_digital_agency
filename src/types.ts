@@ -12,12 +12,6 @@ export interface Iservice {
   subServices?: [string];
 }
 
-export interface IfooterObj {
-  _id?: string;
-  title?: string;
-  subtitle?: string;
-  icon?: IconProp;
-}
 export interface IsocialLinks {
   _id?: string;
   instagram?: string;
@@ -26,12 +20,7 @@ export interface IsocialLinks {
   X?: string;
   Tiktok?: string;
 }
-export interface Ifooter {
-  _id?: string;
-  footerAddress?: [IfooterObj];
-  usefulLinks?: [string];
-  socialLinks?: [IsocialLinks];
-}
+
 export interface Ifeatures {
   _id?: string;
   title: string;

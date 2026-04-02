@@ -55,11 +55,6 @@ const seedDb = async () => {
     } else console.log("data already exist");
 
     //footer
-    const footerCount = await Footer.countDocuments();
-    if (footerCount == 0) {
-      await Footer.insertMany(data.database.footer);
-      console.log("inserting data into database");
-    } else console.log("data already exist");
   } catch (err) {
     console.error("error seeding database.json", err);
   }

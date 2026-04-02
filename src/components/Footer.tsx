@@ -1,4 +1,4 @@
-import { Ifooter } from '@/types'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faCommentDots, faPhoneAlt, IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
@@ -6,25 +6,22 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-// interface footerProps {
-//     footer?: Ifooter
-// }
 const footer = {
     footerAddress: [
         {
-            "title": "Address",
-            "subtitle": "Lagos",
-            "icon": "fa-map-marker-alt"
+            title: "Address",
+            subtitle: "Lagos",
+            icon: "fa-map-marker-alt"
         },
         {
-            "title": "Contact Us",
-            "subtitle": "info@avataworks.com",
-            "icon": "fa-envelope"
+            title: "Contact Us",
+            subtitle: "info@avataworks.com",
+            icon: "fa-envelope"
         },
         {
-            "title": "Telephone",
-            "subtitle": "(+234)708 935 5003",
-            "icon": "fa-phone-alt"
+            title: "Telephone",
+            subtitle: "(+234)708 935 5003",
+            icon: "fa-phone-alt"
         }
     ],
 
@@ -38,11 +35,11 @@ const footer = {
 
     socialLinks:
     {
-        "instagram": "https://www.instagram.com/avataworks?igsh=MXBvOW0xeWxiaDN2bg==",
-        "facebook": "www.facebook.com/share/1Aw2Y9yZrY/",
-        "LinkedIn": "https: //linkedin.com/company/avataworks",
-        "X": "https: //x.com/avataworks",
-        "Tiktok": "https: //www.tiktok.com/@avataworks"
+        instagram: "https://www.instagram.com/avataworks?igsh=MXBvOW0xeWxiaDN2bg==",
+        facebook: "www.facebook.com/share/1Aw2Y9yZrY/",
+        LinkedIn: "https: //linkedin.com/company/avataworks",
+        X: "https: //x.com/avataworks",
+        Tiktok: "https: //www.tiktok.com/@avataworks"
     }
 
 }
@@ -104,12 +101,13 @@ const Footer = async () => {
                                         <div className="row g-4">
                                             {
                                                 footer?.footerAddress?.map((contact, contactInx: number) => {
+
                                                     const { title, subtitle, icon } = contact;
                                                     return (
                                                         <div className="col-lg-6 col-xl-4" key={contactInx}>
                                                             <div className="d-flex">
                                                                 <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon as IconDefinition} width={20} height={20} /></i>
+                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon as IconProp} width={20} height={20} /></i>
                                                                 </div>
                                                                 <div>
                                                                     <h4 className="text-white">{title}</h4>

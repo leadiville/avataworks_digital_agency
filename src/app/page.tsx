@@ -8,9 +8,8 @@ import Faq from "../components/homePage/Faq";
 import Footer from "../components/Footer";
 import Team from "../components/homePage/Team";
 import Testimonials from "../components/homePage/Testimonials";
-import { Ifaq, Ifeatures, Ifooter, IOurTeam, Ireviews, Iservice } from "@/types";
+import { Ifaq, Ifeatures, IOurTeam, Ireviews, Iservice } from "@/types";
 import { HeroCarousel } from "../components/carousels/BootstrapCarousel";
-import FooterM from "../models/Footer";
 import OurTeam from "../models/OurTeam";
 import FeaturesM from "../models/Features";
 import FaqM from "../models/Faq";
@@ -30,7 +29,6 @@ export default async function Home() {
   const services = cleanMongoShape(await ServicesM.find().lean<Partial<Iservice>[]>());
   const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
   const reviews = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>()).map(review => ({ ...review, _id: review?._id?.toString() }));
-  // const footer = cleanMongoShape(await FooterM.findOne<Partial<Ifooter>>()) || null;
 
   const faqHome = faq?.[0].homePage ?? [];
 

@@ -5,9 +5,8 @@ import AboutUs from "../../components/homePage/AboutUs"
 import Team from "../../components/homePage/Team"
 import Footer from "../../components/Footer"
 import { WelcomeAbout } from "../../components/AboutUs/WelcomeAbout"
-import { Ifeatures, Ifooter, IOurTeam, Ireviews } from "@/types"
+import { Ifeatures, IOurTeam, Ireviews } from "@/types"
 import OurTeam from "../../models/OurTeam";
-import FooterM from "../../models/Footer";
 import FeaturesM from "../../models/Features";
 import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
@@ -19,7 +18,7 @@ import Reviews from "@/models/Reviews";
 const AboutPage = async function () {
     await connectDb();
     const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
-    const footer = cleanMongoShape(await FooterM.findOne().lean<Ifooter>()) || null;
+    // const footer = cleanMongoShape(await FooterM.findOne().lean<Ifooter>()) || null;
     const features = cleanMongoShape(await FeaturesM.find().lean<Ifeatures[]>());
     const testimonials = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>());
     return (
@@ -29,7 +28,7 @@ const AboutPage = async function () {
             <AboutUs />
             <Team teamMembers={ourTeam} />
             <Testimonials testimonials={testimonials} />
-            {footer && <Footer footer={footer} />}
+            <Footer />
         </>
     )
 }
