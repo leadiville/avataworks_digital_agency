@@ -47,7 +47,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                     })}
                     <div className="w-100 d-flex justify-content-center">
 
-                        {(path == "/") && <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-white border-primary w-auto p-3 px-5' icon={faPeopleGroup} /></Link>}
+                        {(path == "/") && <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary border-white w-auto p-3 px-5' icon={faPeopleGroup} /></Link>}
                     </div>
                 </div>
             </div>

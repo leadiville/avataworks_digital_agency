@@ -7,7 +7,7 @@
                 "imgSrc": "/rebranding-amico.png",
                 "showInfo": false,
                 "icon": "pencil",
-                "fullInfo": "Build a Brand That Speaks, Sells, and Stands Out. At AVATA Works, we don't just create logos we craft brand strategy, visual identity systems and scalable creatives designed to move prospects through your funnel. We align messaging and content creation to acquisition goals so high-performing creatives directly improve ad performance and long-term value.",
+                "fullInfo": "Build a Brand That Speaks, Sells, and Stands Out. Your brand is the first decision your customer makes before they contact you. We build brand identity systems: logos, visual language, brand guidelines, and creative strategy that sell before you say a word. Our branding work is tied directly to commercial intent, designed to improve ad performance, reduce customer acquisition cost, and build long-term brand equity for ambitious brands.",
                 "subServices": [
                     "Logo and Brand Identity",
                     "Graphic Design",
@@ -17,12 +17,12 @@
                 ]
             },
             {
-                "title": "Technology  Strategic Innovation",
+                "title": "Technology Strategic & Innovation",
                 "info": "Developing tailored software solutions to meet specific business needs",
                 "imgSrc": "/Developer activity-bro.png",
                 "showInfo": false,
                 "icon": "laptopCode",
-                "fullInfo": "AvataWorks engineers sophisticated tech solutions that solves, scales, and meets strategic growth. We build custom digital solutions that don’t just look good but work smart. By prioritizing conversion-first architecture and actionable data over mere aesthetics, we turn web and mobile applications into scalable revenue channels for ambitious brands.",
+                "fullInfo": "AvataWorks engineers innovative tech solutions that solves, scales, and meets strategic growth. Your website is your 24/7 salesperson but most African business sites lose leads every day. We build high-performance websites, mobile applications, and landing pages designed for performance, SEO, and revenue. CRM-integrated. Mobile-optimized. Built to compete locally and grow globally.",
                 "subServices": [
                     "Website Development",
                     "Mobile App Development ",
@@ -37,7 +37,7 @@
                 "imgSrc": "/Marketing-cuate.png",
                 "showInfo": false,
                 "icon": "rectangleAd",
-                "fullInfo": "AVATAWorks runs social media like a growth engine for startups and ambitious brands. We convert attention into revenue with digital advertising that converts. As your brand’s growth partner, we develop strategy, execute campaigns, and optimize performance by putting your brand in front of the right people, on the right platforms, at the right time to reduce customer acquisition cost and build a monthly pipeline.",
+                "fullInfo": "AVATAWorks manages your social media presence as a full revenue operation, not just content. From paid advertising on Meta, TikTok, LinkedIn, and Google Ads, to organic content strategy, community management, and influencer partnerships. Every campaign is tracked, every naira of ad spend is optimized, and every platform decision is driven by cross-market data and global insights.",
                 "subServices": [
                     "Copywriting & Content Marketing",
                     "Paid Advertising",
@@ -46,42 +46,6 @@
                 ]
             }
         ],
-
-        "footer": {
-            "footerAddress": [
-                {
-                    "title": "Address",
-                    "subtitle": "Lagos",
-                    "icon": "fa-map-marker-alt"
-                },
-                {
-                    "title": "Mail Us",
-                    "subtitle": "avataworks@info.com",
-                    "icon": "fa-envelope"
-                },
-                {
-                    "title": "Telephone",
-                    "subtitle": "(+234)708 935 5003",
-                    "icon": "fa-phone-alt"
-                }
-            ],
-            "usefulLinks": [
-                "About",
-                "Our Team",
-                "Features",
-                "Services",
-                "FAQ's, Contact"
-            ],
-            "socialLinks": [
-                {
-                    "instagram": "https://www.instagram.com/avataworks?igsh=MXBvOW0xeWxiaDN2bg==",
-                    "facebook": "www.facebook.com/share/1Aw2Y9yZrY/",
-                    "LinkedIn": "https: //linkedin.com/company/avataworks",
-                    "X": "https: //x.com/avataworks",
-                    "Tiktok": "https: //www.tiktok.com/@avataworks"
-                }
-            ]
-        },
         "features": [
             {
                 "title": "Grow your business with team AVATA",
@@ -141,7 +105,7 @@
                 {
                     "showAnswer": false,
                     "question": "What is AVATAWORKS?",
-                    "answer": "AVATAWorks is a result-driven digital agency based in Nigeria, dedicated to delivering tailored business solutions using cutting-edge technology, experiential marketing, dynamic branding, and strategic sales consulting. Our goal is to drive sustainable growth and help businesses achieve digital brand success."
+                    "answer": "AVATAWorks is a digital agency based in Lagos, Nigeria, dedicated to delivering tailored business solutions. We run social media marketing, creative branding, and web development for Nigerian startups and African brands. Our goal is to drive sustainable growth and help ambitious brand achieve digital brand success."
                 },
                 {
                     "showAnswer": false,
@@ -156,22 +120,23 @@
                 {
                     "showAnswer": false,
                     "question": "What industries does AVATAWorks specialize in?",
-                    "answer": "AVATAWorks has experience working across various industries, including travel, Health, beauty, retail, food, entertainment, and more. Our AVATAs are equipped to handle projects from diverse sectors, tailoring strategies to meet specific business needs for brand digital success."
+                    "answer": "AVATAWorks has experience working across various industries, including Startups, E-commerce, Tech, Agri-Export, Real-Estate, Fast-moving consumer goods (FMCG). Our AVATAs are equipped to handle projects from diverse sectors, tailoring strategies to meet specific business needs for brand digital success."
                 },
                 {
                     "showAnswer": false,
                     "question": "What services does AVATAWorks provide?",
                     "answer": [
                         {
-                            "title": "Brand Strategy & Design:",
-                            "description": "Crafting cohesive brand identities that resonate with target customer avatar"
+                            "title": "Creative Strategy & Branding:",
+                            "description": "We create the brand strategy, visual identity, messaging framework, and creative assets that make your target audience trust you before you've said a word."
                         },
                         {
-                            "title": "Digital Marketing and Advertising",
-                            "description": "Implementing data-driven campaigns to boost online presence and conversions."
+                            "title": "Social Media Management and Advertising",
+                            "description": "Managing organic channels and paid advertising campaigns to boost online presence and conversions."
                         },
                         {
-                            "title": "Full Video Production Services: Capture and create engaging visual content to captivate and inform your customer avatar."
+                            "title": "Website and App Development Services:",
+                            "description": "We build high-performance websites, e-commerce platforms, and mobile applications engineered for performance, SEO, and revenue not just aesthetics."
                         }
                     ]
                 },
@@ -222,11 +187,11 @@
                     "answer": [
                         {
                             "title": "Initial Consultation: Understanding your business needs and objectives",
-                            "description": " Strategy Development: Crafting a brief and a tailored plan to achieve your digital brand goals,"
+                            "description": " Mandatory AVATA Session: Audit, craft a brief and present a tailored strategy plan that aligns with your business goals,"
                         },
                         {
                             "title": " Execution: Implementing the strategy with regular updates,",
-                            "description": " Monitoring & Optimizatio: Assessing performance and making necessary adjustment."
+                            "description": " Monitoring & Optimization: Assessing performance and making necessary adjustment."
                         }
                     ],
                     "showAnswer": false
@@ -250,7 +215,7 @@
         },
         "reviews": [
             {
-                "companyName": "Regal",
+                "companyName": "Regal Plastic Surgery Centre",
                 "service": "Creative Strategy & Branding",
                 "review": "Their brand playbook made our organic marketing strategy more appealing to our ideal target audience. More booked appointments that increased client acquisition by 200%",
                 "companyPosition": "Lead Surgeon",
@@ -303,32 +268,32 @@
             },
             {
                 "fullName": "Essang Sonia Esther",
-                "skillSet": "Executive Assistant (AVATA)",
+                "skillSet": "Executive Assistant",
                 "image": "Esther.jpg"
             },
             {
                 "fullName": "Anum Queen",
-                "skillSet": "social media manager (AVATA)",
+                "skillSet": "social media manager",
                 "image": "queen.webp"
             },
             {
                 "fullName": "Faith",
-                "skillSet": "Digital Strategist (AVATA)",
+                "skillSet": "Digital Strategist",
                 "image": "Faith.webp"
             },
             {
                 "fullName": "George Samuel",
-                "skillSet": "Visual designer (AVATA)",
+                "skillSet": "Visual designer",
                 "image": "george.webp"
             },
             {
                 "fullName": "Victory Nengi Samuel",
-                "skillSet": "Digital Advertiser (AVATA)",
+                "skillSet": "Digital Advertiser",
                 "image": "nengi.webp"
             },
             {
                 "fullName": "Igbinosa Osayuwame",
-                "skillSet": "video editor (AVATA).",
+                "skillSet": "video editor",
                 "image": "yuyu.webp"
             }
         ]

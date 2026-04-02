@@ -11,16 +11,17 @@ import { connectDb } from "@/lib/mongodb";
 export const GET = async () => {
   try {
     await connectDb();
+    const data = await Promise.all([
+      Faq.find(),
+      Features.find(),
+      Footer.findOne(),
+      OurTeam.find(),
+      Reviews.find(),
+      Services.find(),
+      WhyChooseUs.find(),
+    ]);
     const [faq, features, footer, ourTeam, reviews, services, whyChooseUs] =
-      await Promise.all([
-        Faq.find(),
-        Features.find(),
-        Footer.findOne(),
-        OurTeam.find(),
-        Reviews.find(),
-        Services.find(),
-        WhyChooseUs.find(),
-      ]);
+      data;
 
     return NextResponse.json({
       faq,

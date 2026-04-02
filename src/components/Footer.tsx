@@ -6,11 +6,48 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-interface footerProps {
-    footer?: Ifooter
+// interface footerProps {
+//     footer?: Ifooter
+// }
+const footer = {
+    footerAddress: [
+        {
+            "title": "Address",
+            "subtitle": "Lagos",
+            "icon": "fa-map-marker-alt"
+        },
+        {
+            "title": "Contact Us",
+            "subtitle": "info@avataworks.com",
+            "icon": "fa-envelope"
+        },
+        {
+            "title": "Telephone",
+            "subtitle": "(+234)708 935 5003",
+            "icon": "fa-phone-alt"
+        }
+    ],
+
+    usefulLinks: [
+        "About Us",
+        "Meet the Avatas",
+        "Features",
+        "Our Services",
+        "FAQ's, Contact"
+    ],
+
+    socialLinks:
+    {
+        "instagram": "https://www.instagram.com/avataworks?igsh=MXBvOW0xeWxiaDN2bg==",
+        "facebook": "www.facebook.com/share/1Aw2Y9yZrY/",
+        "LinkedIn": "https: //linkedin.com/company/avataworks",
+        "X": "https: //x.com/avataworks",
+        "Tiktok": "https: //www.tiktok.com/@avataworks"
+    }
+
 }
 
-const Footer = async ({ footer }: footerProps) => {
+const Footer = async () => {
 
     return (
         <div>

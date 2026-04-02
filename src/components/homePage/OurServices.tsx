@@ -29,12 +29,14 @@ const OurServices = ({ services }: ServicesProps) => {
 
     return (
         <div>
-            <div className="container-fluid service py-5">
+            <div className="container-fluid service py-5 position-relative bg-primaryLight z-2">
                 <div className="container py-5 p-lg-4">
-                    <div className="text-center mx-auto pb-5 wow fadeInUp" >
-                        <h1 className="mb-4 text-primary display-3">Full digital services. <br /> One team. <br /> Infinite possibilities.</h1>
-                        <h6 className="mb-0 text-black px-lg-5 mx-lg-5">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand).
-                        </h6>
+                    <div className="d-flex justify-content-center" >
+                        <span className="text-center w-75 pb-5 wow fadeInUp">
+                            <h1 className="mb-4 text-primary">Full digital services. <br /> One team. <br /> Infinite possibilities.</h1>
+                            <h5 className="mb-0 text-black px-lg-5 mx-lg-5">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand).
+                            </h5>
+                        </span>
                     </div>
                     <div className="row gy-lg-4 gy-4 justify-content-evenly">
                         {services?.map((service) => {
@@ -51,7 +53,7 @@ const OurServices = ({ services }: ServicesProps) => {
                                         <div className="service-content p-4">
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4">{title}</h2>
-                                                <p className="mb-4">{fullInfo}</p>
+                                                <p className="mb-4 service-info">{fullInfo}</p>
                                                 <Link href={"/our-services"} className='explore-btn py-3'><PrimaryButton className='border-primary bg-white py-3 px-4' text={`Explore ${title}`} /></Link>
                                             </div>
                                         </div>

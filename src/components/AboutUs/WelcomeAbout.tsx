@@ -4,35 +4,45 @@ import Image from "next/image";
 
 export const WelcomeAbout = () => {
   return (
-    <div className="container-fluid about-bg py-0 px-0 ">
-      <div className="container pb-lg-5 py-5">
-        <div className="container d-lg-flex gap-lg-5">
-          <div className="text-left mt-lg-4 d-lg-flex justify-content-center align-items-center">
-            <div className="p-lg-0">
+    <div className="container-fluid bg-primary about pt-5">
+      <div className="container pt-5">
+        <div className="row g-5 w-100">
+          <div className="col-lg-4 px-5 col-sm-4">
+            <i>
               <Image
-                src={"/aboutUs.png"}
-                width={3600}
-                height={2400}
+                src={"/aboutLadyCartoon.png"}
+                width={450}
+                height={450}
                 alt="welcome image"
-                className="image-fluid w-100 h-100"
               />
-            </div>
-            <div className="w-100 d-flex justify-content-end">
-              {/* <h1 className="text-white text-capitalize px-lg-5">We are your</h1> */}
-              <div className="text-dark fw-bold text-bold mx-lg-5 ml-5 my-4 my-lg-0">
-                <br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">A</span> - <span className="bg-primary text-white rounded p-3 "> Advanced</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">V</span> - <span className="bg-primary text-white rounded p-3 "> Virtual</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">A</span> - <span className="bg-primary text-white rounded p-3 "> Assistant in</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">T</span> - <span className="bg-primary text-white rounded p-3 "> Technology and</span> </h3><br />
-                <h3 className="py-0 my-2 text-uppercase text-lg-xl text-md"><span className="text-white bg-primary rounded-circle p-3">A</span> - <span className="bg-primary text-white rounded p-3 "> Advertising</span> </h3>
-              </div>
-            </div>
+            </i>
+          </div>
+          <div className="col-lg-8 px-5 pt-4 col-sm-8 text-white">
+            <h1 className="display-3 mb-2 text-black">
+              Welcome to <span className="text-white">Avataworks</span>
+            </h1>
+            <p className="text-dark fw-bold">
+              We are your – Advanced Virtual Assistance in Technology and
+              Advertising.
+            </p>
+            <p
+              className="text-grey my-4 fw-bolder"
+              style={{ lineHeight: "30px" }}
+            >
+              {" "}
+              At our core, we are a results-driven digital agency based in
+              Nigeria, committed to transforming businesses through strategic,
+              data-informed innovation. AVATAWorks takes a holistic approach to
+              help businesses thrive in an ever-evolving digital landscape. Our
+              services are not one-size-fits-all; they are tailored to crafting
+              your brand identity, building responsive websites, executing
+              full-scale digital marketing campaigns, or managing world-class
+              events, we focus on one ultimate goal—achieving digital brand
+              success.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
-
-
+  );
+};

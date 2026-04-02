@@ -4,7 +4,7 @@ import Image from 'next/image'
 import allItems from '../../../public/heroData.json';
 import { Card, Carousel, Stack } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenAlt, faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine, faPenAlt, faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Ireviews } from '@/types';
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
@@ -19,35 +19,36 @@ const HeroCarousel = () => {
       {heroSection.map((heroDetails) => (
         <Carousel.Item key={heroDetails.id} className='header-carousel-item'>
           <Carousel.Caption>
-            <div className="">
-              <div className="row g-4 align-items-center justify-content-center">
-                <div className="col-lg-7 animated fadeInLeft">
-                  <div className="text-sm-center text-md-start text-primary align-items-center justify-content-center w-100">
-                    {/* <h4 className="text-uppercase text-black fw-bold mb-4">welcome to Avataworks</h4> */}
-                    <h1 className="text-primary text-break display-1 text-bold fw-bold">{heroDetails.title}</h1>
-                    <p className="mb-5 fs-lg-5 text-black">{heroDetails.body}
-                    </p>
-                    <div className="text-capitalize hero-cta">
-                      {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
+            <div className="row g-4 align-items-center justify-content-center">
+              <div className="col-lg-7 animated fadeInLeft">
+                <div className="text-sm-center text-md-start text-primary align-items-center justify-content-center w-100">
+                  <p className='rounded-pill bg-primaryLight d-inline-block text-primary p-lg-2 px-2 p-1 mt-lg-5'>
+                    <span className="px-lg-2"></span>
+                    Nigeria's AI-Native Growth Agency
+                  </p>
+                  <h1 className="text-black text-break display-1 text-bold fw-bold mt-2">Africa's <span className='text-primary '>AI-Driven</span> Growth Engine. Built in Lagos.</h1>
+                  <h5 className="my-4 fs-lg-5 font-bold" style={{ color: "#0a0a0a" }}>AVATAWorks combines AI-powered execution with expert Human-in-the-Loop AVATAs to deliver social media marketing, branding, and web development — faster, smarter, and at a fraction of traditional agency costs.
+                  </h5>
+                  <div className="text-capitalize hero-cta">
+                    {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
-                      <div className='d-lg-flex d-grid gap-2 gap-md-3'>
-                        <span className="position-relative">
-                          <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
-                            <PrimaryButton  text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008' }`} icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
-                        </span>
-                        <span className="position-relative">
-                          <Link href={"/get-quote"}>
-                            <PrimaryButton text={"Get a quote"} icon={faPenAlt} className='btn-danger p-3 align-items-center justify-content-center w-100 text-white' /></Link>
-                        </span>
-                      </div>
+                    <div className='d-lg-flex d-grid gap-2 gap-md-3'>
+                      <span className="">
+                        <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
+                          <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
+                      </span>
+                      <span className="">
+                        <Link href={"/get-quote"}>
+                          <PrimaryButton text={"Start Growing"} icon={faChartLine} className='btn-danger p-3 align-items-center justify-content-center w-100 text-white' /></Link>
+                      </span>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-5 p-0 mt-0 mb-0 animated fadeInRight order-first order-lg-1">
-                  <div className="calrousel-img p-0" style={{ objectFit: 'cover' }}>
-                    {/* <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' /> */}
-                    <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
-                  </div>
+              </div>
+              <div className="col-lg-5 mt-5 pt-5 animated fadeInRight order-first order-lg-1">
+                <div className="" style={{ objectFit: 'cover' }}>
+                  {/* <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' /> */}
+                  <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
                 </div>
               </div>
             </div>

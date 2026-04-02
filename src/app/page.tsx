@@ -18,6 +18,7 @@ import ServicesM from "../models/Services";
 import Reviews from "../models/Reviews";
 import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
+import Stats from "@/components/homePage/Stats";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -29,21 +30,23 @@ export default async function Home() {
   const services = cleanMongoShape(await ServicesM.find().lean<Partial<Iservice>[]>());
   const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
   const reviews = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>()).map(review => ({ ...review, _id: review?._id?.toString() }));
-  const footer = cleanMongoShape(await FooterM.findOne<Partial<Ifooter>>()) || null;
+  // const footer = cleanMongoShape(await FooterM.findOne<Partial<Ifooter>>()) || null;
 
   const faqHome = faq?.[0].homePage ?? [];
 
   return (
     <>
+      <div className="grid-bg z-1"></div>
       <Navbar />
       <HeroCarousel />
+      <Stats />
+      <OurServices services={services}/>
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
-      <OurServices services={services} />
       <AboutUs />
       <Team teamMembers={ourTeam?.splice(0, 4)} />
       <Testimonials testimonials={reviews} />
       <Faq faq={faqHome} />
-      {footer && <Footer footer={footer} />}
+      <Footer />
     </>
   )
 }
