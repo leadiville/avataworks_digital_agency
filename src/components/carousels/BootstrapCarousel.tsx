@@ -15,14 +15,14 @@ const HeroCarousel = () => {
   const { heroSection } = allItems.items;
 
   return (
-    <Carousel className='header-carousel container-fluid'>
+    <Carousel className='header-carousel container-fluid py-lg-4 my-lg-4'>
       {heroSection.map((heroDetails) => (
         <Carousel.Item key={heroDetails.id} className='header-carousel-item'>
           <Carousel.Caption>
-            <div className="row g-4 align-items-center justify-content-center">
+            <div className="row g-lg-4 align-items-center justify-content-center">
               <div className="col-lg-7 animated fadeInLeft">
                 <div className="text-sm-center text-md-start text-primary align-items-center justify-content-center w-100">
-                  <p className='rounded-pill bg-primaryLight d-inline-block text-primary p-lg-2 px-2 p-1 mt-lg-5'>
+                  <p className='rounded-pill bg-primaryLight d-inline-block text-primary p-lg-2 px-lg-2 mt-5'>
                     <span className="px-lg-2"></span>
                     Nigeria's AI-Native Growth Agency
                   </p>
@@ -45,10 +45,9 @@ const HeroCarousel = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5 mt-5 pt-5 animated fadeInRight order-first order-lg-1">
+              <div className="col-lg-5 mt-4 mt-lg-5 pt-lg-5 animated fadeInRight order-first order-lg-1">
                 <div className="" style={{ objectFit: 'cover' }}>
-                  {/* <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' /> */}
-                  <Image width={500} height={500} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
+                  <Image width={100} height={100} src={heroDetails.imageUrl} alt='slides' className='h-100 w-100' />
                 </div>
               </div>
             </div>
