@@ -12,22 +12,22 @@ import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 import Testimonials from "@/components/homePage/Testimonials";
 import Reviews from "@/models/Reviews";
+import AboutAbout from "@/components/AboutUs/AboutAbout";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const AboutPage = async function () {
     await connectDb();
     const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
-    // const footer = cleanMongoShape(await FooterM.findOne().lean<Ifooter>()) || null;
     const features = cleanMongoShape(await FeaturesM.find().lean<Ifeatures[]>());
     const testimonials = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>());
     return (
         <>
             <WelcomeAbout />
+            <AboutAbout />
             <Features featuresData={features} title={'We ensure digital brand success'} />
-            <AboutUs />
-            <Team teamMembers={ourTeam} />
             <Testimonials testimonials={testimonials} />
+            <Team teamMembers={ourTeam} />
             <Footer />
         </>
     )

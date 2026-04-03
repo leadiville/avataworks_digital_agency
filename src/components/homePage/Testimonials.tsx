@@ -11,9 +11,11 @@ const Testimonials = ({ testimonials }: TestimonyProps) => {
       <div className="container pb-3">
         <div className="text-center mx-auto wow fadeInUp w-lg-75 mb-5" >
           <h1 className="text-primary display-4 mb-4">Real Results. Real Voices</h1>
-          <p className="mb-0">
-            Discover how businesses across Nigeria and beyond have grown with AvataWorks. From startups to established brands, our clients share their experiences working with our dedicated AVATAs and result-driven digital solutions.
-          </p>
+          <div className="d-flex justify-content-center">
+            <p className="mb-0 w-lg-50 text-center">
+              Discover how businesses across Nigeria and beyond have grown with AvataWorks. From startups to established brands, our clients share their experiences working with our dedicated AVATAs and result-driven digital solutions.
+            </p>
+          </div>
         </div>
         <div className="row owl-carousel testimonial-carousel wow fadeInUp">
           <div className="testimonial-item rounded">

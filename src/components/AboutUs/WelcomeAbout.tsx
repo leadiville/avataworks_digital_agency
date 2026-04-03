@@ -1,32 +1,27 @@
 // import { faBullseye, faFingerprint, faLightbulb } from "@fortawesome/free-solid-svg-icons"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image";
+import HeroAnimation from "./HeroAnimation";
 
 export const WelcomeAbout = () => {
   return (
-    <div className="container-fluid bg-primary about pt-5">
+    <div className="container-fluid pt-5">
       <div className="container pt-5">
         <div className="row g-5 w-100">
-          <div className="col-lg-4 px-5 col-sm-4">
-            <i>
-              <Image
-                src={"/aboutLadyCartoon.png"}
-                width={450}
-                height={450}
-                alt="welcome image"
-              />
-            </i>
+          <div className="col-lg-6 px-5 col-sm-4">
+            <HeroAnimation />
           </div>
-          <div className="col-lg-8 px-5 pt-4 col-sm-8 text-white">
-            <h1 className="display-3 mb-2 text-black">
-              Welcome to <span className="text-white">Avataworks</span>
+          <div className="col-lg-6 px-5 pt-4 col-sm-8 text-white">
+            <span className="fw-bold hero-badge bg-white">
+              <span className="badge-dot"></span>
+              <span className="badge-text text-primary ">We are your – Advanced Virtual Assistance in Technology and
+                Advertising.</span>
+            </span>
+            <h1 className="display-3 mb-2 text-black mb-4 text-capitalize">
+              Welcome <br /> to <span className="text-primary">Avataworks</span>
             </h1>
-            <p className="text-dark fw-bold">
-              We are your – Advanced Virtual Assistance in Technology and
-              Advertising.
-            </p>
             <p
-              className="text-grey my-4 fw-bolder"
+              className="mb-4 fw-bolder text-primary"
               style={{ lineHeight: "30px" }}
             >
               {" "}

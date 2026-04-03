@@ -7,9 +7,10 @@ const servicesLayout = async ({ children }: PropsWithChildren) => {
     await connectDb();
     return (
         <>
+            <div className="grid-bg z-1"></div>
             <Navbar />
             {children}
-            <Footer/>
+            <Footer />
         </>
     );
 }

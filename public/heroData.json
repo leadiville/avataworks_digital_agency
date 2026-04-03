@@ -3,21 +3,15 @@
     "heroSection": [
       {
         "id": 1,
-        "title": "Full-Service Digital Solution",
-        "body": "Your all-in-one partner for brand visibility, engagement, and digital success—offering tailored strategies in branding, marketing, and tech.",
-        "imageUrl": "/At the office-amico.png"
+        "title": " Growth Engine. Built in Lagos.",
+        "body": "AVATAWorks combines AI-powered execution with expert Human-in-the-Loop AVATAs to deliver social media marketing, branding, and web development (faster, smarter, and at a fraction of traditional agency costs).",
+        "imageUrl": "/hero/AI-Driven-Agency-in-nigeria.webp"
       },
       {
         "id": 2,
-        "title": "Wide-Range Technological Solutions",
-        "body": "We harness advanced tools, data-driven strategies, and creative expertise to deliver cutting-edge solutions for your digital brand success.",
-        "imageUrl": "/WideRange.png"
-      },
-      {
-        "id": 3,
         "title": "Advanced Virtual Assistants",
-        "body": " Remote AVATAs—skilled African digital talents—empowering your brand with creativity, innovation, and efficiency to fuel business growth globally.",
-        "imageUrl": "/VirtualAssist.png"
+        "body": "Your all-in-one team of AI-powered digital specialists dedicated to your brand's growth, engagement, and digital success. AI handles the grind, and AVATAs handle strategy, soul, and brand accuracy. Your business never sleeps: 24/7 output. Zero quality compromise",
+        "imageUrl": "/hero/Full-Digital-Solutions-AI-and-HITL-Executions-v1.webp"
       }
     ]
   }

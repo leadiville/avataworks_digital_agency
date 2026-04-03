@@ -4,7 +4,7 @@
   --foreground: #0a0a0a;
   --primary: #0575bb;
   --primaryLighter: #3486b9;
-  --primaryLight: #F0F7FF;
+  --primaryLight: #f0f7ff;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --grid-line: rgba(5, 117, 187, 0.08);
 }
@@ -425,6 +425,118 @@ p {
     text-align: center !important;
   }
 }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(5, 117, 187, 0.06);
+  border: 1px solid rgba(5, 117, 187, 0.2);
+  border-radius: 99px;
+  padding: 6px 16px 6px 8px;
+  margin-bottom: 28px;
+}
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--electric);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 194, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(0, 194, 255, 0);
+  }
+}
+.badge-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+/* Add hero-aboutus animation */
+/* HERO VISUAL */
+.hero-visual {
+  position: relative;
+}
+.ai-diagram {
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+.diagram-svg {
+  width: 100%;
+  height: 100%;
+} /* HERO VISUAL */
+.hero-visual {
+  position: relative;
+}
+.ai-diagram {
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+.diagram-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/*animation */
+/* ── AI NODE VISUAL ────────────────────────────────────────── */
+.node-ring {
+  animation: spin-slow 20s linear infinite;
+}
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+.node-pulse {
+  animation: node-glow 2s ease-in-out infinite alternate;
+}
+@keyframes node-glow {
+  from {
+    r: 6;
+  }
+  to {
+    r: 9;
+  }
+}
+.blink-1 {
+  animation: blink 1.4s ease-in-out infinite;
+}
+.blink-2 {
+  animation: blink 1.8s ease-in-out infinite 0.3s;
+}
+.blink-3 {
+  animation: blink 2.2s ease-in-out infinite 0.6s;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.dash-flow {
+  stroke-dasharray: 8 4;
+  animation: dash-move 1.5s linear infinite;
+}
+@keyframes dash-move {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
 
 /* ── STATS BAR ───────────────────────────────────────────── */
 .stats-bar {
@@ -615,7 +727,6 @@ p {
   border-radius: 10px;
   position: relative !important;
   z-index: 3 !important;
-  
 }
 .service .service-item .service-img {
   position: relative;
@@ -756,7 +867,7 @@ p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-clamp: 9;
-  -webkit-line-clamp:  9;
+  -webkit-line-clamp: 9;
 }
 /* mobile view */
 @media (max-width: 768px) {
