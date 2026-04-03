@@ -401,20 +401,14 @@ p {
 
 /*** Carousel Hero Header Start ***/
 
-.header-carousel .header-carousel-item {
-  height: 640px;
-}
+.header-carousel {
 
+}
 @media (max-width: 1024px) {
-  .header-carousel .header-carousel-item {
-    height: 950px;
-  }
+ 
 }
 
-@media (max-width: 768px) {
-  .header-carousel .header-carousel-item {
-    height: 130vh !important;
-  }
+@media (min-width: 768px) {
   /* hero cta */
   .hero-cta {
     display: flex !important;

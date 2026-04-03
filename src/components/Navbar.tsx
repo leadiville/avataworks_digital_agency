@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div>
             {/* Navbar & Hero Start */}
-            <div className="container-fluid nav-bar px-4 px-md-5 py-md-0">
+            <div className="container-fluid nav-bar px-lg-4 px-md-5 py-md-0 position-relative   ">
                 <div>
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <Link href="/" className="navbar-brand p-0">

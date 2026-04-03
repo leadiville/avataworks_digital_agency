@@ -1,11 +1,7 @@
 // import { faBullseye, faFingerprint, faLightbulb } from "@fortawesome/free-solid-svg-icons"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 "use client";
-import Image from "next/image";
 import HeroAnimation from "./HeroAnimation";
-import PrimaryButton from "../PrimaryButton";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const WelcomeAbout = () => {

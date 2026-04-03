@@ -52,7 +52,6 @@ const Footer = async () => {
                 <div className="container py-5">
                     <div className="row g-5">
                         <div className="col-xl-9">
-
                             <div className="mb-5">
                                 <div className="row g-4">
                                     <div className="col-md-6 col-lg-6 col-xl-5">

@@ -15,47 +15,46 @@ const HeroCarousel = () => {
   const { heroSection } = allItems.items;
 
   return (
-    <Carousel className='header-carousel container-fluid py-lg-4 my-lg-4'>
-      {heroSection.map((heroDetails) => (
-        <Carousel.Item key={heroDetails.id} className='header-carousel-item'>
-          <Carousel.Caption>
-            <div className="row g-lg-4 align-items-center justify-content-center">
-              <div className="col-lg-7 animated fadeInLeft">
-                <div className="text-sm-center text-md-start text-primary align-items-center justify-content-center w-100">
+    <div className="container d-lg-flex">
+
+      <Carousel className='container-fluid positon-relative my-4' fade>
+        {heroSection.map((heroDetails) => (
+          <Carousel.Item key={heroDetails.id} >
+            <div className="row g-0 align-items-center" style={{ height: 'fit-content' }}>
+              <Carousel.Caption className='col-lg-7  position-static'>
+                <div className="text-md-center text-lg-start text-primary align-items-center justify-content-center">
                   <p className='hero-badge'>
                     <span className="badge-dot"></span>
                     <span className="badge-text text-primary">Nigeria's AI-Native Growth Agency</span>
                   </p>
-                  <h1 className="text-black text-break display-1 text-bold fw-bold mt-2">Africa's <span className='text-primary '>AI-Driven </span>{heroDetails.title}</h1>
-                  <h5 className="my-4 fs-lg-5 font-bold" style={{ color: "#0a0a0a" }}>
+                  <h1 className="text-black text-break text-bold fw-bold text-break">Africa's <span className='text-primary '>AI-Driven </span>{heroDetails.title}</h1>
+                  <p className="lead mb-4 font-bold" style={{ color: "#0a0a0a" }}>
                     {heroDetails.body}
-                  </h5>
-                  <div className="text-capitalize hero-cta">
+                  </p>
+                  <div className="text-capitalize mb-4">
                     {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
                     <div className='d-lg-flex d-grid gap-2 gap-md-3'>
                       <span className="">
                         <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
-                          <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary align-items-center p-3 justify-content-center w-100' /></Link>
+                          <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary align-items-center p-2 justify-content-center w-100' /></Link>
                       </span>
                       <span className="">
                         <Link href={"/get-quote"}>
-                          <PrimaryButton text={"Start Growing"} icon={faChartLine} className='btn-danger p-3 align-items-center justify-content-center w-100 text-white' /></Link>
+                          <PrimaryButton text={"Start Growing"} icon={faChartLine} className='btn-danger p-2 align-items-center justify-content-center w-100 text-white' /></Link>
                       </span>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-5 mt-4 mt-lg-5 pt-lg-5 animated fadeInRight order-first order-lg-1">
-                <div className="" style={{ objectFit: 'cover' }}>
-                  <Image width={500} height={300} src={heroDetails.imageUrl} alt='slides' className='h-100 w-100' />
-                </div>
+              </Carousel.Caption>
+              <div className="col-lg-5 order-first order-lg-1" >
+                <Image width={800} height={600} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
               </div>
             </div>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+          </Carousel.Item>
+        ))}
+      </Carousel>      
+    </div>
   )
 }
 interface ReviewsProps {
