@@ -88,7 +88,7 @@ const HeroAnimation = () => {
                     font-size="8"
                     font-family="DM Sans,sans-serif"
                 >
-                    OS
+                    WORKS
                 </text>
                 {/* <!-- Connector lines --> */}
                 <line
@@ -310,7 +310,7 @@ const HeroAnimation = () => {
                     font-family="DM Sans,sans-serif"
                     font-weight="600"
                 >
-                    AVATA OS v1.0
+                    A.W Digital Agency
                 </text>
             </svg>
         </div>)

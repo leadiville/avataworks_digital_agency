@@ -456,6 +456,10 @@ p {
   font-weight: 600;
   color: var(--blue);
 }
+.about-hero-text {
+  text-overflow: hidden;
+  /* padding-bottom: 30px; */
+}
 
 /* Add hero-aboutus animation */
 /* HERO VISUAL */
