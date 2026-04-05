@@ -39,7 +39,7 @@ const EachCoreService = ({ header, subheader, img, whatWeBuild, }: ICoreServices
                         </ul>
                     </div>
                 </div>
-                    <Link href={"/get-quote"} ><PrimaryButton text='Get Quote' className='btn btn-danger p-3 px-5 my-5 text-center w-100 rounded text-center' icon={faPen} /></Link>
+                    <Link href={"/get-quote"} ><PrimaryButton text='Get Quote' className='btn btn-danger' icon={faPen} /></Link>
             </div>
         </div>
     )

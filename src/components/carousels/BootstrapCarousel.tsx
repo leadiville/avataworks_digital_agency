@@ -17,17 +17,17 @@ const HeroCarousel = () => {
   return (
     <div className="container d-lg-flex">
 
-      <Carousel className='container-fluid positon-relative my-4' fade>
+      <Carousel className='container-fluid positon-relative py-5 home-carousel' slide>
         {heroSection.map((heroDetails) => (
           <Carousel.Item key={heroDetails.id} >
-            <div className="row g-0 align-items-center" style={{ height: 'fit-content' }}>
+            <div className="row g-0 align-items-center" style={{ height: 'fit' }}>
               <Carousel.Caption className='col-lg-7  position-static'>
                 <div className="text-md-center text-lg-start text-primary align-items-center justify-content-center">
                   <p className='hero-badge'>
                     <span className="badge-dot"></span>
                     <span className="badge-text text-primary">Nigeria's AI-Native Growth Agency</span>
                   </p>
-                  <h1 className="text-black text-break text-bold fw-bold text-break">Africa's <span className='text-primary '>AI-Driven </span>{heroDetails.title}</h1>
+                  <h1 className="text-black text-break text-bold fw-bold text-break"><span className='text-primary '>{heroDetails.title?.charAt(0)}</span>{heroDetails.title.slice(1, heroDetails.title.length)}</h1>
                   <p className="lead mb-4 font-bold" style={{ color: "#0a0a0a" }}>
                     {heroDetails.body}
                   </p>
@@ -37,11 +37,11 @@ const HeroCarousel = () => {
                     <div className='d-lg-flex d-grid gap-2 gap-md-3'>
                       <span className="">
                         <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
-                          <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary align-items-center p-2 justify-content-center w-100' /></Link>
+                          <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary' /></Link>
                       </span>
                       <span className="">
                         <Link href={"/get-quote"}>
-                          <PrimaryButton text={"Start Growing"} icon={faChartLine} className='btn-danger p-2 align-items-center justify-content-center w-100 text-white' /></Link>
+                          <PrimaryButton text={"Start Growing"} icon={faChartLine} className='btn-danger' /></Link>
                       </span>
                     </div>
                   </div>
@@ -53,7 +53,7 @@ const HeroCarousel = () => {
             </div>
           </Carousel.Item>
         ))}
-      </Carousel>      
+      </Carousel>
     </div>
   )
 }

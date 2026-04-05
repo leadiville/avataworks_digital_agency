@@ -10,7 +10,7 @@ interface IPrimaryBtn {
 export default ({ icon, text, className }: IPrimaryBtn) => {
 
     return (
-        <button className={`btn rounded text-capitalize "btn-primary" ${className}`}>
+        <button className={`btn rounded text-capitalize p-md-3 px-lg-5 "btn-primary" border border-inherit ${className}`}>
             <FontAwesomeIcon icon={icon as IconDefinition } width={"30px"} height={'auto'} />
             {text}
         </button>

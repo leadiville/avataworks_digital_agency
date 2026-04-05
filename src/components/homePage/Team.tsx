@@ -18,7 +18,7 @@ const Team = ({ teamMembers }: TeamProps) => {
         <div className="container-fluid team pb-5 pt-5">
             <div className="container">
                 <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
-                    <h1 className="display-4 mb-4 text-primary">Meet Our Avatas</h1>
+                    <h2 className="mb-4 text-primary">Meet Our Avatas</h2>
                     <p className="mb-0">A powerhouse of advanced virtual assistants in tech and advertising, each bringing exceptional skills, experience, and passion. Driving our clients to digital brand success.
                     </p>
                 </div>
@@ -47,7 +47,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                     })}
                     <div className="w-100 d-flex justify-content-center">
 
-                        {(path == "/") && <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary border-white w-auto p-3 px-5' icon={faPeopleGroup} /></Link>}
+                        {(path == "/") && <Link href="/about"><PrimaryButton text='Meet our Avatas' className='btn-primary' icon={faPeopleGroup} /></Link>}
                     </div>
                 </div>
             </div>

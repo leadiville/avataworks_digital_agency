@@ -1,28 +1,22 @@
-"use client"
+"use client";
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { setActive } from '@/utils/navabarActiveColor';
 import PrimaryButton from './PrimaryButton';
-import { faPen, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRotateForward, faEarthAfrica, faHome, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faContactCard } from '@fortawesome/free-solid-svg-icons/faContactCard';
 
 
-const NavMenus = () => {
-    const pathname = usePathname();
+const NavMenus = () => {   
+
     return (
-        <div className={`collapse navbar-collapse`} id='navbarToggleMenu' >
-            <div className="menu-container">
-
-                <div className="navbar-nav bg-white rounded my-lg-0 p-4 my-4 d-flex">
-                    <Link href="/get-quote" className={`nav-item nav-link my-lg-0 my-2 me-lg-5 ${pathname === "/get-quote" ? "active" : "text-primary"}`}>Contact Us</Link>
-                    <Link href="/our-services" className={`nav-item nav-link my-lg-0 my-2 me-lg-5 ${pathname === "/our-services" ? "active" : "text-primary"}`}>Our Services</Link>
-                    <Link href="about" className={`nav-item nav-link my-lg-0 my-2 me-lg-5 ${pathname === "/about" ? "active" : "text-primary"}`}>About Us</Link>
-                    {/* <Link href="blog" className="nav-item nav-link">Blog</Link> */}
-                    <div className="nav-item p-0 my-lg-0 my-2 me-lg-3" >
-                        <Link href="/get-quote" ><PrimaryButton text='Get a Quote' icon={faPen} className="btn btn-danger"></PrimaryButton></Link>
-                    </div>
-                    <div className="nav-item p-0 my-lg-0 my-2 me-lg-3 d-lg-none" >
-                        <Link href="tel:+234-803-273-4944" ><PrimaryButton text='Speak to an Avata' icon={faPhone} className="btn btn-primary"></PrimaryButton></Link>
-                    </div>
-                </div>
+        <div className="collapse navbar-collapse" id="navbarToggleMenu">
+            <div className="menu-container d-flex flex-column flex-lg-row gap-4 justify-content-lg-evenly w-100 py-md-5 py-4 px-2 my-3 my-lg-0">
+                <span className={`nav-items ${setActive('/')}`}>{<FontAwesomeIcon icon={faContactCard} className='me-3 d-lg-none' />}<Link href="/" className="nav-items my-lg-0 my-2">Home</Link></span>
+                <span className={`nav-items ${setActive('/our-services')}`}>{<FontAwesomeIcon icon={faToolbox} className='me-3 d-lg-none' />}<Link href="/our-services" className="nav-items my-lg-0 my-2">Our Services</Link></span>
+                <span className={`nav-items ${setActive('/get-quote')}`}>{<FontAwesomeIcon icon={faContactCard} className='me-3 d-lg-none' />}<Link href="/get-quote" className="nav-items my-lg-0 my-2">Contact Us</Link></span>
+                <span className={`nav-items ${setActive('/about')}`}>{<FontAwesomeIcon icon={faEarthAfrica} className='me-3 d-lg-none' />}<Link href="about" className="nav-items my-lg-0 my-2">About Us</Link></span>
+                <PrimaryButton className='btn-white d-lg-none' text='Get Started' icon={faArrowRotateForward} />
             </div>
         </div>
     )

@@ -13,10 +13,10 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
             {/* Feature Start  */}
             <div className="container-fluid feature bg-light pt-5">
                 <div className="container py-5">
-                    <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: '800px' }}>
-                        <h1 className="text-primary">{title}</h1>
-                        <p className="mb-0 p-4">At AVATAWorks, we don&apos;t just offer services—we deliver transformative solutions tailored to suite your brand needs. As your all-in-one Advanced Virtual Assistant in Technology and Advertising, we combine creativity, technology, and strategy to help brands scale faster, stronger, and smarter.
-                        </p>
+                    <div className="d-flex justify-content-center align-items-center w-100">
+                        <div className="col-12 pb-5 wow fadeInUp">
+                            <h2 className="text-primary text-center">{title}</h2>
+                        </div>
                     </div>
                     <div className="row g-4">
                         {featuresData.map((ftData, ftDataInx) => {

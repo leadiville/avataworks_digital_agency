@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
 import { iconMap } from '@/utils/iconMap';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 interface ServicesProps {
     services: Iservice[];
@@ -31,18 +32,19 @@ const OurServices = ({ services }: ServicesProps) => {
         <div>
             <div className="container-fluid service py-5 position-relative bg-primaryLight z-2">
                 <div className="container py-5 p-lg-4">
-                    <div className="d-flex justify-content-center" >
-                        <span className="text-center w-75 pb-5 wow fadeInUp">
-                            <h1 className="mb-4 text-primary">Full digital services. <br /> One team. <br /> Infinite possibilities.</h1>
-                            <h5 className="mb-0 text-black px-lg-5 mx-lg-5">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand).
-                            </h5>
-                        </span>
-                    </div>
-                    <div className="row gy-lg-4 gy-4 justify-content-evenly">
+                    <span className="text-center pb-5 wow fadeInUp ">
+                        <h2 className="mb-4 text-primary">Full digital services. One team. <br /> Infinite possibilities.</h2>
+                        <div className="d-flex justify-content-center" >
+                            <p className="mb-0 col-12 col-lg-8">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand).
+                            </p>
+                        </div>
+                    </span>
+                    <div className="row gb-lg-4 gy-4 justify-content-evenly">
                         {services?.map((service) => {
-                            const { _id, title, imgSrc, icon, fullInfo } = service;
+                            const { _id, title, imgSrc, icon, fullInfo, showInfo } = service;
+                            const [isShowMore, setIsShowMore] = useState(showInfo);
                             return (
-                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp my-5 py-2" ref={ref}>
+                                <div key={_id} className="col-md-6 col-lg-4 wow fadeInUp  my-5" ref={ref}>
                                     <div className={`service-item ${isActive && 'services-scroll'}`}>
                                         <div className="service-img">
                                             <Image width={400} height={400} src={imgSrc as string} className="img-fluid rounded-top w-100" alt="" />
@@ -50,17 +52,22 @@ const OurServices = ({ services }: ServicesProps) => {
                                                 <i className="fa fa-users fa-2x"><FontAwesomeIcon icon={iconMap[icon as string]} /></i>
                                             </div>
                                         </div>
-                                        <div className="service-content p-4">
+                                        <div className="service-content p-lg-4 px-2 py-3 text-center">
                                             <div className="service-content-inner">
-                                                <h2 className="d-inline-block h4 mb-4">{title}</h2>
-                                                <p className="mb-4 service-info">{fullInfo}</p>
-                                                <Link href={"/our-services"} className='explore-btn py-3'><PrimaryButton className='border-primary bg-white py-3 px-4' text={`Explore ${title}`} /></Link>
+                                                <h2 className="d-inline-block h4 mb-4 d-inline-block services-header">{title}</h2>
+                                                <p className="mb-4 service-info">{isShowMore ? fullInfo : (fullInfo?.slice(0, 195) + '...')}
+                                                    <a type='button' className='btn-link' onClick={() => setIsShowMore(!isShowMore)}> {`${!isShowMore ? ' more' : " less"}`}</a>
+                                                </p>
+                                                <Link href={"/our-services"} className='explore-btn d-inline-block'><PrimaryButton className='border-primary bg-white py-lg-3 px-lg-4 p-2' text={`Explore ${title}`} /></Link>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             )
                         })}
+                    </div>
+                    <div className='w-100 text-center'>
+                        <Link href={'/our-services'} ><PrimaryButton text='View All Services' icon={faArrowRight} className='btn-primary' /></Link>
                     </div>
                 </div>
             </div>

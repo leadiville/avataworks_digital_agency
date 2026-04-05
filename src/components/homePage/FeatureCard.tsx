@@ -44,7 +44,7 @@ const FeatureCard = ({ title, info, icon }: Ifeat) => {
 
     return (
         <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" ref={ref} >
-            <div className={`feature-item  ${active && 'feature-item-scroll'} p-4 pt-0`} style={{ maxHeight: '320px' }}>
+            <div className={`feature-item  ${active && 'feature-item-scroll'} p-4 pt-0`} style={{ minHeight: '240px' }}>
                 <div className="feature-icon p-4 mb-4">
                     <i><FontAwesomeIcon icon={icon} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
                 </div>

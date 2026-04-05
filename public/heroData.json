@@ -3,15 +3,15 @@
     "heroSection": [
       {
         "id": 1,
-        "title": " Growth Engine. Built in Lagos.",
-        "body": "AVATAWorks combines AI-powered execution with expert Human-in-the-Loop AVATAs to deliver social media marketing, branding, and web development (faster, smarter, and at a fraction of traditional agency costs).",
-        "imageUrl": "/hero/AI-Driven-Agency-in-nigeria.webp"
+        "title": "Scalable Web & AI Solutions for Growing Businesses",
+        "body": "We build scalable web platforms and AI-driven solutions that optimize workflows, automate processes, and deliver measurable results",
+        "imageUrl": "/hero/Full-Digital-Solutions-AI-and-HITL-Executions-v1.webp"
       },
       {
         "id": 2,
-        "title": "Advanced Virtual Assistants",
-        "body": "Your all-in-one team of AI-powered digital specialists dedicated to your brand's growth, engagement, and digital success. AI handles the grind, and AVATAs handle strategy, soul, and brand accuracy. Your business never sleeps: 24/7 output. Zero quality compromise",
-        "imageUrl": "/hero/Full-Digital-Solutions-AI-and-HITL-Executions-v1.webp"
+        "title": "Run Your Digital Presence on Autopilot",
+        "body": "A Human-in-the-Loop (AVATA) team runs your digital presence 24/7, combining AI precision with human oversight to drive consistent growth and measurable brand results.",
+        "imageUrl": "/hero/AI-Driven-Agency-in-nigeria.webp"
       }
     ]
   }
