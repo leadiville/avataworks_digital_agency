@@ -3,7 +3,7 @@
   --secondary-bg: #0003;
   --foreground: #0a0a0a;
   --primary: #0575bb;
-  --primaryLighter: #3486b9;
+  --primaryLighter: #6799b8;
   --primaryLight: #f0f7ff;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --grid-line: rgba(5, 117, 187, 0.08);
@@ -246,9 +246,9 @@ nav .menu-container {
 }
 @media screen and (max-width: 768px) {
   nav .menu-container {
-  border-top: 2px solid white !important;
-  border-bottom: 2px solid white !important;
-}
+    border-top: 2px solid white !important;
+    border-bottom: 2px solid white !important;
+  }
   .nav-items {
     transform: translateX(0);
   }
@@ -256,7 +256,6 @@ nav .menu-container {
   .nav-items:active {
     transform: translateX(10px) scale(1.1);
   }
-
 }
 
 /*** Carousel Hero Header Start ***/
@@ -400,7 +399,7 @@ nav .menu-container {
 
 .stat-num {
   font-family: "Syne", sans-serif;
-  }
+}
 
 /* ── HITL FLOW ────────────────────────────────────────────── */
 .hitl-flow {
@@ -948,3 +947,61 @@ input:-webkit-autofill:active {
   background-size: contain;
   background-blend-mode: difference;
 }
+/* Timeline about us */
+.tl {
+  margin-top: 40px;
+}
+.tli {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 28px;
+  position: relative;
+}
+.tli:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 40px;
+  bottom: 0;
+  width: 2px;
+  background: var(--primaryLighter);
+}
+.tld {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--primary);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  font-family: "Syne", sans-serif;
+}
+.tlc h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.tlc p {
+  font-size: 13px;
+}
+/* CONTAINERS */
+.c{max-width:1200px;margin:0 auto;padding:0 28px;}
+.sec{padding:88px 0;}
+.sec-hdr{text-align:center;margin-bottom:60px;}
+.sec-hdr p{font-size:17px;max-width:580px;margin:14px auto 0;}
+
+/* BADGE */
+.badge{display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--blue);background:rgba(5,117,187,.07);
+  border:1px solid rgba(5,117,187,.2);padding:5px 14px 5px 9px;border-radius:99px;margin-bottom:18px;}
+[data-dark] .badge{color:var(--electric);background:rgba(0,194,255,.07);border-color:rgba(0,194,255,.18);}
+.bdot{width:7px;height:7px;border-radius:50%;background:var(--electric);
+  animation:pd 2s ease-in-out infinite;}
+@keyframes pd{0%,100%{box-shadow:0 0 0 0 rgba(0,194,255,.5);}50%{box-shadow:0 0 0 6px rgba(0,194,255,0);}}

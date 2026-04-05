@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRotateForward, faBars, faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faBars, faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import NavMenus from './NavMenus'
 import PrimaryButton from './PrimaryButton'
@@ -21,7 +21,7 @@ const Navbar = () => {
                         </button>
                         <NavMenus />
                         {<div className="d-none d-lg-flex bg-white p-1 rounded">
-                            <PrimaryButton className='btn-danger rounded' text='Get Started' icon={faArrowRotateForward} />
+                            <PrimaryButton className='btn-danger rounded' text='Get Started' icon={faArrowRight} />
                         </div>}
                     </nav>
                 </div>

@@ -72,7 +72,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
     <>
       <Carousel className='testimonial-carousel p-sm-0' slide>
         {testimonys?.map((e, eachInx) => (
-          <Carousel.Item key={eachInx} className='rounded my-5'>
+          <Carousel.Item key={eachInx} className='rounded my-5 z-1'>
             <Stack direction='horizontal' gap={4} >
               <Card className='flex flex-lg-row  px-lg-5 mx-lg-5 justify-content-between align-items-center w-100 border my-4'>
                 <Card.Img

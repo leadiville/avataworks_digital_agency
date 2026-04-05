@@ -18,6 +18,7 @@ import Reviews from "../models/Reviews";
 import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 import Stats from "@/components/homePage/Stats";
+import { HtlSectioin } from "@/components/homePage/HtlSectioin";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -38,7 +39,8 @@ export default async function Home() {
       <Navbar />
       <HeroCarousel />
       <Stats />
-      <OurServices services={services}/>
+      <HtlSectioin />
+      <OurServices services={services} />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
       <AboutUs />
       <Team teamMembers={ourTeam?.splice(0, 4)} />

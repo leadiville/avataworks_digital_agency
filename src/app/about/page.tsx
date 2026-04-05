@@ -1,7 +1,4 @@
 export const dynamic = "force-dynamic";
-
-import Features from "../../components/homePage/Features"
-import AboutUs from "../../components/homePage/AboutUs"
 import Team from "../../components/homePage/Team"
 import Footer from "../../components/Footer"
 import { WelcomeAbout } from "../../components/AboutUs/WelcomeAbout"
@@ -13,6 +10,8 @@ import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 import Testimonials from "@/components/homePage/Testimonials";
 import Reviews from "@/models/Reviews";
 import AboutAbout from "@/components/AboutUs/AboutAbout";
+import { Timeline } from "@/components/AboutUs/Timeline";
+import ReadyToWork from "@/components/AboutUs/ReadyToWork";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -25,9 +24,11 @@ const AboutPage = async function () {
         <>
             <WelcomeAbout />
             <AboutAbout />
-            <Features featuresData={features} title={'We ensure digital brand success'} />
-            <Testimonials testimonials={testimonials} />
+            {/* <Features featuresData={features} title={'We ensure digital brand success'} /> */}
+            <Timeline />
             <Team teamMembers={ourTeam} />
+            <Testimonials testimonials={testimonials} />
+            <ReadyToWork />
             <Footer />
         </>
     )
