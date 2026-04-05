@@ -12,6 +12,8 @@ import Reviews from "@/models/Reviews";
 import AboutAbout from "@/components/AboutUs/AboutAbout";
 import { Timeline } from "@/components/AboutUs/Timeline";
 import ReadyToWork from "@/components/AboutUs/ReadyToWork";
+import Banner from "@/components/AboutUs/ReadyToWork";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -28,7 +30,7 @@ const AboutPage = async function () {
             <Timeline />
             <Team teamMembers={ourTeam} />
             <Testimonials testimonials={testimonials} />
-            <ReadyToWork />
+            <Banner title="Ready to Work With AVATAWorks?" subtitle="Book a free AVATA session. We diagnose, prioritise, and build the growth plan that fits your brand." buttonText="Get a Quote" icon={faArrowRight} />
             <Footer />
         </>
     )
