@@ -1,6 +1,7 @@
 // import { faBullseye, faFingerprint, faLightbulb } from "@fortawesome/free-solid-svg-icons"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 "use client";
+import Badge from "../Badge";
 import HeroAnimation from "./HeroAnimation";
 import { useEffect, useState } from "react";
 
@@ -23,16 +24,12 @@ export const WelcomeAbout = () => {
             <HeroAnimation />
           </div>
           <div className="col-lg-6 px-lg-5 pt-4 col-sm-8 text-white text-center px-0  text-lg-start">
-            <span className="fw-bold hero-badge bg-white">
-              <span className="badge-dot"></span>
-              <span className="badge-text text-primary text-lg-start text-center">We are your – Advanced Virtual Assistance in Technology and
-                Advertising.</span>
-            </span>
-            <h1 className="display-3 mb-2 text-primary mb-4 text-capitalize">
-              Welcome to <span className="text-black">Avataworks</span>
+            <Badge text="We are your – Advanced Virtual Assistance in Technology and Advertising." key={'about-hero'} style="bg-primaryLight" />
+            <h1 className="display-3 mb-2 mb-4 text-capitalize text-dark">
+              Welcome to <span className="text-primary">Avataworks</span>
             </h1>
             <p
-              className="mb-4 fw-bolder text-primary about-hero-text"
+              className="mb-4 fw-bolder about-hero-text"
               style={{ lineHeight: "30px" }}
             >
               {!isText ? aboutText.slice(0, 258) : aboutText}...

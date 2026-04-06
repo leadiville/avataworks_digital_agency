@@ -59,7 +59,7 @@ const QuoteForm = ({ initialState }: quoteT) => {
     useEffect(() => { activateBtn() }, [inputValue, activateBtn]);
 
     return (
-        <form action="form" className="mt-5" onSubmit={(e) => {
+        <form action="form" className="mt-lg-5" onSubmit={(e) => {
             e.preventDefault();
             submitForm();
         }}>

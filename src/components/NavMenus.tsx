@@ -16,7 +16,7 @@ const NavMenus = () => {
                     <span className='nav-item-container'>{<FontAwesomeIcon icon={faHome} className='d-lg-none text-primary' />}<Link href="/" className={`${setActive("/")} nav-item my-lg-0 my-2`}>Home</Link></span>
                     <span className='nav-item-container'>{<FontAwesomeIcon icon={faToolbox} className='d-lg-none text-primary' />}<Link href="/our-services" className={`${setActive("/our-services")} nav-item my-lg-0 my-2`}>Our Services</Link></span>
                     {/* <span ('/get-quote')}`}>{<FontAwesomeIcon icon={faContactCard} className='d-lg-none' />}<Link href="/get-quote" className="my-lg-0 my-2">Contact Us</Link></span> */}
-                    <span className='nav-item-container'>{<FontAwesomeIcon icon={faEarthAfrica} className='d-lg-none text-primary' />}<Link href="about" className={`${setActive("/about-us")} nav-item my-lg-0 my-2`}>About Us</Link></span>
+                    <span className='nav-item-container'>{<FontAwesomeIcon icon={faEarthAfrica} className='d-lg-none text-primary' />}<Link href="about" className={`${setActive("/about")} nav-item my-lg-0 my-2`}>About Us</Link></span>
                     <PrimaryButton className='btn-primary d-lg-none mx-lg-0 ms-2 mb-2 mb-lg-0 ' text='Get Started' icon={faArrowRight} />
                 </div>
             </div>

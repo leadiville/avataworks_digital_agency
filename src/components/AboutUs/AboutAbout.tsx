@@ -15,15 +15,15 @@ const AboutAbout = () => {
                             <h2 className="mb-lg-4 text-capitalize  fw-bold ">Your all-in-one team <br /> of AI-powered specialists.</h2>
                             <div className="second-section ">
                                 <div className=''>
-                                    <h4>Tech-Driven Creativity</h4>
+                                    <h3>Tech-Driven Creativity</h3>
                                     <p className=''><small>AI-powered execution combined with human creative direction — delivering high-performing solutions at machine speed. </small></p>
                                 </div>
                                 <div className=''>
-                                    <h4>1-on-1 Growth Consultation</h4>
+                                    <h3>1-on-1 Growth Consultation</h3>
                                     <p className=''><small>Every engagement starts with an AVATA session to diagnose, prioritise, and map the growth plan that fits your brand.</small></p>
                                 </div>
                                 <div className=''>
-                                    <h4>Productivity Meets Precision</h4>
+                                    <h3>Productivity Meets Precision</h3>
                                     <p className=''><small>Fast turnarounds, deadline-ready delivery, and data-driven decisions — every project built for measurable results.</small></p>
                                 </div>
                             </div>

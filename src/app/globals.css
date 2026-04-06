@@ -276,7 +276,6 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(5, 117, 187, 0.06);
   border: 1px solid rgba(5, 117, 187, 0.2);
   border-radius: 99px;
   padding: 6px 16px 6px 8px;
