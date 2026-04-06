@@ -103,6 +103,9 @@ p {
 .text-primary {
   color: #0575bb !important;
 }
+.text-danger {
+  color: red;
+}
 .text-lighter {
   color: rgb(217, 215, 215);
 }
@@ -226,35 +229,34 @@ p {
 /*** Topbar End ***/
 
 /* Navbar */
-.nav-items {
-  font-weight: bold;
+.nav-item {
   text-decoration: none;
-  transform: translateY(0) scale(1);
-  color: inherit;
+  font-weight: 600;
+}
+.nav-item-container {
+  transform: translateY(0px);
   transition:
-    color 0.5s,
-    transform 0.7s,
-    0.7s linear;
+    transform 0.4s,
+    color 0.2s linear;
 }
-.nav-items:hover,
-.nav-items:active {
-  color: var(--dark) !important;
-  transform: translateY(-2px) scale(1.1);
+.nav-item-container:hover,
+.nav-item:hover {
+  color: rgb(19, 19, 120) !important;
+  transform: translateY(2px) !important;
 }
-nav .menu-container {
-  border: none !important;
-}
+
 @media screen and (max-width: 768px) {
-  nav .menu-container {
-    border-top: 2px solid white !important;
-    border-bottom: 2px solid white !important;
+  .nav-item {
+    margin: 10px 0px 10px 10px;
+    min-width: 100% !important;
   }
-  .nav-items {
-    transform: translateX(0);
+  .nav-item:hover,
+  .nav-item:active {
+    transform: translateY(0px);
+    /* color: var(--primary) !important; */
   }
-  .nav-items:hover,
-  .nav-items:active {
-    transform: translateX(10px) scale(1.1);
+  .nav-item-container {
+    padding: 0.6rem;
   }
 }
 
@@ -299,7 +301,7 @@ nav .menu-container {
 .badge-text {
   font-size: 12px;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--primary);
 }
 .about-hero-text {
   text-overflow: hidden;
@@ -431,8 +433,8 @@ nav .menu-container {
 }
 .flow-icon.ai {
   background: rgba(5, 117, 187, 0.1);
-  border: 2px solid var(--blue);
-  color: var(--blue);
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }
 .flow-icon.human {
   background: rgba(0, 194, 255, 0.1);
@@ -457,7 +459,7 @@ nav .menu-container {
 }
 .flow-arrow {
   font-size: 20px;
-  color: var(--blue);
+  color: var(--primary);
   flex-shrink: 0;
   padding: 0 4px;
   margin-top: -20px;
@@ -689,7 +691,7 @@ nav .menu-container {
 
 /* services page hero section */
 .services-hero {
-  background-image: url("/hero/Digital_Brand_Success_gif.gif");
+  background-image: url("/public/Telework-pana\ \(1\).png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -991,17 +993,161 @@ input:-webkit-autofill:active {
   font-size: 13px;
 }
 /* CONTAINERS */
-.c{max-width:1200px;margin:0 auto;padding:0 28px;}
-.sec{padding:88px 0;}
-.sec-hdr{text-align:center;margin-bottom:60px;}
-.sec-hdr p{font-size:17px;max-width:580px;margin:14px auto 0;}
+.c {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+.sec {
+  padding: 88px 0;
+}
+.sec-hdr {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sec-hdr p {
+  font-size: 17px;
+  max-width: 580px;
+  margin: 14px auto 0;
+}
 
 /* BADGE */
-.badge{display:inline-flex;align-items:center;gap:8px;
-  font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--blue);background:rgba(5,117,187,.07);
-  border:1px solid rgba(5,117,187,.2);padding:5px 14px 5px 9px;border-radius:99px;margin-bottom:18px;}
-[data-dark] .badge{color:var(--electric);background:rgba(0,194,255,.07);border-color:rgba(0,194,255,.18);}
-.bdot{width:7px;height:7px;border-radius:50%;background:var(--electric);
-  animation:pd 2s ease-in-out infinite;}
-@keyframes pd{0%,100%{box-shadow:0 0 0 0 rgba(0,194,255,.5);}50%{box-shadow:0 0 0 6px rgba(0,194,255,0);}}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(5, 117, 187, 0.07);
+  border: 1px solid rgba(5, 117, 187, 0.2);
+  padding: 5px 14px 5px 9px;
+  border-radius: 99px;
+  margin-bottom: 18px;
+}
+[data-dark] .badge {
+  color: var(--electric);
+  background: rgba(0, 194, 255, 0.07);
+  border-color: rgba(0, 194, 255, 0.18);
+}
+.bdot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--electric);
+  animation: pd 2s ease-in-out infinite;
+}
+@keyframes pd {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 194, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(0, 194, 255, 0);
+  }
+}
+
+/* PRICING */
+.pg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.pc {
+  background: white;
+  z-index: 1;
+  border: 1px solid var(--primaryLighter);
+  border-radius: 1rem;
+  padding: 36px 28px;
+  position: relative;
+  transition: all 0.25s;
+}
+.pc.pop {
+  border-color: var(--primary);
+  box-shadow:
+    0 0 0 1px var(--primary),
+    0 8px 36px rgba(5, 117, 187, 0.18);
+}
+[data-dark] .pc.pop {
+  border-color: var(--electric);
+  box-shadow:
+    0 0 0 1px var(--electric),
+    0 8px 36px rgba(0, 194, 255, 0.12);
+}
+.pb {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 16px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+[data-dark] .pb {
+  background: var(--electric);
+  color: var(--navy);
+}
+.pt {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+[data-dark] .pt {
+  color: var(--electric);
+}
+.pn {
+  font-family: "Syne", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.pa {
+  font-family: "Syne", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+}
+.pp {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 20px;
+}
+.pd {
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.pf {
+  list-style: none;
+  margin-bottom: 28px;
+}
+.pf li {
+  font-size: 12px;
+  color: var(--text2);
+  padding: 6px 0;
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+}
+.pf li::before {
+  content: "✓";
+  color: var(--primary);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+[data-dark] .pf li::before {
+  color: var(--electric);
+}

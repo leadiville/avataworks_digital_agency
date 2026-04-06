@@ -7,16 +7,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faContactCard } from '@fortawesome/free-solid-svg-icons/faContactCard';
 
 
-const NavMenus = () => {   
+const NavMenus = () => {
 
     return (
-        <div className="collapse navbar-collapse" id="navbarToggleMenu">
-            <div className="menu-container d-flex flex-column flex-lg-row gap-4 justify-content-lg-evenly w-100 py-md-5 py-4 px-2 my-3 my-lg-0">
-                <span className={`nav-items ${setActive('/')}`}>{<FontAwesomeIcon icon={faContactCard} className='me-3 d-lg-none' />}<Link href="/" className="nav-items my-lg-0 my-2">Home</Link></span>
-                <span className={`nav-items ${setActive('/our-services')}`}>{<FontAwesomeIcon icon={faToolbox} className='me-3 d-lg-none' />}<Link href="/our-services" className="nav-items my-lg-0 my-2">Our Services</Link></span>
-                {/* <span className={`nav-items ${setActive('/get-quote')}`}>{<FontAwesomeIcon icon={faContactCard} className='me-3 d-lg-none' />}<Link href="/get-quote" className="nav-items my-lg-0 my-2">Contact Us</Link></span> */}
-                <span className={`nav-items ${setActive('/about')}`}>{<FontAwesomeIcon icon={faEarthAfrica} className='me-3 d-lg-none' />}<Link href="about" className="nav-items my-lg-0 my-2">About Us</Link></span>
-                <PrimaryButton className='btn-white d-lg-none' text='Get Started' icon={faArrowRight} />
+        <div className="collapse navbar-collapse mt-4 mb-2 mt-lg-0 mb-lg-0" id="navbarToggleMenu">
+            <div className="w-100 d-lg-flex justify-content-center">
+                <div className="col-lg-10 col-12 bg-white border border-white position-relative z-1 p-3 px-lg-5 rounded d-lg-flex justify-content-between d-grid gap-4">
+                    <span className='nav-item-container'>{<FontAwesomeIcon icon={faHome} className='d-lg-none text-primary' />}<Link href="/" className={`${setActive("/")} nav-item my-lg-0 my-2`}>Home</Link></span>
+                    <span className='nav-item-container'>{<FontAwesomeIcon icon={faToolbox} className='d-lg-none text-primary' />}<Link href="/our-services" className={`${setActive("/our-services")} nav-item my-lg-0 my-2`}>Our Services</Link></span>
+                    {/* <span ('/get-quote')}`}>{<FontAwesomeIcon icon={faContactCard} className='d-lg-none' />}<Link href="/get-quote" className="my-lg-0 my-2">Contact Us</Link></span> */}
+                    <span className='nav-item-container'>{<FontAwesomeIcon icon={faEarthAfrica} className='d-lg-none text-primary' />}<Link href="about" className={`${setActive("/about-us")} nav-item my-lg-0 my-2`}>About Us</Link></span>
+                    <PrimaryButton className='btn-primary d-lg-none mx-lg-0 ms-2 mb-2 mb-lg-0 ' text='Get Started' icon={faArrowRight} />
+                </div>
             </div>
         </div>
     )

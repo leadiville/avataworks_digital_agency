@@ -11,18 +11,18 @@ const Navbar = () => {
         <div className='bg-primary'>
             {/* Navbar & Hero Start */}
             <div className="container-fluid py-md-0 position-relative">
-                <div className='container d-flex justify-content-between'>
-                    <nav className="w-100 navbar navbar-expand-lg ">
-                        <Link href="/" className="navbar-brand p-0">
-                            <Image width={220} height={70} src="/logo.png" alt="Logo" className='w-100 h-100' />
-                        </Link>
-                        <button className="navbar-toggler" type="button" data-bs-target="#navbarToggleMenu" data-bs-toggle="collapse">
-                            <span className="fa fa-bars"><FontAwesomeIcon icon={faBars} style={{ color: 'white' }} /></span>
-                        </button>
-                        <NavMenus />
-                        {<div className="d-none d-lg-flex bg-white p-1 rounded">
-                            <PrimaryButton className='btn-danger rounded' text='Get Started' icon={faArrowRight} />
-                        </div>}
+                <div className='container'>
+                    <nav className="navbar navbar-expand-lg w-fit position-relative">
+                            <Link href="/" className="navbar-brand">
+                                <Image width={220} height={70} src="/logo.png" alt="Logo" className='w-100 h-100' />
+                            </Link>                        
+                            <button className="navbar-toggler" type="button" data-bs-target="#navbarToggleMenu" data-bs-toggle="collapse">
+                                <span className="fa fa-bars"><FontAwesomeIcon icon={faBars} style={{ color: 'white' }} /></span>
+                            </button>
+                            <NavMenus />
+                            {<div className="d-none d-lg-inline-block bg-white p-lg-2 rounded">
+                                <PrimaryButton className='bg-danger text-white rounded p-lg-2' text='Get Started' icon={faArrowRight} />
+                            </div>}
                     </nav>
                 </div>
             </div>

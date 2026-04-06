@@ -7,22 +7,23 @@ type bannerT = {
     subtitle: string;
     buttonText: string;
     icon?: IconDefinition | string;
+    isWideBanner?: boolean;
 }
-const Banner = ({ title, subtitle, buttonText, icon }: bannerT) => {
+const Banner = ({ title, subtitle, buttonText, icon, isWideBanner }: bannerT) => {
     return (
-        <section className="bg-primary w-100">
-            <div className="text-white py-5">
-                <div className="container text-center py-5 align-items-center">
+        <div className="bg-primary mt-5">
+            <section className={`${isWideBanner ? 'py-4' : 'py-5'}`}>
+                <div className="container text-center align-items-center text-white">
                     <h2>{title}</h2>
                     <div className="row">
                         <div className="d-flex justify-content-center">
-                            <p className='col-lg-5 col-12 py-lg-2 text-white'>{subtitle}</p>
+                            <p className={`${!isWideBanner ? 'col-lg-5' : 'col-12 py-lg-2'} text-lighter `}>{subtitle}</p>
                         </div>
                     </div>
-                    <Link href={'/get-quote'} className='col-lg-5 col-12'><PrimaryButton text={buttonText} className="btn btn-white" icon={icon as IconDefinition} /></Link>
+                    {!isWideBanner && <Link href={'/get-quote'} className='col-lg-5 col-12'><PrimaryButton text={buttonText} className="btn btn-white" icon={icon as IconDefinition} /></Link>}
                 </div>
-            </div>
-        </section >
+            </section >
+        </div>
     )
 }
 
