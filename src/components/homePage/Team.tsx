@@ -15,8 +15,8 @@ const Team = ({ teamMembers }: TeamProps) => {
     const path = usePathname();
     return (
 
-        <div className="container-fluid team pb-5 pt-5 position-relative z-1 bg-primaryLight ">
-            <div className="container">
+        <div className="container-fluid team py-5 position-relative z-1 bg-primaryLight ">
+            <div className="container py-5">
                 <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
                     <h2 className="mb-4 text-primary">Meet Our Avatas</h2>
                     <p className="mb-0">A powerhouse of advanced virtual assistants in tech and advertising, each bringing exceptional skills, experience, and passion. Driving our clients to digital brand success.

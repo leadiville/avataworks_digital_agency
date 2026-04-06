@@ -1,6 +1,4 @@
 "use client";
-import Link from 'next/link'
-import PrimaryButton from '../PrimaryButton'
 import { usePathname } from 'next/navigation'
 import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,45 +9,18 @@ type About = {
 
 const AboutGrowth = ({ bg }: About) => {
     const path = usePathname();
+    const aiStacks = ["n8n", "WhatsApp Business Cloud API", "Claude/GPT-4o", "Midjourney/Canva Magic", "Vista Social/Madgicx"," Relevance AI", "Webflow/Bubble", "Vapi/Retell AI", "ElevenLabs", "Airtable", "Make/Zapier", "Manus"];
+
     return (
-        <div className={`${bg} rounded p-lg-5 p-sm-0 h-100 mt-4`}>
-            <div className="row g-4 justify-content-center w-100 p-4">
-                <h4 className="mb-4 fw-bold text-uppercase "><FontAwesomeIcon className="text-dark" icon={faDotCircle} /> Our AI Stack</h4>
-                <div className="col-12">
-                    <div className="counter-item bg-light rounded p-3 h-100">
-                        <div className="counter-counting">
-                            <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">Claude AI</span>
-                            {/* <span className="h1 fw-bold text-primary">%</span> */}
+        <div className={`${bg} rounded  p-sm-0 h-fit mt-2 mt-lg-0`}>
+            <div className="row g-2 justify-content-center w-100 p-4">
+                <h4 className=" fw-bold text-uppercase text-white text-lg-center text-center"><FontAwesomeIcon icon={faDotCircle} /> Our AI Stack</h4>
+                <div className="row gap-2 d-lg-flex justify-content-center py-4">
+                    {aiStacks?.map((each, inx) => (
+                        <div className="col-lg-5 text-center bg-primaryLight rounded p-2 w-fit h-fit d-lg-flex justify-content-center align-items-center mb-2 mb-lg-0">
+                            <h5 className="text-gray fw-bold" data-toggle="counter-up">{each}</h5>
                         </div>
-                        {/* <h4 className="mb-0 text-dark">Profit Increase</h4> */}
-                    </div>
-                </div>
-                <div className="col-12">
-                    <div className="counter-item bg-light rounded p-3 h-100">
-                        <div className="counter-counting">
-                            <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">Vapi Voice AI</span>
-                            {/* <span className="h1 fw-bold text-primary">+</span> */}
-                        </div>
-                        {/* <h4 className="mb-0 text-dark">Brands Managed</h4> */}
-                    </div>
-                </div>
-                <div className="col-12">
-                    <div className="counter-item bg-light rounded p-3 h-100">
-                        <div className="counter-counting">
-                            <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">Madgicx</span>
-                            {/* <span className="h1 fw-bold text-primary">+</span> */}
-                        </div>
-                        {/* <h4 className="mb-0 text-dark">Skilled Avatas</h4> */}
-                    </div>
-                </div>
-                <div className="col-12">
-                    <div className="counter-item bg-light rounded p-3 h-100">
-                        <div className="counter-counting">
-                            <span className="text-primary fs-2 fw-bold" data-toggle="counter-up">Airtable</span>
-                            {/* <span className="h1 fw-bold text-primary">+</span> */}
-                        </div>
-                        {/* <h4 className="mb-0 text-dark">Success Years</h4> */}
-                    </div>
+                    ))}
                 </div>
             </div>
 

@@ -11,7 +11,7 @@ type bannerT = {
 }
 const Banner = ({ title, subtitle, buttonText, icon, isWideBanner }: bannerT) => {
     return (
-        <div className="bg-primary mt-5">
+        <div className="bg-primary">
             <section className={`${isWideBanner ? 'py-4' : 'py-5'}`}>
                 <div className="container text-center align-items-center text-white">
                     <h2>{title}</h2>

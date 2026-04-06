@@ -24,7 +24,7 @@ export const WelcomeAbout = () => {
             <HeroAnimation />
           </div>
           <div className="col-lg-6 px-lg-5 pt-4 col-sm-8 text-white text-center px-0  text-lg-start">
-            <Badge text="We are your – Advanced Virtual Assistance in Technology and Advertising." key={'about-hero'} style="bg-primaryLight" />
+            <Badge text="We are your all in one AI-driven agency." key={'about-hero'} style="bg-primaryLight text-capitalize" />
             <h1 className="display-3 mb-2 mb-4 text-capitalize text-dark">
               Welcome to <span className="text-primary">Avataworks</span>
             </h1>

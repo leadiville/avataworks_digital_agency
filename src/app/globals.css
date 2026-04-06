@@ -109,6 +109,12 @@ p {
 .text-lighter {
   color: rgb(217, 215, 215);
 }
+.text-gray {
+  color: gray;
+}
+.text-grey {
+  color: grey;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
