@@ -59,7 +59,7 @@ const Footer = async () => {
                                             <a href="index.html" className="p-0">
                                                 <Image src="/logo.png" width={150} height={50} className='w-50 h-50 p-0 m-0' alt="Logo" />
                                             </a>
-                                            <p className="text-white mb-4 text-capitalize">your all in  one digital and technology agency to meet all your business needs</p>
+                                            <p className="text-white mb-4 text-capitalize">your all in one AI-driven agency</p>
                                             <div className="footer-btn d-flex">
                                                 <Link className="btn btn-md-square rounded-circle me-3" href="https://web.facebook.com/avataworks"><i className="fab fa-facebook-f"><FontAwesomeIcon width={20} height={20} icon={faFacebook} /></i></Link>
                                                 <Link className="btn btn-md-square rounded-circle me-3" href="https://x.com/avataworks"><i className="fab fa-twitter"><FontAwesomeIcon width={20} height={20} icon={faTwitter} /></i></Link>
