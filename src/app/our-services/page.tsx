@@ -5,9 +5,11 @@ import { Ifaq } from "@/types";
 import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 import CoreServices from "@/components/servicesPage/CoreServices";
-import Banner from "@/components/AboutUs/ReadyToWork";
+import Banner from "@/components/AboutUs/Banner";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Pricing from "@/components/servicesPage/Pricing";
+import Badge from "@/components/Badge";
+import Image from "next/image";
 
 export type faqT = {
   answer: string;
@@ -26,11 +28,20 @@ const page = async () => {
 
   return (
     <div>
-      <div className="container-fluid p-5 services-hero" >
-      </div>
-      <Banner title="We are brand builders for hire!" subtitle="AVATAWorks digital agency is a growth engine and Managed Marketing Service Provider (MMSP) for startups and ambitious brands. We build brands, execute conversion-ready digital transformations, and operate growth systems with Avatas across social media, creative strategy & branding, website & app development." buttonText="Get a Free Consultation" icon={faArrowRight} isWideBanner/>
-      <div className="container-fluid">
-          <CoreServices />
+
+      {/* // Hero section  */}
+      <section className="svc-hero ">
+        <div className="position-relative container">
+          <div className="badge" style={{ background: "rgba(255,255,255,0.12)", borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}>
+            <span className="bdot"></span>AI-Native Services
+          </div>
+          <h1 className="text-white display-1 fw-bold">Digital Marketing Services<br />in Nigeria - <span style={{ color: 'skyBlue' }}>AI-Driven.</span></h1>
+          <p>Three core service lines upgraded into AI-powered delivery systems. Built for Nigerian startups and ambitious African brands ready to scale.</p>
+        </div>
+      </section>
+      {/* <Banner title="We are your AI-driven brand builders for hire!" buttonText="Get a Free Consultation" icon={faArrowRight} isWideBanner /> */}
+      <div className="container-fluid ">
+        <CoreServices />
       </div>
       <Pricing />
       <Faq faq={faqServices} />

@@ -11,8 +11,8 @@ import Testimonials from "@/components/homePage/Testimonials";
 import Reviews from "@/models/Reviews";
 import AboutAbout from "@/components/AboutUs/AboutAbout";
 import { Timeline } from "@/components/AboutUs/Timeline";
-import ReadyToWork from "@/components/AboutUs/ReadyToWork";
-import Banner from "@/components/AboutUs/ReadyToWork";
+import ReadyToWork from "@/components/AboutUs/Banner";
+import Banner from "@/components/AboutUs/Banner";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;

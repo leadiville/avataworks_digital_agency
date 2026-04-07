@@ -1,36 +1,44 @@
+import Badge from '../Badge';
 import EachCoreService from './EachCoreService';
 
 const CoreServices = () => {
     const servicesDeliver = [
         {
             socialMediaMngt: [
-                "Market and audience research: customer avatar profiling, competitor analysis, and channel strategy for the African market",
-                "Paid advertising management: A/B testing and weekly optimization across Meta, TikTok, YouTube, LinkedIn, and Google",
-                "Content creation and marketing: content calendars, short-form video, copywriting, platform-native creatives, and SEO blog strategy",
-                "Community and influencer activation: creator partnerships, micro-influencer programs, and community funnel management",
-                "CRM and marketing automation: integrations, lead pipeline management, email automation, and monthly performance dashboards"
+                "Brand strategy, positioning & competitive differentiation",
+                "Logo systems, typography, colour palettes & brand guidelines",
+                "Brand voice, messaging hierarchy & content tone frameworks",
+                "Ad creative systems aligned to performance marketing goals",
+                "Launch campaigns, pitch decks & brand activation assets",
+                "AI-accelerated brand concept exploration — AVATA-reviewed",
 
             ],
             webDev: [
-                "Conversion-first website design and development — landing pages, corporate websites, WordPress, and e-commerce platforms", "Mobile app development — iOS and Android applications for ambitious brands",
-                "CRM integration and lead capture systems — HubSpot, Salesforce, and custom integrations for automated lead management",
-                "Technical SEO and site performance — page speed optimization, structured data, Core Web Vitals, and Google-ready architecture",
-                "Ongoing maintenance and optimization — monthly performance reviews, iteration cycles, and support for scaling teams"
+                "Conversion-first website design & development",
+                "Mobile app development — iOS & Android for Nigerian startups",
+                "CRM integration, lead capture & marketing automation",
+                "Technical SEO, Core Web Vitals & Google-ready architecture",
+                "E-commerce — Shopify, WooCommerce & custom builds",
+                "Ongoing maintenance & performance optimisation",
             ],
             creativeBranding: [
-                "Brand strategy and positioning: competitive differentiation, audience research, and go-to-market messaging",
-                "Visual identity design: logo systems, typography, colour palettes, brand guidelines, and asset libraries", "Brand voice and content frameworks: messaging hierarchy, tone of voice, and content guidelines", "Ad creative systems: high-performing creative aligned to your paid media and performance marketing goals",
-                "Launch campaigns and brand activations: pitch decks, event assets, and go-to-market campaign creative"
+                "Market research, customer avatar profiling & channel strategy",
+                "Paid advertising: Meta, TikTok, YouTube, LinkedIn, Google Ads",
+                "Content calendars, short-form video, copywriting & UGC",
+                "Community management & micro-influencer activation",
+                "CRM integration, email automation & performance dashboards",
+                "AI-generated content — AVATA-reviewed before publishing",
             ]
         }
     ];
     return (
-        <div className="container service py-lg-4 py-2">
-            {/* <h2 className="text-danger text-center p-2">Who are we?</h2> */}
-            <div className='container-fluid'>
-                <EachCoreService header='Social Media Management' subheader='AVATAWorks is a paid media and social media marketing agency in Nigeria. We drive growth for startups and brands in Africa. We deliver digital brand success through organic growth marketing operations, customer avatar acquisition, content creation and user-generated content for e-commerce. Managing community systems that convert attention into qualified leads and revenue.' img={"/Marketing-avataworks.webp"} whatWeBuild={servicesDeliver[0]?.socialMediaMngt} />
-                <EachCoreService header='Technology & Strategic Innovation' subheader='AvataWorks is a Tech Innovation agency in Nigeria. We build websites and custom mobile app development that are engineered for growth. We design Landing pages, CRM-integrated websites, WordPress websites, and analytics to turn your digital assets into a reliable revenue channel.' img={"/Cross-platform software-bro.png"} whatWeBuild={servicesDeliver[0]?.webDev} />
-                <EachCoreService header='Creative Strategy & Branding' subheader='AVATAWorks crafts brand identity for startups in Africa. We create brand playbooks, visual designs, and creative branding services to align messaging and improve ad creative, ad copy, and video production for performance marketing and long-term digital brand success' whatWeBuild={servicesDeliver[0]?.creativeBranding} img={"/Marketing-rafiki.png"} />
+        <div className="container-fluid service py-lg-5">
+            <div className='p-0'>
+                <EachCoreService header='We Run Social Media Like a Revenue Engine' subheader='Not just content. A full growth operation. From paid advertising on Meta, TikTok, LinkedIn, and Google Ads, to organic content strategy, community management, and influencer partnerships. Every campaign tracked against CAC, ROAS, and pipeline generated — every naira optimised.' img={"/Marketing-avataworks.webp"} whatWeBuild={servicesDeliver[0]?.socialMediaMngt} title='Creative Strategy and Branding' />
+
+                <EachCoreService header='Your Website Is Your 24/7 Salesperson.' subheader='Most African business sites lose leads every day. We build high-performance websites, mobile applications, and landing pages — conversion-first, SEO-ready, CRM-integrated. Built to compete locally and grow globally.' img={"/Cross-platform software-bro.png"} whatWeBuild={servicesDeliver[0]?.webDev} title='Technology and Strategic Innovation' />
+
+                <EachCoreService header='Build a Brand That Speaks, Sells, and Stands Out.' subheader='Your brand is the first decision your customer makes before they contact you. We build brand identity systems — logos, visual language, brand guidelines, and creative strategy — tied directly to commercial intent. Every brand we build is engineered to improve ad performance, reduce customer acquisition cost, and build long-term equity in Nigerian and African markets.' whatWeBuild={servicesDeliver[0]?.creativeBranding} img={"/Marketing-rafiki.png"} title='Creative Strategy and Branding' />
             </div>
         </div>
     );

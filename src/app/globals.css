@@ -88,7 +88,8 @@ h3 {
 }
 p {
   line-height: 1.75;
-  color: var(--foreground);
+  color: grey;
+  font-weight: 700;
 }
 .bg-primaryLighter {
   background-color: var(--primaryLighter);
@@ -112,8 +113,8 @@ p {
 .text-gray {
   color: gray;
 }
-.text-grey {
-  color: grey;
+.text-lightDark {
+  color: rgb(71, 71, 71);
 }
 @media (prefers-color-scheme: dark) {
   html {
@@ -237,7 +238,7 @@ p {
 /* Navbar */
 .nav-item {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 .nav-item-container {
   transform: translateY(0px);
@@ -265,7 +266,13 @@ p {
     padding: 0.6rem;
   }
 }
-
+.hero-quote {
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+}
+.hero-quote:hover {
+  transform: translateY(3px); 
+}
 /*** Carousel Hero Header Start ***/
 @media (min-width: 768px) {
   /* hero cta */
@@ -477,7 +484,7 @@ p {
   transition: 0.5s;
 }
 .feature-item p {
-  min-height: 220px;
+  
 }
 .feature .feature-item:hover {
   background: var(--primary) !important;
@@ -695,30 +702,41 @@ p {
 }
 
 /* services page hero section */
-.services-hero {
-  background-image: url("/public/Telework-pana\ \(1\).png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding: 25rem !important;
+.svc-hero {
+  background: var(--primary);
+  padding: 72px 0 60px;
+  position: relative;
+  overflow: hidden;
 }
-.service-info {
-}
-/* mobile view */
 @media (max-width: 768px) {
-  .services-hero {
-    background-position: right;
-    padding: 9rem !important;
-  }
-
-  .services-scroll .service-content {
-    bottom: 0;
-    color: var(--bs-white);
+  .svc-hero {
     background: var(--primary);
-    height: 100%;
-    transition: 0.5s;
+    padding: 24px 0 16px;
+    position: relative;
+    overflow: hidden;
   }
 }
+.svc-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.svc-hero h1 {
+  color: #fff;
+  position: relative;
+}
+.svc-hero p {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 580px;
+  font-size: 17px;
+  margin-top: 14px;
+  position: relative;
+}
+
 /*** Service End ***/
 
 div.accordion-item {
@@ -1060,6 +1078,13 @@ input:-webkit-autofill:active {
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
+@media screen and (max-width: 768px) {
+  .pg-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 22px;
+  }
+}
 .pc {
   background: white;
   z-index: 1;
@@ -1125,7 +1150,7 @@ input:-webkit-autofill:active {
 }
 .pp {
   font-size: 12px;
-  color: grey;
+  color: gray;
   margin-bottom: 20px;
 }
 .pd {

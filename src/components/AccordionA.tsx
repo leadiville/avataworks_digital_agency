@@ -22,7 +22,7 @@ const AccordionA = ({ faq }: FaqProps) => {
             <AccordionBody>
               {/* STRING */}
               {typeof data.answer === "string" && (
-                <p>{data.answer}</p>
+                <p className='text-white'>{data.answer}</p>
               )}
 
               {/* ARRAY */}

@@ -7,7 +7,7 @@ interface TestimonyProps {
 }
 const Testimonials = ({ testimonials }: TestimonyProps) => {
   return (
-    <div className="container-fluid testimonial bg-primaryLight rounded-lg-pill py-5">
+    <div className="container-fluid testimonial bg-primaryLight rounded-lg-pill py-lg-5">
       <div className="container pb-3 py-5">
         <div className="text-center mx-auto wow fadeInUp w-lg-75 mb-5" >
           <h2 className="text-primary mb-4">Real Results. Real Voices</h2>

@@ -55,8 +55,8 @@ const OurServices = ({ services }: ServicesProps) => {
                                         <div className="service-content p-lg-4 px-2 py-3 text-center">
                                             <div className="service-content-inner">
                                                 <h2 className="d-inline-block h4 mb-4 d-inline-block services-header">{title}</h2>
-                                                <p className="mb-4 service-info">{isShowMore ? fullInfo : (fullInfo?.slice(0, 195) + '...')}
-                                                    <a type='button' className='btn-link' onClick={() => setIsShowMore(!isShowMore)}> {`${!isShowMore ? ' more' : " less"}`}</a>
+                                                <p className="mb-4 service-info">{isShowMore ? fullInfo + " " : (fullInfo?.slice(0, 195) + '...' + ' ')}
+                                                    <a type='button' className='text-dark' onClick={() => setIsShowMore(!isShowMore)}> {`${!isShowMore ? ' show-more' : " show-less"}`}</a>
                                                 </p>
                                                 <Link href={"/our-services"} className='explore-btn d-inline-block'><PrimaryButton className='border-primary bg-white py-lg-3 px-lg-4 p-2' text={`Explore ${title}`} /></Link>
                                             </div>

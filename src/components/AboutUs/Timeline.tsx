@@ -6,10 +6,10 @@ export const Timeline = () => {
     return (
         <div className=''>
             <Stats />
-            <section className="sec sec-alt">
+            <section className="sec py-5">
                 <div className="c" style={{ maxWidth: '720px' }}>
                     <div className="sec-hdr">
-                        <div className="badge">
+                        <div className="badge my-lg-5">
                             <span className="bdot"></span>Our Journey
                         </div>
                         <h2>4 Years of Proving the Model</h2>
@@ -51,7 +51,7 @@ export const Timeline = () => {
                         <div className="tli" style={{ paddingBottom: '0' }}>
                             <div className="tld" style={{ background: 'var(--primaryLighter)' }}>26</div>
                             <div className="tlc">
-                                <h4>2026 — AVATA OS Launch</h4>
+                                <h4>2026 — AVATA AIDE Launch</h4>
                                 <p>AIDE model fully active. AVATA OS MVP in development. Target: 50 AI subscription clients.</p>
                             </div>
                         </div>

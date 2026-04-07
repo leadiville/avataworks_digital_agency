@@ -5,14 +5,14 @@ const AboutAbout = () => {
     return (
         <div>
             <div className="position-relative z-1 bg-primaryLight container-fluid py-5">
-                <div className="container py-5">
+                <div className="container py-lg-5">
                     <div className="row align-items-center">
                         <div className='col-lg-6 py-4 py-lg-0 order text-lg-start text-center'>
-                            <h2 className="mb-lg-4 text-capitalize text-primary fw-bold">Your all-in-one team <br /> of AI-powered specialists.</h2>
+                            <h2 className="mb-4 text-capitalize text-primary fw-bold">Your all-in-one team <br /> of AI-powered specialists.</h2>
                             <div className="second-section text-gray">
                                 <div className=''>
                                     <h3 className='text-grey'>Tech-Driven Creativity</h3>
-                                    <p className=''><small>AI-powered execution combined with human creative direction — delivering high-performing solutions at machine speed. </small></p>
+                                    <p className=''><small>AI-powered execution combined with human creative direction delivering high-performing solutions at machine speed. </small></p>
                                 </div>
                                 <div className=''>
                                     <h3 className='text-grey'>1-on-1 Growth Consultation</h3>

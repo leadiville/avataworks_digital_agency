@@ -13,12 +13,12 @@ const AboutGrowth = ({ bg }: About) => {
 
     return (
         <div className={`${bg} rounded  p-sm-0 h-fit mt-2 mt-lg-0`}>
-            <div className="row g-2 justify-content-center w-100 p-4">
-                <h4 className=" fw-bold text-uppercase text-white text-lg-center text-center"><FontAwesomeIcon icon={faDotCircle} /> Our AI Stack</h4>
-                <div className="row gap-2 d-lg-flex justify-content-center py-4">
+            <div className="row g-2 justify-content-center w-100 p-3">
+                <h5 className="fw-bold text-uppercase text-white text-lg-center text-center"><FontAwesomeIcon icon={faDotCircle} /> Our AI Stack</h5>
+                <div className="row gap-4 d-lg-flex justify-content-center py-4">
                     {aiStacks?.map((each, inx) => (
                         <div className="col-lg-5 text-center bg-primaryLight rounded p-2 w-fit h-fit d-lg-flex justify-content-center align-items-center mb-2 mb-lg-0">
-                            <h5 className="text-gray fw-bold" data-toggle="counter-up">{each}</h5>
+                            <small className="text-gray fw-bold" data-toggle="counter-up">{each}</small>
                         </div>
                     ))}
                 </div>

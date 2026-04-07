@@ -43,13 +43,13 @@ const FeatureCard = ({ title, info, icon }: Ifeat) => {
     }, []);
 
     return (
-        <div className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" ref={ref} >
-            <div className={`feature-item  ${active && 'feature-item-scroll'} p-4 pt-0`} style={{ minHeight: '240px' }}>
+        <div className="col-lg-3 col-12 wow fadeInUp" ref={ref} >
+            <div className={`feature-item  ${active && 'feature-item-scroll'} p-4 py-0 pb-4 border border-white`}>
                 <div className="feature-icon p-4 mb-4">
-                    <i><FontAwesomeIcon icon={icon} width={30} height={30} style={{ width: '50px', height: '50px' }} /></i>
+                    <i><FontAwesomeIcon icon={icon} width={30} height={30} className='w-100 h-100' /></i>
                 </div>
-                <h4 className="mb-4" style={{ fontWeight: 600 }}>{title}</h4>
-                <p className="mb-0 text-black-5">{info}
+                <h4 className="mb-2" style={{ fontWeight: 600 }}>{title}</h4>
+                <p className="mb-0 text-lightDark">{info}
                 </p>
             </div>
         </div>

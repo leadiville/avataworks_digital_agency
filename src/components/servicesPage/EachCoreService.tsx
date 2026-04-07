@@ -1,8 +1,9 @@
-import { faMailForward, faPen } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faMailForward, faPen } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
+import Badge from '../Badge';
 
 
 interface ICoreServices {
@@ -10,40 +11,47 @@ interface ICoreServices {
     subheader: string;
     img: string;
     whatWeBuild: string[] | undefined;
+    title: string;
 }
 
-const EachCoreService = ({ header, subheader, img, whatWeBuild, }: ICoreServices) => {
+const EachCoreService = ({ header, subheader, img, whatWeBuild, title }: ICoreServices) => {
     return (
-        <div className='container pb-lg-5'>
-            <div className="container text-center pt-lg-5">
-                <h2 className='text-primary my-3'>
-                    {header}
-                </h2>
-                <div className="d-lg-flex justify-content-center align-items-center">
-                    <p className="col-12 col-lg-10 text-grey">{subheader}</p>
-                </div>
-            </div>
-            <div className="d-lg-flex justify-content-center align-items-center">
-                <div className="col-lg-4 p-0 text-center bg-primaryLight rounded">
-                    <Image src={img} width={500} height={420} alt='service-image' className='w-lg-fit h-lg-fit w-auto h-fit p-0' />
-                </div>
-                <div className="col-lg-8 bg-white z-1 p-4">
-                    <div className='p-0'>
-                        <h4 className="text-primary"><FontAwesomeIcon className='me-2' icon={faMailForward} />What we deliver</h4>
-                        <ul style={{ color: "grey" }} className='my-4'>
-                            {whatWeBuild?.map((each, inx) => {
-                                return (
-                                    <li className='my-lg-1 d-inline-block' key={inx} >
-                                        {each}
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
-                    <Link href={"/get-quote"}><PrimaryButton text='Get Quote' className='btn btn-danger w-100' icon={faPen} /></Link>
-                </div>
-            </div>
+        <div className='pb-5 pt-5  bg-white position-relative z-1 p-lg-5 pt-3 rounded px-lg-0 px-3 container'>
+            <div className="px-lg-5">
+                <div className="text-center">
+                    <Badge text={title} textStyle='text-primary' style="bg-primaryLight text-uppercase fw-bold" key={title + "-key"} />
 
+                    <h2 className='text-primary'>
+                        {header}
+                    </h2>
+                    <div className="d-lg-flex justify-content-center align-items-center">
+                        <p className="col-12 col-lg-10  ">{subheader}</p>
+                    </div>
+                </div>
+                <div className="row d-lg-flex align-items-center justify-content-center">
+                    <div className="col-lg-5 gap-2 p-lg- p-0 order-2" >
+                        <div className='text-start my-4'>
+                            <p style={{ color: "grey" }} className=''>
+                                {whatWeBuild?.map((each, inx) => {
+                                    return (
+                                        <span className='px-lg-3 my-lg-3  d-flex align-items-center gap-3' key={inx} >
+                                            {<FontAwesomeIcon icon={faArrowRight} className='' />}
+                                            <small className=''>{each}</small>
+                                        </span>
+                                    )
+                                })}
+                            </p>
+                        </div>
+
+                        <Link href={"/get-quote"} className='w-100' style={{ textDecoration: "none" }}>
+                            <PrimaryButton text='Get Started' className='btn btn-danger w-100' icon={faArrowRight} />
+                        </Link>
+                    </div>
+                    <div className="col-lg-6 p-0 text-center rounded order-first order-lg-2">
+                        <Image src={img} width={500} height={400} alt='service-image' className='w-lg-auto h-lg-fit w-100 h-auto p-0' />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
