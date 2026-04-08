@@ -8,9 +8,10 @@ import { useEffect, useState } from "react";
 export const WelcomeAbout = () => {
   const aboutText =
     " At AVATAWorks, we don't just offer services — we deliver transformative growth systems tailored to your brand's needs. As your all-in-one AI-Driven agency, we combine creativity, technology, and strategy to help brands scale faster, stronger, and smarter."
-
-  const [windowSize, setWindowSize] = useState<number>(window.innerHeight);
-  useEffect(() => {
+    
+    const [windowSize, setWindowSize] = useState(window.innerHeight);
+    
+    useEffect(() => {
     setWindowSize(windowSize);
   }, []);
 

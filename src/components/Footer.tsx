@@ -96,16 +96,13 @@ const Footer = async () => {
                                             <h4 className="mb-4 text-white">Instagram</h4>
                                             <div className="row g-3">
                                                 {footer.instaImages?.map((each, inx) => (
-                                                    <>
-
-                                                        <div className="col-4" key={inx}>
-                                                            <div className="footer-instagram rounded">
-                                                                <Link href={each.url} >
-                                                                    <Image width={100} height={100} src={each.thumbnail} alt='instagram-images' />
-                                                                </Link>
-                                                            </div>
-                                                        </div >
-                                                    </>
+                                                    <div className="col-4" key={inx}>
+                                                        <div className="footer-instagram rounded">
+                                                            <Link href={each.url} >
+                                                                <Image width={100} height={100} src={each.thumbnail} alt='instagram-images' />
+                                                            </Link>
+                                                        </div>
+                                                    </div >
                                                 ))}
                                             </div>
                                         </div>
