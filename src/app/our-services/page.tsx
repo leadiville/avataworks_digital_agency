@@ -10,6 +10,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Pricing from "@/components/servicesPage/Pricing";
 import Badge from "@/components/Badge";
 import Image from "next/image";
+import { ServicesHero } from "@/components/servicesPage/ServicesHero";
 
 export type faqT = {
   answer: string;
@@ -28,17 +29,8 @@ const page = async () => {
 
   return (
     <div>
-
       {/* // Hero section  */}
-      <section className="svc-hero ">
-        <div className="position-relative container">
-          <div className="badge" style={{ background: "rgba(255,255,255,0.12)", borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}>
-            <span className="bdot"></span>AI-Native Services
-          </div>
-          <h1 className="text-white display-1 fw-bold">Digital Marketing Services<br />in Nigeria - <span style={{ color: 'skyBlue' }}>AI-Driven.</span></h1>
-          <p>Three core service lines upgraded into AI-powered delivery systems. Built for Nigerian startups and ambitious African brands ready to scale.</p>
-        </div>
-      </section>
+      <ServicesHero />
       {/* <Banner title="We are your AI-driven brand builders for hire!" buttonText="Get a Free Consultation" icon={faArrowRight} isWideBanner /> */}
       <div className="container-fluid ">
         <CoreServices />

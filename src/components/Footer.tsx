@@ -20,7 +20,7 @@ const footer = {
         },
         {
             title: "Telephone",
-            subtitle: "(+234)708 935 5003",
+            subtitle: "(+234)814 738 7748",
             icon: "fa-phone-alt"
         }
     ],
@@ -45,7 +45,7 @@ const footer = {
 }
 
 const Footer = async () => {
-
+                                                    
     return (
         <div>
             <div className="container-fluid footer py-5 wow fadeIn">
@@ -143,13 +143,12 @@ const Footer = async () => {
                                     </div>
                                     <div className="d-flex flex-column ms-3 flex-shrink-0 text-white">
                                         <span >Contact our Avatas</span>
-                                        <a href="tel: (+234) 708 935 5003"><span className="text-white">Free: (+234) 708 935 5003</span>
+                                        <a href="tel: (+234) 814 738 7748"><span className="text-white">Free: (+234) 814 738 7748</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

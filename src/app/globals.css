@@ -251,8 +251,13 @@ p {
   color: rgb(19, 19, 120) !important;
   transform: translateY(2px) !important;
 }
-
+.active-item {
+  color: red;
+}
 @media screen and (max-width: 768px) {
+  .active-item {
+    color: var(--primary);
+  }
   .nav-item {
     margin: 10px 0px 10px 10px;
     min-width: 100% !important;
@@ -260,7 +265,6 @@ p {
   .nav-item:hover,
   .nav-item:active {
     transform: translateY(0px);
-    /* color: var(--primary) !important; */
   }
   .nav-item-container {
     padding: 0.6rem;
@@ -271,7 +275,7 @@ p {
   transition: transform 0.4s ease-in-out;
 }
 .hero-quote:hover {
-  transform: translateY(3px); 
+  transform: translateY(3px);
 }
 /*** Carousel Hero Header Start ***/
 @media (min-width: 768px) {
@@ -484,7 +488,6 @@ p {
   transition: 0.5s;
 }
 .feature-item p {
-  
 }
 .feature .feature-item:hover {
   background: var(--primary) !important;

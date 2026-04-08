@@ -18,11 +18,11 @@ export const WelcomeAbout = () => {
   return (
     <div className="container-fluid pt-4">
       <div className="container pt-lg-5 pt-3">
-        <div className="row w-100">
-          <div className="col-lg-6 col-sm-4 order-first order-2">
+        <div className="row w-full">
+          <div className="col-lg-6 col-sm-4 ">
             <HeroAnimation />
           </div>
-          <div className="col-lg-6 pt-lg-4 col-sm-8 col-12 text-white text-center px-0  text-lg-start order-lg-2">
+          <div className="col-lg-6 pt-lg-4 col-sm-8 col-12 text-white text-center px-0  text-lg-start">
             <Badge text="We are your all in one AI-driven agency." key={'about-hero'} style="bg-primaryLight text-capitalize" />
             <h1 className="text-capitalize text-dark">
               We Ensure Digital Brand
@@ -30,7 +30,7 @@ export const WelcomeAbout = () => {
               <span className="text-primary"> Success.</span>
             </h1>
             <p
-              className="mb-4 fw-bolder w-auto d-inline-block"
+              className="mb-4 fw-bolder container d-inline-block"
               style={{ lineHeight: "30px" }}
             >
               {aboutText}
