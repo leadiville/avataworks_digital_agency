@@ -809,6 +809,8 @@ div.accordion-item {
   justify-content: center;
   transition: 0.5s;
   opacity: 0;
+  background-color: white;
+  color: white !important;
 }
 
 /* .footer .footer-item .footer-instagram:hover .footer-search-icon {

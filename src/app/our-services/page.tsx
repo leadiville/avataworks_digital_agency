@@ -30,8 +30,8 @@ const page = async () => {
   return (
     <div>
       {/* // Hero section  */}
-      <ServicesHero />
       {/* <Banner title="We are your AI-driven brand builders for hire!" buttonText="Get a Free Consultation" icon={faArrowRight} isWideBanner /> */}
+      <ServicesHero />
       <div className="container-fluid ">
         <CoreServices />
       </div>

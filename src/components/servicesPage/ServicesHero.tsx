@@ -4,7 +4,7 @@ export const ServicesHero = () => {
     return (
         <div className=''>                          
             <section className="svc-hero container-fluid ">
-            <div className="position-relative py-4 container px-4 px-lg-0">
+            <div className="position-relative py-4 container px-4">
                 
                 <div className="badge " style={{ background: "rgba(255,255,255,0.12)", borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}>
                     <span className="bdot"></span>AI-Native Services

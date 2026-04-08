@@ -40,12 +40,26 @@ const footer = {
         LinkedIn: "https: //linkedin.com/company/avataworks",
         X: "https: //x.com/avataworks",
         Tiktok: "https: //www.tiktok.com/@avataworks"
-    }
+    },
 
+    instaImages: [
+        {
+            url: "https://www.instagram.com/p/DFdDnYZMmPo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            thumbnail: "/footer/insta-image1.jpeg"
+        },
+        {
+            url: "https://www.instagram.com/p/DVgAWINDCb1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            thumbnail: "/footer/insta-image2.jpeg"
+        },
+        {
+            url: "https://www.instagram.com/reel/DU5dKssjLM_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            thumbnail: "/footer/insta-image3.jpeg"
+        },
+    ]
 }
 
 const Footer = async () => {
-                                                    
+
     return (
         <div>
             <div className="container-fluid footer py-5 wow fadeIn">
@@ -76,20 +90,28 @@ const Footer = async () => {
                                             )}
                                         </div>
                                     </div>
+                                    {/* Instagram section */}
                                     <div className="col-md-6 col-lg-6 col-xl-4">
                                         <div className="footer-item">
                                             <h4 className="mb-4 text-white">Instagram</h4>
                                             <div className="row g-3">
-                                                <div className="col-4">
-                                                    <div className="footer-instagram rounded">
-                                                        {/* <img src="img/instagram-footer-1.jpg" className="img-fluid w-100" alt=""> */}
-                                                        <div className="footer-search-icon">
-                                                            <a href="img/instagram-footer-1.jpg" data-lightbox="footerInstagram-1" className="my-auto"><i className="fas fa-link text-white"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                {footer.instaImages?.map((each, inx) => (
+                                                    <>
+
+                                                        <div className="col-4" key={inx}>
+                                                            <div className="footer-instagram rounded">
+                                                                <Link href={each.url} >
+                                                                    <Image width={100} height={100} src={each.thumbnail} alt='instagram-images' />
+                                                                </Link>
+                                                            </div>
+                                                        </div >
+                                                    </>
+                                                ))}
                                             </div>
                                         </div>
+                                    </div>
+                                    <div className="footer-search-icon">
+                                        <a href="img/instagram-footer-1.jpg" data-lightbox="footerInstagram-1" className="my-auto"><i className="fas fa-link text-white"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -105,8 +127,8 @@ const Footer = async () => {
                                                     return (
                                                         <div className="col-lg-6 col-xl-4" key={contactInx}>
                                                             <div className="d-flex">
-                                                                <div className="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                                    <i className="fas fa-map-marker-alt fa-2x"><FontAwesomeIcon icon={icon as IconProp} width={20} height={20} /></i>
+                                                                <div className="bg-primary text-white rounded p-4 me-4">
+                                                                    <FontAwesomeIcon icon={icon as IconProp} width={20} height={20} />
                                                                 </div>
                                                                 <div>
                                                                     <h4 className="text-white">{title}</h4>
@@ -132,8 +154,8 @@ const Footer = async () => {
                                     <input className="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email" />
                                     <button type="button" className="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
                                 </div>
-                                <div className="d-flex flex-shrink-0">
-                                    <div className="footer-btn">
+                                <div className="d-flex flex-shrink-0 mb-0 pt-lg-5 mt-lg-5">
+                                    <div className="footer-btn mt-md-2 mt-lg-0">
                                         <a href="#" className="btn btn-lg-square rounded-circle position-relative wow tada">
                                             <i className="fa fa-phone-alt fa-2x"><FontAwesomeIcon icon={faPhoneAlt} /></i>
                                             <div className="position-absolute" style={{ top: " 1px", right: "25px" }}>
@@ -141,8 +163,8 @@ const Footer = async () => {
                                             </div>
                                         </a>
                                     </div>
-                                    <div className="d-flex flex-column ms-3 flex-shrink-0 text-white">
-                                        <span >Contact our Avatas</span>
+                                    <div className="d-flex mt-md-2 mt-lg-0 flex-column ms-3 flex-shrink-0 text-white">
+                                        <span >Contact us</span>
                                         <a href="tel: (+234) 814 738 7748"><span className="text-white">Free: (+234) 814 738 7748</span>
                                         </a>
                                     </div>
@@ -153,7 +175,7 @@ const Footer = async () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
