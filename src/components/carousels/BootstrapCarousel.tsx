@@ -18,41 +18,44 @@ const HeroCarousel = () => {
     <div className="container d-lg-flex">
 
       <Carousel className='container-fluid positon-relative py-5 home-carousel' slide>
-        {heroSection.map((heroDetails) => (
-          <Carousel.Item key={heroDetails.id} >
-            <div className="row g-0 align-items-center" style={{ height: 'fit' }}>
-              <Carousel.Caption className='col-lg-7  position-static'>
-                <div className="text-md-center text-lg-start text-primary align-items-center justify-content-center">
-                  <p className='hero-badge'>
-                    <span className="badge-dot"></span>
-                    <span className="badge-text text-primary">Nigeria's AI-Native Growth Agency</span>
-                  </p>
-                  <h1 className="text-black text-break text-bold fw-bold text-break"><span className='text-primary '>{heroDetails.title?.charAt(0)}</span>{heroDetails.title.slice(1, heroDetails.title.length)}</h1>
-                  <p className="lead mb-4 font-bold" style={{ color: "#0a0a0a" }}>
-                    {heroDetails.body}
-                  </p>
-                  <div className="text-capitalize mb-4">
-                    {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
+        {heroSection.map((heroDetails, inx) => {
+          return (
+            <Carousel.Item key={heroDetails.id} >
+              <div className="row g-0 align-items-center" style={{ height: 'fit' }}>
+                <Carousel.Caption className='col-lg-7  position-static'>
+                  <div className="text-md-center text-lg-start text-primary align-items-center justify-content-center">
+                    <p className='hero-badge'>
+                      <span className="badge-dot"></span>
+                      <span className="badge-text text-primary">Nigeria's AI-Native Growth Agency</span>
+                    </p>
+                    <h1 className="text-black text-break text-bold fw-bold text-break">{inx == 0 ? heroDetails?.title.slice(0, 15) : heroDetails.title.slice(0, heroDetails.title.length - 10)}<span className='text-primary '>{inx == 0 ? heroDetails?.title.slice(15, 17) : heroDetails.title.slice(heroDetails.title.length - 10, heroDetails.title.length)}</span>{inx == 0 && heroDetails?.title.slice(17, heroDetails.title.length)}</h1>
+                    <p className="lead mb-4 font-bold" style={{ color: "#0a0a0a" }}>
+                      {heroDetails.title}
+                    </p>
+                    <div className="text-capitalize mb-4">
+                      {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
                       <a className="btn btn-danger rounded-pill  ms-2 " href="#">Get a free Quote</a> */}
-                    <div className='d-lg-flex d-grid gap-2 gap-md-3'>
-                      <span className="">
-                        <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
-                          <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary' /></Link>
-                      </span>
-                      <span className="">
-                        <Link href={"/get-quote"}>
-                          <PrimaryButton text={"Start Growing"} icon={faChartLine} className='btn-danger' /></Link>
-                      </span>
+                      <div className='d-lg-flex d-grid gap-2 gap-md-3'>
+                        <span className="">
+                          <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
+                            <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary' />
+                          </Link>
+                        </span>
+                        <span className="">
+                          <Link href={"/get-quote"}>
+                            <PrimaryButton text={"Start Growing"} icon={faChartLine} className='btn-danger' /></Link>
+                        </span>
+                      </div>
                     </div>
                   </div>
+                </Carousel.Caption>
+                <div className="col-lg-5 order-first order-lg-1" >
+                  <Image width={800} height={600} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
                 </div>
-              </Carousel.Caption>
-              <div className="col-lg-5 order-first order-lg-1" >
-                <Image width={800} height={600} src={heroDetails.imageUrl} alt='slides' className='w-100 h-100' />
               </div>
-            </div>
-          </Carousel.Item>
-        ))}
+            </Carousel.Item>
+          )
+        })}
       </Carousel>
     </div>
   )
@@ -77,7 +80,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
               <Card className='flex flex-lg-row  px-lg-5 mx-lg-5 justify-content-between align-items-center w-100 border my-4'>
                 <Card.Img
                   src={`${e.logo}`} width={100} height={100} className='logo-image bg-light' />
-                <Card.Body className='d-flex flex-column text-black align-items-lg-start align-items-center'>
+                <Card.Title className='d-flex flex-column text-black align-items-lg-start align-items-center'>
                   <Card.Title>{e.companyName} - {e.companyPosition}</Card.Title>
                   <Card.Text></Card.Text>
                   <Card.Text>{`${e.service}`}</Card.Text>
@@ -90,7 +93,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
                     <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
                     <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
                   </span>
-                </Card.Body>
+                </Card.Title>
               </Card>
             </Stack>
           </Carousel.Item>

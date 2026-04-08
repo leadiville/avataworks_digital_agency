@@ -33,12 +33,12 @@ const pricingData = [
     },
     {
         ourPlans: "Enterprise",
-        type: "AVATA OS",
+        type: "AVATA",
         price: "₦1.7M",
         accessibility: "/month · Unlimited brands",
         about: "Full AI-native growth infrastructure for high-growth African companies.",
         benefits: [
-            "Full AVATA OS stack",
+            "Full AVATA stack",
             "All 6 platforms managed",
             "Unlimited AI content drafts",
             "Website + landing page builds",
@@ -55,7 +55,7 @@ const Pricing = () => {
         <section className="sec sec-alt bg-primaryLight position-relative z-1">
             <div className="c position-relative">
                 <div className="sec-hdr">
-                    <div className="badge"><span className="bdot"></span>{"choose a growth plan"}</div>
+                    <div className="badge"><span className="bdot"></span>{"coming soon"}</div>
                     <h2 className='text-primary'>Productized Plans for<br />Nigerian Businesses</h2>
                     <p>Fixed pricing. Defined deliverables. No hidden retainer fees. Join the waitlist for early-access pricing.</p>
                 </div>
