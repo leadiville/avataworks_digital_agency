@@ -16,7 +16,7 @@ interface ICoreServices {
 
 const EachCoreService = ({ header, subheader, img, whatWeBuild, title }: ICoreServices) => {
     return (
-        <div className='pb-5 pt-5  bg-white position-relative z-1 p-lg-5 pt-3 rounded px-lg-0 px-3 container'>
+        <div className='mb-5 pt-5  bg-primaryLight position-relative z-1 p-lg-5 rounded px-lg-0 px-3 container'>
             <div className="px-lg-5">
                 <div className="text-center">
                     <Badge text={title} textStyle='text-primary' style="bg-primaryLight text-uppercase fw-bold" key={title + "-key"} />
@@ -34,7 +34,7 @@ const EachCoreService = ({ header, subheader, img, whatWeBuild, title }: ICoreSe
                             <p style={{ color: "grey" }} className=''>
                                 {whatWeBuild?.map((each, inx) => {
                                     return (
-                                        <span className='px-lg-3 my-lg-3  d-flex align-items-center gap-3' key={inx} >
+                                        <span className='px-lg-3 px-2 my-lg-3  d-flex align-items-center gap-3' key={inx} >
                                             {<FontAwesomeIcon icon={faArrowRight} className='' />}
                                             <small className=''>{each}</small>
                                         </span>
@@ -47,7 +47,7 @@ const EachCoreService = ({ header, subheader, img, whatWeBuild, title }: ICoreSe
                             <PrimaryButton text='Get Started' className='btn btn-danger w-100' icon={faArrowRight} />
                         </Link>
                     </div>
-                    <div className="col-lg-6 p-0 text-center rounded order-first order-lg-2">
+                    <div className="col-lg-4 p-0 text-center rounded order-first order-lg-2">
                         <Image src={img} width={500} height={400} alt='service-image' className='w-lg-auto h-lg-fit w-100 h-auto p-0' />
                     </div>
                 </div>

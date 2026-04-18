@@ -1,0 +1,310 @@
+[
+    {
+        "title": "A-Bay Tours Ltd",
+        "brand": "A-Bay Tours Ltd",
+        "location": "Lagos, Nigeria",
+        "category": "Travel & Tourism",
+        "headlineImpact": "From a traditional tour operator to a premium travel lifestyle brand that consistently converts.",
+        "servicesRendered": "Social Media • Branding • Content • Paid Ads",
+        "body": "We repositioned A-Bay Tours as a lifestyle-driven brand and built a structured marketing system that combines content, paid ads, and funnel optimization to drive consistent bookings",
+        "duration": "4 Years",
+        "milestone": [
+            {
+                "startTitle": "+50%",
+                "endTitle": "Bookings"
+            },
+            {
+                "startTitle": "200%",
+                "endTitle": "IG Growth"
+            },
+            {
+                "startTitle": "200%",
+                "endTitle": "Lead Generation"
+            },
+            {
+                "startTitle": "100%",
+                "endTitle": "Customer Retention"
+            }
+        ],
+        "testimonial": {
+            "name": "Mr. David Komoni",
+            "position": "Managing Director",
+            "testimony": "AvataWorks didn’t just market us—they transformed how we sell travel."
+        },
+        "isActive": false
+    },
+    {
+        "title": "Regal Plastic Surgery Centre",
+        "brand": "Regal Plastic Surgery Centre",
+        "location": "Lagos, Nigeria",
+        "category": "Healthcare",
+        "headlineImpact": "Transformed brand perception into authority, driving trust and patient acquisition.",
+        "servicesRendered": "Social Media • Branding • Content • Paid Ads",
+        "body": "We aligned brand messaging with authority-driven content and conversion campaigns, increasing trust, visibility, and consistent appointment bookings.",
+        "duration": "2 Years",
+        "milestone": [
+            {
+                "startTitle": "200%",
+                "endTitle": "IG Growth"
+            },
+            {
+                "startTitle": "30%",
+                "endTitle": "Booking Lift"
+            },
+            {
+                "startTitle": "10x",
+                "endTitle": "ROAS"
+            }
+        ],
+        "testimonial": {
+            "name": "Dr. Kingsley Opara",
+            "position": "Medical Director",
+            "testimony": "AvataWorks understood trust in our industry and delivered results."
+        },
+        "isActive": false
+    },
+    {
+        "title": "Gynescope Specialist Hospital",
+        "brand": "Gynescope Specialist Hospital",
+        "location": "Lagos, Nigeria",
+        "category": "Healthcare",
+        "headlineImpact": "Built a trust-first medical identity that drives credibility and patient action.",
+        "servicesRendered": "Brand Identity",
+        "body": "We created a clean, professional visual identity that strengthened credibility, improved perception, and supported increased engagement and patient inquiries.",
+        "duration": "2 Months",
+        "milestone": [
+            {
+                "startTitle": "1",
+                "endTitle": "Brand Identity"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Trust-Led System"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Launch-Ready Visual"
+            }
+        ],
+        "testimonial": {
+            "name": "Dr. Jude",
+            "position": "Lead Consultant",
+            "testimony": "AvataWorks gave us a brand that reflects our standard."
+        },
+        "isActive": false
+    },
+    {
+        "title": "Flournuts Chinchin",
+        "brand": "Flournuts Chinchin",
+        "location": "Rivers, Nigeria",
+        "category": "Food",
+        "headlineImpact": "Turned a snack brand into a demand engine, driving awareness and sales.",
+        "servicesRendered": "Paid Ads • Social Media • Branding • Sales",
+        "body": "We executed high-converting ads and partnerships to boost brand visibility, expand retail presence, and drive consistent product demand.",
+        "duration": "6 Months",
+        "milestone": [
+            {
+                "startTitle": "100%",
+                "endTitle": "Sales Conversion"
+            },
+            {
+                "startTitle": "100%",
+                "endTitle": "Retail Push"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Paid Ad System"
+            }
+        ],
+        "testimonial": {
+            "name": "Florence Osaige",
+            "position": "CEO",
+            "testimony": "Sales improved significantly after working with AvataWorks."
+        },
+        "isActive": false
+    },
+    {
+        "title": "The Roundtable Lekki",
+        "brand": "The Roundtable Lekki",
+        "location": "Lagos, Nigeria",
+        "category": "Events & Community",
+        "headlineImpact": "Scaled event visibility to 2,000+ registrations in just 5 weeks.",
+        "servicesRendered": "Paid Ads • Event Promotion • Social Media",
+        "body": "We deployed a high-performance Meta Ads funnel and organic growth strategy to drive massive registrations and rapid audience growth.",
+        "duration": "5 Weeks (Annual)",
+        "milestone": [
+            {
+                "startTitle": "2K+",
+                "endTitle": "Registrations"
+            },
+            {
+                "startTitle": "2k%",
+                "endTitle": "IG Growth"
+            },
+            {
+                "startTitle": "10x",
+                "endTitle": "ROAS"
+            },
+            {
+                "startTitle": "5-Week",
+                "endTitle": "Campaign"
+            }
+        ],
+        "testimonial": {
+            "name": "Pastor Christ Ubamadu",
+            "position": "Convener",
+            "testimony": "AvataWorks consistently delivers strong results for us."
+        },
+        "isActive": false
+    },
+    {
+        "title": "Neighbour Tailor",
+        "brand": "Neighbour Tailor",
+        "location": "Texas, USA",
+        "category": "Beauty and Fashion",
+        "headlineImpact": "Delivered a user-friendly website that enhances customer experience.",
+        "servicesRendered": "Website Development",
+        "body": "We developed a clean, responsive website focused on usability, improving navigation and making it easier for customers to engage with the brand online.",
+        "duration": "3 Months",
+        "milestone": [
+            {
+                "startTitle": "1",
+                "endTitle": "User-Friendly Website"
+            },
+            {
+                "startTitle": "100%",
+                "endTitle": "Responsive Design"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Improved Navigation Flow"
+            }
+        ],
+        "testimonial": {
+            "name": "Durian",
+            "position": "Founder",
+            "testimony": "Our website feels modern and easy to use."
+        },
+        "isActive": false
+    },
+    {
+        "title": "De-ethernex",
+        "brand": "De-ethernex",
+        "location": "Lagos, Nigeria",
+        "category": "E-commerce",
+        "headlineImpact": "Built a modern e-commerce platform designed for conversion and scale.",
+        "servicesRendered": "E-commerce Website Development",
+        "body": "We created a marketplace-style e-commerce site optimized for product discovery, trust, and seamless transactions.",
+        "duration": "3 Months",
+        "milestone": [
+            {
+                "startTitle": "1",
+                "endTitle": "E-Commerce Store"
+            },
+            {
+                "startTitle": "100%",
+                "endTitle": "Modern Interface"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Seamless Checkout Flow"
+            }
+        ],
+        "testimonial": {
+            "name": "Founder",
+            "position": "De-ethernex",
+            "testimony": "The platform feels like a top-tier marketplace."
+        },
+        "isActive": false
+    },
+    {
+        "title": "Hairlyn",
+        "brand": "Hairlyn",
+        "location": "Lagos, Nigeria",
+        "category": "Beauty and Fashion",
+        "headlineImpact": "Built a complete beauty brand identity and executed a strong launch.",
+        "servicesRendered": "Brand Identity • Social Media",
+        "body": "We developed a cohesive visual identity and executed a social launch strategy that positioned the brand for immediate audience engagement.",
+        "duration": "90 Days",
+        "milestone": [
+            {
+                "startTitle": "1",
+                "endTitle": "Full Brand System"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Social Rollout"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Visual System"
+            }
+        ],
+        "testimonial": {
+            "name": "Evelyn Efeomo",
+            "position": "Founder",
+            "testimony": "They gave my brand a total makeover."
+        },
+        "isActive": false
+    },
+    {
+        "title": "Precibelle Events",
+        "brand": "Precibelle Events",
+        "location": "Toronto, Canada",
+        "category": "Events & Community",
+        "headlineImpact": "Crafted a premium identity that builds trust and attracts clients.",
+        "servicesRendered": "Brand Identity",
+        "body": "We translated the brand vision into a refined visual system that improved perception and positioned the business for a premium clientele.",
+        "duration": "2 Months",
+        "milestone": [
+            {
+                "startTitle": "1",
+                "endTitle": "Premium Identity"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Visual System"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Credibility Upgrade"
+            }
+        ],
+        "testimonial": {
+            "name": "Miss Miracle",
+            "position": "Founder",
+            "testimony": "We love our brand identity, precisely what we hoped to achieve."
+        },
+        "isActive": false
+    },
+    {
+        "title": "PREL",
+        "brand": "PREL",
+        "location": "Toronto, Canada",
+        "category": "Beauty and Fashion",
+        "headlineImpact": "Turned ideas into a clear, professional brand identity.",
+        "servicesRendered": "Brand Identity",
+        "body": "We transformed the founder’s concept into a structured visual identity that communicates precision, trust, and professionalism.",
+        "duration": "2 Months",
+        "milestone": [
+            {
+                "startTitle": "1",
+                "endTitle": "Brand Identity"
+            },
+            {
+                "startTitle": "3",
+                "endTitle": "Reviewed Concepts"
+            },
+            {
+                "startTitle": "1",
+                "endTitle": "Visual System"
+            }
+        ],
+        "testimonial": {
+            "name": "Mr. Fred",
+            "position": "Founder",
+            "testimony": "They brought our idea to life."
+        },
+        "isActive": false
+    }
+]

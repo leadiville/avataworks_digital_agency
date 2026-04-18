@@ -30,7 +30,7 @@ const HeroCarousel = () => {
                     </p>
                     <h1 className="text-black text-break text-bold fw-bold text-break">{inx == 0 ? heroDetails?.title.slice(0, 15) : heroDetails.title.slice(0, heroDetails.title.length - 10)}<span className='text-primary '>{inx == 0 ? heroDetails?.title.slice(15, 17) : heroDetails.title.slice(heroDetails.title.length - 10, heroDetails.title.length)}</span>{inx == 0 && heroDetails?.title.slice(17, heroDetails.title.length)}</h1>
                     <p className="lead mb-4 font-bold" style={{ color: "#0a0a0a" }}>
-                      {heroDetails.title}
+                      {heroDetails.body}
                     </p>
                     <div className="text-capitalize mb-4">
                       {/* <a className="btn btn-primary rounded-pill  me-2" href="#"><i className="fas fa-play-circle me-2"><FontAwesomeIcon icon={faPhone} width={20} height={20} /></i>Speak to an Avata</a>
@@ -73,11 +73,11 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
   // }
   return (
     <>
-      <Carousel className='testimonial-carousel p-sm-0' slide>
+      <Carousel className='testimonial-carousel p-sm-0' fade>
         {testimonys?.map((e, eachInx) => (
           <Carousel.Item key={eachInx} className='rounded my-5 z-1'>
             <Stack direction='horizontal' gap={4} >
-              <Card className='flex flex-lg-row  px-lg-5 mx-lg-5 justify-content-between align-items-center w-100 border my-4'>
+              <Card className='flex flex-lg-row p-4 justify-content-between align-items-center w-100 border my-4'>
                 <Card.Img
                   src={`${e.logo}`} width={100} height={100} className='logo-image bg-light' />
                 <Card.Title className='d-flex flex-column text-black align-items-lg-start align-items-center'>

@@ -5,7 +5,7 @@ import Stats from '../homePage/Stats'
 export const Timeline = () => {
     return (
         <div className=''>
-            <Stats />
+            <Stats style/>
             <section className="sec py-5">
                 <div className="c" style={{ maxWidth: '720px' }}>
                     <div className="sec-hdr">

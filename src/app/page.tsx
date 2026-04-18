@@ -38,7 +38,7 @@ export default async function Home() {
       <div className="grid-bg z-1"></div>
       <Navbar />
       <HeroCarousel />
-      <Stats />
+      <Stats style/>
       <HtlSectioin />
       <OurServices services={services} />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />

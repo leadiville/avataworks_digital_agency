@@ -32,9 +32,7 @@ const page = async () => {
       {/* // Hero section  */}
       {/* <Banner title="We are your AI-driven brand builders for hire!" buttonText="Get a Free Consultation" icon={faArrowRight} isWideBanner /> */}
       <ServicesHero />
-      <div className="container-fluid ">
-        <CoreServices />
-      </div>
+      <CoreServices />
       <Pricing />
       <Faq faq={faqServices} />
       <Banner buttonText="Book a Free Strategy Session" title="Not Sure Where to Start?" subtitle="Book a free 30-minute AVATA strategy session. We diagnose, prioritise, and recommend the growth plan that fits your brand." icon={faArrowRight} />

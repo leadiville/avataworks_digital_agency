@@ -8,7 +8,7 @@ import PrimaryButton from './PrimaryButton'
 
 const Navbar = () => {
     return (
-        <div className='bg-primary'>
+        <div className='bg-primary py-2'>
             {/* Navbar & Hero Start */}
             <div className="container-fluid container py-md-0 position-relative">
                 <div className='container'>
@@ -21,7 +21,7 @@ const Navbar = () => {
                         </button>
                         <NavMenus />
                         {<div className="d-none d-lg-inline-block bg-white border border-white rounded hero-quote">
-                            <Link href={'/get-quote'}><PrimaryButton className='bg-danger text-white rounded p-lg-1' text='Get Started' icon={faArrowRight} /></Link>
+                            <Link href={'/get-quote'}><PrimaryButton className='bg-danger text-white rounded p-lg-1 text-xs' text='Get Started' icon={faArrowRight} /></Link>
                         </div>}
                     </nav>
                 </div>
