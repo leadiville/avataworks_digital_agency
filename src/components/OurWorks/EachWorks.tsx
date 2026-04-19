@@ -41,7 +41,7 @@ const EachWorks = ({
     console.log(assignWorkImg("Travel & Tourism"));
     return (
         <div className={`work-container my-2 border px-0 `} >
-            <div className={`w-full rounded-top ${!isFirst && 'bg-primary'} position-relative`} style={{ height: `${isFirst ? '400px' : 'fit-content'}`, backgroundImage: `url('${assignWorkImg(brand)}')` }}>
+            <div className={`rounded-top position-relative`} style={{ height: `${isFirst ? '400px' : 'fit-content'}`, width:"100%", backgroundImage: `url('${assignWorkImg(brand)}')`, backgroundPosition: 'top', backgroundSize: "cover", backgroundRepeat:"no-repeat" }}>
                 <div className="text-end w-100 p-3">
                     <p className='bg-primaryLighter d-inline-block text-black py-1 px-3 rounded fw-bold'>{duration}</p>
                 </div>

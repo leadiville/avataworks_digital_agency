@@ -17,7 +17,7 @@ const WorksHero = () => {
                                 <div className="hero-divider"></div>
                             </div>
                             <h1 className='display-1 lh-1 fw-bold py-2 text-white' style={{ letterSpacing: "0.3rem" }}>Work  That <br /> Moves <br /> the<br /><span className="text-primary">Needle.</span></h1>
-                            <p className="py-2 text-gray">4+ years of results delivered by expert AVATAs for Nigerian startups and ambitious African brands. No fluff. No inflated numbers. Just documented outcomes — and a glimpse of what's coming next.</p>
+                            <p className="py-2 text-gray">4+ years of results delivered by expert AVATAs for startups and ambitious brands. No fluff. No inflated numbers. Just documented outcomes — and a glimpse of what's coming next.</p>
                             <div className="d-md-flex d-grid gap-lg-4 gap-3 w-max-content">
                                 <Link href="/our-services"><PrimaryButton className="btn-dark px-md-2" text='Our Services →' /></Link>
                                 <Link href="/get-quote"><PrimaryButton className="btn-white px-md-2" text='Start Your Story →' /></Link>

@@ -1244,12 +1244,12 @@ input:-webkit-autofill:active {
 .scroller-track {
   display: flex;
   width: max-content; /* Ensures it expands to fit all items */
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 /* Individual items: 4 per screen means each is 25vw */
 .item {
-  flex: 0 0 20vw;
+  flex: 0 0 16.6vw;
   /* height: 100px; */
   display: flex;
   align-items: center;

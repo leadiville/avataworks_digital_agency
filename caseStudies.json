@@ -34,36 +34,6 @@
         "isActive": false
     },
     {
-        "title": "Regal Plastic Surgery Centre",
-        "brand": "Regal Plastic Surgery Centre",
-        "location": "Lagos, Nigeria",
-        "category": "Healthcare",
-        "headlineImpact": "Transformed brand perception into authority, driving trust and patient acquisition.",
-        "servicesRendered": "Social Media • Branding • Content • Paid Ads",
-        "body": "We aligned brand messaging with authority-driven content and conversion campaigns, increasing trust, visibility, and consistent appointment bookings.",
-        "duration": "2 Years",
-        "milestone": [
-            {
-                "startTitle": "200%",
-                "endTitle": "IG Growth"
-            },
-            {
-                "startTitle": "30%",
-                "endTitle": "Booking Lift"
-            },
-            {
-                "startTitle": "10x",
-                "endTitle": "ROAS"
-            }
-        ],
-        "testimonial": {
-            "name": "Dr. Kingsley Opara",
-            "position": "Medical Director",
-            "testimony": "AvataWorks understood trust in our industry and delivered results."
-        },
-        "isActive": false
-    },
-    {
         "title": "Gynescope Specialist Hospital",
         "brand": "Gynescope Specialist Hospital",
         "location": "Lagos, Nigeria",
@@ -90,6 +60,36 @@
             "name": "Dr. Jude",
             "position": "Lead Consultant",
             "testimony": "AvataWorks gave us a brand that reflects our standard."
+        },
+        "isActive": false
+    },
+    {
+        "title": "Regal Plastic Surgery Centre",
+        "brand": "Regal Plastic Surgery Centre",
+        "location": "Lagos, Nigeria",
+        "category": "Healthcare",
+        "headlineImpact": "Transformed brand perception into authority, driving trust and patient acquisition.",
+        "servicesRendered": "Social Media • Branding • Content • Paid Ads",
+        "body": "We aligned brand messaging with authority-driven content and conversion campaigns, increasing trust, visibility, and consistent appointment bookings.",
+        "duration": "2 Years",
+        "milestone": [
+            {
+                "startTitle": "200%",
+                "endTitle": "IG Growth"
+            },
+            {
+                "startTitle": "30%",
+                "endTitle": "Booking Lift"
+            },
+            {
+                "startTitle": "10x",
+                "endTitle": "ROAS"
+            }
+        ],
+        "testimonial": {
+            "name": "Dr. Kingsley Opara",
+            "position": "Medical Director",
+            "testimony": "AvataWorks understood trust in our industry and delivered results."
         },
         "isActive": false
     },
@@ -144,10 +144,6 @@
             {
                 "startTitle": "10x",
                 "endTitle": "ROAS"
-            },
-            {
-                "startTitle": "5-Week",
-                "endTitle": "Campaign"
             }
         ],
         "testimonial": {

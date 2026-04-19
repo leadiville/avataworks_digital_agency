@@ -10,7 +10,7 @@ interface FaqProps {
 }
 const Faq = ({ faq }: FaqProps) => {
     return (
-        <div className="container-fluid bg-light py-5">
+        <div className="container-fluid bg-light">
             <div className="container py-lg-5">
                 <div className="row g-5 align-items-center py-5">
                     <div className="col-xl-6 wow fadeInLeft order-lg-2">

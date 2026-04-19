@@ -22,7 +22,7 @@
                 "imgSrc": "/Developer activity-bro.png",
                 "showInfo": false,
                 "icon": "laptopCode",
-                "fullInfo": "AvataWorks engineers innovative tech solutions that solves, scales, and meets strategic growth. Your website is your 24/7 salesperson but most African business sites lose leads every day. We build high-performance websites, mobile applications, and landing pages designed for performance, SEO, and revenue. CRM-integrated. Mobile-optimized. Built to compete locally and grow globally.",
+                "fullInfo": "AvataWorks engineers innovative tech solutions that solves, scales, and meets strategic growth. Your website is your 24/7 salesperson but most business sites lose leads every day. We build high-performance websites, mobile applications, and landing pages designed for performance, SEO, and revenue. CRM-integrated. Mobile-optimized. Built to compete locally and grow globally.",
                 "subServices": [
                     "Website Development",
                     "Mobile App Development ",
@@ -105,12 +105,12 @@
                 {
                     "showAnswer": false,
                     "question": "What is AVATAWORKS?",
-                    "answer": "AVATAWorks is a digital agency based in Lagos, Nigeria, dedicated to delivering tailored business solutions. We run social media marketing, creative branding, and web development for Nigerian startups and African brands. Our goal is to drive sustainable growth and help ambitious brand achieve digital brand success."
+                    "answer": "AVATAWorks is a digital agency based in Lagos, Nigeria, dedicated to delivering tailored business solutions. We run social media marketing, creative branding, and web development for startups and ambitious brands. Our goal is to drive sustainable growth and help ambitious brand achieve digital brand success."
                 },
                 {
                     "showAnswer": false,
                     "question": "Where is AVATAWORKS located?",
-                    "answer": "AVATAWorks is a fully remote company operating from Nigeria atm. However, we serve clients both locally and internationally, leveraging virtual collaboration tools to bridge any geographical gaps."
+                    "answer": "AVATAWorks is a fully remote company operating from Nigeria. However, we serve clients both locally and internationally, leveraging virtual collaboration tools to bridge any geographical gaps."
                 },
                 {
                     "showAnswer": false,

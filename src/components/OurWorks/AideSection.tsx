@@ -2,7 +2,7 @@ import React from 'react'
 
 const AideSection = () => {
     return (
-        <div className="container aide-teaser pb-5 mb-5 ">
+        <div className="container aide-teaser mb-5 ">
             <div className="aide-grid">
 
                 {/* <!-- Left: Honest positioning copy --> */}

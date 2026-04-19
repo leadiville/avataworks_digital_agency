@@ -14,17 +14,17 @@ const Stats = ({ milestone, style, isWorks }: styleT) => {
                     <div className={`row rounded gap-0 justify-content-center ${style ? 'text-white' : 'text-primary'}`}>
                         {!isWorks &&
                             (<>
-                                <div className="col-3 border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">30+</span><small>Brands Managed Across Nigeria</small></div>
-                                <div className="col-3 border-start border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">200%</span><small>Profit Increase for Clients</small></div>
-                                <div className="col-3 border-start border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">4</span><small>Years of Growth Execution</small></div>
-                                <div className="col-3 border-start border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">10+</span><small>Skilled Avatas (Human in the loop)</small></div>
+                                <div className="col-3 border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">30+</span><small className="text-dark">Brands Managed</small></div>
+                                <div className="col-3 border-start border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">200%</span><small className="text-dark">Profit Increase for Clients</small></div>
+                                <div className="col-3 border-start border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">4</span><small className="text-dark">Years of Growth Execution</small></div>
+                                <div className="col-3 border-start border-top border-primary text-centerd d-grid text-center py-4 px-0 "><span className="stat-num display-6 fw-bold ">10+</span><small className="text-dark">Skilled Avatas (Human in the loop)</small></div>
                             </>)
                         }
 
                         {
                             isWorks && milestone?.map((each, inx) => (
                                 <div key={inx} className={`col-${12 / milestone.length} border-start border-top border-primary text-centerd d-grid text-center py-4 px-0 `}>
-                                    <span className="stat-num display-6 fw-bold ">{each?.startTitle}</span><small>{each?.endTitle}</small></div>))
+                                    <span className="stat-num display-6 fw-bold ">{each?.startTitle}</span><small className="text-dark">{each?.endTitle}</small></div>))
                         }
                     </div>
                 </div>

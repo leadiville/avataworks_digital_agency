@@ -38,7 +38,7 @@ const CaseStudies = () => {
             </div>
             {/* workd main section */}
             <div className="row gap-0 my-5 ">
-                <div className="col-lg-7" style={{ height: "fit-content" }}>
+                <div className="col-lg-8" style={{ height: "fit-content" }}>
 
                     {categoriseItems.map((each, inx) => {
                         if (categoriseItems.indexOf(each) == 0) return (
@@ -48,7 +48,7 @@ const CaseStudies = () => {
                         )
                     })}
                 </div>
-                <div className="col-lg-5 ">
+                <div className="col-lg-4 ">
 
                     {categoriseItems.map((each, inx) => {
                         return (

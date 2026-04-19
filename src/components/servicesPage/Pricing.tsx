@@ -18,7 +18,7 @@ const pricingData = [
         type: "Brand Starter",
         price: "₦350K",
         accessibility: "/month · 1 brand",
-        about: "For Nigerian businesses establishing a consistent digital presence.",
+        about: "For businesses establishing a consistent digital presence.",
         benefits: ["30 AI content drafts/month", "Logos, captions & carousels", "AI brand voice calibration", "2 platforms — IG + Facebook", "Content calendar + scheduling", "AVATA approval before posting", "Basic monthly summary report"
         ],
     },
@@ -27,7 +27,7 @@ const pricingData = [
         type: "Growth Partner",
         price: "₦850K",
         accessibility: "/month · 4 platforms",
-        about: "For brands actively acquiring customers at volume across Nigeria.",
+        about: "For brands actively acquiring customers at volume.",
         benefits: ["Everything in Startup Pack", "4 platforms — IG, FB, TikTok, X", "Meta Ads optimisation via Madgicx", "Lead capture & CRM automation", "Branding + creative strategy", "Priority AVATA team", "White-label performance reports",
         ],
     },
@@ -36,7 +36,7 @@ const pricingData = [
         type: "AVATA",
         price: "₦1.7M",
         accessibility: "/month · Unlimited brands",
-        about: "Full AI-native growth infrastructure for high-growth African companies.",
+        about: "Full AI-native growth infrastructure for high-growth companies.",
         benefits: [
             "Full AVATA stack",
             "All 6 platforms managed",
@@ -56,7 +56,7 @@ const Pricing = () => {
             <div className="c position-relative">
                 <div className="sec-hdr">
                     <div className="badge"><span className="bdot"></span>{"coming soon"}</div>
-                    <h2 className='text-primary'>Productized Plans for<br />Nigerian Businesses</h2>
+                    <h2 className='text-primary'>Productized Plans for<br /> Businesses</h2>
                     <p>Fixed pricing. Defined deliverables. No hidden retainer fees. Join the waitlist for early-access pricing.</p>
                 </div>
                 <div className="pg-grid">

@@ -14,7 +14,7 @@ export const AboutGoals = () => {
                         </div>
                         <div className="px-4">
                             <h3>Our Mission</h3>
-                            <p className="mb-0 me-5 text-white">To supercharge businesses in Africa with innovative solutions that drive brand visibility, engagement, and profitability. We blend advanced technology, experiential marketing, and data-driven strategies to empower our clients and deliver measurable growth
+                            <p className="mb-0 me-5 text-white">To supercharge businesses with innovative solutions that drive brand visibility, engagement, and profitability. We blend advanced technology, experiential marketing, and data-driven strategies to empower our clients and deliver measurable growth
                             </p>
                         </div>
                     </div>
@@ -24,7 +24,7 @@ export const AboutGoals = () => {
                         </div>
                         <div className="ps-4">
                             <h3>Our Vision</h3>
-                            <p className="mb-0 text-white">To become Africa’s premier digital agency that delivers full-scale digital solutions in dynamic branding, experiential marketing, and business growth on a global stage—helping businesses to achieve maximum visibility, engagement, and sustainable digital brand success.
+                            <p className="mb-0 text-white">To become a premier digital agency that delivers full-scale digital solutions in dynamic branding, experiential marketing, and business growth on a global stage—helping businesses to achieve maximum visibility, engagement, and sustainable digital brand success.
                             </p>
                         </div>
                     </div>
