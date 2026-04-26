@@ -1,6 +1,6 @@
-import { faDotCircle } from '@fortawesome/free-solid-svg-icons'
+import { faDotCircle, faList } from '@fortawesome/free-solid-svg-icons';
+import { faListOl } from '@fortawesome/free-solid-svg-icons/faListOl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
 
 const ScrollerWorks = () => {
 
@@ -23,11 +23,11 @@ const ScrollerWorks = () => {
         <div className="container-fluid px-0 mx-0">
             <div className="scroller-container">
 
-                <ul className='scroller-track text-white bg-primary' >
+                <ol type='a' className='scroller-track text-white bg-primary' >
                     {works.map((each, inx) => (
-                        <li key={inx} className='item text-foreground p-2 text-white px-0'><small className='d-flex align-items-center'>{each}</small></li>
+                        <li key={inx} className='item text-foreground p-2 text-white px-lg-0 px-4 fw-bold'><small className='d-flex align-items-center'><FontAwesomeIcon icon={faDotCircle} className='me-2 text-white bg-white rounded'/>{each}</small></li>
                     ))}
-                </ul>
+                </ol>
             </div>
         </div>)
 }

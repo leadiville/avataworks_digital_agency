@@ -1410,6 +1410,24 @@ input:-webkit-autofill:active {
   flex-wrap: wrap;
   margin-top: 32px;
 }
+@media(max-width:640px){
+  .nlinks a:not(.ncta){display:none;}
+  .tgrid{grid-template-columns:1fr;}
+  .hstat{flex:0 0 50%;}
+  .hero-stats{flex-wrap:wrap;}
+  .fgrid{grid-template-columns:1fr;}
+  .aide-left,.aide-right{padding:36px 28px;}
+}
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .hero-perf{display:none;}
+  .wc-8,.wc-7,.wc-5,.wc-4,.wc-6{grid-column:span 12;}
+  .wcard-h{grid-template-columns:1fr;}
+  .aide-grid{grid-template-columns:1fr;}
+  .aide-right{border-top:1px solid rgba(255,255,255,.07);}
+  .tgrid{grid-template-columns:1fr 1fr;}
+  .fgrid{grid-template-columns:1fr 1fr;}
+}
 
 /* Right side — velocity visual */
 .aide-right {
