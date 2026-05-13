@@ -78,12 +78,11 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
           <Carousel.Item key={eachInx} className='rounded my-5 z-1'>
             <Stack direction='horizontal' gap={4} >
               <Card className='flex flex-lg-row p-4 justify-content-between align-items-center w-100 border my-4'>
-                <Card.Img
-                  src={`${e.logo}`} width={100} height={100} className='logo-image bg-light' />
+                <Card.Img src={`${e.logo}`} width={100} height={100} className='logo-image bg-light' />
                 <Card.Title className='d-flex flex-column text-black align-items-start'>
                   <Card.Title>{e.companyName} - {e.companyPosition}</Card.Title>
-                  <Card.Text className='text-black fw-light fs-5'>{`${e.service}`}</Card.Text>
-                  <Card.Text className='text-black fw-light fs-6'>"{e.review}"</Card.Text>
+                  <Card.Text className='text-grey fw-light fw-bold fs-6 text-uppercase'>{`${e.service}`}</Card.Text>
+                  <Card.Text className='text-black fw-light fs-6 '>"{e.review}"</Card.Text>
                   <br />
                   <span className='d-flex flex-row'>
                     <i className='star'><FontAwesomeIcon icon={faStar} style={{ color: 'ffd700' }}></FontAwesomeIcon></i>
