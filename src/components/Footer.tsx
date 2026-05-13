@@ -26,11 +26,18 @@ const footer = {
     ],
 
     usefulLinks: [
-        "About Us",
-        "Meet the Avatas",
-        "Features",
-        "Our Services",
-        "FAQ's, Contact"
+        {
+            url: "/about-us",
+            title: "About Us",
+        },
+        {
+            url: "/about-us",
+            title: "Meet the Avatas",
+        },
+        {
+            url: "/our-services",
+            title: "Our Services",
+        }
     ],
 
     socialLinks:
@@ -86,7 +93,7 @@ const Footer = async () => {
                                     <div className="col-md-6 col-lg-6 col-xl-3">
                                         <div className="footer-item">
                                             <h4 className="text-white mb-4">Useful Links</h4>
-                                            {footer?.usefulLinks?.map((link: string, linkId: number) => <a key={linkId} href="#"><i className="fas fa-angle-right me-2"></i> {link}</a>
+                                            {footer?.usefulLinks?.map((link, linkId: number) => <a key={linkId} href={link.url}><i className="fas fa-angle-right me-2"></i> {link.title}</a>
                                             )}
                                         </div>
                                     </div>
