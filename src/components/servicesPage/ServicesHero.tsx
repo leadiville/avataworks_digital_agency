@@ -5,8 +5,8 @@ import { faBook, faChartLine } from '@fortawesome/free-solid-svg-icons'
 export const ServicesHero = () => {
     return (
         <div className='container-fluid px-0'>
-            <section className="svc-hero py-5">
-                <div className="position-relative container px-4 py-5">
+            <section className="svc-hero py-lg-5">
+                <div className="position-relative container px-4 py-lg-5 py-3">
 
                     <div className="badge" style={{ background: "rgba(255,255,255,0.12)", borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}>
                         <span className="bdot"></span>AI-Native Services

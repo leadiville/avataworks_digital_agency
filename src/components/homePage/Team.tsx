@@ -37,9 +37,9 @@ const Team = ({ teamMembers }: TeamProps) => {
                                             <a className="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i className="fab fa-instagram"></i></a>
                                         </div>
                                     </div>
-                                                           <div className="team-title p-4">
+                                    <div className="team-title p-4">
                                         <h4 className="mb-0">{fullName}</h4>
-                                        <p className="mb-0 text-capitalize">{skillSet}</p>
+                                        <p className="mb-0 text-capitalize text-white">{skillSet}</p>
                                     </div>
                                 </div>
                             </div>

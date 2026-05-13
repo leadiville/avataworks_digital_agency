@@ -7,7 +7,7 @@ const AboutAbout = () => {
             <div className="position-relative z-1 bg-primaryLight container-fluid py-5">
                 <div className="container py-lg-5">
                     <div className="row align-items-center">
-                        <div className='col-lg-6 py-4 py-lg-0 order text-lg-start text-center order-first order-1'>
+                        <div className='col-lg-6 pt-4 py-lg-0 order text-lg-start text-center order-first order-1'>
                             <h2 className="mb-4 text-capitalize text-primary fw-bold">Your all-in-one team <br /> of AI-powered specialists.</h2>
                             <div className="second-section text-gray">
                                 <div className=''>
