@@ -11,8 +11,8 @@ interface IPrimaryBtn {
 export default ({ icon, text, className, onclick }: IPrimaryBtn) => {
 
     return (
-        <button onClick={onclick} className={`btn rounded text-capitalize p-md-3 px-lg-4 "btn-primary" border border-inherit ${className}`}>
-            <FontAwesomeIcon icon={icon as IconDefinition} width={"30px"} height={'auto'} />
+        <button onClick={onclick} className={`btn rounded text-capitalize px-4 py-3 border border-inherit fw-bold fs-5 ${className}`}>
+            <FontAwesomeIcon icon={icon as IconDefinition} width={"40px"} height={'auto'} />
             {text}
         </button>
     )
