@@ -27,12 +27,12 @@ export const WelcomeAbout = () => {
           <div className="col-lg-8 pt-lg-4 col-12 text-white text-center px-0  text-lg-start">
             <Badge text="We are your all in one AI-driven agency." key={'about-hero'} style="bg-primaryLight text-capitalize" />
             <h1 className="text-capitalize">
-              We Ensure Digital Brand
+              We Ensure <br /> Digital Brand
               <br />
               <span className="text-primary"> Success.</span>
             </h1>
             <p
-              className="mb-4 fw-bolder container d-inline-block"
+              className="mb-4 fw-bolder container d-inline-block pe-lg-5"
               style={{ lineHeight: "30px" }}
             >
               {aboutText}

@@ -8,7 +8,7 @@ export const ServicesHero = () => {
         <div className="container-fluid ">
         <div className='container px-0 py-5'>
             <div className="row align-items-center ">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-7">
                         <div className="position-relative container">
                             <div className="badge" style={{ background: "rgba(255,255,255,0.12)", borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}>
                                 <span className="bdot"></span>AI-Native Services
@@ -18,7 +18,7 @@ export const ServicesHero = () => {
                             <PrimaryButton icon={faChartLine} text='Start Growing' className='btn-primary mt-2' />
                         </div>
                 </div>
-                <div className="col-12 col-lg-6 order-first order-sm-1">
+                <div className="col-12 col-lg-5 order-first order-sm-1">
                     <HeroAnimation />
                 </div>
             </div>
