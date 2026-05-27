@@ -30,7 +30,6 @@ export default async function Home() {
   const services = cleanMongoShape(await ServicesM.find().lean<Partial<Iservice>[]>());
   const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
   const reviews = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>()).map(review => ({ ...review, _id: review?._id?.toString() }));
-
   const faqHome = faq?.[0].homePage ?? [];
 
   return (
@@ -43,7 +42,7 @@ export default async function Home() {
       <OurServices services={services} />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
       <AboutUs />
-      <Team teamMembers={ourTeam?.splice(0, 4)} />
+      <Team teamMembers={ourTeam.splice(0, 6)}/>
       <Testimonials testimonials={reviews} />
       <Faq faq={faqHome} />
       <Footer />

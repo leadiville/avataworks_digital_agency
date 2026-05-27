@@ -1,21 +1,28 @@
 import React from 'react'
 import PrimaryButton from '../PrimaryButton'
 import { faBook, faChartLine } from '@fortawesome/free-solid-svg-icons'
+import HeroAnimation from '../AboutUs/HeroAnimation'
 
 export const ServicesHero = () => {
     return (
-        <div className='container-fluid px-0'>
-            <section className="svc-hero py-lg-5">
-                <div className="position-relative container px-4 py-lg-5 py-3">
-
-                    <div className="badge" style={{ background: "rgba(255,255,255,0.12)", borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}>
-                        <span className="bdot"></span>AI-Native Services
-                    </div>
-                    <h1 className="text-white display-1 fw-bold">We Are <br /> Brand Builders<br />  for Hire - <span style={{ color: 'skyBlue' }}>AI-Driven.</span></h1>
-                    <p>Three core service lines upgraded into AI-powered delivery systems. Built for startups and ambitious brands ready to scale.</p>
-                    <PrimaryButton icon={faChartLine} text='Start Growing' className='btn-primary mt-2' />
+        <div className="container-fluid ">
+        <div className='container px-0 py-5'>
+            <div className="row align-items-center ">
+                <div className="col-12 col-lg-6">
+                        <div className="position-relative container">
+                            <div className="badge" style={{ background: "rgba(255,255,255,0.12)", borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}>
+                                <span className="bdot"></span>AI-Native Services
+                            </div>
+                            <h1 className="text-darl display-1 fw-bold">We Are <br /> Brand Builders<br />  for Hire - <span className="text-primary">AI-Driven.</span></h1>
+                            <p className='text-dark'>Three core service lines upgraded into AI-powered delivery systems. <br /> Built for startups and ambitious brands ready to scale.</p>
+                            <PrimaryButton icon={faChartLine} text='Start Growing' className='btn-primary mt-2' />
+                        </div>
                 </div>
-            </section>
+                <div className="col-12 col-lg-6 order-first order-sm-1">
+                    <HeroAnimation />
+                </div>
+            </div>
+        </div>
         </div>
     )
 }

@@ -20,7 +20,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const AboutPage = async function () {
     await connectDb();
     const ourTeam = cleanMongoShape(await OurTeam.find().lean<Partial<IOurTeam>[]>());
-    const features = cleanMongoShape(await FeaturesM.find().lean<Ifeatures[]>());
+    // const features = cleanMongoShape(await FeaturesM.find().lean<Ifeatures[]>());
     const testimonials = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>());
     return (
         <>

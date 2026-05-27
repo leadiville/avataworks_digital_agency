@@ -29,7 +29,7 @@ const OurServices = ({ services }: ServicesProps) => {
     }, []);
 
     return (
-        <div>
+        <div className=''>
             <div className="container-fluid service py-5 position-relative bg-primaryLight z-2">
                 <div className="container py-5 p-lg-4">
                     <span className="text-center pb-5 wow fadeInUp ">

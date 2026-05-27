@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Script from "next/script";
 import * as FontawesomeIcons from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import ScrollAnimate from '@/utils/ScrollAnimate';
 
 // Minimal version - Filtering out the icons we need, so we don't fetch everything every time
 const chosenIcons = Object.values(FontawesomeIcons).filter(
@@ -38,6 +39,7 @@ export default function RootLayout({
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossOrigin="anonymous"></link>
       </Head>
       <body className={`${geistSans.className}`} >
+        <ScrollAnimate />
         {children}
       </body>
     </html>

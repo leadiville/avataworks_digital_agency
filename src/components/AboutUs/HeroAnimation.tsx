@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroAnimation = () => {
     return (
-        <div className="hero-visual">
+        <div className="">
             <svg
                 className="diagram-svg"
                 viewBox="0 0 480 480"

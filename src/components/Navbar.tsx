@@ -20,8 +20,8 @@ const Navbar = () => {
                             <span className="fa fa-bars"><FontAwesomeIcon icon={faBars} style={{ color: 'white' }} /></span>
                         </button>
                         <NavMenus />
-                        {<div className="d-none d-lg-inline-block bg-white border border-white rounded hero-quote">
-                            <Link href={'/get-quote'}><PrimaryButton className='bg-danger text-white rounded p-lg-1 text-xs' text='Get Started' icon={faArrowRight} /></Link>
+                        {<div className="d-none d-lg-inline-block border border-white rounded hero-quote">
+                            <Link href={'/get-quote'}><button className='bg-danger rounded d-lg-inline-block py-2 px-4 d-none'>Get Started<FontAwesomeIcon icon={faArrowRight} width={20} height={100} className='align-center ms-2'/></button></Link>
                         </div>}
                     </nav>
                 </div>

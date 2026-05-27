@@ -100,6 +100,9 @@ p {
 .bg-primaryLight {
   background-color: var(--primaryLight);
 }
+.bg-primaryDark {
+  background-color: var(--hbg) !important;
+}
 .btn-primary,
 .bg-primary {
   background-color: #0575bb !important;
@@ -109,6 +112,10 @@ p {
 }
 .text-danger {
   color: red;
+}
+.btn-danger {
+  background-color: red;
+  color: white;
 }
 .text-lighter {
   color: rgb(217, 215, 215);
@@ -239,11 +246,16 @@ p {
 /*** Topbar End ***/
 
 /* Navbar */
+.nav-get-started {
+  padding: 0.6rem 1.5rem !important; 
+  font-weight: 500 !important;
+}
 .nav-item {
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: 400;
 }
 .nav-item-container {
+  text-decoration: none !important;
   transform: translateY(0px);
   transition:
     transform 0.4s,
@@ -264,6 +276,7 @@ p {
   .nav-item {
     margin: 10px 0px 10px 10px;
     min-width: 100% !important;
+    color: white !important;
   }
   .nav-item:hover,
   .nav-item:active {
@@ -271,6 +284,11 @@ p {
   }
   .nav-item-container {
     padding: 0.6rem;
+    width: 75vw;
+    border: 2px solid white;
+    margin: 5px;
+    background: var(--primaryLighter);
+    border-radius: 0.4rem;
   }
 }
 .hero-quote {
@@ -1559,4 +1577,21 @@ input:-webkit-autofill:active {
 }
 .wb-text strong {
   color: #fff;
+}
+
+/* Animation for website */
+
+.animate-all {
+  animation: showAll 1s ease-in;
+  animation-delay: 0.8s;
+}
+@keyframes showAll {
+  from {
+    transform: scale(0) translateY(-20px);
+    opacity: 0;
+  } 
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }

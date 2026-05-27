@@ -1,12 +1,6 @@
 "use client";
 import PrimaryButton from '../PrimaryButton'
-import Link from 'next/link'
-import AboutGrowth from '../AboutUs/AboutGrowth'
-// import { usePathname } from 'next/navigation'
-import { faBook, faBookOpen, faPencil } from '@fortawesome/free-solid-svg-icons';
-
 const AboutUs = () => {
-    // const path = usePathname();
     return (
         <section className='bg-primary pb-4'>
             <div className="py-5 container">
@@ -15,7 +9,7 @@ const AboutUs = () => {
                     <h2 style={{ marginBottom: '16px', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>Africa's brands deserve better.<br />We're building the system that delivers it.</h2>
                     <p className='text-white' style={{ maxWidth: '560px', margin: '0 auto 40px' }}>AVATAWorks is not another Lagos agency. It's the AI-driven growth infrastructure businesses have been waiting for.</p>
                     <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <PrimaryButton text='Get a Free Strategy Session 🪏' className='btn-white' />
+                        <PrimaryButton text='Get a Free Strategy Session 🪏' className='btn-white border' />
                         <PrimaryButton text='About AVATAWorks 📚' className='btn-primary' />
                     </div>
                 </div>

@@ -262,6 +262,16 @@
                 "image": "efe.jpg"
             },
             {
+                "fullName": "Chisalem Chukunda",
+                "skillSet": "Executive Assistant",
+                "image": "blueblue.webp"
+            },
+            {
+                "fullName": "David Diez",
+                "skillSet": "Visual designer",
+                "image": "David.webp"
+            },
+            {
                 "fullName": "Mabel Ike-Udechukwu",
                 "skillSet": "Head of AVATA Operations",
                 "image": "mabel.jpg"
@@ -272,24 +282,19 @@
                 "image": "Esther.jpg"
             },
             {
+                "fullName": "June Akpede",
+                "skillSet": "Digital Strategist",
+                "image": "June.webp"
+            },
+            {
+                "fullName": "Emeka Dan-chukwu",
+                "skillSet": "Visual designer",
+                "image": "Emeka.webp"
+            },
+            {
                 "fullName": "Anum Queen",
                 "skillSet": "social media manager",
                 "image": "queen.webp"
-            },
-            {
-                "fullName": "Faith",
-                "skillSet": "Digital Strategist",
-                "image": "Faith.webp"
-            },
-            {
-                "fullName": "George Samuel",
-                "skillSet": "Visual designer",
-                "image": "george.webp"
-            },
-            {
-                "fullName": "Victory Nengi Samuel",
-                "skillSet": "Digital Advertiser",
-                "image": "nengi.webp"
             },
             {
                 "fullName": "Igbinosa Osayuwame",

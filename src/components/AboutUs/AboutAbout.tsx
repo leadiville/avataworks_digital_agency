@@ -26,7 +26,7 @@ const AboutAbout = () => {
                         </div>
                         {/* get a quote here */}
                         <div className="position-relative col-lg-6 text-start p-0 m-0 order-lg-1">
-                            <AboutGrowth bg='bg-primary' />
+                            <AboutGrowth bg='bg-primaryDark' />
                         </div>
                     </div>
                 </div>

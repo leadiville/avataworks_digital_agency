@@ -5,7 +5,7 @@ export const HtlSectioin = () => {
     return (
         <div>
             {/* //  <!-- HITL SECTION-- > */}
-            <section className="container text-center my-4 py-4 px-0">
+            <section className="container text-center my-4 py-4 px-0 reveal-animate">
                 <div className="container">
                     <div className="pt-4">
                         <h2 className='mb-2 text-primary'>AI-Driven Execution.<br />Human-Approved Results.</h2>
