@@ -42,7 +42,7 @@ export default async function Home() {
       <OurServices services={services} />
       <Features featuresData={features} title={'Why Choose Avataworks?'} />
       <AboutUs />
-      <Team teamMembers={ourTeam.splice(0, 6)}/>
+      <Team teamMembers={ourTeam.splice(0, 4)}/>
       <Testimonials testimonials={reviews} />
       <Faq faq={faqHome} />
       <Footer />

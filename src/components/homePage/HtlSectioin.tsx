@@ -1,5 +1,6 @@
 
 import React from 'react'
+import PrimaryButton from '../PrimaryButton'
 
 export const HtlSectioin = () => {
     return (
@@ -33,7 +34,7 @@ export const HtlSectioin = () => {
                         <div className="flow-sub">Human refinement</div>
                     </div>
                     <div className="flow-arrow">→</div>
-                    <div className="flow-step">                                                     
+                    <div className="flow-step">
                         <div className="flow-icon ai">04</div>
                         <div className="flow-label">Auto Execute</div>
                         <div className="flow-sub">AI deploys 24/7</div>
@@ -45,8 +46,10 @@ export const HtlSectioin = () => {
                         <div className="flow-sub">Measurable results</div>
                     </div>
                 </div>
+                <div className='w-100 text-center'>
+                    <PrimaryButton text='📚 Learn More About Us' className='btn-primary' />
+                </div>
             </section>
-
         </div>
     )
 }

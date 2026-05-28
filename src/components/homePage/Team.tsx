@@ -27,10 +27,10 @@ const Team = ({ teamMembers }: TeamProps) => {
                     {teamMembers?.map((member, memberId) => {
                         const { fullName, skillSet, image } = member;
                         return (
-                            <div className="col-md-6 col-xl-4 wow fadeInUp mb-4" key={memberId}>
+                            <div className={`${path === "/" ? 'col-xl-3' : 'col-xl-4'} col-md-6 wow fadeInUp mb-4`} key={memberId}>
                                 <div className="team-item">
-                                    <div className="team-img">
-                                        <Image src={`/team/${image}`} className="img-fluid rounded-top w-100" alt="" width={500} height={500} />
+                                    <div className="team-img " style={{ minHeight: `${path === "/" ? '320px' : '400px'}` }}>
+                                        <Image src={`/team/${image}`} className="img-fluid rounded-top w-100 h-100" alt="" fill sizes='(max-width: 768px) 100px 300px' />
                                         <div className="team-icon">
                                             <a className="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i className="fab fa-facebook-f"></i></a>
                                             <a className="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i className="fab fa-twitter"></i></a>

@@ -58,7 +58,7 @@ const OurServices = ({ services }: ServicesProps) => {
                                                 <p className="mb-4 service-info">{isShowMore ? fullInfo + " " : (fullInfo?.slice(0, 195) + '...' + ' ')}
                                                     <a type='button' className='text-dark' onClick={() => setIsShowMore(!isShowMore)}> {`${!isShowMore ? ' show-more' : " show-less"}`}</a>
                                                 </p>
-                                                <Link href={"/our-services"} className='explore-btn d-inline-block'><PrimaryButton className='border-primary bg-white py-lg-3 px-lg-4 p-2' text={`Explore ${title}`} /></Link>
+                                                <Link href={"/our-services"} className='explore-btn d-inline-block'><PrimaryButton className='border border-2 bg-white py-lg-3 px-lg-4 p-2' text={`Explore ${title}`} /></Link>
                                             </div>
                                         </div>
                                     </div>

@@ -11,17 +11,17 @@ const Features = ({ featuresData, title }: FeaturesProps) => {
     return (
         <div>
             {/* Feature Start  */}
-            <div className="container-fluid feature bg-light py-5">
-                <div className="container py-lg-5">
+            <div className="container-fluid feature bg-primary pt-5">
+                <div className="container pt-5">
                     <div className="d-flex justify-content-center align-items-center w-100">
                         <div className="col-12 pb-5 wow fadeInUp">
-                            <h2 className="text-primary text-center">{title}</h2>
+                            <h2 className="text-white text-center">{title}</h2>
                         </div>
                     </div>
                     <div className="row g-4">
                         {featuresData.map((ftData, ftDataInx) => {
                             return (
-                                <FeatureCard key={ftDataInx} title={ftData.title} info={ftData.info} icon={iconMap[ftData.icon]} />
+                                <FeatureCard key={ftDataInx} title={ftData.title} icon={iconMap[ftData.icon]} />
                             )
                         })}
                     </div>

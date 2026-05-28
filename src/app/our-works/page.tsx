@@ -18,10 +18,10 @@ const page = async () => {
         <>
             <Navbar />
             <WorksHero />
-            <Stats />
             <ScrollerWorks />
             <CaseStudies />
             <AideSection />
+            <Stats style />
             <Testimonials testimonials={reviews} key="services-Review" />
                 <Footer />
         </>

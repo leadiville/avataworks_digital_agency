@@ -77,7 +77,7 @@ const Footer = async () => {
                                 <div className="row g-4">
                                     <div className="col-md-6 col-lg-6 col-xl-5">
                                         <div className="footer-item">
-                                            <a href="index.html" className="p-0">
+                                            <a href="/" className="p-0">
                                                 <Image src="/logo.png" width={150} height={50} className='w-50 h-50 p-0 m-0' alt="Logo" />
                                             </a>
                                             <p className="text-white mb-4 text-capitalize">your all in one AI-driven agency</p>

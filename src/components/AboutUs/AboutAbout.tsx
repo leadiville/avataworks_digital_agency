@@ -2,6 +2,7 @@
 import AboutGrowth from './AboutGrowth'
 
 const AboutAbout = () => {
+    
     return (
         <div>
             <div className="position-relative z-1 bg-primaryLight container-fluid py-5">
