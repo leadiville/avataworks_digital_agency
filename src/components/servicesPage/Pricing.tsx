@@ -3,6 +3,7 @@ import { useState } from 'react'
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import ScrollAnimate from '@/utils/ScrollAnimate';
 
 interface PricingI {
     ourPlans: string;
@@ -65,23 +66,26 @@ const Pricing = () => {
                         const { ourPlans, type, price, accessibility, about, benefits } = each;
                         return (
                             <>
-                                <div className="pc positon-relative" key={eachInx}>
-                                    {eachInx === 1 &&
-                                        <div className='w-fit position-absolute top-0 translate-middle start-50' >
-                                            <small className="text-uppercase bg-primary text-white rounded-pill px-4 py-1 ">
-                                                Most Popular
-                                            </small>
-                                        </div>}
-                                    <div className="pt">{ourPlans}</div>
-                                    <div className="pn">{type}</div>
-                                    <sup className='me-2'>Starting from -</sup><span className="pa text-primary">{price}</span>
-                                    <div className="pp">{accessibility}</div>
-                                    <div className="pd">{about}</div>
-                                    <ol className="pf">
-                                        {benefits?.map((each, inx) => (<li key={inx}>{each}</li>))}
-                                    </ol>
-                                    <Link href="/get-quote"><PrimaryButton className={`btn w-100 ${eachInx === 1 ? "btn-primary" : "btn-white"}`} icon={faArrowRight} text="Join Waitlist " /></Link>
-                                </div>
+                                <ScrollAnimate>
+
+                                    <div className="pc positon-relative" key={eachInx}>
+                                        {eachInx === 1 &&
+                                            <div className='w-fit position-absolute top-0 translate-middle start-50' >
+                                                <small className="text-uppercase bg-primary text-white rounded-pill px-4 py-1 ">
+                                                    Most Popular
+                                                </small>
+                                            </div>}
+                                        <div className="pt">{ourPlans}</div>
+                                        <div className="pn">{type}</div>
+                                        <sup className='me-2'>Starting from -</sup><span className="pa text-primary">{price}</span>
+                                        <div className="pp">{accessibility}</div>
+                                        <div className="pd">{about}</div>
+                                        <ol className="pf">
+                                            {benefits?.map((each, inx) => (<li key={inx}>{each}</li>))}
+                                        </ol>
+                                        <Link href="/get-quote"><PrimaryButton className={`btn w-100 ${eachInx === 1 ? "btn-primary" : "btn-white"}`} icon={faArrowRight} text="Join Waitlist " /></Link>
+                                    </div>
+                                </ScrollAnimate >
                             </>
                         );
                     })}

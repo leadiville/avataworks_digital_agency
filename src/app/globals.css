@@ -250,7 +250,7 @@ p {
 
 /* Navbar */
 .nav-get-started {
-  padding: 0.6rem 1.5rem !important; 
+  padding: 0.6rem 1.5rem !important;
   font-weight: 500 !important;
 }
 .nav-item {
@@ -1430,23 +1430,57 @@ input:-webkit-autofill:active {
   flex-wrap: wrap;
   margin-top: 32px;
 }
-@media(max-width:640px){
-  .nlinks a:not(.ncta){display:none;}
-  .tgrid{grid-template-columns:1fr;}
-  .hstat{flex:0 0 50%;}
-  .hero-stats{flex-wrap:wrap;}
-  .fgrid{grid-template-columns:1fr;}
-  .aide-left,.aide-right{padding:36px 28px;}
+@media (max-width: 640px) {
+  .nlinks a:not(.ncta) {
+    display: none;
+  }
+  .tgrid {
+    grid-template-columns: 1fr;
+  }
+  .hstat {
+    flex: 0 0 50%;
+  }
+  .hero-stats {
+    flex-wrap: wrap;
+  }
+  .fgrid {
+    grid-template-columns: 1fr;
+  }
+  .aide-left,
+  .aide-right {
+    padding: 36px 28px;
+  }
 }
-@media(max-width:1024px){
-  .hero-grid{grid-template-columns:1fr;gap:32px;}
-  .hero-perf{display:none;}
-  .wc-8,.wc-7,.wc-5,.wc-4,.wc-6{grid-column:span 12;}
-  .wcard-h{grid-template-columns:1fr;}
-  .aide-grid{grid-template-columns:1fr;}
-  .aide-right{border-top:1px solid rgba(255,255,255,.07);}
-  .tgrid{grid-template-columns:1fr 1fr;}
-  .fgrid{grid-template-columns:1fr 1fr;}
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .hero-perf {
+    display: none;
+  }
+  .wc-8,
+  .wc-7,
+  .wc-5,
+  .wc-4,
+  .wc-6 {
+    grid-column: span 12;
+  }
+  .wcard-h {
+    grid-template-columns: 1fr;
+  }
+  .aide-grid {
+    grid-template-columns: 1fr;
+  }
+  .aide-right {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  .tgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fgrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Right side — velocity visual */
@@ -1583,17 +1617,29 @@ input:-webkit-autofill:active {
 
 /* Animation for website */
 
-.animate-all {
-  animation: showAll 1s ease-in;
-  animation-delay: 0.8s;
+.animate-page {
+  animation: animateSections 0.8s ease-out;
 }
-@keyframes showAll {
+
+@keyframes animateSections {
   from {
-    transform: scale(0) translateY(-20px);
-    opacity: 0;
-  } 
-  to {
-    transform: scale(1) translateY(0);
-    opacity: 1;
+    transform: translateY(30px);
+    opacity: 0 !important;
   }
+  to {
+    transform: translateY(0);
+    opacity: 1 !important;
+  }
+}
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+.delay-4 {
+  animation-delay: 0.8s;
 }

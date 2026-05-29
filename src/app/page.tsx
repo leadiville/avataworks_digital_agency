@@ -19,6 +19,7 @@ import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 import Stats from "@/components/homePage/Stats";
 import { HtlSectioin } from "@/components/homePage/HtlSectioin";
+import ScrollAnimate from "@/utils/ScrollAnimate";
 
 // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -37,14 +38,16 @@ export default async function Home() {
       <div className="grid-bg z-1"></div>
       <Navbar />
       <HeroCarousel />
-      <Stats style/>
-      <HtlSectioin />
-      <OurServices services={services} />
-      <Features featuresData={features} title={'Why Choose Avataworks?'} />
-      <AboutUs />
-      <Team teamMembers={ourTeam.splice(0, 4)}/>
-      <Testimonials testimonials={reviews} />
-      <Faq faq={faqHome} />
+      <Stats style />
+      <ScrollAnimate>
+        <HtlSectioin />
+      </ScrollAnimate>
+        <OurServices services={services} />
+        <Features featuresData={features} title={'Why Choose Avataworks?'} />
+        <AboutUs />
+        <Team teamMembers={ourTeam.splice(0, 4)} />
+        <Testimonials testimonials={reviews} />
+        <Faq faq={faqHome} />
       <Footer />
     </>
   )
