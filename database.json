@@ -230,19 +230,14 @@
         ],
         "ourTeam": [
             {
-                "fullName": "Efe Komoni",
-                "skillSet": "General Manager",
-                "image": "efe.jpg"
-            },
-            {
                 "fullName": "Mabel Ike-Udechukwu",
                 "skillSet": "Head of AVATA Operations",
                 "image": "mabel.jpg"
             },
             {
-                "fullName": "David Diez",
-                "skillSet": "Visual designer",
-                "image": "David.webp"
+                "fullName": "Efe Komoni",
+                "skillSet": "General Manager",
+                "image": "efe.jpg"
             },
             {
                 "fullName": "Chisalem Chukunda",
@@ -253,6 +248,11 @@
                 "fullName": "Essang Sonia Esther",
                 "skillSet": "Executive Assistant",
                 "image": "Esther.jpg"
+            },
+            {
+                "fullName": "David Diez",
+                "skillSet": "Visual designer",
+                "image": "David.webp"
             },
             {
                 "fullName": "June Akpede",
