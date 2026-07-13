@@ -16,36 +16,29 @@ interface PricingI {
 const pricingData = [
     {
         ourPlans: "Startup Pack",
-        type: "Brand Starter",
-        price: "₦350K",
-        accessibility: "/month · 1 brand",
+        type: "Brand Startup",
+        price: "₦400K",
+        accessibility: "/month · 2 platforms",
         about: "For businesses establishing a consistent digital presence.",
-        benefits: ["30 AI content drafts/month", "Logos, captions & carousels", "AI brand voice calibration", "2 platforms — IG + Facebook", "Content calendar + scheduling", "AVATA approval before posting", "Basic monthly summary report"
+        benefits: ["40 posts/month", "Instagram + Facebook", "Logos, Visuals & captions", "AI augumented content - Avata-reviewed", "Content calendar + scheduling", "Basic monthly summary report"
         ],
     },
     {
         ourPlans: "Entrepreneur",
         type: "Growth Partner",
-        price: "₦850K",
+        price: "₦1.2M",
         accessibility: "/month · 4 platforms",
         about: "For brands actively acquiring customers at volume.",
-        benefits: ["Everything in Startup Pack", "4 platforms — IG, FB, TikTok, X", "Meta Ads optimisation via Madgicx", "Lead capture & CRM automation", "Branding + creative strategy", "Priority AVATA team", "White-label performance reports",
+        benefits: ["Everything in Startup Pack", "Linkedin + TikTok", "Paid ads, 1 platform (AI-optimized)", "Lead capture & CRM automation", "Priority Avata squad", "Monthly performance reports",
         ],
     },
     {
         ourPlans: "Enterprise",
-        type: "AVATA",
-        price: "₦1.7M",
-        accessibility: "/month · Unlimited brands",
+        type: "Enterprise Avata",
+        price: "₦2.5M",
+        accessibility: "/month · 6 platforms",
         about: "Full AI-native growth infrastructure for high-growth companies.",
-        benefits: [
-            "Full AVATA stack",
-            "All 6 platforms managed",
-            "Unlimited AI content drafts",
-            "Website + landing page builds",
-            "Voice AI outreach via Vapi",
-            "Custom AI brand voice model",
-            "Dedicated AVATA squad",
+        benefits: ["Everything in Entrepreneur", "Paid ads: Meta + Google + TikTok + LinkedIn", "Custom AI brand voice model", "Agentic Workflows/Quarterly website builds", "Voice AI outreach & automation", "Dedicated Avata squad", "White-label reporting & dashboards",
         ],
     }
 ]
@@ -56,9 +49,9 @@ const Pricing = () => {
         <section className="sec sec-alt bg-primaryLight position-relative z-1">
             <div className="c position-relative">
                 <div className="sec-hdr">
-                    <div className="badge"><span className="bdot"></span>{"coming soon"}</div>
+                    <div className="badge"><span className="bdot"></span>{"Now accepting clients"}</div>
                     <h2 className='text-primary'>Productized Plans for<br /> Businesses</h2>
-                    <p>Fixed pricing. Defined deliverables. No hidden retainer fees. Join the waitlist for early-access pricing.</p>
+                    <p>Fixed price AI marketing plans for ambitious brands.<br /> Now accepting clients.</p>
                 </div>
                 <div className="pg-grid">
                     {pricing?.map((each, eachInx) => {
@@ -83,7 +76,7 @@ const Pricing = () => {
                                         <ol className="pf">
                                             {benefits?.map((each, inx) => (<li key={inx}>{each}</li>))}
                                         </ol>
-                                        <Link href="/get-quote"><PrimaryButton className={`btn w-100 ${eachInx === 1 ? "btn-primary" : "btn-white"}`} icon={faArrowRight} text="Join Waitlist " /></Link>
+                                        <Link href="/get-quote"><PrimaryButton className={`btn w-100 ${eachInx === 1 ? "btn-primary" : "btn-white"}`} icon={faArrowRight} text="Get Started" /></Link>
                                     </div>
                                 </ScrollAnimate >
                             </>

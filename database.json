@@ -2,12 +2,12 @@
     "database": {
         "services": [
             {
-                "title": "Creative Strategy & Branding",
+                "title": "Branding and Creative Strategy",
                 "info": "Crafting comprehensive brand identities that resonate with your ideal customer avatar",
                 "imgSrc": "/rebranding-amico.png",
                 "showInfo": false,
                 "icon": "pencil",
-                "fullInfo": "Build a Brand That Speaks, Sells, and Stands Out. Your brand is the first decision your customer makes before they contact you. We build brand identity systems: logos, visual language, brand guidelines, and creative strategy that sell before you say a word. Our branding work is tied directly to commercial intent, designed to improve ad performance, reduce customer acquisition cost, and build long-term brand equity for ambitious brands.",
+                "fullInfo": "AI-Accelerated Brand Strategy and Creative Design That Speaks, Sells, and Stands Out. Your brand is the first decision your ideal customer avatar makes before they contact you. We build brand identity systems, logos, visual language, brand guidelines, and creative strategy tied directly to commercial intent. AI handles the speed, volume, and data. Our Human-In-The-Loop (HITL) Avatas handles the strategy, creativity, and cultural intelligence for your market. You get both speed and quality.",
                 "subServices": [
                     "Logo and Brand Identity",
                     "Graphic Design",
@@ -17,12 +17,12 @@
                 ]
             },
             {
-                "title": "Tech & Strategic Innovation",
+                "title": "Tech and Strategic Innovation",
                 "info": "Developing tailored software solutions to meet specific business needs",
                 "imgSrc": "/Developer activity-bro.png",
                 "showInfo": false,
                 "icon": "laptopCode",
-                "fullInfo": "AvataWorks engineers innovative tech solutions that solves, scales, and meets strategic growth. Your website is your 24/7 salesperson but most business sites lose leads every day. We build high-performance websites, mobile applications, and landing pages designed for performance, SEO, and revenue. CRM-integrated. Mobile-optimized. Built to compete locally and grow globally.",
+                "fullInfo": "High-Performance Websites, Mobile Apps, and AI Automation Systems for Business Growth. Your website is your 24/7 salesperson, but most business sites lose leads every day. Avataworks builds differently: conversion-first websites, iOS and Android mobile apps, and AI automation systems. Our Avatas build custom software solutions and AI systems that meet specific business needs, ensuring your digital brand is optimized for growth, engagement, and success.",
                 "subServices": [
                     "Website Development",
                     "Mobile App Development ",
@@ -32,12 +32,12 @@
                 ]
             },
             {
-                "title": "Social Media Management",
+                "title": "Social Media and Advertising",
                 "info": "Implementing strategies like SEO, PPC, and social media marketing to enhance online presence",
                 "imgSrc": "/Marketing-cuate.png",
                 "showInfo": false,
                 "icon": "rectangleAd",
-                "fullInfo": "AVATAWorks manages your social media presence as a full revenue operation, not just content. From paid advertising on Meta, TikTok, LinkedIn, and Google Ads, to organic content strategy, community management, and influencer partnerships. Every campaign is tracked, every naira of ad spend is optimized, and every platform decision is driven by cross-market data and global insights.",
+                "fullInfo": "AI-Powered social media marketing. Not just a content engine, but a revenue engine. Avataworks manages your social media presence as a full growth operation: AI-augmented content at scale across Meta, TikTok, LinkedIn, and X; paid advertising tracked against ROAS and cost-per-lead; community management; and monthly performance dashboards. Our Avatas HITL reviews, approves, and implements AI-augmented strategies like SEO, PPC, and social media marketing that turn your brand into a revenue engine 24/7.",
                 "subServices": [
                     "Copywriting & Content Marketing",
                     "Paid Advertising",
@@ -48,23 +48,23 @@
         ],
         "features": [
             {
-                "title": "Grow your business with team AVATA",
-                "info": "AvataWorks is your all-in-one team of Advanced Virtual Assistants in Technology and Advertising solutions.",
+                "title": "AI Infrastructure, Not AI Tools",
+                "info": "We build data-driven agentic workflows, multi-step AI systems that automate your marketing from content creation to CRM lead capture.",
                 "icon": "handshake"
             },
             {
                 "title": "Tech-Driven Creativity & Innovation",
-                "info": "Our approach combines data-driven insights with cutting-edge technology to deliver high-performing software solutions.",
+                "info": "AI-augmented execution combined with human creative direction and oversight that delivers high-performing tech solutions at machine speed.",
                 "icon": "lightbulb"
             },
             {
-                "title": "1 on 1 Business growth consultation",
-                "info": "Whether you are an emerging startup or a global enterprise, our solutions are designed to ensuring digital brand success.",
+                "title": "1 on 1 Avata consultation",
+                "info": "Every engagement starts with an Avata session to diagnose, prioritize, and map the growth plan that fits your brand.",
                 "icon": "chartLine"
             },
             {
-                "title": "Productivity Meets Precision",
-                "info": "With our AVATAs delivering fast turnarounds, every project is data-driven, deadline-ready, and designed for results.",
+                "title": "Every Output, Human-Approved",
+                "info": "Our Avatas make sure it's always right, every project is data-driven, deadline-ready, and designed for results.",
                 "icon": "gears"
             }
         ],
@@ -104,46 +104,28 @@
             "homePage": [
                 {
                     "showAnswer": false,
-                    "question": "What is AVATAWORKS?",
-                    "answer": "AVATAWorks is a digital agency based in Lagos, Nigeria, dedicated to delivering tailored business solutions. We run social media marketing, creative branding, and web development for startups and ambitious brands. Our goal is to drive sustainable growth and help ambitious brand achieve digital brand success."
+                    "question": "What exactly is an AI-powered digital agency?",
+                    "answer": "An AI-powered digital agency uses artificial intelligence as its operating infrastructure — not just a collection of tools. Avataworks uses agentic AI workflows to automate the full marketing pipeline at scale, while human Avata specialists review and approve every output before it reaches clients or their audiences. The result is AI efficiency with human accountability on every deliverable."
                 },
                 {
                     "showAnswer": false,
-                    "question": "Where is AVATAWORKS located?",
-                    "answer": "AVATAWorks is a fully remote company operating from Nigeria. However, we serve clients both locally and internationally, leveraging virtual collaboration tools to bridge any geographical gaps."
+                    "question": "What does Avata-reviewed mean for my brand's content?",
+                    "answer": "Every Avataworks deliverable is reviewed, refined, and approved by a trained human Avata before it goes live. AI generates at speed and volume. Your Avata guarantees brand accuracy, creative quality, and cultural relevance for your ideal customer avatar. You never receive raw, unreviewed AI output."
                 },
                 {
                     "showAnswer": false,
-                    "question": "How does AVATA Works help businesses grow?",
-                    "answer": "We use tailored strategies, data-driven analytics, and innovative solutions to build brand visibility, generate leads,`and enhance customer engagement to achieve measurable`growth for businesses."
+                    "question": "How does Avataworks generate more leads for my business?",
+                    "answer": "We combine AI-powered paid advertising on Meta, TikTok, Google, and LinkedIn with automated lead capture systems, CRM integration, and 24/7 follow-up sequences. This creates an always-on lead generation machine that captures, qualifies, and nurtures prospects even when you're offline — reducing your cost per lead while increasing volume and quality."
                 },
                 {
                     "showAnswer": false,
-                    "question": "What industries does AVATAWorks specialize in?",
-                    "answer": "AVATAWorks has experience working across various industries, including Startups, E-commerce, Tech, Agri-Export, Real-Estate, Fast-moving consumer goods (FMCG). Our AVATAs are equipped to handle projects from diverse sectors, tailoring strategies to meet specific business needs for brand digital success."
+                    "question": "How much does it cost to work with Avataworks?",
+                    "answer": "Fixed monthly plans: Brand Startup from ₦400K/month (1 brand, IG + Facebook, 30 AI-augmented content drafts), Growth Partner from ₦1.2M/month (4 platforms, Meta Ads, CRM automation), and Enterprise Avata from ₦3.7M/month (full AI stack, all 6 platforms, Paid Ads, Voice AI, website builds). Advertising spend is always separate and passed through at zero markup."
                 },
                 {
                     "showAnswer": false,
-                    "question": "What services does AVATAWorks provide?",
-                    "answer": [
-                        {
-                            "title": "Creative Strategy & Branding:",
-                            "description": "We create the brand strategy, visual identity, messaging framework, and creative assets that make your target audience trust you before you've said a word."
-                        },
-                        {
-                            "title": "Social Media Management and Advertising",
-                            "description": "Managing organic channels and paid advertising campaigns to boost online presence and conversions."
-                        },
-                        {
-                            "title": "Website and App Development Services:",
-                            "description": "We build high-performance websites, e-commerce platforms, and mobile applications engineered for performance, SEO, and revenue not just aesthetics."
-                        }
-                    ]
-                },
-                {
-                    "showAnswer": false,
-                    "question": "What is digital marketing, and why is it important?",
-                    "answer": "Digital marketing involves promoting products or services using digital channels such as websites, social media, email, and search engines. It's crucial because it allows businesses to reach a broader audience, engage with customers in real-time, and measure the effectiveness of campaigns."
+                    "question": "Do you offer customised solutions for each business?",
+                    "answer": "Absolutely. Every engagement starts with an Avata Audit Session, a deep-dive into your goals, market, and competitive landscape. Every strategy and deliverable is built from scratch for your brand, never recycled templates. The productized plans define the scope and price. The execution is always specific to you."
                 },
                 {
                     "showAnswer": false,
@@ -152,18 +134,18 @@
                 },
                 {
                     "showAnswer": false,
-                    "question": "Why does my business need a digital team of AVATAs?",
-                    "answer": "Search Engine Optimization (SEO) enhances your brand's visibility on search engines like Google and social media search engines like Instagram, X, and more. By optimizing your channels' content, structure, bio, and technical aspects, you can rank higher in search results, leading to increased organic traffic and potential customers."
+                    "question": "Who exactly will be working on my account?",
+                    "answer": "A dedicated Avata squad, your primary Avata contact supported by specialists in strategy, design, development, and paid media. You will always know who you are talking to and how your project is progressing. An Avata squad with a single senior point of contact, weekly strategy reviews, and a monthly performance report. Nothing moves without your awareness."
                 },
                 {
                     "showAnswer": false,
-                    "question": "Why do I need a website for my business?",
-                    "answer": "Your website is your 24/7 digital storefront. In today’s fast-moving world, customers look online first before making buying decisions. AVATAWorks builds modern, mobile-friendly websites that not only showcase your brand but also drive traffic, build trust, and generate leads — helping you compete locally and globally"
+                    "question": "What makes Avataworks different from other digital agencies?",
+                    "answer": "Three things no other agency offers: a documented 5-step Avata Human-in-the-Loop pipeline where every AI output is reviewed before release; agentic AI workflows that execute marketing operations autonomously 24/7; and fixed monthly pricing with zero markup on advertising spend. We are built AI-first — not AI-added-on to traditional agency operations."
                 },
                 {
                     "showAnswer": false,
-                    "question": " What is an AVATA, and what tasks can they handle?",
-                    "answer": "An AVATA stands for Advanced Virtual Assistant in Technology and Advertising — a highly skilled digital professional trained by AVATAWorks to support businesses remotely across a wide range of tasks. Unlike generic freelancers, AVATAs are verified talents equipped with both creative and technical skills to help you grow your brand faster and more affordably."
+                    "question": "Will AI content make my brand look generic?",
+                    "answer": "No, because every piece of content is reviewed by a human Avata who understands the market nuance, your brand voice, and your ideal customer avatar before anything is published. The AI generates at scale; the Avata guarantees it sounds like your brand. Clients consistently report their content sounds more consistent and more on-brand than before Avataworks."
                 }
             ],
             "servicePage": [
@@ -173,42 +155,33 @@
                     "showAnswer": false
                 },
                 {
-                    "question": " Can AVATAWorks handle both small and large-scale projects?",
+                    "question": "Can Avataworks handle both small and large-scale projects?",
                     "answer": "Yes, we are equipped to manage projects of all sizes. Whether you're a start-up looking to establish your brand or a large corporation aiming to enhance your digital presence, we have the expertise to deliver results.",
                     "showAnswer": false
                 },
                 {
-                    "question": " Does AVATAWorks offer content creation services",
-                    "answer": " Yes, we provide content creation services, including blog posts, articles, videos, design creatives, and social media content, to engage your audience and boost digital brand success",
+                    "question": "Do you work with businesses outside Africa?",
+                    "answer": " Yes. Avataworks was built in Lagos for the African market, but our AI-native delivery model means we work effectively with brands across Africa and globally. If your business operates across borders or targets international markets, our Avata squad is equipped to build and execute for that scale.",
                     "showAnswer": false
                 },
                 {
-                    "question": "10. What is your client onboarding process like?",
-                    "answer": [
-                        {
-                            "title": "Initial Consultation: Understanding your business needs and objectives",
-                            "description": " Mandatory AVATA Session: Audit, craft a brief and present a tailored strategy plan that aligns with your business goals,"
-                        },
-                        {
-                            "title": " Execution: Implementing the strategy with regular updates,",
-                            "description": " Monitoring & Optimization: Assessing performance and making necessary adjustment."
-                        }
-                    ],
+                    "question": "What is your client onboarding process",
+                    "answer": "Once you sign, three things happen immediately. Your Avata squad conducts an Avata Audit Session, capturing your brand voice, business goals, competitive landscape, and target customer avatar. We then present a tailored strategy plan before a single piece of content or creative is produced. Execution follows with regular updates, performance monitoring, and optimisation built into the rhythm of every month. You approve before anything goes live.",
                     "showAnswer": false
                 },
                 {
-                    "question": "What are your pricing options?",
-                    "answer": " Our pricing is project-specific, based on the scope, complexity, and duration. We offer both fixed-price packages and customizable solutions to fit different budgets.",
+                    "question": "How quickly can you get started?",
+                    "answer": " Most engagements kick off within 3 business days of your Avata Audit Session. First brand identity concepts typically arrive within 48 hours of brief sign-off. Website and campaign timelines are scoped in the strategy brief before execution begins, you always know what is coming and when before we move.",
                     "showAnswer": false
                 },
                 {
-                    "question": "Who will be working on my project?",
-                    "answer": " Your project will be handled by a team of advanced virtual assistants in Technology and Advertising, including strategists, designers, content creators, developers, and marketers. A dedicated AVATA will oversee the process and serve as your primary point of contact.",
+                    "question": "Who exactly will be working on my account?",
+                    "answer": "A dedicated Avata squad, your primary Avata contact supported by specialists in strategy, design, development, and paid media. You will always know who you are talking to and how your project is progressing. An Avata squad with a single senior point of contact, weekly strategy reviews, and a monthly performance report. Nothing moves without your awareness.",
                     "showAnswer": false
                 },
                 {
                     "question": "Do you offer training or workshops for in-house teams?",
-                    "answer": " Yes, we provide training sessions and brand builders workshops to empower your in-house teams with the latest digital marketing strategies and tools.",
+                    "answer": " Yes. We are brand builders, we offer training sessions and workshops covering content creation, digital marketing strategy, and AI-assisted execution, designed for in-house teams that want to build internal capability alongside their Avata engagement. Sessions are available for small teams and larger groups. Reach out to discuss formats, dates, and pricing.",
                     "showAnswer": false
                 }
             ]

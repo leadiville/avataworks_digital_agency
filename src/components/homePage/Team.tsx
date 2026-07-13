@@ -22,7 +22,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                 <ScrollAnimate>
                     <div className="text-center mx-auto pb-5 wow fadeInUp" style={{ maxWidth: "800px" }}>
                         <h2 className="mb-4 text-primary">Meet Our Avatas</h2>
-                        <p className="mb-0">A powerhouse of advanced virtual assistants in tech and advertising, each bringing exceptional skills, experience, and passion. Driving our clients to digital brand success.
+                        <p className="mb-0">A powerhouse of advanced virtual assistants in marketing and tech, individually bringing exceptional skills, experience, and passion to deliver digital brand success for our clients.
                         </p>
                     </div>
                 </ScrollAnimate>

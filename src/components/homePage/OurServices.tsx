@@ -35,9 +35,9 @@ const OurServices = ({ services }: ServicesProps) => {
                 <div className="container py-lg-5 py-4 p-lg-4">
                     <ScrollAnimate >
                         <span className="text-center pb-5 ">
-                            <h2 className="mb-4 text-primary">Full digital services. One team. <br /> Infinite possibilities.</h2>
+                            <h2 className="mb-4 text-primary">AI-Driven digital marketing services. One team. <br /> Infinite possibilities.</h2>
                             <div className="d-flex justify-content-center" >
-                                <p className="mb-0 col-12 col-lg-8">We offer end-to-end digital services to startups, SMEs, and established brands. These services are delivered by our internal digital team and verified AVATAs (Advanced Virtual Assistants in Tech & Advertising we assign on demand).
+                                <p className="mb-0 col-12 col-lg-8">Avataworks is a full-service, AI-native digital marketing agency built in Lagos, Nigeria. We deliver social media marketing, creative branding, and website development for ambitious, brands. AI-generated at speed, Avata-reviewed for quality, and deployed 24/7.
                                 </p>
                             </div>
                         </span>

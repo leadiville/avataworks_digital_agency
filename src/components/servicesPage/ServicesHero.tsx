@@ -14,7 +14,7 @@ export const ServicesHero = () => {
                                 <span className="bdot"></span>AI-Native Services
                             </div>
                             <h1 className="text-darl display-1 fw-bold">We Are <br /> Brand Builders<br />  for Hire - <span className="text-primary">AI-Driven.</span></h1>
-                            <p className='text-dark'>Three core service lines upgraded into AI-powered delivery systems. <br /> Built for startups and ambitious brands ready to scale.</p>
+                            <p className='text-dark'>Three core service lines - AI-powered social media management, branding and creative strategy, and technology and automation. <br /> Every AI-native delivery system is designed for speed, volume, and is consistently reviewed, and approved by our Human-in-the-Loop Avata specialists.</p>
                             <PrimaryButton icon={faChartLine} text='Start Growing' className='btn-primary mt-2' />
                         </div>
                 </div>

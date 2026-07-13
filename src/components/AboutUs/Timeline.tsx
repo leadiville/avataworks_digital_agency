@@ -16,43 +16,36 @@ export const Timeline = () => {
                     </div>
                     <div className="tl">
                         <div className="tli">
-                            <div className="tld">21
+                            <div className="tld">22
                             </div><div className="tlc">
-                                <h4>2021 — Founded in Lagos</h4><p>AVATAWorks registered and launched as a full-service digital agency in Lagos, Nigeria.</p>
-                            </div>
-                        </div>
-                        <div className="tli">
-                            <div className="tld">22</div>
-                            <div className="tlc">
-                                <h4>2022 — First Brands Onboarded</h4>
-                                <p>First 3 client brands onboarded. AVATA team built. Internship program launched.</p>
+                                <h4>2022 - Built in Lagos</h4><p>Avataworks launched as a full-service digital agency in Lagos, Nigeria.</p>
                             </div>
                         </div>
                         <div className="tli">
                             <div className="tld">23</div>
                             <div className="tlc">
-                                <h4>2023 — Scale &amp; Systems</h4>
-                                <p>20+ brands managed. 10× ROAS campaigns. 10+ certified AVATAs trained.</p>
+                                <h4>2023 - First Brands Onboarded</h4>
+                                <p>First 3 client brands onboarded. The Avata model was built.</p>
                             </div>
                         </div>
                         <div className="tli">
                             <div className="tld">24</div>
                             <div className="tlc">
-                                <h4>2024 — Revenue Milestone</h4><p>₦30M+ revenue generated for clients. AI-native migration strategy formalized.</p>
+                                <h4>2024 - Scale &amp; Systems</h4>
+                                <p>10+ brands managed. 10× ROAS. Internship program launched. 10+ trained Avatas.</p>
                             </div>
                         </div>
                         <div className="tli">
                             <div className="tld">25</div>
                             <div className="tlc">
-                                <h4>2025 — AI Migration Begins</h4>
-                                <p>Full AI stack deployed internally. avataworks.com live. AVATA OS architecture designed.</p>
+                                <h4>2025 - Revenue Milestone</h4><p>₦30M+ revenue generated for clients. AI-native migration strategy formalized.</p>
                             </div>
                         </div>
-                        <div className="tli" style={{ paddingBottom: '0' }}>
-                            <div className="tld" style={{ background: 'var(--primaryLighter)' }}>26</div>
+                        <div className="tli">
+                            <div className="tld">26</div>
                             <div className="tlc">
-                                <h4>2026 — AVATA AIDE Launch</h4>
-                                <p>AIDE model fully active. AVATA OS MVP in development. Target: 50 AI subscription clients.</p>
+                                <h4>2026 - AI Migration Begins</h4>
+                                <p>Full AI stack deployed internally. avataworks.com live. Target: 30 AI-Native clients.</p>
                             </div>
                         </div>
                     </div>

@@ -12,16 +12,16 @@ const AboutAbout = () => {
                             <h2 className="mb-4 text-capitalize text-primary fw-bold">Your all-in-one team <br /> of AI-powered specialists.</h2>
                             <div className="second-section text-gray">
                                 <div className=''>
+                                    <h3 className='text-grey'>AI Infrastructure, Human Oversight</h3>
+                                    <p className=''><small>We build agentic workflows, multi-step AI systems that automate your marketing from content creation to CRM lead capture. Our Avatas make sure it's always right.</small></p>
+                                </div>
+                                <div className=''>
                                     <h3 className='text-grey'>Tech-Driven Creativity</h3>
-                                    <p className=''><small>AI-powered execution combined with human creative direction delivering high-performing solutions at machine speed. </small></p>
+                                    <p className=''><small>AI-accelerated execution combined with human creative direction and oversight that delivers high-performing tech solutions at machine speed.</small></p>
                                 </div>
                                 <div className=''>
-                                    <h3 className='text-grey'>1-on-1 Growth Consultation</h3>
-                                    <p className=''><small>Every engagement starts with an AVATA session to diagnose, prioritise, and map the growth plan that fits your brand.</small></p>
-                                </div>
-                                <div className=''>
-                                    <h3 className='text-grey'>Productivity Meets Precision</h3>
-                                    <p className=''><small>Fast turnarounds, deadline-ready delivery, and data-driven decisions — every project built for measurable results.</small></p>
+                                    <h3 className='text-grey'>1-on-1 Avata Consultation</h3>
+                                    <p className=''><small>Every engagement starts with an Avata session to diagnose, prioritize, and map the growth plan that fits your brand.</small></p>
                                 </div>
                             </div>
                         </div>

@@ -9,7 +9,7 @@ type About = {
 
 const AboutGrowth = ({ bg }: About) => {
     const path = usePathname();
-    const aiStacks = ["n8n", "Claude", "GPT-4.0", "Midjourney", "Canva Magic", "Vista Social", "Madgicx", " Relevance AI", "Webflow", "Bubble", "Vapi", "Retell AI", "ElevenLabs", "Airtable", "Zapier", "Manus"];
+    const aiStacks = ["n8n", "Relevance AI", "Claude", "ChatGPT", "Gemini", "Midjourney", "Canva", "Nano Banana", "HiggsField", "SeeDance", "Vista Social", "ManyChats", "Webflow", "Bubble", "Airtable", "Vapi", "Retell AI", "ElevenLabs", "Zapier", "Manus"];
 
     return (
         <div className={`${bg} rounded  p-sm-0 h-fit mt-lg-0 mb-4 mb-lg-0`}>

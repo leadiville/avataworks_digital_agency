@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export const WelcomeAbout = () => {
   const aboutText =
-    " At AVATAWorks, we don't just offer services — we deliver transformative growth systems tailored to your brand's needs. As your all-in-one AI-Driven agency, we combine creativity, technology, and strategy to help brands scale faster, stronger, and smarter."
+    "Avataworks is an AI-native digital marketing agency built in Lagos, Nigeria. We combine agentic AI workflows with trained human Avata specialists to deliver social media marketing, creative branding, and custom software development for growing startups and ambitious brands. Every output is AI-accelerated and Avata-reviewed before it reaches a client or their audience. This Human-in-the-Loop, Avata model consistently delivers more leads, more calls, and more sales for our clients."
 
   const [windowSize, setWindowSize] = useState(window.innerHeight);
 
@@ -27,7 +27,7 @@ export const WelcomeAbout = () => {
           <div className="col-lg-8 pt-lg-4 col-12 text-white text-center px-0  text-lg-start">
             <Badge text="We are your all in one AI-driven agency." key={'about-hero'} style="bg-primaryLight text-capitalize" />
             <h1 className="text-capitalize">
-              We Ensure <br /> Digital Brand
+              Built to Ensure <br /> Digital Brand
               <br />
               <span className="text-primary"> Success.</span>
             </h1>

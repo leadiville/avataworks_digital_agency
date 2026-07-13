@@ -11,7 +11,7 @@ export const HtlSectioin = () => {
                     <div className="pt-4">
                         <h2 className='mb-2 text-primary'>AI-Driven Execution.<br />Human-Approved Results.</h2>
                         <div className="d-flex justify-content-center row">
-                            <p className='d-inline-block col-lg-7 col-12'>Every output goes through our Human-in-the-Loop (HITL) pipeline. AI handles the speed and volume. Expert AVATAs guarantee brand accuracy and strategic quality.</p>
+                            <p className='d-inline-block col-lg-7 col-12'>Every output goes through our Human-in-the-Loop (HITL) pipeline. AI handles the speed and volume. Expert Avatas guarantee brand accuracy and strategic quality.</p>
                         </div>
                     </div>
                 </div>
