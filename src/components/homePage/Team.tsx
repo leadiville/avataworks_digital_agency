@@ -35,7 +35,7 @@ const Team = ({ teamMembers }: TeamProps) => {
                                 <ScrollAnimate>
                                     <div className="team-item">
                                         <div className="team-img delay-4" style={{ minHeight: `${path === "/" ? '320px' : '400px'}` }}>
-                                            <Image src={`/team/${image}`} className="img-fluid rounded-top w-100 h-100" alt="" fill sizes='(max-width: 768px) 100px 300px' style={{ aspectRatio: "1" }} />
+                                            <Image src={`/team/${image}`} className="img-fluid rounded-top w-100 h-100" alt="" fill sizes='(max-width: 768px) 100px 250px' />
                                             <div className="team-icon">
                                                 <a className="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i className="fab fa-facebook-f"></i></a>
                                                 <a className="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i className="fab fa-twitter"></i></a>
