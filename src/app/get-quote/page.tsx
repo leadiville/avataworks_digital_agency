@@ -16,13 +16,13 @@ const page = () => {
     return (
         <div className="bg-primary">
             <div className='container py-lg-5 pb-5'>
-                <div className="row gap-1">
-                    <div className="col-lg-7 d-lg-flex align-items-end">
-                        <div className="d-flex align-items-center h-100">
+                <div className="row">
+                    <div className="col-lg-7 d-lg-flex align-items-center">
+                        <div className="h-100">
                             <Image width={400} height={800} className="w-100 h-auto" alt="get-quote-img" src={"/getQuote/Good team-bro.png"} />
                         </div>
                     </div>
-                    <div className="container col-lg-5 bg-white text-primary d-flex align-items-center form-container">
+                    <div className="container col-lg-5 bg-white text-primary form-container">
                         <div>
                             <h4 className="text-capitalized mb-3 fw-bold">Speak to an Avata!<span className="text-primary"><FontAwesomeIcon icon={faBullhorn} width={50} height={100} /></span></h4>
                             <h2 className="text-black text-capitalize">Let’s build your digital brand success! </h2>
