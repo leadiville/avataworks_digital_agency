@@ -17,9 +17,10 @@ const page = () => {
         <div className="bg-primary">
             <div className='container py-lg-5 pb-5'>
                 <div className="row">
-                    <div className="col-lg-7 d-lg-flex h-100 align-items-center">
-                    <Image width={400} height={800} className="w-100 h-100" alt="get-quote-img" src={"/getQuote/Good team-bro.png"} />
-                        
+                    <div className="col-lg-7 h-100">
+                        <div className="d-lg-flex w-100 h-100 align-items-center">
+                            <Image width={400} height={800} className="w-100 h-100 " alt="get-quote-img" src={"/getQuote/Good team-bro.png"} />
+                        </div>
                     </div>
                     <div className="container col-lg-5 bg-white text-primary form-container">
                         <div>
