@@ -17,7 +17,7 @@ const page = () => {
         <div className="bg-primary">
             <div className='container py-lg-5 pb-5'>
                 <div className="row gap-1">
-                    <div className="col-lg-6 d-lg-flex align-items-end">
+                    <div className="col-lg-7 d-lg-flex align-items-end">
                         <div className="d-flex align-items-center h-100">
                             <Image width={400} height={800} className="w-100 h-auto" alt="get-quote-img" src={"/getQuote/Good team-bro.png"} />
                         </div>

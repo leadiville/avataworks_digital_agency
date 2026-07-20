@@ -12,7 +12,7 @@ type Type = {
 const Input = ({ type, placeholder, inputValue, change, pattern,  required }: Type) => {
     return (
         <div className="control">
-            <input type={type} pattern={pattern} className="input text-dark p-3 w-100 bg-white border border-primary my-3" placeholder={placeholder} value={inputValue} onChange={(e) => {
+            <input type={type} pattern={pattern} className="input text-dark p-1 w-100 bg-white border border-primary my-3" placeholder={placeholder} value={inputValue} onChange={(e) => {
                 let formValue = e.target?.value ?? "";
                 change(formValue);
             }} required = {required} />

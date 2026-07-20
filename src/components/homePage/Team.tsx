@@ -4,14 +4,12 @@ import Image from 'next/image'
 import PrimaryButton from '../PrimaryButton';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { faPeopleGroup, faPerson } from '@fortawesome/free-solid-svg-icons';
-import { faTeamspeak } from '@fortawesome/free-brands-svg-icons/faTeamspeak';
+import { faPeopleGroup} from '@fortawesome/free-solid-svg-icons';
 import ScrollAnimate from '@/utils/ScrollAnimate';
 
 interface TeamProps {
     teamMembers: IOurTeam[];
 }
-
 
 const Team = ({ teamMembers }: TeamProps) => {
     const path = usePathname();

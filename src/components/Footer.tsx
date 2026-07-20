@@ -1,10 +1,9 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faCommentDots, faPhoneAlt, IconDefinition } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
+import { faCommentDots, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon,  } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const footer = {
     footerAddress: [
@@ -20,7 +19,7 @@ const footer = {
         },
         {
             title: "Telephone",
-            subtitle: "(+234)814 738 7748",
+            subtitle: "(+234)907 895 5077",
             icon: "fa-phone-alt"
         }
     ],
@@ -169,7 +168,7 @@ const Footer = async () => {
                                     </div>
                                     <div className="d-flex mt-md-2 mt-lg-0 flex-column ms-3 flex-shrink-0 text-white">
                                         <span >Contact us</span>
-                                        <a href="tel: (+234) 814 738 7748"><span className="text-white">Free: (+234) 814 738 7748</span>
+                                        <a href="tel: (+234) 907 895 5077"><span className="text-white">Free: (+234) 090 789 55077</span>
                                         </a>
                                     </div>
                                 </div>

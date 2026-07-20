@@ -36,7 +36,7 @@ const HeroCarousel = () => {
                         <div className='d-lg-flex d-grid gap-2 gap-md-3'>
                           <span className="">
                             <Link href={"tel:+234-708-935-5008"} onClick={() => setIsShowNumber(true)}>
-                              <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2347089355008'}`} icon={faPhone} className='btn-primary' />
+                              <PrimaryButton text={`${!isShowNumber ? 'Speak to an avata' : '+2349078955077'}`} icon={faPhone} className='btn-primary' />
                             </Link>
                           </span>
                           <span className="">
