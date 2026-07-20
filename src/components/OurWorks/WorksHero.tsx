@@ -13,7 +13,7 @@ const WorksHero = () => {
                         {/* <!-- Left: editorial --> */}
                         <div className="col-md-6">
                             <div className="hero-eyebrow">
-                                <span className="hero-year-badge text-white">Lagos · 2021 – 2026</span>
+                                <span className="hero-year-badge text-white">Lagos · 2022 – 2026</span>
                                 <div className="hero-divider"></div>
                             </div>
                             <h1 className='display-1 lh-1 fw-bold py-2 text-white' style={{ letterSpacing: "0.3rem" }}>Work  That <br /> Moves <br /> the<br /><span className="text-primary">Needle.</span></h1>
