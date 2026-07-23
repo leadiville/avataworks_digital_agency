@@ -58,7 +58,7 @@ const Pricing = () => {
 
                         const { ourPlans, type, price, accessibility, about, benefits } = each;
                         return (
-                            <>
+                            <div>
                                 <ScrollAnimate>
 
                                     <div className="pc positon-relative" key={eachInx}>
@@ -79,7 +79,7 @@ const Pricing = () => {
                                         <Link href="/get-quote"><PrimaryButton className={`btn w-100 ${eachInx === 1 ? "btn-primary" : "btn-white"}`} icon={faArrowRight} text="Get Started" /></Link>
                                     </div>
                                 </ScrollAnimate >
-                            </>
+                            </div>
                         );
                     })}
                 </div>

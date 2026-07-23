@@ -70,7 +70,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
   //   groupedItems.push(window.innerWidth >= 967 ? testimonys.slice(i, i + 2) : testimonys.slice(i, i + 1));
   // }
   return (
-    <>
+    <div>
       <Carousel className='testimonial-carousel p-sm-0' fade>
         {testimonys?.map((e, eachInx) => (
           <Carousel.Item key={eachInx} className='rounded my-5 z-1'>
@@ -95,7 +95,7 @@ const TestimonialCarousel = ({ testimonys }: ReviewsProps) => {
           </Carousel.Item>
         ))}
       </Carousel >
-    </>
+    </div>
   )
 }
 export { TestimonialCarousel, HeroCarousel };

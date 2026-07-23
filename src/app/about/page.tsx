@@ -2,16 +2,14 @@ export const dynamic = "force-dynamic";
 import Team from "../../components/homePage/Team"
 import Footer from "../../components/Footer"
 import { WelcomeAbout } from "../../components/AboutUs/WelcomeAbout"
-import { Ifeatures, IOurTeam, Ireviews } from "@/types"
+import { IOurTeam, Ireviews } from "@/types"
 import OurTeam from "../../models/OurTeam";
-import FeaturesM from "../../models/Features";
 import { connectDb } from "@/lib/mongodb";
 import { cleanMongoShape } from "@/utils/cleanMongoStructure";
 import Testimonials from "@/components/homePage/Testimonials";
 import Reviews from "@/models/Reviews";
 import AboutAbout from "@/components/AboutUs/AboutAbout";
 import { Timeline } from "@/components/AboutUs/Timeline";
-import ReadyToWork from "@/components/AboutUs/Banner";
 import Banner from "@/components/AboutUs/Banner";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 

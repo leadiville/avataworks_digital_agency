@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const WorksHero = () => {
     return (
-        <>
+        <div>
             <section className="hero container-fluid" style={{ backgroundColor: "#0A2540", height:"fit-content" }}>
                 <div className=" container py-lg-5 gap-4 pb-5">
                     <div className="row hero-grid align-items-center py-4">
@@ -34,7 +34,7 @@ const WorksHero = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 

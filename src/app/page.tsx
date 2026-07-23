@@ -34,7 +34,7 @@ export default async function Home() {
   const faqHome = faq?.[0].homePage ?? [];
 
   return (
-    <>
+    <div>
       <div className="grid-bg z-1"></div>
       <Navbar />
       <HeroCarousel />
@@ -49,7 +49,7 @@ export default async function Home() {
         <Testimonials testimonials={reviews} />
         <Faq faq={faqHome} />
       <Footer />
-    </>
+    </div>
   )
 }
 

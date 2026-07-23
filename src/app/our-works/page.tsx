@@ -15,7 +15,7 @@ const page = async () => {
     await connectDb();
     const reviews = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>()).map(review => ({ ...review, _id: review?._id?.toString() }));
     return (
-        <>
+        <div>
             <Navbar />
             <WorksHero />
             <ScrollerWorks />
@@ -24,7 +24,7 @@ const page = async () => {
             <Stats style />
             <Testimonials testimonials={reviews} key="services-Review" />
                 <Footer />
-        </>
+        </div>
     )
 }
 
