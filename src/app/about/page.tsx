@@ -23,7 +23,7 @@ const AboutPage = async function () {
     // const features = cleanMongoShape(await FeaturesM.find().lean<Ifeatures[]>());
     const testimonials = cleanMongoShape(await Reviews.find().lean<Partial<Ireviews>[]>());
     return (
-        <>
+        <div>
             <WelcomeAbout />
             <AboutAbout />
             {/* <Features featuresData={features} title={'We ensure digital brand success'} /> */}
@@ -32,7 +32,7 @@ const AboutPage = async function () {
             <Testimonials testimonials={testimonials} />
             <Banner title="Ready to Work With AVATAWorks?" subtitle="Book a free AVATA session. We diagnose, prioritise, and build the growth plan that fits your brand." buttonText="Get a Quote" icon={faArrowRight} />
             <Footer />
-        </>
+        </div>
     )
 }
 export default AboutPage        

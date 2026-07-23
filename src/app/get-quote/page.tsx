@@ -17,7 +17,7 @@ const page = () => {
         <div className="bg-primary">
             <div className='container py-lg-5 pb-5'>
                 <div className="row">
-                    <div className="col-lg-7 h-100">
+                    <div className="container col-lg-7 h-100">
                         <div className="d-lg-flex w-100 h-100 align-items-center">
                             <Image width={400} height={800} className="w-auto h-auto" alt="get-quote-img" src={"/getQuote/Good team-bro.png"} />
                         </div>
@@ -32,7 +32,7 @@ const page = () => {
                 </div>
             </div>
         </div >
-    )
-}
+    ) 
+ }
 
 export default page                                                  
