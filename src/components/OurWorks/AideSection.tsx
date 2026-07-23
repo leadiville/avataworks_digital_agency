@@ -10,15 +10,15 @@ const AideSection = () => {
                 <ScrollAnimate>
 
                     <div className="aide-left">
-                        <div className="aide-eyebrow text-primary"><span className="pdot"></span>Launching in a few weeks · Join the Waitlist</div>
-                        <h2>Every result above was<br />built by <em>human AVATAs.</em><br />AIDE makes it faster.</h2>
-                        <p>For 4 years, our AVATA team has delivered these results manually — strategy, creative, execution, reporting. That work is real and it's proven. AIDE doesn't replace it. AIDE gives those same expert AVATAs AI-powered tools that let them work 5× faster, handle more brands at once, and deliver at a cost that was never possible before. The quality stays. The speed multiplies.</p>
+                        <div className="aide-eyebrow text-primary"><span className="pdot"></span>Now accepting clients</div>
+                        <h2>Every result above was<br />built by <em>human Avatas.</em><br />Now AI makes it faster.</h2>
+                        <p>For 4 years, our Avatas have delivered these results manually — strategy, creative, execution, reporting. That work is real and it's proven. AI doesn't replace it rather it gives those same expert Avatas the infrastructure that lets them work 5× faster, handle more brands at once, and deliver without adding overhead. The quality stays. The speed multiplies.</p>
 
                         <div className="aide-proof-line">
                             <div className="apl-icon">✅</div>
                             <div className="apl-body">
-                                <div className="apl-title">What stays the same: AVATA quality control</div>
-                                <div className="apl-sub">Every output — AI-generated or not — is reviewed and approved by a human AVATA before it reaches your brand. That doesn't change with AIDE.</div>
+                                <div className="apl-title">What stays the same: Avata quality control</div>
+                                <div className="apl-sub">Every AI-accelerated output is reviewed and approved by an Avata before it reaches your audience.</div>
                             </div>
                         </div>
                         <div className="aide-proof-line">
@@ -30,12 +30,12 @@ const AideSection = () => {
                         </div>
 
                         <div className="aide-cta-row">
-                            <a href="https://avataworks.com/get-quote" className="btn btn-white">Join the Waitlist →</a>
+                            <a href="https://avataworks.com/get-quote" className="btn btn-white">Get Started →</a>
                             <a href="https://avataworks.com/our-services" className="btn btn-primary">See Our Services</a>
                         </div>
                         <div className="waitlist-badge">
                             <span className="wb-dot"></span>
-                            <span className="text-primary"><strong className='text-white'>Early access pricing</strong> locked in for waitlist members</span>
+                            <span className="text-primary"><strong className='text-white'>Now accepting clients</strong></span>
                         </div>
                     </div>
                 </ScrollAnimate>
@@ -53,7 +53,7 @@ const AideSection = () => {
                                 </div>
                                 <div className="vel-bar-row">
                                     <div className="vel-bar-bg"><div className="vel-bar-fill vb-aide" style={{ width: '18%', animation: 'none' }}></div></div>
-                                    <span className="vel-tag vt-soon">~30 mins ⚡</span>
+                                    <span className="vel-tag vt-soon">~2 hours ⚡</span>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const AideSection = () => {
                                 </div>
                                 <div className="vel-bar-row">
                                     <div className="vel-bar-bg"><div className="vel-bar-fill vb-aide" style={{ width: '14%' }}></div></div>
-                                    <span className="vel-tag vt-soon">~2 hours ⚡</span>
+                                    <span className="vel-tag vt-soon">~1 day ⚡</span>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ const AideSection = () => {
                                 </div>
                                 <div className="vel-bar-row">
                                     <div className="vel-bar-bg"><div className="vel-bar-fill vb-aide" style={{ width: '12%' }}></div></div>
-                                    <span className="vel-tag vt-soon">~4 hours ⚡</span>
+                                    <span className="vel-tag vt-soon">~8 hours ⚡</span>
                                 </div>
                             </div>
                         </div>
@@ -102,8 +102,8 @@ const AideSection = () => {
                     </ScrollAnimate>
 
                     <div className="vel-legend">
-                        <div className="vleg"><div className="vleg-dot vd-now"></div><span className="vleg-txt">Our current AVATA delivery</span></div>
-                        <div className="vleg"><div className="vleg-dot vd-soon"></div><span className="vleg-txt">AIDE — coming soon</span></div>
+                        <div className="vleg"><div className="vleg-dot vd-now"></div><span className="vleg-txt">Old Avata delivery</span></div>
+                        <div className="vleg"><div className="vleg-dot vd-soon"></div><span className="vleg-txt">AI-Driven + Avata delivery</span></div>
                     </div>
                 </div>
 
