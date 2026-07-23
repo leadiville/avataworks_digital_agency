@@ -20,7 +20,7 @@ const CaseStudies = () => {
             <div className='mb-5'>
                 <Badge style='' text='Case studies' key={'case-studies'} textStyle='text-uppercase' />
                 <h2 className="text-capitalize py-2">Real work. <br /> Real outcomes.</h2>
-                <p>Every result below was built by our AVATA team — expert human specialists running your brand with precision and accountability.</p>
+                <p>Every result below was built by our Avatas, expert human specialists running your brand with precision and accountability.</p>
             </div>
             {/* works category section */}
             <div className="category-tags d-inline-flex gap-lg-4 gap-2">
